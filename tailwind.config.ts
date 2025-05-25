@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -62,6 +61,33 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				// Zasta brand colors
+				zasta: {
+					green: {
+						50: '#f0f9f4',
+						100: '#dcf3e3',
+						200: '#bce6ca',
+						300: '#8dd4a5',
+						400: '#57bc77',
+						500: '#2f9354',
+						600: '#1e7a3f',
+						700: '#196135',
+						800: '#184e2c',
+						900: '#144024',
+					},
+					gold: {
+						50: '#fefbec',
+						100: '#fcf3c9',
+						200: '#f8e68e',
+						300: '#f4d453',
+						400: '#f0c329',
+						500: '#eab308',
+						600: '#ca8a04',
+						700: '#a16207',
+						800: '#854d0e',
+						900: '#713f12',
+					}
 				}
 			},
 			borderRadius: {

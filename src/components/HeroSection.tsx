@@ -11,13 +11,13 @@ const HeroSection = () => {
       title: "Powering Infrastructure Projects Worldwide",
       subtitle: "Comprehensive workforce solutions and construction management for mega-projects",
       cta: "Explore Our Services",
-      bg: "bg-gradient-to-br from-blue-900 via-blue-700 to-blue-500"
+      bg: "bg-gradient-to-br from-green-900 via-green-700 to-green-500"
     },
     {
       title: "Digital Project Management Suite",
       subtitle: "SiteSync - Advanced field quality control with 2000+ checklists",
       cta: "Discover SiteSync",
-      bg: "bg-gradient-to-br from-purple-900 via-purple-700 to-blue-600"
+      bg: "bg-gradient-to-br from-yellow-800 via-yellow-600 to-green-600"
     }
   ];
 
@@ -67,7 +67,7 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg px-8 py-4 group">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-lg px-8 py-4 group">
               {slides[currentSlide].cta}
               <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
@@ -79,17 +79,17 @@ const HeroSection = () => {
           {/* Stats */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 hover:bg-white/20 transition-all duration-300">
-              <Users className="w-8 h-8 mb-4 mx-auto text-blue-300" />
+              <Users className="w-8 h-8 mb-4 mx-auto text-yellow-300" />
               <div className="text-3xl font-bold mb-2">100+</div>
               <div className="text-gray-300">Skilled Workforce</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 hover:bg-white/20 transition-all duration-300">
-              <Building className="w-8 h-8 mb-4 mx-auto text-blue-300" />
+              <Building className="w-8 h-8 mb-4 mx-auto text-yellow-300" />
               <div className="text-3xl font-bold mb-2">35+</div>
               <div className="text-gray-300">Projects Completed</div>
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 hover:bg-white/20 transition-all duration-300">
-              <Zap className="w-8 h-8 mb-4 mx-auto text-blue-300" />
+              <Zap className="w-8 h-8 mb-4 mx-auto text-yellow-300" />
               <div className="text-3xl font-bold mb-2">₹4 Cr+</div>
               <div className="text-gray-300">Revenue FY24-25</div>
             </div>

@@ -25,10 +25,12 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-800 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">Z</span>
-            </div>
+          <Link to="/" className="flex items-center space-x-3">
+            <img 
+              src="/lovable-uploads/fbc0b943-b9c4-4cc2-b50c-20cd73fdfe74.png" 
+              alt="Zasta Group Logo" 
+              className="h-10 w-auto object-contain"
+            />
             <div className="flex flex-col">
               <span className="font-bold text-xl text-gray-900">Zasta</span>
               <span className="text-xs text-gray-600 -mt-1">Group</span>
@@ -41,14 +43,14 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:bg-blue-50 hover:text-blue-600 ${
-                  isActive(item.path) ? 'bg-blue-100 text-blue-600' : 'text-gray-700'
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:bg-green-50 hover:text-green-600 ${
+                  isActive(item.path) ? 'bg-green-100 text-green-600' : 'text-gray-700'
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button className="ml-4 bg-blue-600 hover:bg-blue-700">
+            <Button className="ml-4 bg-green-600 hover:bg-green-700">
               Get Started
             </Button>
           </nav>
@@ -71,7 +73,7 @@ const Header = () => {
                   key={item.name}
                   to={item.path}
                   className={`px-4 py-3 text-sm font-medium transition-colors ${
-                    isActive(item.path) ? 'bg-blue-100 text-blue-600' : 'text-gray-700 hover:bg-gray-50'
+                    isActive(item.path) ? 'bg-green-100 text-green-600' : 'text-gray-700 hover:bg-gray-50'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -79,7 +81,7 @@ const Header = () => {
                 </Link>
               ))}
               <div className="px-4 pt-2">
-                <Button className="w-full bg-blue-600 hover:bg-blue-700">
+                <Button className="w-full bg-green-600 hover:bg-green-700">
                   Get Started
                 </Button>
               </div>
