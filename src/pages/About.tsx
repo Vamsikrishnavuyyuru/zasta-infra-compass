@@ -45,11 +45,11 @@ const About = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-900 via-blue-800 to-blue-600 text-white py-20">
+      <section className="bg-gradient-to-br from-zasta-green-900 via-zasta-green-700 to-zasta-green-500 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl font-bold mb-6 animate-fade-in">About Zasta Group</h1>
-            <p className="text-xl text-blue-100 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <p className="text-xl text-green-100 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Powering infrastructure projects worldwide since 2016 with innovative solutions and skilled expertise
             </p>
           </div>
@@ -76,7 +76,7 @@ const About = () => {
               {stats.map((stat, index) => (
                 <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
-                    <stat.icon className="w-12 h-12 text-blue-600 mx-auto mb-4" />
+                    <stat.icon className="w-12 h-12 text-zasta-green-600 mx-auto mb-4" />
                     <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
                     <div className="text-gray-600 text-sm">{stat.label}</div>
                   </CardContent>
@@ -88,13 +88,13 @@ const About = () => {
       </section>
 
       {/* Vision & Mission */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-zasta-green-50">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                  <Eye className="w-8 h-8 text-blue-600" />
+                <div className="bg-zasta-green-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                  <Eye className="w-8 h-8 text-zasta-green-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Vision</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -105,8 +105,8 @@ const About = () => {
             
             <Card className="hover:shadow-xl transition-shadow">
               <CardContent className="p-8">
-                <div className="bg-green-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                  <Target className="w-8 h-8 text-green-600" />
+                <div className="bg-zasta-gold-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                  <Target className="w-8 h-8 text-zasta-gold-600" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Our Mission</h3>
                 <p className="text-gray-600 leading-relaxed">
@@ -129,7 +129,7 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div key={index} className="text-center group">
-                <div className="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-gradient-to-br from-zasta-green-500 to-zasta-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                   <value.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{value.title}</h3>
@@ -151,19 +151,19 @@ const About = () => {
           <div className="max-w-4xl mx-auto">
             <div className="relative">
               {/* Timeline line */}
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-blue-500 hidden md:block"></div>
+              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-zasta-green-500 hidden md:block"></div>
               
               <div className="space-y-12">
                 {timeline.map((item, index) => (
                   <div key={index} className="relative flex items-center">
                     {/* Timeline dot */}
-                    <div className="absolute left-6 w-4 h-4 bg-blue-500 rounded-full border-4 border-gray-900 hidden md:block"></div>
+                    <div className="absolute left-6 w-4 h-4 bg-zasta-green-500 rounded-full border-4 border-gray-900 hidden md:block"></div>
                     
                     {/* Content */}
                     <div className="md:ml-16 bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors w-full">
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between">
                         <div>
-                          <div className="text-blue-400 font-bold text-lg mb-2">{item.year}</div>
+                          <div className="text-zasta-gold-400 font-bold text-lg mb-2">{item.year}</div>
                           <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                           <p className="text-gray-300">{item.description}</p>
                         </div>
