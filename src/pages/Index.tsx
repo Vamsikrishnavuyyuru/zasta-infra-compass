@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import HeroSection from '@/components/HeroSection';
 import { Button } from '@/components/ui/button';
@@ -187,12 +186,9 @@ const Index = () => {
             Ready to power your next infrastructure project? Get in touch with our team today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-zasta-green-600 hover:bg-gray-100 text-lg px-8 py-4">
+            <button className="bg-white text-zasta-green-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
               Contact Us
-            </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-zasta-green-600 text-lg px-8 py-4">
-              View Projects
-            </Button>
+            </button>
           </div>
         </div>
       </section>

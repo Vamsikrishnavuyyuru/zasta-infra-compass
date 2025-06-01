@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +12,6 @@ const Header = () => {
     { name: 'About Us', path: '/about' },
     { name: 'Services', path: '/services' },
     { name: 'Sectors', path: '/sectors' },
-    { name: 'Projects', path: '/projects' },
     { name: 'Careers', path: '/careers' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -50,9 +48,6 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="ml-4 bg-zasta-green-600 hover:bg-zasta-green-700">
-              Get Started
-            </Button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -80,11 +75,6 @@ const Header = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-4 pt-2">
-                <Button className="w-full bg-zasta-green-600 hover:bg-zasta-green-700">
-                  Get Started
-                </Button>
-              </div>
             </nav>
           </div>
         )}
