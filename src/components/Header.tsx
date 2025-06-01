@@ -43,14 +43,14 @@ const Header = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:bg-green-50 hover:text-green-600 ${
-                  isActive(item.path) ? 'bg-green-100 text-green-600' : 'text-gray-700'
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:bg-zasta-green-50 hover:text-zasta-green-600 ${
+                  isActive(item.path) ? 'bg-zasta-green-100 text-zasta-green-600' : 'text-gray-700'
                 }`}
               >
                 {item.name}
               </Link>
             ))}
-            <Button className="ml-4 bg-green-600 hover:bg-green-700">
+            <Button className="ml-4 bg-zasta-green-600 hover:bg-zasta-green-700">
               Get Started
             </Button>
           </nav>
@@ -73,7 +73,7 @@ const Header = () => {
                   key={item.name}
                   to={item.path}
                   className={`px-4 py-3 text-sm font-medium transition-colors ${
-                    isActive(item.path) ? 'bg-green-100 text-green-600' : 'text-gray-700 hover:bg-gray-50'
+                    isActive(item.path) ? 'bg-zasta-green-100 text-zasta-green-600' : 'text-gray-700 hover:bg-gray-50'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >
@@ -81,7 +81,7 @@ const Header = () => {
                 </Link>
               ))}
               <div className="px-4 pt-2">
-                <Button className="w-full bg-green-600 hover:bg-green-700">
+                <Button className="w-full bg-zasta-green-600 hover:bg-zasta-green-700">
                   Get Started
                 </Button>
               </div>
