@@ -88,15 +88,15 @@ const Index = () => {
             {services.map((service, index) => (
               <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <CardContent className="p-8">
-                  <div className="bg-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-blue-600 transition-colors">
-                    <service.icon className="w-8 h-8 text-blue-600 group-hover:text-white transition-colors" />
+                  <div className="bg-zasta-green-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-zasta-green-600 transition-colors">
+                    <service.icon className="w-8 h-8 text-zasta-green-600 group-hover:text-white transition-colors" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6">{service.description}</p>
                   <ul className="space-y-2">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className="flex items-center text-sm text-gray-600">
-                        <ChevronRight className="w-4 h-4 text-blue-600 mr-2" />
+                        <ChevronRight className="w-4 h-4 text-zasta-green-600 mr-2" />
                         {feature}
                       </li>
                     ))}
@@ -109,7 +109,7 @@ const Index = () => {
       </section>
 
       {/* Sectors We Serve */}
-      <section className="py-20 bg-blue-50">
+      <section className="py-20 bg-zasta-green-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Sectors We Serve</h2>
@@ -138,7 +138,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {whyZasta.map((item, index) => (
               <div key={index} className="text-center group">
-                <div className="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+                <div className="bg-gradient-to-br from-zasta-green-500 to-zasta-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                   <item.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>
@@ -163,13 +163,13 @@ const Index = () => {
                 <CardContent className="p-8">
                   <div className="flex mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                      <Star key={i} className="w-5 h-5 text-zasta-gold-400 fill-current" />
                     ))}
                   </div>
                   <p className="text-gray-300 mb-6 italic">"{testimonial.content}"</p>
                   <div>
                     <div className="font-semibold text-white">{testimonial.name}</div>
-                    <div className="text-blue-400">{testimonial.position}</div>
+                    <div className="text-zasta-green-400">{testimonial.position}</div>
                     <div className="text-gray-400 text-sm">{testimonial.company}</div>
                   </div>
                 </CardContent>
@@ -180,17 +180,17 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-r from-zasta-green-600 to-zasta-green-800 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold mb-6">Need Skilled Experts? Let's Connect.</h2>
-          <p className="text-xl mb-8 text-blue-100">
+          <p className="text-xl mb-8 text-zasta-green-100">
             Ready to power your next infrastructure project? Get in touch with our team today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 text-lg px-8 py-4">
+            <Button size="lg" className="bg-white text-zasta-green-600 hover:bg-gray-100 text-lg px-8 py-4">
               Contact Us
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 text-lg px-8 py-4">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-zasta-green-600 text-lg px-8 py-4">
               View Projects
             </Button>
           </div>
