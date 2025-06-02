@@ -102,7 +102,7 @@ const Services = () => {
           details: "Secure cloud-based data synchronization ensuring all stakeholders have access to the latest project information."
         }
       ],
-      detailedDescription: "Our proprietary Zasta Digital Suite revolutionizes construction quality management with comprehensive checklists, real-time monitoring, and detailed reporting capabilities for enhanced project oversight."
+      detailedDescription: "Our proprietary software SiteSync AI-powered, revolutionizes construction quality management with comprehensive checklists, real-time monitoring, performance tracking and detailed reporting capabilities for enhanced project oversight."
     }
   ];
 
