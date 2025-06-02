@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
@@ -75,7 +74,7 @@ const Services = () => {
     },
     {
       icon: Smartphone,
-      title: "SiteSync Digital Suite",
+      title: "Zasta Digital Suite",
       description: "Advanced field quality app with 2000+ checklists, offline functionality, and real-time auditing capabilities.",
       features: [
         {
