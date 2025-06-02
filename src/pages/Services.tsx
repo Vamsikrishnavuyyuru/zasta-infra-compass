@@ -1,7 +1,8 @@
+
 import Layout from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-import { Users, Building, Smartphone, ChevronDown, CheckCircle } from 'lucide-react';
+import { Users, Building, Smartphone, ChevronDown, CheckCircle, Monitor, HardHat, Database } from 'lucide-react';
 import { useState } from 'react';
 
 const Services = () => {
@@ -12,6 +13,8 @@ const Services = () => {
       icon: Users,
       title: "Workforce Solutions",
       description: "Civil, Mechanical, Electrical, Instrumentation, Software Engineers & IT professionals with complete onboarding and compliance support.",
+      illustration: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+      illustrationAlt: "Professional team working on laptops",
       features: [
         {
           name: "Sourcing & Onboarding",
@@ -44,6 +47,8 @@ const Services = () => {
       icon: Building,
       title: "Construction Project Management",
       description: "End-to-end project planning, scheduling, quality control, safety management, and execution support.",
+      illustration: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop",
+      illustrationAlt: "Construction site with crane and building",
       features: [
         {
           name: "Planning & Scheduling",
@@ -76,6 +81,8 @@ const Services = () => {
       icon: Smartphone,
       title: "Zasta Digital Suite",
       description: "Advanced field quality app with 2000+ checklists, offline functionality, and real-time auditing capabilities.",
+      illustration: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop",
+      illustrationAlt: "Software code on computer screen",
       features: [
         {
           name: "2000+ Checklists",
@@ -182,7 +189,15 @@ const Services = () => {
                 </div>
                 
                 <div className="flex-1">
-                  <Card className="shadow-xl">
+                  <Card className="shadow-xl overflow-hidden">
+                    <div className="relative h-48 overflow-hidden">
+                      <img 
+                        src={service.illustration} 
+                        alt={service.illustrationAlt}
+                        className="w-full h-full object-cover"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                    </div>
                     <CardContent className="p-8">
                       <h3 className="text-xl font-semibold mb-4 text-gray-900">Service Overview</h3>
                       <p className="text-gray-600 mb-4">{service.description}</p>
