@@ -1,13 +1,12 @@
 
 import Layout from '@/components/Layout';
-import { Card, CardContent } from '@/components/ui/card';
-import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/ui/collapsible';
-import { Users, Building, Smartphone, ChevronDown, CheckCircle, Monitor, HardHat, Database } from 'lucide-react';
-import { useState } from 'react';
+import { Users, Building, Smartphone } from 'lucide-react';
+import ServiceHero from '@/components/services/ServiceHero';
+import ServiceCard from '@/components/services/ServiceCard';
+import ProcessSteps from '@/components/services/ProcessSteps';
+import ServicesCTA from '@/components/services/ServicesCTA';
 
 const Services = () => {
-  const [openService, setOpenService] = useState<number | null>(null);
-
   const services = [
     {
       icon: Users,
@@ -113,147 +112,33 @@ const Services = () => {
     }
   ];
 
-  const processSteps = [
-    {
-      number: "01",
-      title: "Consultation",
-      description: "We understand your project requirements and challenges"
-    },
-    {
-      number: "02", 
-      title: "Planning",
-      description: "Develop customized solutions tailored to your needs"
-    },
-    {
-      number: "03",
-      title: "Execution",
-      description: "Deploy our expert teams and advanced tools"
-    },
-    {
-      number: "04",
-      title: "Monitoring",
-      description: "Continuous oversight and quality assurance"
-    }
-  ];
-
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-zasta-green-600 to-zasta-green-800 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">Our Services</h1>
-            <p className="text-xl text-zasta-green-100 leading-relaxed">
-              Comprehensive infrastructure solutions powered by skilled professionals and cutting-edge technology
-            </p>
-          </div>
-        </div>
-      </section>
-
+      <ServiceHero />
+      
       {/* Services Detail Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="space-y-20">
             {services.map((service, index) => (
-              <div key={index} className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-start gap-12`}>
-                <div className="flex-1">
-                  <div className="flex items-center mb-6">
-                    <div className="bg-zasta-green-100 w-16 h-16 rounded-lg flex items-center justify-center mr-4">
-                      <service.icon className="w-8 h-8 text-zasta-green-600" />
-                    </div>
-                    <h2 className="text-3xl font-bold text-gray-900">{service.title}</h2>
-                  </div>
-                  <p className="text-lg text-gray-600 mb-6">{service.detailedDescription}</p>
-                  
-                  {/* Interactive Service Features */}
-                  <div className="space-y-3">
-                    {service.features.map((feature, idx) => (
-                      <Collapsible key={idx}>
-                        <CollapsibleTrigger className="w-full">
-                          <div className="flex items-center justify-between w-full p-4 bg-zasta-green-50 hover:bg-zasta-green-100 rounded-lg transition-colors">
-                            <div className="flex items-center">
-                              <CheckCircle className="w-5 h-5 text-zasta-green-600 mr-3" />
-                              <span className="text-gray-900 font-medium text-left">{feature.name}</span>
-                            </div>
-                            <ChevronDown className="w-5 h-5 text-zasta-green-600 transition-transform duration-200" />
-                          </div>
-                        </CollapsibleTrigger>
-                        <CollapsibleContent>
-                          <div className="mt-2 p-4 bg-white border border-zasta-green-100 rounded-lg">
-                            <p className="text-gray-600">{feature.details}</p>
-                          </div>
-                        </CollapsibleContent>
-                      </Collapsible>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="flex-1">
-                  <Card className="shadow-xl overflow-hidden">
-                    <div className="relative h-48 overflow-hidden">
-                      <img 
-                        src={service.illustration} 
-                        alt={service.illustrationAlt}
-                        className="w-full h-full object-cover"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                    </div>
-                    <CardContent className="p-8">
-                      <h3 className="text-xl font-semibold mb-4 text-gray-900">Service Overview</h3>
-                      <p className="text-gray-600 mb-4">{service.description}</p>
-                      <div className="bg-zasta-green-50 p-4 rounded-lg">
-                        <p className="text-sm text-zasta-green-700 font-medium">
-                          Click on any feature above to learn more about our detailed approach and methodology.
-                        </p>
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
-              </div>
+              <ServiceCard
+                key={index}
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+                illustration={service.illustration}
+                illustrationAlt={service.illustrationAlt}
+                features={service.features}
+                detailedDescription={service.detailedDescription}
+                index={index}
+              />
             ))}
           </div>
         </div>
       </section>
 
-      {/* Process Section */}
-      <section className="py-20 bg-zasta-green-50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
-            <p className="text-xl text-gray-600">How we deliver excellence in every project</p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-gradient-to-br from-zasta-green-500 to-zasta-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
-                  {step.number}
-                </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
-                <p className="text-gray-600">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-zasta-green-600 to-zasta-green-800 text-white">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Get Started?</h2>
-          <p className="text-xl mb-8 text-zasta-green-100">
-            Let's discuss how our services can support your next infrastructure project.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-white text-zasta-green-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-              Contact Us Today
-            </button>
-            <button className="border-2 border-white text-white hover:bg-white hover:text-zasta-green-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors">
-              Download Brochure
-            </button>
-          </div>
-        </div>
-      </section>
+      <ProcessSteps />
+      <ServicesCTA />
     </Layout>
   );
 };
