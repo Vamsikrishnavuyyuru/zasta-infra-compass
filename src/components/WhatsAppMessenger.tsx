@@ -2,7 +2,7 @@
 import { MessageCircle } from 'lucide-react';
 
 const WhatsAppMessenger = () => {
-  const phoneNumber = "919876543210"; // Replace with actual WhatsApp business number
+  const phoneNumber = "919701620621"; // Updated WhatsApp business number
   const message = "Hello! I'm interested in Zasta Group's services. Could you please provide more information?";
   
   const handleWhatsAppClick = () => {
