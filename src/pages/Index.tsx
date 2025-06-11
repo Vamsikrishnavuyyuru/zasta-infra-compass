@@ -27,11 +27,11 @@ const Index = () => {
   ];
 
   const sectors = [
+    { name: "Real Estate", icon: "🏗️" },
     { name: "Power & Distribution", icon: "⚡" },
     { name: "Transportation", icon: "🚄" },
     { name: "Oil & Gas", icon: "🛢️" },
     { name: "Data Centers", icon: "🏢" },
-    { name: "Real Estate", icon: "🏗️" },
     { name: "Industries & Warehousing", icon: "🏭" }
   ];
 
