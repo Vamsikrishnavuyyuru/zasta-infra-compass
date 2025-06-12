@@ -38,14 +38,14 @@ const Index = () => {
     {
       name: "Rajesh Kumar",
       position: "Project Director",
-      company: "MegaInfra Ltd",
+      company: "XYZ Ltd",
       content: "Zasta's workforce solutions helped us complete our power project 2 months ahead of schedule.",
       rating: 5
     },
     {
       name: "Priya Sharma",
       position: "Operations Manager",
-      company: "PowerGrid Corp",
+      company: "ABC Corp",
       content: "SiteSync has revolutionized our quality control process with real-time monitoring capabilities.",
       rating: 5
     }
@@ -61,7 +61,7 @@ const Index = () => {
           <div className="max-w-4xl mx-auto text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
             <p className="text-xl text-gray-600 leading-relaxed">
-              Founded in 2016 and based in Hyderabad, Zasta Group has emerged as a trusted partner for infrastructure projects worldwide. We deliver comprehensive solutions that combine skilled workforce deployment, advanced project management, and cutting-edge digital tools.
+              Founded in 2016 and based in Hyderabad, Zasta Enterprises Private Limited, Previously known as Zasta Engineers And Consultancy Services has emerged as a trusted partner for infrastructure projects worldwide. We deliver comprehensive solutions that combine skilled workforce deployment, advanced project management, and cutting-edge digital tools.
             </p>
           </div>
         </div>
@@ -104,7 +104,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Zasta?</h2>
-            <p className="text-xl text-gray-600">What sets us apart in the infrastructure industry</p>
+            <p className="text-xl text-gray-600">What sets us apart</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
