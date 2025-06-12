@@ -96,8 +96,8 @@ const HeroSection = () => {
             </div>
             <div className="bg-white/10 backdrop-blur-md rounded-lg p-6 hover:bg-white/20 transition-all duration-300">
               <Zap className="w-8 h-8 mb-4 mx-auto text-zasta-gold-300" />
-              <div className="text-3xl font-bold mb-2">₹4 Cr+</div>
-              <div className="text-gray-300">Revenue FY24-25</div>
+              <div className="text-3xl font-bold mb-2">25+</div>
+              <div className="text-gray-300">Current Projects</div>
             </div>
           </div>
         </div>
