@@ -104,8 +104,8 @@ const Services = () => {
           details: "GPS-enabled photo documentation with timestamp and location data for comprehensive visual records."
         },
         {
-          name: "Report Generation",
-          details: "Automated report generation with customizable templates, analytics dashboards, and stakeholder-specific views."
+          name: "AI Report Generation in Dashboard",
+          details: "Automated report creation with customizable templates, real-time analytics, and stakeholder-specific dashboards views."
         },
         {
           name: "Cloud Synchronization",
