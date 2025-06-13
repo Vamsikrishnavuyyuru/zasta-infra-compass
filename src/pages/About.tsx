@@ -38,8 +38,7 @@ const About = () => {
   const stats = [
     { icon: Users, number: "100+", label: "Skilled Professionals" },
     { icon: Building, number: "35+", label: "Projects Completed" },
-    { icon: Calendar, number: "8+", label: "Years of Experience" },
-    { icon: TrendingUp, number: "₹6 Cr", label: "Target Revenue FY25-26" }
+    { icon: Calendar, number: "8+", label: "Years of Experience" }
   ];
 
   return (
@@ -48,7 +47,7 @@ const About = () => {
       <section className="bg-gradient-to-br from-zasta-green-900 via-zasta-green-700 to-zasta-green-500 text-white py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6 animate-fade-in">About Zasta Group</h1>
+            <h1 className="text-5xl font-bold mb-6 animate-fade-in">About Zasta </h1>
             <p className="text-xl text-green-100 animate-fade-in" style={{ animationDelay: '0.2s' }}>
               Powering infrastructure projects worldwide since 2016 with innovative solutions and skilled expertise
             </p>
