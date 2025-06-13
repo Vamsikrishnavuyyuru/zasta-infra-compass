@@ -5,7 +5,7 @@ import { Target, Eye, Heart, Award, Users, Building, Calendar, TrendingUp } from
 
 const About = () => {
   const timeline = [
-    { year: "2016", title: "Company Founded", description: "Zasta Enterprises Pvt Ltd established in Hyderabad" },
+    { year: "2016", title: "Company Founded", description: "Zasta Engineers And Consultancy Services established in Hyderabad" },
     { year: "2018", title: "First Major Project", description: "Deployed workforce for mega power transmission project" },
     { year: "2020", title: "Digital Innovation", description: "Launched SiteSync digital quality management suite" },
     { year: "2022", title: "Sector Expansion", description: "Extended services to data centers and industrial projects" },
