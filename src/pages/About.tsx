@@ -38,7 +38,7 @@ const About = () => {
   const stats = [
     { icon: Users, number: "100+", label: "Skilled Professionals" },
     { icon: Building, number: "35+", label: "Projects Completed" },
-    { icon: Calendar, number: "8+", label: "Years of Experience" }
+    { icon: Calendar, number: "9+", label: "Years of Experience" }
   ];
 
   return (
@@ -62,13 +62,13 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Founded in 2016 in Hyderabad, Zasta Enterprises Pvt Ltd emerged from a vision to bridge the gap between skilled talent and infrastructure development needs. What started as a workforce solutions company has evolved into a comprehensive infrastructure services provider.
+                Founded in 2016 in Hyderabad, Zasta Enterprises Private Limited, Previously known as Zasta Engineers And Consultancy Services emerged from a vision to bridge the gap between skilled talent and infrastructure development needs. What started as a workforce solutions company has evolved into a comprehensive infrastructure services provider.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Today, we serve global infrastructure projects across power, transportation, oil & gas, data centers, real estate, and industrial sectors. Our commitment to excellence, innovation, and client success has made us a trusted partner for some of the industry's most challenging projects.
+                Today, we serve global infrastructure projects across power, transportation, oil & gas, data centers, real estate, industrial sectors and Information Technology. Our commitment to excellence, innovation, and client success has made us a trusted partner for some of the industry's most challenging projects.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                With a revenue of ₹4 Cr+ in FY24-25 and a target of ₹6 Cr for FY25-26, we continue to grow while maintaining our core values of quality, agility, and domain expertise.
+                We continue to grow while maintaining our core values of quality, agility, and domain expertise.
               </p>
             </div>
             <div className="grid grid-cols-2 gap-6">
