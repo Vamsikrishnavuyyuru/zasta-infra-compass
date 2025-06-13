@@ -55,7 +55,7 @@ Kukatpally, Hyderabad - 500072, India</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone size={18} className="text-zasta-green-400 flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+91 (040) 123-4567</span>
+                <span className="text-gray-300 text-sm"> +91 9701620621 </span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail size={18} className="text-zasta-green-400 flex-shrink-0" />
