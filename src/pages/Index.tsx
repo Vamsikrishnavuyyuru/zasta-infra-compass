@@ -26,7 +26,6 @@ const Index = () => {
       features: ["2000+ Checklists", "Offline Functionality", "Real-time Audits", "Photo Tagging"]
     }
   ];
-  
   const sectors = [
     { name: "Power & Distribution", icon: "⚡" },
     { name: "Transportation", icon: "🚄" },
