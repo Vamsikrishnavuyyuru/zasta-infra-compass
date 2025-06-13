@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import WhatsAppMessenger from './WhatsAppMessenger';
+import LinkedInButton from './LinkedInButton';
 
 interface LayoutProps {
   children: ReactNode;
@@ -16,6 +17,7 @@ const Layout = ({ children }: LayoutProps) => {
         {children}
       </main>
       <Footer />
+      <LinkedInButton />
       <WhatsAppMessenger />
     </div>
   );
