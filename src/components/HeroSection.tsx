@@ -21,7 +21,7 @@ const HeroSection = () => {
     },
     {
       title: "Expert Engineering Consultancy",
-      subtitle: "Delivering specialized engineering solutions across power, transportation, and industrial sectors",
+      subtitle: "Delivering specialized engineering solutions across real estate, power, transportation, and industrial sectors",
       cta: "Our Expertise",
       bg: "bg-gradient-to-br from-zasta-green-800 via-zasta-gold-700 to-zasta-green-600"
     }
