@@ -74,7 +74,7 @@ const Services = () => {
           details: "Real-time progress tracking with detailed reporting, performance analytics, and stakeholder communication."
         },
         {
-          name: "Building Information Model"
+          name: "Building Information Model",
           details: "Collaborative BIM integration with project stakeholders to streamline design coordination, improve construction accuracy, and enhance lifecycle management."
         },
       ],
