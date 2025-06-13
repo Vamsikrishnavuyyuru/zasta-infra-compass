@@ -30,7 +30,7 @@ const Header = () => {
             />
             <div className="flex flex-col">
               <span className="font-bold text-xl text-gray-900">Zasta</span>
-                <span className="text-xs text-gray-600 -mt-1">Enterprises Private Limited</span>
+                <span className="text-bold text-gray-600 -mt-1">Enterprises Private Limited</span>
             </div>
           </Link>
 
