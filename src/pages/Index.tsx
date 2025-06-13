@@ -26,6 +26,16 @@ const Index = () => {
       features: ["2000+ Checklists", "Offline Functionality", "Real-time Audits", "Photo Tagging"]
     }
   ];
+  
+  const sectors = [
+    { name: "Power & Distribution", icon: "⚡" },
+    { name: "Transportation", icon: "🚄" },
+    { name: "Oil & Gas", icon: "🛢️" },
+    { name: "Data Centers", icon: "🏢" },
+    { name: "Real Estate", icon: "🏗️" },
+    { name: "Industries & Warehousing", icon: "🏭" },
+    { name: "Information Technology", icon: "💻" }
+  ];
 
   const whyZasta = [
     { icon: Zap, title: "Agility", description: "Rapid response and flexible solutions" },
