@@ -51,7 +51,7 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Office Address",
-      details: "123 Business District, Tech Hub, Mumbai 400001"
+      details: "Flat no - 1505, Tower - 1, Emami Swanlake Apartments, Opposite Metro cash & carry, Balaji nagar, Kukatpally, Hyderabad - 500072, India"
     },
     {
       icon: Phone,
