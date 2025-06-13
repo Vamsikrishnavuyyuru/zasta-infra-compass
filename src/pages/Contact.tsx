@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -56,7 +55,7 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Phone Number",
-      details: "+91 98765 43210"
+      details: "+91 9701620621"
     },
     {
       icon: Mail,
