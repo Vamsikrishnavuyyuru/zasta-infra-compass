@@ -2,7 +2,7 @@
 import { Linkedin } from 'lucide-react';
 
 const LinkedInButton = () => {
-  const linkedinUrl = "https://www.linkedin.com/company/zasta-group"; // Update with actual LinkedIn URL
+  const linkedinUrl = "https://www.linkedin.com/company/zasta-engineers-consultancy-services";
   
   const handleLinkedInClick = () => {
     window.open(linkedinUrl, '_blank');
