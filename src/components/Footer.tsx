@@ -16,18 +16,18 @@ const Footer = () => {
                 className="h-10 w-auto object-contain"
               />
               <div className="flex flex-col">
-                <span className="font-bold text-xl">Zasta Group</span>
-                <span className="text-sm text-gray-400">Powering Infrastructure Projects Worldwide</span>
+                <span className="font-bold text-xl">Zasta Enterprises Private Limited</span>
+                <span className="text-sm text-gray-400">Excellence Always</span>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Founded in 2016 and based in Hyderabad, Zasta Group delivers comprehensive infrastructure solutions including workforce deployment, construction management, and digital project tools.
+              Founded in 2016 and based in Hyderabad, Zasta Enterprises Private Limited, Previously known as Zasta Engineers And Consultancy Services delivers comprehensive infrastructure solutions including workforce deployment, construction management, and digital project tools.
             </p>
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/company/zasta-engineers-consultancy-services" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-zasta-green-400 transition-colors">
                 <Linkedin size={24} />
               </a>
-              <a href="mailto:info@zastagroup.com" className="text-gray-400 hover:text-zasta-green-400 transition-colors">
+              <a href="mailto:hr@zastagroup.com" className="text-gray-400 hover:text-zasta-green-400 transition-colors">
                 <Mail size={24} />
               </a>
             </div>
@@ -67,7 +67,7 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2024 Zasta Enterprises Pvt Ltd. All rights reserved.
+              © 2025 Zasta Enterprises Pvt Ltd. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <Link to="/privacy" className="text-gray-400 hover:text-zasta-green-400 text-sm transition-colors">
