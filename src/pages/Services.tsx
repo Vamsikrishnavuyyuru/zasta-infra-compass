@@ -72,7 +72,11 @@ const Services = () => {
         {
           name: "Progress Monitoring",
           details: "Real-time progress tracking with detailed reporting, performance analytics, and stakeholder communication."
-        }
+        },
+        {
+          name: "Building Information Model"
+          details: "Collaborative BIM integration with project stakeholders to streamline design coordination, improve construction accuracy, and enhance lifecycle management."
+        },
       ],
       detailedDescription: "We deliver comprehensive project management services that ensure your infrastructure projects are completed on time, within budget, and to the highest quality standards."
     },
