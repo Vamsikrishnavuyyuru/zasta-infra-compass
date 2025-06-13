@@ -108,6 +108,25 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Sectors We Serve */}
+       <section className="py-20 bg-zasta-green-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Sectors We Serve</h2>
+            <p className="text-xl text-gray-600">Delivering excellence across diverse infrastructure domains</p>
+          </div>
+          
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+            {sectors.map((sector, index) => (
+              <div key={index} className="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow group">
+                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">{sector.icon}</div>
+                <h3 className="font-semibold text-gray-900 text-sm">{sector.name}</h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Why Zasta Section */}
       <section className="py-20 bg-zasta-green-50">
         <div className="container mx-auto px-4">
