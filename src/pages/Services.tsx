@@ -12,7 +12,7 @@ const Services = () => {
       icon: Users,
       title: "Workforce Solutions",
       description: "Civil, Mechanical, Electrical, Instrumentation, Software Engineers & IT professionals with complete onboarding and compliance support.",
-      illustration: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=600&h=400&fit=crop",
+      illustration: "https://t4.ftcdn.net/jpg/02/64/87/45/360_F_264874512_asSj4QLFkdifkjMUDj80UKLKKwtH8qBZ.jpg",
       illustrationAlt: "Professional team working on laptops",
       features: [
         {
