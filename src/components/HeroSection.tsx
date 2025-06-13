@@ -1,31 +1,40 @@
 
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, Building, Users, Zap } from 'lucide-react';
 
 const HeroSection = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const navigate = useNavigate();
   
   const slides = [
     {
       title: "Powering Infrastructure Projects Worldwide",
       subtitle: "Comprehensive workforce solutions and construction management for mega-projects",
       cta: "Explore Our Services",
+      ctaAction: () => navigate('/services'),
       bg: "bg-gradient-to-br from-zasta-green-900 via-zasta-green-700 to-zasta-green-500"
     },
     {
       title: "Digital Project Management Suite",
       subtitle: "SiteSync - Advanced field quality control with 2000+ checklists",
       cta: "Discover SiteSync",
+      ctaAction: () => navigate('/services'),
       bg: "bg-gradient-to-br from-zasta-gold-800 via-zasta-gold-600 to-zasta-green-600"
     },
     {
       title: "Expert Engineering Consultancy",
       subtitle: "Delivering specialized engineering solutions across real estate, power, transportation, and industrial sectors",
       cta: "Our Expertise",
+      ctaAction: () => navigate('/about'),
       bg: "bg-gradient-to-br from-zasta-green-800 via-zasta-gold-700 to-zasta-green-600"
     }
   ];
+
+  const handleWorkWithUs = () => {
+    navigate('/careers');
+  };
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -73,11 +82,20 @@ const HeroSection = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            <Button size="lg" className="bg-zasta-green-600 hover:bg-zasta-green-700 text-lg px-8 py-4 group">
+            <Button 
+              size="lg" 
+              className="bg-zasta-green-600 hover:bg-zasta-green-700 text-lg px-8 py-4 group"
+              onClick={slides[currentSlide].ctaAction}
+            >
               {slides[currentSlide].cta}
               <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
-            <Button size="lg" variant="outline" className="text-lg px-8 py-4 border-white text-white bg-grey-900 hover:bg-white hover:text-gray-900">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="text-lg px-8 py-4 border-white text-white bg-grey-900 hover:bg-white hover:text-gray-900"
+              onClick={handleWorkWithUs}
+            >
               Work With Us
             </Button>
           </div>
