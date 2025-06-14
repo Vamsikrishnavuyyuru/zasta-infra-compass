@@ -1,4 +1,5 @@
 import Layout from '@/components/Layout';
+import SectionHeaderWithCity from '@/components/shared/SectionHeaderWithCity';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -71,17 +72,11 @@ const Contact = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-zasta-green-600 to-zasta-green-800 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">Contact Us</h1>
-            <p className="text-xl text-zasta-green-100 leading-relaxed">
-              Ready to start your next infrastructure project? Get in touch with our experts today.
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section with City Animation */}
+      <SectionHeaderWithCity
+        title="Contact Us"
+        subtitle="Ready to start your next infrastructure project? Get in touch with our experts today."
+      />
 
       {/* Contact Form and Info Section */}
       <section className="py-20">
