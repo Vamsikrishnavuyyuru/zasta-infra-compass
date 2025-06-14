@@ -35,7 +35,7 @@ const CVSubmissionForm = () => {
 
   // EmailJS Configuration
   const EMAILJS_SERVICE_ID = 'service_fjdc2up';
-  const EMAILJS_TEMPLATE_ID = 'template_s577sar';
+  const EMAILJS_TEMPLATE_ID = 'template_r5b721a';
   const EMAILJS_PUBLIC_KEY = 'k2HA7dp0FpEmkKzuo';
 
   const validateForm = () => {
