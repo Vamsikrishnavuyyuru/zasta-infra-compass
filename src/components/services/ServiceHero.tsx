@@ -6,7 +6,7 @@ const ServiceHero = () => {
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl font-bold mb-6">Our Services</h1>
           <p className="text-xl text-zasta-green-100 leading-relaxed">
-            Comprehensive infrastructure solutions powered by skilled professionals and cutting-edge technology
+            From workforce deployment to project execution - we deliver excellence across every phase of your infrastructure journey
           </p>
         </div>
       </div>
