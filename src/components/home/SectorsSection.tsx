@@ -19,7 +19,7 @@ const SectorsSection = () => {
         </div>
         
         <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 justify-items-center">
             {sectors.map((sector, index) => (
               <div key={index} className="bg-white rounded-lg p-8 text-center hover:shadow-lg transition-shadow group w-full max-w-sm">
                 <div className="text-5xl mb-6 group-hover:scale-110 transition-transform flex justify-center items-center h-16">
