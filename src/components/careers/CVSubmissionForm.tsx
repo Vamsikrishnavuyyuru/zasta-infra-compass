@@ -120,15 +120,6 @@ const CVSubmissionForm = () => {
     setIsSubmitting(true);
 
     try {
-      let fileContent = '';
-      if (cvFile) {
-        fileContent = await new Promise((resolve) => {
-          const reader = new FileReader();
-          reader.onload = () => resolve(reader.result as string);
-          reader.readAsDataURL(cvFile);
-        });
-      }
-
       const templateParams = {
         to_email: 'hr@zastagroup.com',
         from_name: formData.name,
@@ -138,7 +129,6 @@ const CVSubmissionForm = () => {
         skills: formData.skills,
         cover_letter: formData.coverLetter || 'No cover letter provided',
         cv_filename: cvFile?.name || '',
-        cv_content: fileContent,
         submission_date: new Date().toLocaleDateString(),
         reply_to: formData.email,
       };
