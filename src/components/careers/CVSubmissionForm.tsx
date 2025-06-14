@@ -1,5 +1,4 @@
-
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -32,6 +31,7 @@ const CVSubmissionForm = () => {
   });
   const [formErrors, setFormErrors] = useState<{[key: string]: string}>({});
   const [cvFile, setCvFile] = useState<File | null>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   // EmailJS Configuration
   const EMAILJS_SERVICE_ID = 'service_fjdc2up';
@@ -99,6 +99,10 @@ const CVSubmissionForm = () => {
       setCvFile(file);
       setFormErrors(prev => ({ ...prev, cv: '' }));
     }
+  };
+
+  const handleUploadDivClick = () => {
+    fileInputRef.current?.click();
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -271,13 +275,17 @@ const CVSubmissionForm = () => {
 
           <div>
             <Label htmlFor="cv-upload">Upload CV/Resume *</Label>
-            <div className={`mt-2 border-2 border-dashed rounded-lg p-6 text-center hover:border-zasta-green-500 transition-colors cursor-pointer ${formErrors.cv ? 'border-red-500' : 'border-gray-300'}`}>
+            <div 
+              onClick={handleUploadDivClick}
+              className={`mt-2 border-2 border-dashed rounded-lg p-6 text-center hover:border-zasta-green-500 transition-colors cursor-pointer ${formErrors.cv ? 'border-red-500' : 'border-gray-300'}`}
+            >
               <Upload className="w-8 h-8 text-gray-400 mx-auto mb-2" />
               <p className="text-gray-600">
                 {cvFile ? `Selected: ${cvFile.name}` : 'Click to upload or drag and drop'}
               </p>
               <p className="text-sm text-gray-400">PDF, DOC, DOCX (max 5MB)</p>
               <Input
+                ref={fileInputRef}
                 id="cv-upload"
                 type="file"
                 accept=".pdf,.doc,.docx"
