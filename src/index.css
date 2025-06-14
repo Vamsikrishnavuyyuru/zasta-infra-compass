@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,46 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+/* Custom keyframes for city building animation */
+@keyframes growUp {
+  0% {
+    height: 0;
+    transform: scaleY(0);
+  }
+  70% {
+    transform: scaleY(1.05);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    width: 0;
+    transform: scaleX(0);
+  }
+  70% {
+    transform: scaleX(1.05);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    width: 0;
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  70% {
+    transform: scaleX(1.05);
+  }
+  100% {
+    transform: scaleX(1);
   }
 }

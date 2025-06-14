@@ -58,16 +58,44 @@ const HeroSection = () => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/30" />
       
-      {/* Animated Grid Background */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="grid grid-cols-12 grid-rows-8 h-full">
-          {Array.from({ length: 96 }).map((_, i) => (
-            <div
-              key={i}
-              className="border border-white/20 animate-pulse"
-              style={{ animationDelay: `${i * 0.1}s` }}
-            />
-          ))}
+      {/* Animated City Skyline Background */}
+      <div className="absolute inset-0 opacity-20">
+        {/* Building blocks that form a city skyline */}
+        <div className="relative h-full w-full">
+          {/* Tall skyscrapers */}
+          <div className="absolute bottom-0 left-[10%] w-8 bg-white/30 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '60%', animationDelay: '0s' }} />
+          <div className="absolute bottom-0 left-[15%] w-6 bg-white/25 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '45%', animationDelay: '0.5s' }} />
+          <div className="absolute bottom-0 left-[20%] w-10 bg-white/35 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '70%', animationDelay: '1s' }} />
+          <div className="absolute bottom-0 left-[28%] w-7 bg-white/28 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '50%', animationDelay: '1.5s' }} />
+          <div className="absolute bottom-0 left-[34%] w-9 bg-white/32 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '65%', animationDelay: '2s' }} />
+          
+          {/* Medium buildings */}
+          <div className="absolute bottom-0 left-[42%] w-12 bg-white/30 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '40%', animationDelay: '2.5s' }} />
+          <div className="absolute bottom-0 left-[52%] w-8 bg-white/25 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '35%', animationDelay: '3s' }} />
+          <div className="absolute bottom-0 left-[58%] w-10 bg-white/35 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '55%', animationDelay: '3.5s' }} />
+          <div className="absolute bottom-0 left-[66%] w-6 bg-white/28 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '30%', animationDelay: '4s' }} />
+          
+          {/* More tall buildings */}
+          <div className="absolute bottom-0 left-[72%] w-9 bg-white/32 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '75%', animationDelay: '0.8s' }} />
+          <div className="absolute bottom-0 left-[79%] w-7 bg-white/30 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '48%', animationDelay: '1.3s' }} />
+          <div className="absolute bottom-0 left-[85%] w-11 bg-white/35 animate-[growUp_4s_ease-out_infinite] origin-bottom" style={{ height: '68%', animationDelay: '1.8s' }} />
+          
+          {/* Infrastructure elements */}
+          {/* Bridge/overpass */}
+          <div className="absolute bottom-[20%] left-[30%] w-32 h-2 bg-white/20 animate-[slideInLeft_3s_ease-out_infinite] origin-left" style={{ animationDelay: '2.2s' }} />
+          <div className="absolute bottom-[20%] left-[30%] w-2 h-8 bg-white/20 animate-[growUp_3s_ease-out_infinite] origin-bottom" style={{ animationDelay: '2.4s' }} />
+          <div className="absolute bottom-[20%] left-[60%] w-2 h-8 bg-white/20 animate-[growUp_3s_ease-out_infinite] origin-bottom" style={{ animationDelay: '2.6s' }} />
+          
+          {/* Construction cranes */}
+          <div className="absolute bottom-0 left-[25%] w-1 bg-white/15 animate-[growUp_5s_ease-out_infinite] origin-bottom" style={{ height: '80%', animationDelay: '1.2s' }} />
+          <div className="absolute bottom-[80%] left-[25%] w-8 h-1 bg-white/15 animate-[slideInLeft_5s_ease-out_infinite] origin-left" style={{ animationDelay: '1.7s' }} />
+          <div className="absolute bottom-0 left-[75%] w-1 bg-white/15 animate-[growUp_5s_ease-out_infinite] origin-bottom" style={{ height: '85%', animationDelay: '2.8s' }} />
+          <div className="absolute bottom-[85%] left-[75%] w-10 h-1 bg-white/15 animate-[slideInRight_5s_ease-out_infinite] origin-right" style={{ animationDelay: '3.3s' }} />
+          
+          {/* Small infrastructure blocks */}
+          <div className="absolute bottom-0 left-[5%] w-4 bg-white/20 animate-[growUp_3s_ease-out_infinite] origin-bottom" style={{ height: '15%', animationDelay: '0.3s' }} />
+          <div className="absolute bottom-0 left-[90%] w-5 bg-white/20 animate-[growUp_3s_ease-out_infinite] origin-bottom" style={{ height: '20%', animationDelay: '2.1s' }} />
+          <div className="absolute bottom-0 left-[95%] w-3 bg-white/20 animate-[growUp_3s_ease-out_infinite] origin-bottom" style={{ height: '12%', animationDelay: '2.9s' }} />
         </div>
       </div>
 
