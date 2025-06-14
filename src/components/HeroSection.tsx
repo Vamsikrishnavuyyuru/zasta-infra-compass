@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -17,7 +16,7 @@ const HeroSection = () => {
       bg: "bg-gradient-to-br from-zasta-green-900 via-zasta-green-700 to-zasta-green-500"
     },
     {
-      title: "Digital Project Management Suite",
+      title: "Construction Quality Management Software",
       subtitle: "SiteSync - Advanced field quality control with 2000+ checklists",
       cta: "Discover SiteSync",
       ctaAction: () => navigate('/services'),
