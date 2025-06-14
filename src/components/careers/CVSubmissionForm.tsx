@@ -34,9 +34,9 @@ const CVSubmissionForm = () => {
   const [cvFile, setCvFile] = useState<File | null>(null);
 
   // EmailJS Configuration
-  const EMAILJS_SERVICE_ID = 'service_zastagroup';
-  const EMAILJS_TEMPLATE_ID = 'template_cv_submission';
-  const EMAILJS_PUBLIC_KEY = '5Mw9xNbIWe2S19LiC';
+  const EMAILJS_SERVICE_ID = 'service_fjdc2up';
+  const EMAILJS_TEMPLATE_ID = 'template_s577sar';
+  const EMAILJS_PUBLIC_KEY = 'k2HA7dp0FpEmkKzuo';
 
   const validateForm = () => {
     const errors: {[key: string]: string} = {};
