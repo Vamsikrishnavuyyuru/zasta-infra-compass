@@ -25,6 +25,11 @@ const Careers = () => {
   const [formErrors, setFormErrors] = useState<{[key: string]: string}>({});
   const [cvFile, setCvFile] = useState<File | null>(null);
 
+  // EmailJS Configuration
+  const EMAILJS_SERVICE_ID = 'service_zastagroup';
+  const EMAILJS_TEMPLATE_ID = 'template_cv_submission';
+  const EMAILJS_PUBLIC_KEY = 'YOUR_EMAILJS_PUBLIC_KEY'; // Replace with your actual public key
+
   const currentOpenings = [
     {
       id: 1,
@@ -180,15 +185,15 @@ const Careers = () => {
         cv_filename: cvFile?.name || '',
         cv_content: fileContent,
         submission_date: new Date().toLocaleDateString(),
+        reply_to: formData.email,
       };
 
       // Send email using EmailJS
-      // Note: You'll need to replace these with your actual EmailJS credentials
       await emailjs.send(
-        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
-        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
         templateParams,
-        'YOUR_PUBLIC_KEY' // Replace with your EmailJS public key
+        EMAILJS_PUBLIC_KEY
       );
 
       toast({
@@ -216,7 +221,7 @@ const Careers = () => {
       console.error('Error sending email:', error);
       toast({
         title: "Submission Failed",
-        description: "There was an error submitting your application. Please try again or contact us directly.",
+        description: "There was an error submitting your application. Please try again or contact us directly at hr@zastagroup.com.",
         variant: "destructive",
       });
     } finally {
@@ -288,14 +293,16 @@ const Careers = () => {
                     </p>
                   </div>
 
-                  {/* EmailJS Setup Alert */}
+                  {/* EmailJS Setup Instructions */}
                   <Alert className="mb-6">
                     <Mail className="h-4 w-4" />
                     <AlertDescription>
-                      <strong>Setup Required:</strong> To enable email functionality, you need to:
-                      <br />1. Sign up for a free EmailJS account at emailjs.com
-                      <br />2. Replace the placeholder credentials in the code with your actual EmailJS service ID, template ID, and public key
-                      <br />3. Create an email template in EmailJS that matches the form fields
+                      <strong>EmailJS Setup Instructions:</strong>
+                      <br />1. Create a free account at <a href="https://emailjs.com" target="_blank" rel="noopener noreferrer" className="text-zasta-green-600 underline">emailjs.com</a>
+                      <br />2. Create a service (Gmail, Outlook, etc.)
+                      <br />3. Create an email template with variables: from_name, from_email, phone, experience, skills, cover_letter, cv_filename
+                      <br />4. Replace 'YOUR_EMAILJS_PUBLIC_KEY' in the code with your actual public key
+                      <br />5. Update service and template IDs if different from defaults
                     </AlertDescription>
                   </Alert>
 
