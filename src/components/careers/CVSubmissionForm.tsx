@@ -36,7 +36,7 @@ const CVSubmissionForm = () => {
   // EmailJS Configuration
   const EMAILJS_SERVICE_ID = 'service_zastagroup';
   const EMAILJS_TEMPLATE_ID = 'template_cv_submission';
-  const EMAILJS_PUBLIC_KEY = 'YOUR_EMAILJS_PUBLIC_KEY';
+  const EMAILJS_PUBLIC_KEY = '5Mw9xNbIWe2S19LiC';
 
   const validateForm = () => {
     const errors: {[key: string]: string} = {};
