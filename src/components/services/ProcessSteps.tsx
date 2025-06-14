@@ -26,6 +26,11 @@ const ProcessSteps = () => {
       number: "04",
       title: "Monitoring",
       description: "Continuous oversight and quality assurance"
+    },
+    {
+      number: "05",
+      title: "Feedback",
+      description: "Continuous improvement through client feedback and optimization"
     }
   ];
 
@@ -37,7 +42,7 @@ const ProcessSteps = () => {
           <p className="text-xl text-gray-600">How we deliver excellence in every project</p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {processSteps.map((step, index) => (
             <div key={index} className="text-center">
               <div className="bg-gradient-to-br from-zasta-green-500 to-zasta-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
