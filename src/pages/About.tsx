@@ -11,6 +11,7 @@ const About = () => {
     { year: "2020", title: "Started Construction Project Management", description: "Expanded into comprehensive construction project management services" },
     { year: "2022", title: "Sector Expansion", description: "Extended services to data centers, industrial projects, and real estate" },
     { year: "2024", title: "Launched Sitesync - Construction Quality Management Software", description: "Introduced advanced digital quality management solution for construction projects" },
+    { year: "2025", title: "100+ Employees Milestone", description: "Zasta reaches 100+ skilled professionals." },
     { year: "2025", title: "Company Rebranding", description: "Name changed to Zasta Enterprises Pvt Ltd" }
   ];
 
