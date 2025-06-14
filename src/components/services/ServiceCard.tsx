@@ -31,72 +31,70 @@ const ServiceCard = ({
 }: ServiceCardProps) => {
   return (
     <div className="relative">
-      {/* Main Service Card */}
-      <Card className="overflow-hidden shadow-2xl bg-gradient-to-br from-zasta-green-50 to-white border-0 transform hover:scale-[1.02] transition-all duration-500">
+      {/* Professional Service Card */}
+      <Card className="overflow-hidden shadow-lg bg-white border border-gray-200 hover:shadow-xl transition-all duration-300">
         <div className="relative">
-          {/* Hero Image Section */}
-          <div className="relative h-80 overflow-hidden">
-            <img 
-              src={illustration} 
-              alt={illustrationAlt}
-              className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-zasta-green-900/80 via-zasta-green-800/40 to-transparent" />
-            
-            {/* Floating Icon */}
-            <div className="absolute top-6 left-6 bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg border-2 border-zasta-green-200">
-              <Icon className="w-8 h-8 text-zasta-green-600" />
-            </div>
-            
-            {/* Title Overlay */}
-            <div className="absolute bottom-6 left-6 right-6">
-              <h2 className="text-3xl font-bold text-white mb-2">{title}</h2>
-              <p className="text-zasta-green-100 text-lg">{description}</p>
+          {/* Clean Header Section */}
+          <div className="bg-gradient-to-r from-zasta-green-600 to-zasta-green-700 p-8 text-white">
+            <div className="flex items-start space-x-4">
+              <div className="bg-white/20 backdrop-blur-sm p-4 rounded-lg">
+                <Icon className="w-8 h-8 text-white" />
+              </div>
+              <div className="flex-1">
+                <h2 className="text-2xl font-bold mb-2">{title}</h2>
+                <p className="text-zasta-green-100 text-lg leading-relaxed">{description}</p>
+              </div>
             </div>
           </div>
 
-          {/* Content Section */}
-          <CardContent className="p-8 bg-gradient-to-b from-white to-zasta-green-50">
+          {/* Professional Content Section */}
+          <CardContent className="p-8">
+            {/* Overview Section */}
             <div className="mb-8">
-              <h3 className="text-xl font-semibold text-zasta-green-800 mb-4">What We Deliver</h3>
-              <p className="text-zasta-green-700 leading-relaxed">{detailedDescription}</p>
+              <div className="flex items-center mb-4">
+                <div className="w-1 h-6 bg-zasta-green-600 mr-3"></div>
+                <h3 className="text-xl font-semibold text-gray-900">Service Overview</h3>
+              </div>
+              <p className="text-gray-700 leading-relaxed text-lg">{detailedDescription}</p>
             </div>
 
-            {/* Features Grid */}
-            <div className="grid gap-4">
-              <h4 className="text-lg font-semibold text-zasta-green-800 mb-4 flex items-center">
-                <CheckCircle className="w-5 h-5 text-zasta-green-600 mr-2" />
-                Key Capabilities
-              </h4>
+            {/* Features Section */}
+            <div className="mb-8">
+              <div className="flex items-center mb-6">
+                <div className="w-1 h-6 bg-zasta-green-600 mr-3"></div>
+                <h4 className="text-xl font-semibold text-gray-900">Key Capabilities</h4>
+              </div>
               
-              {features.map((feature, idx) => (
-                <Collapsible key={idx}>
-                  <CollapsibleTrigger className="w-full group">
-                    <div className="flex items-center justify-between w-full p-4 bg-gradient-to-r from-zasta-green-100 to-zasta-green-50 hover:from-zasta-green-200 hover:to-zasta-green-100 rounded-xl transition-all duration-300 border border-zasta-green-200 hover:border-zasta-green-300 hover:shadow-lg">
-                      <div className="flex items-center">
-                        <div className="w-3 h-3 bg-zasta-green-500 rounded-full mr-4 group-hover:scale-125 transition-transform duration-200" />
-                        <span className="text-zasta-green-800 font-medium text-left">{feature.name}</span>
+              <div className="space-y-3">
+                {features.map((feature, idx) => (
+                  <Collapsible key={idx}>
+                    <CollapsibleTrigger className="w-full group">
+                      <div className="flex items-center justify-between w-full p-4 bg-gray-50 hover:bg-gray-100 rounded-lg transition-all duration-200 border border-gray-200 hover:border-zasta-green-300">
+                        <div className="flex items-center">
+                          <CheckCircle className="w-5 h-5 text-zasta-green-600 mr-3" />
+                          <span className="text-gray-800 font-medium text-left">{feature.name}</span>
+                        </div>
+                        <ChevronDown className="w-5 h-5 text-gray-500 transition-transform duration-200 group-data-[state=open]:rotate-180" />
                       </div>
-                      <ChevronDown className="w-5 h-5 text-zasta-green-600 transition-transform duration-200 group-hover:text-zasta-green-700 group-data-[state=open]:rotate-180" />
-                    </div>
-                  </CollapsibleTrigger>
-                  <CollapsibleContent>
-                    <div className="mt-2 p-6 bg-white border-2 border-zasta-green-200 rounded-xl shadow-sm ml-4">
-                      <p className="text-zasta-green-700 leading-relaxed">{feature.details}</p>
-                    </div>
-                  </CollapsibleContent>
-                </Collapsible>
-              ))}
+                    </CollapsibleTrigger>
+                    <CollapsibleContent>
+                      <div className="mt-2 p-4 bg-white border-l-4 border-zasta-green-600 ml-8 rounded-r-lg shadow-sm">
+                        <p className="text-gray-700 leading-relaxed">{feature.details}</p>
+                      </div>
+                    </CollapsibleContent>
+                  </Collapsible>
+                ))}
+              </div>
             </div>
 
-            {/* Call to Action */}
-            <div className="mt-8 p-6 bg-gradient-to-r from-zasta-green-600 to-zasta-green-700 rounded-xl text-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="flex items-center justify-between">
+            {/* Professional CTA */}
+            <div className="border-t border-gray-200 pt-6">
+              <div className="flex items-center justify-between p-6 bg-gradient-to-r from-gray-50 to-gray-100 rounded-lg border border-gray-200 hover:from-zasta-green-50 hover:to-zasta-green-100 hover:border-zasta-green-300 transition-all duration-300 cursor-pointer group">
                 <div>
-                  <h4 className="font-semibold mb-1">Ready to Get Started?</h4>
-                  <p className="text-zasta-green-100 text-sm">Let's discuss how we can help with your project</p>
+                  <h4 className="font-semibold text-gray-900 mb-1">Ready to Discuss Your Project?</h4>
+                  <p className="text-gray-600 text-sm">Contact our team to explore how we can support your objectives</p>
                 </div>
-                <ArrowRight className="w-6 h-6 text-white" />
+                <ArrowRight className="w-6 h-6 text-zasta-green-600 group-hover:translate-x-1 transition-transform duration-200" />
               </div>
             </div>
           </CardContent>
