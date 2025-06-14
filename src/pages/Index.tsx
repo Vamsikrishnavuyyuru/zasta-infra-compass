@@ -116,13 +116,17 @@ const Index = () => {
             <p className="text-xl text-gray-600">Delivering excellence across diverse infrastructure domains</p>
           </div>
           
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {sectors.map((sector, index) => (
-              <div key={index} className="bg-white rounded-lg p-6 text-center hover:shadow-lg transition-shadow group">
-                <div className="text-4xl mb-4 group-hover:scale-110 transition-transform">{sector.icon}</div>
-                <h3 className="font-semibold text-gray-900 text-sm">{sector.name}</h3>
-              </div>
-            ))}
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+              {sectors.map((sector, index) => (
+                <div key={index} className="bg-white rounded-lg p-8 text-center hover:shadow-lg transition-shadow group w-full max-w-sm">
+                  <div className="text-5xl mb-6 group-hover:scale-110 transition-transform flex justify-center items-center h-16">
+                    {sector.icon}
+                  </div>
+                  <h3 className="font-semibold text-gray-900 text-base">{sector.name}</h3>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
