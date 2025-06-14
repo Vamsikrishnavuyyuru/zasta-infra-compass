@@ -1,5 +1,5 @@
-
 import Layout from '@/components/Layout';
+import SectionHeaderWithCity from '@/components/shared/SectionHeaderWithCity';
 import { Card, CardContent } from '@/components/ui/card';
 import { Target, Eye, Heart, Award, Users, Building, Calendar, TrendingUp } from 'lucide-react';
 
@@ -43,17 +43,12 @@ const About = () => {
 
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="bg-gradient-to-br from-zasta-green-900 via-zasta-green-700 to-zasta-green-500 text-white py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6 animate-fade-in">About Zasta </h1>
-            <p className="text-xl text-green-100 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Powering infrastructure projects worldwide since 2016 with innovative solutions and skilled expertise
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section with City Animation */}
+      <SectionHeaderWithCity
+        title="About Zasta"
+        subtitle="Powering infrastructure projects worldwide since 2016 with innovative solutions and skilled expertise"
+        bgGradient="bg-gradient-to-br from-zasta-green-900 via-zasta-green-700 to-zasta-green-500"
+      />
 
       {/* Company Overview */}
       <section className="py-20">

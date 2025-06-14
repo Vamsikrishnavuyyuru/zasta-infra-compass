@@ -1,5 +1,6 @@
 
 import Layout from '@/components/Layout';
+import SectionHeaderWithCity from '@/components/shared/SectionHeaderWithCity';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Upload, Briefcase } from 'lucide-react';
 import CVSubmissionForm from '@/components/careers/CVSubmissionForm';
@@ -9,17 +10,11 @@ import BenefitsSection from '@/components/careers/BenefitsSection';
 const Careers = () => {
   return (
     <Layout>
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-zasta-green-600 to-zasta-green-800 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-6">Join Our Team</h1>
-            <p className="text-xl text-zasta-green-100 leading-relaxed">
-              Build your career with us and be part of transforming infrastructure across the globe
-            </p>
-          </div>
-        </div>
-      </section>
+      {/* Hero Section with City Animation */}
+      <SectionHeaderWithCity
+        title="Join Our Team"
+        subtitle="Build your career with us and be part of transforming infrastructure across the globe"
+      />
 
       {/* Main Content */}
       <section className="py-20">
