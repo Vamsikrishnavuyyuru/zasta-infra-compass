@@ -1,13 +1,11 @@
-
 const SectorsSection = () => {
   const sectors = [
     { name: "Power & Distribution", icon: "⚡" },
     { name: "Transportation", icon: "🚄" },
     { name: "Oil & Gas", icon: "🛢️" },
-    { name: "Information Technology", icon: "💻" },
+    { name: "Information Technology & Data Centers", icon: "💻" },
     { name: "Real Estate", icon: "🏗️" },
-    { name: "Industries & Warehousing", icon: "🏭" },
-    { name: "Data Centers", icon: "🏢" }
+    { name: "Industries & Warehousing", icon: "🏭" }
   ];
 
   return (
