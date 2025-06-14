@@ -6,6 +6,7 @@ import { Target, Eye, Heart, Award, Users, Building, Calendar, TrendingUp } from
 const About = () => {
   const timeline = [
     { year: "2016", title: "Company Founded", description: "Zasta Engineers And Consultancy Services established in Hyderabad" },
+    { year: "2017", title: "National Deployment", description: "Deployed 500+ inspectors across India for a Central Government Project" },
     { year: "2018", title: "First Major Project", description: "Deployed workforce for mega projects in Oil & Gas" },
     { year: "2020", title: "Started Construction Project Management", description: "Expanded into comprehensive construction project management services" },
     { year: "2022", title: "Sector Expansion", description: "Extended services to data centers, industrial projects, and real estate" },
