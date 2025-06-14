@@ -4,10 +4,10 @@ const SectorsSection = () => {
     { name: "Power & Distribution", icon: "⚡" },
     { name: "Transportation", icon: "🚄" },
     { name: "Oil & Gas", icon: "🛢️" },
-    { name: "Data Centers", icon: "🏢" },
+    { name: "Information Technology", icon: "💻" },
     { name: "Real Estate", icon: "🏗️" },
     { name: "Industries & Warehousing", icon: "🏭" },
-    { name: "Information Technology", icon: "💻" }
+    { name: "Data Centers", icon: "🏢" }
   ];
 
   return (
