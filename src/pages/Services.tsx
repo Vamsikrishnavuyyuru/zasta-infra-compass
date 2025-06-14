@@ -11,9 +11,9 @@ const Services = () => {
     {
       icon: Users,
       title: "Workforce Solutions",
-      description: "We provide specialized Civil, Mechanical, Electrical, Instrumentation, Software, and IT professionals, supported by a comprehensive onboarding and regulatory compliance framework.",
-      illustration: "https://t4.ftcdn.net/jpg/02/64/87/45/360_F_264874512_asSj4QLFkdifkjMUDj80UKLKKwtH8qBZ.jpg",
-      illustrationAlt: "Professional team working on laptops",
+      description: "Specialized professionals with complete onboarding and compliance support",
+      illustration: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&h=600&fit=crop",
+      illustrationAlt: "Professional team collaborating in modern office",
       features: [
         {
           name: "Sourcing & Onboarding",
@@ -45,9 +45,9 @@ const Services = () => {
     {
       icon: Building,
       title: "Construction Project Management",
-      description: "End-to-end project planning, scheduling, quality control, safety management, and execution support.",
-      illustration: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop",
-      illustrationAlt: "Construction site with crane and building",
+      description: "End-to-end project execution with quality control and safety management",
+      illustration: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&h=600&fit=crop",
+      illustrationAlt: "Modern construction site with advanced machinery",
       features: [
         {
           name: "Planning & Scheduling",
@@ -82,10 +82,10 @@ const Services = () => {
     },
     {
       icon: Smartphone,
-      title: "Zasta Digital Suite",
-      description: "Advanced field quality app with 2000+ checklists, offline functionality, and real-time auditing capabilities.",
-      illustration: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop",
-      illustrationAlt: "Software code on computer screen",
+      title: "SiteSync Digital Suite",
+      description: "AI-powered construction quality management with advanced digital tools",
+      illustration: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      illustrationAlt: "Advanced digital interface and mobile technology",
       features: [
         {
           name: "2000+ Checklists",
@@ -104,15 +104,15 @@ const Services = () => {
           details: "GPS-enabled photo documentation with timestamp and location data for comprehensive visual records."
         },
         {
-          name: "AI Report Generation in Dashboard",
-          details: "Automated report creation with customizable templates, real-time analytics, and stakeholder-specific dashboards views."
+          name: "AI Report Generation",
+          details: "Automated report creation with customizable templates, real-time analytics, and stakeholder-specific dashboard views."
         },
         {
           name: "Cloud Synchronization",
           details: "Secure cloud-based data synchronization ensuring all stakeholders have access to the latest project information."
         }
       ],
-      detailedDescription: "Our proprietary software SiteSync AI-powered, revolutionizes construction quality management with comprehensive checklists, real-time monitoring, performance tracking and detailed reporting capabilities for enhanced project oversight."
+      detailedDescription: "Our proprietary SiteSync software revolutionizes construction quality management with AI-powered analytics, comprehensive checklists, real-time monitoring, and detailed reporting capabilities for enhanced project oversight."
     }
   ];
 
@@ -121,21 +121,29 @@ const Services = () => {
       <ServiceHero />
       
       {/* Services Detail Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <div className="space-y-20">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Comprehensive solutions designed to transform your infrastructure projects with cutting-edge technology and expert management
+            </p>
+          </div>
+          
+          <div className="space-y-24">
             {services.map((service, index) => (
-              <ServiceCard
-                key={index}
-                icon={service.icon}
-                title={service.title}
-                description={service.description}
-                illustration={service.illustration}
-                illustrationAlt={service.illustrationAlt}
-                features={service.features}
-                detailedDescription={service.detailedDescription}
-                index={index}
-              />
+              <div key={index} className="max-w-4xl mx-auto">
+                <ServiceCard
+                  icon={service.icon}
+                  title={service.title}
+                  description={service.description}
+                  illustration={service.illustration}
+                  illustrationAlt={service.illustrationAlt}
+                  features={service.features}
+                  detailedDescription={service.detailedDescription}
+                  index={index}
+                />
+              </div>
             ))}
           </div>
         </div>
