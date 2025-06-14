@@ -1,0 +1,113 @@
+
+import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
+import { MapPin, Clock, Briefcase, GraduationCap, Share2 } from 'lucide-react';
+import { useToast } from '@/hooks/use-toast';
+
+interface JobOpening {
+  id: number;
+  title: string;
+  department: string;
+  location: string;
+  type: string;
+  experience: string;
+  description: string;
+  requirements: string[];
+  postedDate: string;
+}
+
+interface JobCardProps {
+  job: JobOpening;
+}
+
+const JobCard = ({ job }: JobCardProps) => {
+  const { toast } = useToast();
+
+  const handleJobApply = (jobId: number, jobTitle: string) => {
+    console.log(`Applied for job: ${jobTitle} (ID: ${jobId})`);
+    toast({
+      title: "Application Submitted!",
+      description: `Your application for ${jobTitle} has been submitted successfully.`,
+    });
+  };
+
+  const handleShareJob = (jobTitle: string) => {
+    if (navigator.share) {
+      navigator.share({
+        title: `Job Opening: ${jobTitle} at Zasta Group`,
+        text: `Check out this job opportunity at Zasta Group: ${jobTitle}`,
+        url: window.location.href
+      });
+    } else {
+      navigator.clipboard.writeText(window.location.href);
+      toast({
+        title: "Link Copied!",
+        description: "Job link has been copied to clipboard.",
+      });
+    }
+  };
+
+  return (
+    <Card className="hover:shadow-lg transition-shadow">
+      <CardContent className="p-8">
+        <div className="flex justify-between items-start mb-4">
+          <div>
+            <h3 className="text-2xl font-bold text-gray-900 mb-2">{job.title}</h3>
+            <div className="flex flex-wrap gap-4 text-sm text-gray-600">
+              <span className="flex items-center gap-1">
+                <Briefcase className="w-4 h-4" />
+                {job.department}
+              </span>
+              <span className="flex items-center gap-1">
+                <MapPin className="w-4 h-4" />
+                {job.location}
+              </span>
+              <span className="flex items-center gap-1">
+                <Clock className="w-4 h-4" />
+                {job.type}
+              </span>
+              <span className="flex items-center gap-1">
+                <GraduationCap className="w-4 h-4" />
+                {job.experience}
+              </span>
+            </div>
+          </div>
+          <div className="flex gap-2">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => handleShareJob(job.title)}
+            >
+              <Share2 className="w-4 h-4" />
+            </Button>
+          </div>
+        </div>
+
+        <p className="text-gray-700 mb-4">{job.description}</p>
+
+        <div className="mb-6">
+          <h4 className="font-semibold text-gray-900 mb-2">Requirements:</h4>
+          <ul className="list-disc list-inside space-y-1 text-gray-600">
+            {job.requirements.map((req, index) => (
+              <li key={index}>{req}</li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="flex justify-between items-center">
+          <span className="text-sm text-gray-500">
+            Posted: {new Date(job.postedDate).toLocaleDateString()}
+          </span>
+          <Button
+            onClick={() => handleJobApply(job.id, job.title)}
+            className="bg-zasta-green-600 hover:bg-zasta-green-700"
+          >
+            Apply Now
+          </Button>
+        </div>
+      </CardContent>
+    </Card>
+  );
+};
+
+export default JobCard;
