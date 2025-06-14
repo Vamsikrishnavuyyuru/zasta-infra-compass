@@ -1,4 +1,3 @@
-
 import Layout from '@/components/Layout';
 import { Users, Building, Smartphone } from 'lucide-react';
 import ServiceHero from '@/components/services/ServiceHero';
@@ -123,13 +122,6 @@ const Services = () => {
       {/* Services Detail Section */}
       <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Comprehensive solutions designed to transform your infrastructure projects with cutting-edge technology and expert management
-            </p>
-          </div>
-          
           <div className="space-y-24">
             {services.map((service, index) => (
               <div key={index} className="max-w-4xl mx-auto">
