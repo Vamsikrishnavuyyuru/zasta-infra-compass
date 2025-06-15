@@ -105,6 +105,8 @@ const CVSubmissionForm = () => {
     fileInputRef.current?.click();
   };
 
+  // NOTE: File attachments are NOT supported in this EmailJS setup as the free plan doesn't support direct attachments.
+  // Only the filename will be sent to HR. Alert is shown to user above the form.
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
@@ -128,7 +130,7 @@ const CVSubmissionForm = () => {
         experience: formData.experience,
         skills: formData.skills,
         cover_letter: formData.coverLetter || 'No cover letter provided',
-        cv_filename: cvFile?.name || '',
+        cv_filename: cvFile?.name || '(no file)', // only filename, not the file itself
         submission_date: new Date().toLocaleDateString(),
         reply_to: formData.email,
       };
@@ -163,7 +165,7 @@ const CVSubmissionForm = () => {
       console.error('Error sending email:', error);
       toast({
         title: "Submission Failed",
-        description: "There was an error submitting your application. Please try again or contact us directly at hr@zastagroup.com.",
+        description: "There was an error submitting your application. Please email your CV and details directly to hr@zastagroup.com.",
         variant: "destructive",
       });
     } finally {
@@ -181,15 +183,14 @@ const CVSubmissionForm = () => {
           </p>
         </div>
 
+        {/* Informational Alert to explain CV isn't attached */}
         <Alert className="mb-6">
           <Mail className="h-4 w-4" />
           <AlertDescription>
-            <strong>EmailJS Setup Instructions:</strong>
-            <br />1. Create a free account at <a href="https://emailjs.com" target="_blank" rel="noopener noreferrer" className="text-zasta-green-600 underline">emailjs.com</a>
-            <br />2. Create a service (Gmail, Outlook, etc.)
-            <br />3. Create an email template with variables: from_name, from_email, phone, experience, skills, cover_letter, cv_filename
-            <br />4. Replace 'YOUR_EMAILJS_PUBLIC_KEY' in the code with your actual public key
-            <br />5. Update service and template IDs if different from defaults
+            <strong>Note:</strong> The uploaded CV file will <span className="text-red-600 font-semibold">NOT</span> be sent as an email attachment.
+            <br />
+            Please email your CV file directly to <a href="mailto:hr@zastagroup.com" className="text-blue-600 underline">hr@zastagroup.com</a> after submitting this form.
+            <br />Only your details (including the chosen file's name) will be sent via this form.
           </AlertDescription>
         </Alert>
 
