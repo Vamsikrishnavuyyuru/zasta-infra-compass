@@ -20,7 +20,7 @@ const CVZapierWebhookInput = ({
 
   return (
     <div className="mb-6">
-      <Label htmlFor="zapier-webhook">[Admin] Zapier Webhook URL</Label>
+      <Label htmlFor="zapier-webhook">https://hooks.zapier.com/hooks/catch/23382207/uyj0owa/</Label>
       <Input
         id="zapier-webhook"
         name="zapier-webhook"
