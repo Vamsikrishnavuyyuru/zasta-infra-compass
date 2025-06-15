@@ -13,7 +13,11 @@ interface JobOpening {
   postedDate: string;
 }
 
-const JobListings = () => {
+interface JobListingsProps {
+  onApply?: () => void;
+}
+
+const JobListings = ({ onApply }: JobListingsProps) => {
   const currentOpenings: JobOpening[] = [
     {
       id: 1,
@@ -75,7 +79,7 @@ const JobListings = () => {
       </div>
 
       {currentOpenings.map((job) => (
-        <JobCard key={job.id} job={job} />
+        <JobCard key={job.id} job={job} onApply={onApply} />
       ))}
     </div>
   );

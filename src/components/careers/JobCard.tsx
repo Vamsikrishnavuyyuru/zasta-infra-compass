@@ -18,17 +18,24 @@ interface JobOpening {
 
 interface JobCardProps {
   job: JobOpening;
+  onApply?: () => void;
 }
 
-const JobCard = ({ job }: JobCardProps) => {
+const JobCard = ({ job, onApply }: JobCardProps) => {
   const { toast } = useToast();
 
-  const handleJobApply = (jobId: number, jobTitle: string) => {
-    console.log(`Applied for job: ${jobTitle} (ID: ${jobId})`);
-    toast({
-      title: "Application Submitted!",
-      description: `Your application for ${jobTitle} has been submitted successfully.`,
-    });
+  // Remove old handleJobApply (which did a toast), just call the prop.
+  const handleJobApply = () => {
+    if (onApply) {
+      onApply();
+    } else {
+      // fallback: toast + log (should not be triggered in new arch)
+      console.log(`Applied for job: ${job.title} (ID: ${job.id})`);
+      toast({
+        title: "Application Submitted!",
+        description: `Your application for ${job.title} has been submitted successfully.`,
+      });
+    }
   };
 
   const handleShareJob = (jobTitle: string) => {
@@ -99,7 +106,7 @@ const JobCard = ({ job }: JobCardProps) => {
             Posted: {new Date(job.postedDate).toLocaleDateString()}
           </span>
           <Button
-            onClick={() => handleJobApply(job.id, job.title)}
+            onClick={handleJobApply}
             className="bg-zasta-green-600 hover:bg-zasta-green-700"
           >
             Apply Now

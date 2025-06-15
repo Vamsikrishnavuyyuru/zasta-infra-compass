@@ -6,8 +6,14 @@ import { Upload, Briefcase } from 'lucide-react';
 import CVSubmissionForm from '@/components/careers/CVSubmissionForm';
 import JobListings from '@/components/careers/JobListings';
 import BenefitsSection from '@/components/careers/BenefitsSection';
+import { useState } from 'react';
 
 const Careers = () => {
+  const [activeTab, setActiveTab] = useState('submit-cv');
+
+  // Handler to allow children (JobListings/JobCard) to switch to CV Submission tab
+  const redirectToCVSubmission = () => setActiveTab('submit-cv');
+
   return (
     <Layout>
       {/* Hero Section with City Animation */}
@@ -19,7 +25,12 @@ const Careers = () => {
       {/* Main Content */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <Tabs defaultValue="submit-cv" className="max-w-6xl mx-auto">
+          <Tabs
+            value={activeTab}
+            onValueChange={setActiveTab}
+            defaultValue="submit-cv"
+            className="max-w-6xl mx-auto"
+          >
             <TabsList className="grid w-full grid-cols-2 mb-8">
               <TabsTrigger value="submit-cv" className="flex items-center gap-2">
                 <Upload className="w-4 h-4" />
@@ -36,7 +47,7 @@ const Careers = () => {
             </TabsContent>
 
             <TabsContent value="current-openings">
-              <JobListings />
+              <JobListings onApply={redirectToCVSubmission} />
             </TabsContent>
           </Tabs>
         </div>
