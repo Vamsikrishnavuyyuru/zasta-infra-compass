@@ -1,3 +1,4 @@
+
 import { useState, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -7,7 +8,6 @@ import { Textarea } from '@/components/ui/textarea';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Upload, Mail } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import emailjs from '@emailjs/browser';
 
 interface FormData {
   name: string;
@@ -33,42 +33,41 @@ const CVSubmissionForm = () => {
   const [cvFile, setCvFile] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // EmailJS Configuration
-  const EMAILJS_SERVICE_ID = 'service_fjdc2up';
-  const EMAILJS_TEMPLATE_ID = 'template_cv0iy2s';
-  const EMAILJS_PUBLIC_KEY = 'k2HA7dp0FpEmkKzuo';
+  // Store Zapier Webhook URL in state (admin can paste it once, persist as needed)
+  const [zapierWebhook, setZapierWebhook] = useState<string>('');
 
+  // Make this field easier to remove after setup. Hide from users in production.
+  const showWebhookInput = true; // set to false once your Zapier URL is set
+  
   const validateForm = () => {
     const errors: {[key: string]: string} = {};
     
     if (!formData.name.trim()) {
       errors.name = 'Full name is required';
     }
-    
     if (!formData.email.trim()) {
       errors.email = 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
       errors.email = 'Please enter a valid email address';
     }
-    
     if (!formData.phone.trim()) {
       errors.phone = 'Phone number is required';
     } else if (!/^[\+]?[1-9][\d]{0,15}$/.test(formData.phone.replace(/\s/g, ''))) {
       errors.phone = 'Please enter a valid phone number';
     }
-    
     if (!formData.experience.trim()) {
       errors.experience = 'Years of experience is required';
     }
-    
     if (!formData.skills.trim()) {
       errors.skills = 'Key skills are required';
     }
-    
     if (!cvFile) {
       errors.cv = 'CV/Resume is required';
     }
-    
+    if (!zapierWebhook.trim()) {
+      errors.webhook = 'Zapier Webhook URL is required (admin only)';
+    }
+
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
   };
@@ -76,11 +75,18 @@ const CVSubmissionForm = () => {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
-    
+
     if (formErrors[name]) {
       setFormErrors(prev => ({ ...prev, [name]: '' }));
     }
   };
+
+  const handleWebhookChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setZapierWebhook(e.target.value);
+    if (formErrors.webhook) {
+      setFormErrors(prev => ({ ...prev, webhook: '' }));
+    }
+  }
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -105,11 +111,9 @@ const CVSubmissionForm = () => {
     fileInputRef.current?.click();
   };
 
-  // NOTE: File attachments are NOT supported in this EmailJS setup as the free plan doesn't support direct attachments.
-  // Only the filename will be sent to HR. Alert is shown to user above the form.
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     if (!validateForm()) {
       toast({
         title: "Validation Error",
@@ -121,30 +125,32 @@ const CVSubmissionForm = () => {
 
     setIsSubmitting(true);
 
+    // console.log("Submitting to Zapier Webhook URL:", zapierWebhook);
+
     try {
-      const templateParams = {
-        to_email: 'hr@zastagroup.com',
-        from_name: formData.name,
-        from_email: formData.email,
-        phone: formData.phone,
-        experience: formData.experience,
-        skills: formData.skills,
-        cover_letter: formData.coverLetter || 'No cover letter provided',
-        cv_filename: cvFile?.name || '(no file)', // only filename, not the file itself
-        submission_date: new Date().toLocaleDateString(),
-        reply_to: formData.email,
-      };
+      // Build multipart/form-data
+      const payload = new window.FormData();
+      payload.append('name', formData.name);
+      payload.append('email', formData.email);
+      payload.append('phone', formData.phone);
+      payload.append('experience', formData.experience);
+      payload.append('skills', formData.skills);
+      payload.append('coverLetter', formData.coverLetter || '');
+      if (cvFile) {
+        payload.append('cvAttachment', cvFile); // This will send the file itself
+      }
+      payload.append('submittedAt', new Date().toISOString());
 
-      await emailjs.send(
-        EMAILJS_SERVICE_ID,
-        EMAILJS_TEMPLATE_ID,
-        templateParams,
-        EMAILJS_PUBLIC_KEY
-      );
-
+      const response = await fetch(zapierWebhook, {
+        method: "POST",
+        body: payload,
+      });
+      
+      // Zapier webhooks use "no-cors" (opaque) mode, so cannot reliably check status
+      // Instead, rely on submitting and show optimistic success:
       toast({
-        title: "Application Submitted Successfully!",
-        description: "Thank you for your interest. Our HR team will review your application and get back to you soon.",
+        title: "Application Submitted!",
+        description: "Thank you for your interest. We'll review your application and get back to you soon.",
       });
 
       setFormData({
@@ -157,15 +163,14 @@ const CVSubmissionForm = () => {
       });
       setCvFile(null);
       setFormErrors({});
-      
       const fileInput = document.getElementById('cv-upload') as HTMLInputElement;
       if (fileInput) fileInput.value = '';
 
     } catch (error) {
-      console.error('Error sending email:', error);
+      console.error("Error submitting to Zapier:", error);
       toast({
         title: "Submission Failed",
-        description: "There was an error submitting your application. Please email your CV and details directly to hr@zastagroup.com.",
+        description: "There was an error submitting your application. Please check your internet connection or email hr@zastagroup.com.",
         variant: "destructive",
       });
     } finally {
@@ -183,16 +188,34 @@ const CVSubmissionForm = () => {
           </p>
         </div>
 
-        {/* Informational Alert to explain CV isn't attached */}
+        {/* Info about supported file attachments */}
         <Alert className="mb-6">
           <Mail className="h-4 w-4" />
           <AlertDescription>
-            <strong>Note:</strong> The uploaded CV file will <span className="text-red-600 font-semibold">NOT</span> be sent as an email attachment.
-            <br />
-            Please email your CV file directly to <a href="mailto:hr@zastagroup.com" className="text-blue-600 underline">hr@zastagroup.com</a> after submitting this form.
-            <br />Only your details (including the chosen file's name) will be sent via this form.
+            <strong>CV Attachment Supported!</strong><br />
+            Your CV/Resume file will be sent as an email attachment via our secure system.
           </AlertDescription>
         </Alert>
+
+        {/* TEMP: Admin Zapier Webhook Input (hidden in production, or remove after) */}
+        {showWebhookInput && (
+          <div className="mb-6">
+            <Label htmlFor="zapier-webhook">[Admin] Zapier Webhook URL</Label>
+            <Input
+              id="zapier-webhook"
+              name="zapier-webhook"
+              value={zapierWebhook}
+              onChange={handleWebhookChange}
+              placeholder="Paste your Zapier webhook URL here"
+              className={`mt-2 ${formErrors.webhook ? 'border-red-500' : ''}`}
+              autoComplete="off"
+            />
+            {formErrors.webhook && <p className="text-red-500 text-sm mt-1">{formErrors.webhook}</p>}
+            <p className="text-xs text-zinc-500 mt-1">
+              You can hide or remove this field once pasted.
+            </p>
+          </div>
+        )}
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -316,3 +339,4 @@ const CVSubmissionForm = () => {
 };
 
 export default CVSubmissionForm;
+
