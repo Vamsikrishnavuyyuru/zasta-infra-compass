@@ -39,7 +39,7 @@ const CVSubmissionForm = () => {
   const [zapierWebhook, setZapierWebhook] = useState<string>('');
 
   // Make this field easier to remove after setup. Hide from users in production.
-  const showWebhookInput = false; // set to false to hide the field
+  const showWebhookInput = true; // set to true to SHOW the field for setup
   
   const validateForm = () => {
     const errors: {[key: string]: string} = {};
