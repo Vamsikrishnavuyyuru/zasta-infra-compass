@@ -1,4 +1,3 @@
-
 import { useState, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -8,6 +7,9 @@ import { Textarea } from '@/components/ui/textarea';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 import { Upload, Mail } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import CVAttachmentInput from "./CVAttachmentInput";
+import CVPersonalDetailsForm from "./CVPersonalDetailsForm";
+import CVZapierWebhookInput from "./CVZapierWebhookInput";
 
 interface FormData {
   name: string;
@@ -88,22 +90,31 @@ const CVSubmissionForm = () => {
     }
   }
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0];
+  const handleFileChange = (file: File | null) => {
     if (file) {
       if (file.size > 5 * 1024 * 1024) {
-        setFormErrors(prev => ({ ...prev, cv: 'File size must be less than 5MB' }));
+        setFormErrors((prev) => ({
+          ...prev,
+          cv: "File size must be less than 5MB",
+        }));
         return;
       }
-      
-      const allowedTypes = ['application/pdf', 'application/msword', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'];
+      const allowedTypes = [
+        "application/pdf",
+        "application/msword",
+        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      ];
       if (!allowedTypes.includes(file.type)) {
-        setFormErrors(prev => ({ ...prev, cv: 'Please upload a PDF, DOC, or DOCX file' }));
+        setFormErrors((prev) => ({
+          ...prev,
+          cv: "Please upload a PDF, DOC, or DOCX file",
+        }));
         return;
       }
-      
       setCvFile(file);
-      setFormErrors(prev => ({ ...prev, cv: '' }));
+      setFormErrors((prev) => ({ ...prev, cv: "" }));
+    } else {
+      setCvFile(null);
     }
   };
 
@@ -125,52 +136,51 @@ const CVSubmissionForm = () => {
 
     setIsSubmitting(true);
 
-    // console.log("Submitting to Zapier Webhook URL:", zapierWebhook);
-
     try {
-      // Build multipart/form-data
       const payload = new window.FormData();
-      payload.append('name', formData.name);
-      payload.append('email', formData.email);
-      payload.append('phone', formData.phone);
-      payload.append('experience', formData.experience);
-      payload.append('skills', formData.skills);
-      payload.append('coverLetter', formData.coverLetter || '');
+      payload.append("name", formData.name);
+      payload.append("email", formData.email);
+      payload.append("phone", formData.phone);
+      payload.append("experience", formData.experience);
+      payload.append("skills", formData.skills);
+      payload.append("coverLetter", formData.coverLetter || "");
       if (cvFile) {
-        payload.append('cvAttachment', cvFile); // This will send the file itself
+        payload.append("cvAttachment", cvFile); // This is sent to Zapier
       }
-      payload.append('submittedAt', new Date().toISOString());
+      payload.append("submittedAt", new Date().toISOString());
 
-      const response = await fetch(zapierWebhook, {
+      await fetch(zapierWebhook, {
         method: "POST",
         body: payload,
+        mode: "no-cors", // Zapier expects this for file uploads
       });
-      
-      // Zapier webhooks use "no-cors" (opaque) mode, so cannot reliably check status
-      // Instead, rely on submitting and show optimistic success:
+
       toast({
         title: "Application Submitted!",
-        description: "Thank you for your interest. We'll review your application and get back to you soon.",
+        description:
+          "Thank you for your interest. We'll review your application and get back to you soon.",
       });
 
       setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        experience: '',
-        skills: '',
-        coverLetter: ''
+        name: "",
+        email: "",
+        phone: "",
+        experience: "",
+        skills: "",
+        coverLetter: "",
       });
       setCvFile(null);
       setFormErrors({});
-      const fileInput = document.getElementById('cv-upload') as HTMLInputElement;
-      if (fileInput) fileInput.value = '';
-
+      const fileInput = document.getElementById(
+        "cv-upload"
+      ) as HTMLInputElement;
+      if (fileInput) fileInput.value = "";
     } catch (error) {
       console.error("Error submitting to Zapier:", error);
       toast({
         title: "Submission Failed",
-        description: "There was an error submitting your application. Please check your internet connection or email hr@zastagroup.com.",
+        description:
+          "There was an error submitting your application. Please check your internet connection or email hr@zastagroup.com.",
         variant: "destructive",
       });
     } finally {
@@ -182,155 +192,50 @@ const CVSubmissionForm = () => {
     <Card>
       <CardContent className="p-8">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Submit Your Application</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            Submit Your Application
+          </h2>
           <p className="text-gray-600">
             Don't see a perfect match? Submit your CV and we'll contact you when suitable opportunities arise.
           </p>
         </div>
 
-        {/* Info about supported file attachments */}
         <Alert className="mb-6">
           <Mail className="h-4 w-4" />
           <AlertDescription>
-            <strong>CV Attachment Supported!</strong><br />
+            <strong>CV Attachment Supported!</strong>
+            <br />
             Your CV/Resume file will be sent as an email attachment via our secure system.
           </AlertDescription>
         </Alert>
 
-        {/* TEMP: Admin Zapier Webhook Input (hidden in production, or remove after) */}
-        {showWebhookInput && (
-          <div className="mb-6">
-            <Label htmlFor="zapier-webhook">[Admin] Zapier Webhook URL</Label>
-            <Input
-              id="zapier-webhook"
-              name="zapier-webhook"
-              value={zapierWebhook}
-              onChange={handleWebhookChange}
-              placeholder="Paste your Zapier webhook URL here"
-              className={`mt-2 ${formErrors.webhook ? 'border-red-500' : ''}`}
-              autoComplete="off"
-            />
-            {formErrors.webhook && <p className="text-red-500 text-sm mt-1">{formErrors.webhook}</p>}
-            <p className="text-xs text-zinc-500 mt-1">
-              You can hide or remove this field once pasted.
-            </p>
-          </div>
-        )}
+        <CVZapierWebhookInput
+          zapierWebhook={zapierWebhook}
+          onChange={handleWebhookChange}
+          error={formErrors.webhook}
+          show={showWebhookInput}
+        />
 
         <form onSubmit={handleSubmit} className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <Label htmlFor="name">Full Name *</Label>
-              <Input
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleInputChange}
-                required
-                className={`mt-2 ${formErrors.name ? 'border-red-500' : ''}`}
-              />
-              {formErrors.name && <p className="text-red-500 text-sm mt-1">{formErrors.name}</p>}
-            </div>
-            <div>
-              <Label htmlFor="email">Email Address *</Label>
-              <Input
-                id="email"
-                name="email"
-                type="email"
-                value={formData.email}
-                onChange={handleInputChange}
-                required
-                className={`mt-2 ${formErrors.email ? 'border-red-500' : ''}`}
-              />
-              {formErrors.email && <p className="text-red-500 text-sm mt-1">{formErrors.email}</p>}
-            </div>
-          </div>
+          <CVPersonalDetailsForm
+            formData={formData}
+            formErrors={formErrors}
+            onChange={handleInputChange}
+          />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div>
-              <Label htmlFor="phone">Phone Number *</Label>
-              <Input
-                id="phone"
-                name="phone"
-                value={formData.phone}
-                onChange={handleInputChange}
-                required
-                className={`mt-2 ${formErrors.phone ? 'border-red-500' : ''}`}
-              />
-              {formErrors.phone && <p className="text-red-500 text-sm mt-1">{formErrors.phone}</p>}
-            </div>
-            <div>
-              <Label htmlFor="experience">Years of Experience *</Label>
-              <Input
-                id="experience"
-                name="experience"
-                value={formData.experience}
-                onChange={handleInputChange}
-                required
-                className={`mt-2 ${formErrors.experience ? 'border-red-500' : ''}`}
-              />
-              {formErrors.experience && <p className="text-red-500 text-sm mt-1">{formErrors.experience}</p>}
-            </div>
-          </div>
+          <CVAttachmentInput
+            cvFile={cvFile}
+            onFileChange={handleFileChange}
+            error={formErrors.cv}
+          />
 
-          <div>
-            <Label htmlFor="skills">Key Skills *</Label>
-            <Textarea
-              id="skills"
-              name="skills"
-              value={formData.skills}
-              onChange={handleInputChange}
-              placeholder="List your key technical skills and competencies"
-              required
-              className={`mt-2 ${formErrors.skills ? 'border-red-500' : ''}`}
-            />
-            {formErrors.skills && <p className="text-red-500 text-sm mt-1">{formErrors.skills}</p>}
-          </div>
-
-          <div>
-            <Label htmlFor="cv-upload">Upload CV/Resume *</Label>
-            <div 
-              onClick={handleUploadDivClick}
-              className={`mt-2 border-2 border-dashed rounded-lg p-6 text-center hover:border-zasta-green-500 transition-colors cursor-pointer ${formErrors.cv ? 'border-red-500' : 'border-gray-300'}`}
-            >
-              <Upload className="w-8 h-8 text-gray-400 mx-auto mb-2" />
-              <p className="text-gray-600">
-                {cvFile ? `Selected: ${cvFile.name}` : 'Click to upload or drag and drop'}
-              </p>
-              <p className="text-sm text-gray-400">PDF, DOC, DOCX (max 5MB)</p>
-              <Input
-                ref={fileInputRef}
-                id="cv-upload"
-                type="file"
-                accept=".pdf,.doc,.docx"
-                onChange={handleFileChange}
-                className="hidden"
-                required
-              />
-            </div>
-            {formErrors.cv && <p className="text-red-500 text-sm mt-1">{formErrors.cv}</p>}
-          </div>
-
-          <div>
-            <Label htmlFor="coverLetter">Cover Letter</Label>
-            <Textarea
-              id="coverLetter"
-              name="coverLetter"
-              value={formData.coverLetter}
-              onChange={handleInputChange}
-              placeholder="Tell us why you want to join Zasta Group"
-              className="mt-2"
-              rows={4}
-            />
-          </div>
-
-          <Button 
-            type="submit" 
-            size="lg" 
+          <Button
+            type="submit"
+            size="lg"
             className="w-full bg-zasta-green-600 hover:bg-zasta-green-700"
             disabled={isSubmitting}
           >
-            {isSubmitting ? 'Submitting...' : 'Submit Application'}
+            {isSubmitting ? "Submitting..." : "Submit Application"}
           </Button>
         </form>
       </CardContent>
@@ -339,4 +244,3 @@ const CVSubmissionForm = () => {
 };
 
 export default CVSubmissionForm;
-
