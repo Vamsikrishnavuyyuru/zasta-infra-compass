@@ -26,7 +26,7 @@ const Header = () => {
             <img 
               alt="Zasta Group Logo" 
               className="h-10 w-auto object-scale-down" 
-              src="/lovable-uploads/1329f9be-07f0-4ffe-8caa-45a038685b86.png" 
+              src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fin.linkedin.com%2Fin%2Fzasta-group-014604299&psig=AOvVaw03hdIv6ypaQTAnJlA06XLB&ust=1750326893534000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKi_tvnZ-o0DFQAAAAAdAAAAABAQ" 
             />
             <div className="flex flex-col">
               <span className="font-bold text-xl text-gray-900">Zasta</span>
