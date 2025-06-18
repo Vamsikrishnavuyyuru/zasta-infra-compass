@@ -7,14 +7,14 @@ const TestimonialsSection = () => {
     {
       name: "Rajesh Kumar",
       position: "Project Director",
-      company: "XYZ Ltd",
+      company: "India's Leading Construction Company",
       content: "Zasta's workforce solutions helped us complete our power project 2 months ahead of schedule.",
       rating: 5
     },
     {
       name: "Priya Sharma",
       position: "Operations Manager",
-      company: "ABC Corp",
+      company: "India's Leading Construction PMC",
       content: "SiteSync has revolutionized our quality control process with real-time monitoring capabilities.",
       rating: 5
     }
