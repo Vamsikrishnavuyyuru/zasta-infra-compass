@@ -16,7 +16,7 @@ const TestimonialsSection = () => {
       position: "Operations Manager",
       company: "India's Leading Construction PMC",
       content: "SiteSync has revolutionized our quality control process with real-time monitoring capabilities.",
-      rating: 5
+      rating: 5 
     }
   ]; 
 
