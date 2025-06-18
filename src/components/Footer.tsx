@@ -13,7 +13,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/fbc0b943-b9c4-4cc2-b50c-20cd73fdfe74.png" 
                 alt="Zasta Group Logo" 
-                className="h-10 w-auto object-contain"
+                className="h-10 w-auto object-contain" 
               />
               <div className="flex flex-col">
                 <span className="font-bold text-xl">Zasta Enterprises Private Limited</span>
