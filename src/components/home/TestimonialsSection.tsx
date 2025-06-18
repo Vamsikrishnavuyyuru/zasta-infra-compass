@@ -18,7 +18,7 @@ const TestimonialsSection = () => {
       content: "SiteSync has revolutionized our quality control process with real-time monitoring capabilities.",
       rating: 5
     }
-  ];
+  ]; 
 
   return (
     <section className="py-20 bg-gray-900 text-white">
