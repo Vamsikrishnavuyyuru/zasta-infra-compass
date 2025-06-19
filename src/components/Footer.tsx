@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom';
 import { Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
@@ -10,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/lovable-uploads/68acad11-d6fa-43b4-a1a1-69e7f40148be.png" 
+                src="/lovable-uploads/027d61af-792b-4966-983e-7f82afc7a469.png" 
                 alt="Zasta Group Logo" 
                 className="h-10 w-auto object-contain" 
               />
@@ -85,3 +86,4 @@ Kukatpally, Hyderabad - 500072, India</span>
 };
 
 export default Footer;
+
