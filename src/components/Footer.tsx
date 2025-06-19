@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/lovable-uploads/fbc0b943-b9c4-4cc2-b50c-20cd73fdfe74.png" 
+                src="/lovable-uploads/84de455b-7b88-4d25-b675-c0bcf14da22a.png" 
                 alt="Zasta Group Logo" 
                 className="h-10 w-auto object-contain" 
               />

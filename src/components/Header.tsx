@@ -26,11 +26,11 @@ const Header = () => {
             <img 
               alt="Zasta Group Logo" 
               className="h-10 w-auto object-scale-down" 
-              src="/lovable-uploads/1329f9be-07f0-4ffe-8caa-45a038685b86.png" 
+              src="/lovable-uploads/84de455b-7b88-4d25-b675-c0bcf14da22a.png" 
             />
             <div className="flex flex-col">
               <span className="font-bold text-xl text-gray-900">Zasta</span>
-                <span className="text-bold text-gray-600 -mt-1">Enterprises Private Limited</span>
+                <span className="text-bold text-gray-600 -mt-1">Excellence Always</span>
             </div>
           </Link>
 
