@@ -25,7 +25,7 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3">
             <img 
               alt="Zasta Group Logo" 
-              className="h-10 w-auto object-scale-down animate-[logo-rotate-3d_5s_ease-in-out_infinite]" 
+              className="h-10 w-auto object-scale-down" 
               src="/lovable-uploads/027d61af-792b-4966-983e-7f82afc7a469.png" 
             />
             <div className="flex flex-col">
