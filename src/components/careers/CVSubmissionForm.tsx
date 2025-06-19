@@ -1,3 +1,4 @@
+
 import { useState, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -35,11 +36,11 @@ const CVSubmissionForm = () => {
   const [cvFile, setCvFile] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Store Zapier Webhook URL in state (admin can paste it once, persist as needed)
-  const [zapierWebhook, setZapierWebhook] = useState<string>('');
+  // Set default Zapier Webhook URL and hide it from users
+  const [zapierWebhook, setZapierWebhook] = useState<string>('https://hooks.zapier.com/hooks/catch/23382207/uyj0owa/');
 
-  // Make this field easier to remove after setup. Hide from users in production.
-  const showWebhookInput = true; // set to true to SHOW the field for setup
+  // Hide the webhook input field from users
+  const showWebhookInput = false; // set to false to HIDE the field from users
   
   const validateForm = () => {
     const errors: {[key: string]: string} = {};
@@ -66,9 +67,10 @@ const CVSubmissionForm = () => {
     if (!cvFile) {
       errors.cv = 'CV/Resume is required';
     }
-    if (!zapierWebhook.trim()) {
-      errors.webhook = 'Zapier Webhook URL is required (admin only)';
-    }
+    // Remove webhook validation since it's pre-filled and hidden
+    // if (!zapierWebhook.trim()) {
+    //   errors.webhook = 'Zapier Webhook URL is required (admin only)';
+    // }
 
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
