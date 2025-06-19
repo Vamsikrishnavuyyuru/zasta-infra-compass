@@ -1,7 +1,6 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
-import InteractiveMap from '@/components/InteractiveMap';
 
 const ContactInfo = () => {
   const contactInfo = [
@@ -46,11 +45,6 @@ const ContactInfo = () => {
             </CardContent>
           </Card>
         ))}
-      </div>
-
-      {/* Interactive Map */}
-      <div className="mt-8">
-        <InteractiveMap />
       </div>
     </div>
   );
