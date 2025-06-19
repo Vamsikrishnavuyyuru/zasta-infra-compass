@@ -1,5 +1,4 @@
 
-
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -26,7 +25,7 @@ const Header = () => {
           <Link to="/" className="flex items-center space-x-3">
             <img 
               alt="Zasta Group Logo" 
-              className="h-10 w-auto object-scale-down" 
+              className="h-10 w-auto object-scale-down animate-[logo-rotate-3d_5s_ease-in-out_infinite]" 
               src="/lovable-uploads/027d61af-792b-4966-983e-7f82afc7a469.png" 
             />
             <div className="flex flex-col">
@@ -84,4 +83,3 @@ const Header = () => {
 };
 
 export default Header;
-
