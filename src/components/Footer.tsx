@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Linkedin, Mail, Phone, MapPin } from 'lucide-react';
 
@@ -11,7 +10,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="/lovable-uploads/84de455b-7b88-4d25-b675-c0bcf14da22a.png" 
+                src="/lovable-uploads/68acad11-d6fa-43b4-a1a1-69e7f40148be.png" 
                 alt="Zasta Group Logo" 
                 className="h-10 w-auto object-contain" 
               />
