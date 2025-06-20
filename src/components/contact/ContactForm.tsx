@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
+import emailjs from '@emailjs/browser';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -16,6 +17,7 @@ const ContactForm = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -25,23 +27,52 @@ const ContactForm = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    toast({
-      title: "Message Sent!",
-      description: "Thank you for contacting us. We'll get back to you within 24 hours.",
-    });
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      company: '',
-      phone: '',
-      subject: '',
-      message: ''
-    });
+    setIsSubmitting(true);
+
+    try {
+      // EmailJS configuration - you'll need to replace these with your actual values
+      const serviceId = 'YOUR_SERVICE_ID';
+      const templateId = 'YOUR_TEMPLATE_ID';
+      const publicKey = 'YOUR_PUBLIC_KEY';
+
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        company: formData.company,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'hr@zastagroup.com'
+      };
+
+      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+      toast({
+        title: "Message Sent Successfully!",
+        description: "Thank you for contacting us. Our HR team will get back to you within 24 hours.",
+      });
+      
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        company: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      toast({
+        title: "Failed to Send Message",
+        description: "There was an error sending your message. Please try again or contact us directly.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -60,6 +91,7 @@ const ContactForm = () => {
                   onChange={handleInputChange}
                   required
                   className="mt-1"
+                  disabled={isSubmitting}
                 />
               </div>
               <div>
@@ -72,6 +104,7 @@ const ContactForm = () => {
                   onChange={handleInputChange}
                   required
                   className="mt-1"
+                  disabled={isSubmitting}
                 />
               </div>
             </div>
@@ -85,6 +118,7 @@ const ContactForm = () => {
                   value={formData.company}
                   onChange={handleInputChange}
                   className="mt-1"
+                  disabled={isSubmitting}
                 />
               </div>
               <div>
@@ -95,6 +129,7 @@ const ContactForm = () => {
                   value={formData.phone}
                   onChange={handleInputChange}
                   className="mt-1"
+                  disabled={isSubmitting}
                 />
               </div>
             </div>
@@ -108,6 +143,7 @@ const ContactForm = () => {
                 onChange={handleInputChange}
                 required
                 className="mt-1"
+                disabled={isSubmitting}
               />
             </div>
 
@@ -120,13 +156,18 @@ const ContactForm = () => {
                 onChange={handleInputChange}
                 required
                 rows={5}
-                className="mt-1 flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                disabled={isSubmitting}
+                className="mt-1 flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                 placeholder="Tell us about your project requirements..."
               />
             </div>
 
-            <Button type="submit" className="w-full bg-zasta-green-600 hover:bg-zasta-green-700">
-              Send Message
+            <Button 
+              type="submit" 
+              className="w-full bg-zasta-green-600 hover:bg-zasta-green-700 disabled:opacity-50" 
+              disabled={isSubmitting}
+            >
+              {isSubmitting ? 'Sending...' : 'Send Message'}
             </Button>
           </form>
         </CardContent>
