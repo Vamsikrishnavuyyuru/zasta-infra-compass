@@ -12,10 +12,10 @@ interface HeroContentProps {
 const HeroContent = ({ slides, currentSlide, onWorkWithUs }: HeroContentProps) => {
   return (
     <div className="max-w-5xl mx-auto animate-fade-in px-3 sm:px-4 lg:px-6">
-      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black mb-4 sm:mb-6 md:mb-8 animate-scale-in leading-[1.1] tracking-tight text-shadow-lg hero-title">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black mb-6 sm:mb-8 md:mb-10 animate-scale-in leading-[1.2] tracking-tight text-shadow-lg hero-title">
         {slides[currentSlide].title}
       </h1>
-      <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-6 sm:mb-8 md:mb-10 text-gray-100 animate-fade-in leading-relaxed max-w-4xl mx-auto font-medium hero-subtitle" style={{ animationDelay: '0.2s' }}>
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-8 sm:mb-10 md:mb-12 text-gray-100 animate-fade-in leading-[1.5] max-w-4xl mx-auto font-medium hero-subtitle" style={{ animationDelay: '0.2s' }}>
         {slides[currentSlide].subtitle}
       </p>
       

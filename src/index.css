@@ -109,11 +109,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: hero-glow 3s ease-in-out infinite alternate;
+  overflow: visible;
+  padding-bottom: 0.25rem;
 }
 
 .hero-subtitle {
   text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
   animation: subtitle-float 4s ease-in-out infinite;
+  overflow: visible;
+  padding-bottom: 0.25rem;
 }
 
 .text-shadow-lg {
@@ -209,23 +213,41 @@
 @media (max-width: 640px) {
   .hero-title {
     font-size: 2.5rem !important;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
+    line-height: 1.2 !important;
+    margin-bottom: 2rem !important;
+    padding-bottom: 0.5rem !important;
   }
   
   .hero-subtitle {
     font-size: 1.125rem !important;
-    line-height: 1.6;
-    margin-bottom: 2rem;
+    line-height: 1.6 !important;
+    margin-bottom: 2.5rem !important;
+    padding-bottom: 0.5rem !important;
   }
 }
 
 @media (max-width: 480px) {
   .hero-title {
     font-size: 2.25rem !important;
+    line-height: 1.3 !important;
+    padding-bottom: 0.75rem !important;
   }
   
   .hero-subtitle {
     font-size: 1rem !important;
+    line-height: 1.7 !important;
+    padding-bottom: 0.75rem !important;
   }
+}
+
+/* Hide Lovable badge */
+[data-lovable-badge] {
+  display: none !important;
+}
+
+/* Additional selector to ensure badge is hidden */
+.lovable-badge,
+[class*="lovable"],
+[id*="lovable"] {
+  display: none !important;
 }
