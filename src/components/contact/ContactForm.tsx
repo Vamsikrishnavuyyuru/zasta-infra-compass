@@ -34,8 +34,8 @@ const ContactForm = () => {
     try {
       // EmailJS configuration - you'll need to replace these with your actual values
       const serviceId = 'service_zfyrk8b';
-      const templateId = 'YOUR_TEMPLATE_ID';
-      const publicKey = 'YOUR_PUBLIC_KEY';
+      const templateId = 'template_ayq6hti';
+      const publicKey = '5Mw9xNbIWe2S19LiC';
 
       const templateParams = {
         from_name: formData.name,
