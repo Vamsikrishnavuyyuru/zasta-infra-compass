@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';
@@ -32,10 +31,16 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // EmailJS configuration - you'll need to replace these with your actual values
-      const serviceId = 'service_5i3cwzt';
-      const templateId = 'template_skv5vrm';
-      const publicKey = '5Mw9xNbIWe2S19LiC';
+      // TODO: Replace these with your actual EmailJS credentials
+      // Get these from your EmailJS dashboard: https://www.emailjs.com/
+      const serviceId = 'YOUR_ACTUAL_SERVICE_ID';  // Replace with your service ID
+      const templateId = 'YOUR_ACTUAL_TEMPLATE_ID'; // Replace with your template ID  
+      const publicKey = 'YOUR_ACTUAL_PUBLIC_KEY';   // Replace with your public key
+
+      // Check if credentials are still placeholders
+      if (serviceId === 'YOUR_ACTUAL_SERVICE_ID' || templateId === 'YOUR_ACTUAL_TEMPLATE_ID' || publicKey === 'YOUR_ACTUAL_PUBLIC_KEY') {
+        throw new Error('EmailJS credentials not configured. Please replace the placeholder values with your actual EmailJS credentials.');
+      }
 
       const templateParams = {
         from_name: formData.name,
@@ -46,6 +51,8 @@ const ContactForm = () => {
         message: formData.message,
         to_email: 'hr@zastagroup.com'
       };
+
+      console.log('Attempting to send email with params:', templateParams);
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
@@ -65,9 +72,20 @@ const ContactForm = () => {
       });
     } catch (error) {
       console.error('Email sending failed:', error);
+      
+      let errorMessage = "There was an error sending your message. Please try again or contact us directly.";
+      
+      if (error instanceof Error) {
+        if (error.message.includes('credentials not configured')) {
+          errorMessage = "Email service not configured. Please contact the administrator.";
+        } else if (error.message.includes('blocked') || error.message.includes('423')) {
+          errorMessage = "Email service temporarily unavailable. Please contact us directly at hr@zastagroup.com";
+        }
+      }
+      
       toast({
         title: "Failed to Send Message",
-        description: "There was an error sending your message. Please try again or contact us directly.",
+        description: errorMessage,
         variant: "destructive"
       });
     } finally {
