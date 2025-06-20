@@ -33,8 +33,8 @@ const ContactForm = () => {
 
     try {
       // EmailJS configuration - you'll need to replace these with your actual values
-      const serviceId = 'service_zfyrk8b';
-      const templateId = 'template_ayq6hti';
+      const serviceId = 'service_5i3cwzt';
+      const templateId = 'template_skv5vrm';
       const publicKey = '5Mw9xNbIWe2S19LiC';
 
       const templateParams = {
