@@ -33,9 +33,9 @@ const ContactForm = () => {
     try {
       // TODO: Replace these with your actual EmailJS credentials
       // Get these from your EmailJS dashboard: https://www.emailjs.com/
-      const serviceId = 'YOUR_ACTUAL_SERVICE_ID';  // Replace with your service ID
-      const templateId = 'YOUR_ACTUAL_TEMPLATE_ID'; // Replace with your template ID  
-      const publicKey = 'YOUR_ACTUAL_PUBLIC_KEY';   // Replace with your public key
+      const serviceId = 'service_5kyalio';  // Replace with your service ID
+      const templateId = 'template_g4bu5jd'; // Replace with your template ID  
+      const publicKey = 'fdS6zoPUTAWpJ3sA4';   // Replace with your public key
 
       // Check if credentials are still placeholders
       if (serviceId === 'YOUR_ACTUAL_SERVICE_ID' || templateId === 'YOUR_ACTUAL_TEMPLATE_ID' || publicKey === 'YOUR_ACTUAL_PUBLIC_KEY') {
