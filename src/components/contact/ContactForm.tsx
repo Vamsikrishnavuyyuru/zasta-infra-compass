@@ -32,15 +32,9 @@ const ContactForm = () => {
 
     try {
       // TODO: Replace these with your actual EmailJS credentials
-      // Get these from your EmailJS dashboard: https://www.emailjs.com/
-      const serviceId = 'service_5kyalio';  // Replace with your service ID
-      const templateId = 'template_g4bu5jd'; // Replace with your template ID  
-      const publicKey = 'fdS6zoPUTAWpJ3sA4';   // Replace with your public key
-
-      // Check if credentials are still placeholders
-      if (serviceId === 'service_5kyalio' || templateId === 'template_g4bu5jd' || publicKey === 'fdS6zoPUTAWpJ3sA4') {
-        throw new Error('EmailJS credentials not configured. Please replace the placeholder values with your actual EmailJS credentials.');
-      }
+      const serviceId = 'YOUR_SERVICE_ID';     // Replace with your service ID from EmailJS
+      const templateId = 'YOUR_TEMPLATE_ID';   // Replace with your template ID from EmailJS  
+      const publicKey = 'YOUR_PUBLIC_KEY';     // Replace with your public key from EmailJS
 
       const templateParams = {
         from_name: formData.name,
@@ -52,7 +46,10 @@ const ContactForm = () => {
         to_email: 'hr@zastagroup.com'
       };
 
-      console.log('Attempting to send email with params:', templateParams);
+      console.log('Sending email with EmailJS...');
+      console.log('Service ID:', serviceId);
+      console.log('Template ID:', templateId);
+      console.log('Template params:', templateParams);
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
@@ -73,15 +70,7 @@ const ContactForm = () => {
     } catch (error) {
       console.error('Email sending failed:', error);
       
-      let errorMessage = "There was an error sending your message. Please try again or contact us directly.";
-      
-      if (error instanceof Error) {
-        if (error.message.includes('credentials not configured')) {
-          errorMessage = "Email service not configured. Please contact the administrator.";
-        } else if (error.message.includes('blocked') || error.message.includes('423')) {
-          errorMessage = "Email service temporarily unavailable. Please contact us directly at hr@zastagroup.com";
-        }
-      }
+      let errorMessage = "There was an error sending your message. Please try again or contact us directly at hr@zastagroup.com";
       
       toast({
         title: "Failed to Send Message",
