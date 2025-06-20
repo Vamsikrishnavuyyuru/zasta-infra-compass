@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -100,7 +101,59 @@
   }
 }
 
-/* Custom keyframes for city building animation */
+/* Hero Text Enhancements */
+.hero-title {
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, #ffffff 0%, #f0f9f4 50%, #ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hero-glow 3s ease-in-out infinite alternate;
+}
+
+.hero-subtitle {
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
+  animation: subtitle-float 4s ease-in-out infinite;
+}
+
+.text-shadow-lg {
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Scroll Animation */
+@media (prefers-reduced-motion: no-preference) {
+  .hero-title {
+    transform: translateY(0);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .hero-subtitle {
+    transform: translateY(0);
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+  }
+}
+
+/* Custom keyframes for enhanced animations */
+@keyframes hero-glow {
+  0% {
+    filter: brightness(1) contrast(1);
+    transform: scale(1);
+  }
+  100% {
+    filter: brightness(1.05) contrast(1.1);
+    transform: scale(1.01);
+  }
+}
+
+@keyframes subtitle-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
 @keyframes growUp {
   0% {
     height: 0;
@@ -149,5 +202,30 @@
   100% {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* Mobile-specific enhancements */
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2.5rem !important;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem !important;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.25rem !important;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem !important;
   }
 }

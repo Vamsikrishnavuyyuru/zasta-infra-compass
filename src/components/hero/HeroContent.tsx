@@ -11,18 +11,18 @@ interface HeroContentProps {
 
 const HeroContent = ({ slides, currentSlide, onWorkWithUs }: HeroContentProps) => {
   return (
-    <div className="max-w-4xl mx-auto animate-fade-in px-2 sm:px-4">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-3 sm:mb-4 md:mb-6 animate-scale-in leading-tight">
+    <div className="max-w-5xl mx-auto animate-fade-in px-3 sm:px-4 lg:px-6">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-black mb-4 sm:mb-6 md:mb-8 animate-scale-in leading-[1.1] tracking-tight text-shadow-lg hero-title">
         {slides[currentSlide].title}
       </h1>
-      <p className="text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl mb-4 sm:mb-6 md:mb-8 text-gray-200 animate-fade-in leading-relaxed max-w-3xl mx-auto" style={{ animationDelay: '0.2s' }}>
+      <p className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-6 sm:mb-8 md:mb-10 text-gray-100 animate-fade-in leading-relaxed max-w-4xl mx-auto font-medium hero-subtitle" style={{ animationDelay: '0.2s' }}>
         {slides[currentSlide].subtitle}
       </p>
       
-      <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center animate-fade-in max-w-md sm:max-w-none mx-auto" style={{ animationDelay: '0.4s' }}>
+      <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center animate-fade-in max-w-lg sm:max-w-none mx-auto" style={{ animationDelay: '0.4s' }}>
         <Button 
           size="lg" 
-          className="bg-zasta-green-600 hover:bg-zasta-green-700 text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 group w-full sm:w-auto"
+          className="bg-zasta-green-600 hover:bg-zasta-green-700 text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 group w-full sm:w-auto font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl"
           onClick={slides[currentSlide].ctaAction}
         >
           {slides[currentSlide].cta}
@@ -31,7 +31,7 @@ const HeroContent = ({ slides, currentSlide, onWorkWithUs }: HeroContentProps) =
         <Button 
           size="lg" 
           variant="outline" 
-          className="text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 border-white text-white bg-grey-900 hover:bg-white hover:text-gray-900 w-full sm:w-auto"
+          className="text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 border-2 border-white text-white bg-transparent hover:bg-white hover:text-gray-900 w-full sm:w-auto font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl backdrop-blur-sm"
           onClick={onWorkWithUs}
         >
           Work With Us
