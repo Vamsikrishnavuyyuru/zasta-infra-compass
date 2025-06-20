@@ -47,12 +47,12 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen pt-16 flex items-center justify-center overflow-hidden">
       <HeroSlider slides={slides} currentSlide={currentSlide} />
       <CityAnimation />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white h-full flex flex-col justify-center">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white min-h-screen pt-8 pb-24 flex flex-col justify-center">
         <div className="flex-1 flex items-center justify-center">
           <HeroContent 
             slides={slides} 
@@ -60,7 +60,7 @@ const HeroSection = () => {
             onWorkWithUs={handleWorkWithUs} 
           />
         </div>
-        <div className="pb-8">
+        <div className="mt-8">
           <HeroStats />
         </div>
       </div>
