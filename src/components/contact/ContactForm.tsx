@@ -38,7 +38,7 @@ const ContactForm = () => {
       const publicKey = 'fdS6zoPUTAWpJ3sA4';   // Replace with your public key
 
       // Check if credentials are still placeholders
-      if (serviceId === 'YOUR_ACTUAL_SERVICE_ID' || templateId === 'YOUR_ACTUAL_TEMPLATE_ID' || publicKey === 'YOUR_ACTUAL_PUBLIC_KEY') {
+      if (serviceId === 'service_5kyalio' || templateId === 'template_g4bu5jd' || publicKey === 'fdS6zoPUTAWpJ3sA4') {
         throw new Error('EmailJS credentials not configured. Please replace the placeholder values with your actual EmailJS credentials.');
       }
 
