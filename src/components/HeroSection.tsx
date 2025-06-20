@@ -52,13 +52,17 @@ const HeroSection = () => {
       <CityAnimation />
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
-        <HeroContent 
-          slides={slides} 
-          currentSlide={currentSlide} 
-          onWorkWithUs={handleWorkWithUs} 
-        />
-        <HeroStats />
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center text-white h-full flex flex-col justify-center">
+        <div className="flex-1 flex items-center justify-center">
+          <HeroContent 
+            slides={slides} 
+            currentSlide={currentSlide} 
+            onWorkWithUs={handleWorkWithUs} 
+          />
+        </div>
+        <div className="pb-8">
+          <HeroStats />
+        </div>
       </div>
 
       <SlideIndicators 
