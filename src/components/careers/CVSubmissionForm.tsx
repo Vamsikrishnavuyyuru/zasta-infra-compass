@@ -94,10 +94,10 @@ const CVSubmissionForm = () => {
 
   const handleFileChange = (file: File | null) => {
     if (file) {
-      if (file.size > 5 * 1024 * 1024) {
+      if (file.size > 10 * 1024 * 1024) {
         setFormErrors((prev) => ({
           ...prev,
-          cv: "File size must be less than 5MB",
+          cv: "File size must be less than 10MB",
         }));
         return;
       }
