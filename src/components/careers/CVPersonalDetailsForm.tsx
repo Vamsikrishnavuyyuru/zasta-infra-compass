@@ -89,7 +89,7 @@ const CVPersonalDetailsForm = ({
     </div>
 
     <div>
-      <Label htmlFor="skills">Key Skills *</Label>
+      <Label htmlFor="skills">Key Skills </Label>
       <Textarea
         id="skills"
         name="skills"
