@@ -26,7 +26,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       location: "Hyderabad, India",
       type: "Full-time",
       experience: "18+ years",
-      description: "We are looking for an experienced Civil Engineer to join our infrastructure division as a Project Manager in Hyderabad. The ideal candidate will have extensive experience leading large-scale infrastructure projects, demonstrating strong leadership, technical expertise, and a proven track record of successful project delivery.",
+      description: "We need a Senior Project Manager. You will join our Civil Engineering team. You must have extensive experience. Focus on large projects using Mivan technology. You will lead projects strategically. Ensure timely delivery. Manage budget and quality.",
       requirements: [
         "Bachelor's degree in Civil Engineering",
         "18+ years of progressive experience in managing and delivering complex infrastructure projects",
