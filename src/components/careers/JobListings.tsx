@@ -40,18 +40,20 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     {
       id: 2,
       title: "Planning Engineer",
-      department: "Engineering",
+      department: "Civil Engineering",
       location: "Hyderabad, India",
       type: "Full-time", 
       experience: "5 years",
-      description: "Join our electrical engineering team to work on power distribution and control systems for major infrastructure projects.",
+      description: "We need a skilled Planning Engineer. You must have at least 5 years of experience. Mandatory expertise in Mivan construction is required. You will develop project schedules. You will also monitor and update them. Ensure efficient resource use. Help achieve timely project completion.",
       requirements: [
-        "Bachelor's degree in Electrical Engineering",
-        "5 years of experience in power systems",
-        "Knowledge of electrical design software",
-        "Understanding of safety standards and regulations"
+        "Bachelor's degree in Civil Engineering",
+        "Minimum 5 years in project planning is a must.",
+        "Mandatory, deep knowledge of Mivan technology is required. This includes planning specifics.",
+        "Ability to create detailed schedules is vital. Perform critical path analysis. Prepare earned value reports.",
+        "Experience tracking project progress is necessary. Identify delays. Suggest solutions",
+        "Ability to create progress reports is needed. Also, look-ahead schedules and recovery plans."
       ],
-      postedDate: "2024-05-20"
+      postedDate: "2025-06-21"
     },
     {
       id: 3,
