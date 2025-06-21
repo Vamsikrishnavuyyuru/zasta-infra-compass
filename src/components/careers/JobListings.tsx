@@ -22,7 +22,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     {
       id: 1,
       title: "Project Manager",
-      department: "Engineering",
+      department: "Civil Engineering",
       location: "Hyderabad, India",
       type: "Full-time",
       experience: "18+ years",
@@ -30,6 +30,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       requirements: [
         "Bachelor's degree in Civil Engineering",
         "18+ years of progressive experience in managing and delivering complex infrastructure projects",
+        "**Mandatory in-depth knowledge and hands-on experience with all aspects of Mivan construction, including planning, execution, quality control, and troubleshooting specific to the technology.**",
         "Proven proficiency in AutoCAD, MS Project, Primavera P6, or other industry-standard project management tools.",
         "Demonstrated ability to manage project budgets, schedules, and resources effectively to ensure timely and cost-efficient project completion.",
         "PMP (Project Management Professional) or equivalent certification is highly preferred."
@@ -38,15 +39,15 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     },
     {
       id: 2,
-      title: "Electrical Engineer",
+      title: "Planning Engineer",
       department: "Engineering",
-      location: "Mumbai, India",
+      location: "Hyderabad, India",
       type: "Full-time", 
-      experience: "3-5 years",
+      experience: "5 years",
       description: "Join our electrical engineering team to work on power distribution and control systems for major infrastructure projects.",
       requirements: [
         "Bachelor's degree in Electrical Engineering",
-        "3+ years of experience in power systems",
+        "5 years of experience in power systems",
         "Knowledge of electrical design software",
         "Understanding of safety standards and regulations"
       ],
