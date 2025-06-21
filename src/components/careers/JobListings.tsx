@@ -21,19 +21,20 @@ const JobListings = ({ onApply }: JobListingsProps) => {
   const currentOpenings: JobOpening[] = [
     {
       id: 1,
-      title: "Senior Civil Engineer",
+      title: "Project Manager",
       department: "Engineering",
       location: "Hyderabad, India",
       type: "Full-time",
-      experience: "5-8 years",
-      description: "We are looking for an experienced Civil Engineer to join our infrastructure projects team. The ideal candidate will have expertise in structural design and project management.",
+      experience: "18+ years",
+      description: "We are looking for an experienced Civil Engineer to join our infrastructure division as a Project Manager in Hyderabad. The ideal candidate will have extensive experience leading large-scale infrastructure projects, demonstrating strong leadership, technical expertise, and a proven track record of successful project delivery.",
       requirements: [
         "Bachelor's degree in Civil Engineering",
-        "5+ years of experience in infrastructure projects",
-        "Proficiency in AutoCAD and project management tools",
-        "Strong analytical and problem-solving skills"
+        "18+ years of progressive experience in managing and delivering complex infrastructure projects",
+        "Proven proficiency in AutoCAD, MS Project, Primavera P6, or other industry-standard project management tools.",
+        "Demonstrated ability to manage project budgets, schedules, and resources effectively to ensure timely and cost-efficient project completion.",
+        "PMP (Project Management Professional) or equivalent certification is highly preferred."
       ],
-      postedDate: "2024-05-25"
+      postedDate: "2025-06-21"
     },
     {
       id: 2,
