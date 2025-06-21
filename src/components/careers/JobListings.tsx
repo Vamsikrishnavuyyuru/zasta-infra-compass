@@ -22,7 +22,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     {
       id: 1,
       title: "Project Manager",
-      department: "Civil Engineering",
+      department: "Engineering",
       location: "Hyderabad, India",
       type: "Full-time",
       experience: "18+ years",
@@ -35,12 +35,12 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Demonstrated ability to manage project budgets, schedules, and resources effectively to ensure timely and cost-efficient project completion.",
         "PMP (Project Management Professional) or equivalent certification is highly preferred."
       ],
-      postedDate: "2025-06-21"
+      postedDate: "2025-06-20"
     },
     {
       id: 2,
       title: "Planning Engineer",
-      department: "Civil Engineering",
+      department: "Engineering",
       location: "Hyderabad, India",
       type: "Full-time", 
       experience: "5 years",
@@ -53,23 +53,25 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Experience tracking project progress is necessary. Identify delays. Suggest solutions",
         "Ability to create progress reports is needed. Also, look-ahead schedules and recovery plans."
       ],
-      postedDate: "2025-06-21"
+      postedDate: "2025-06-20"
     },
     {
       id: 3,
-      title: "Project Manager",
-      department: "Management",
-      location: "Delhi, India",
+      title: "Quality Engineer",
+      department: "Engineering",
+      location: "Hyderabad, India",
       type: "Full-time",
-      experience: "7-10 years",
-      description: "Lead complex infrastructure projects from planning to execution. Manage cross-functional teams and ensure project delivery within timeline and budget.",
+      experience: "4+ years",
+      description: "We are looking for a skilled Quality Engineer. You will ensure high standards on our projects. Mandatory experience in Mivan construction is required. You will implement quality control and assurance. This role helps us deliver excellent building projects.",
       requirements: [
-        "Bachelor's degree in Engineering or Management",
-        "7+ years of project management experience",
-        "PMP certification preferred",
-        "Excellent leadership and communication skills"
+        "Bachelor's degree in Civil Engineering",
+        "Minimum 4+ years of experience in construction quality control/assurance",
+        "Mandatory, hands-on experience with Mivan construction quality processes",
+        "Deep understanding of Mivan formwork quality checks is essential",
+        "Ability to develop and implement Quality Management Plans (QMPs)",
+        "Good problem-solving skills are important. Identify and resolve quality issues"
       ],
-      postedDate: "2024-05-18"
+      postedDate: "2025-06-20"
     }
   ];
 
