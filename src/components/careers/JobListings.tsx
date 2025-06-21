@@ -30,7 +30,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       requirements: [
         "Bachelor's degree in Civil Engineering",
         "18+ years of progressive experience in managing and delivering complex infrastructure projects",
-        "**Mandatory in-depth knowledge and hands-on experience with all aspects of Mivan construction, including planning, execution, quality control, and troubleshooting specific to the technology.**",
+        "Mandatory in-depth knowledge and hands-on experience with all aspects of Mivan construction, including planning, execution, quality control, and troubleshooting specific to the technology.",
         "Proven proficiency in AutoCAD, MS Project, Primavera P6, or other industry-standard project management tools.",
         "Demonstrated ability to manage project budgets, schedules, and resources effectively to ensure timely and cost-efficient project completion.",
         "PMP (Project Management Professional) or equivalent certification is highly preferred."
