@@ -9,15 +9,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center space-x-3 mb-4">
               <img 
                 src="/lovable-uploads/027d61af-792b-4966-983e-7f82afc7a469.png" 
                 alt="Zasta Group Logo" 
-                className="h-10 w-auto object-contain" 
+                className="h-10 w-10 object-contain flex-shrink-0" 
               />
-              <div className="flex flex-col">
-                <span className="font-bold text-xl">Zasta Enterprises Private Limited</span>
-                <span className="text-sm text-gray-400">Excellence Always</span>
+              <div className="flex flex-col min-w-0">
+                <span className="font-bold text-xl text-white leading-tight">Zasta Enterprises Private Limited</span>
+                <span className="text-sm text-gray-400 leading-tight">Excellence Always</span>
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
@@ -86,4 +86,3 @@ Kukatpally, Hyderabad - 500072, India</span>
 };
 
 export default Footer;
-
