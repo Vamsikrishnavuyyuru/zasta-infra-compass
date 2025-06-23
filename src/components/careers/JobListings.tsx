@@ -79,8 +79,8 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     },
         {
       id: 4,
-      title: "RMC",
-      department: "Engineering",
+      title: "RMC Quality Engineer",
+      department: "Quality Engineering",
       location: "Hyderabad, India",
       type: "Full-time",
       experience: "7 years",
