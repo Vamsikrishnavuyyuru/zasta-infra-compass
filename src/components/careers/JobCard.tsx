@@ -1,7 +1,7 @@
 
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { MapPin, Clock, Briefcase, GraduationCap, Share2 } from 'lucide-react';
+import { MapPin, Clock, Briefcase, GraduationCap, Share2, Users } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 interface JobOpening {
@@ -77,6 +77,10 @@ const JobCard = ({ job, onApply }: JobCardProps) => {
               <span className="flex items-center gap-1">
                 <GraduationCap className="w-4 h-4" />
                 {job.experience}
+              </span>
+              <span className="flex items-center gap-1">
+                <Users className="w-4 h-4" />
+                {job.vacancy} {job.vacancy === 1 ? 'vacancy' : 'vacancies'}
               </span>
             </div>
           </div>
