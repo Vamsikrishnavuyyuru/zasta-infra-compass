@@ -76,6 +76,25 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Good problem-solving skills are important. Identify and resolve quality issues"
       ],
       postedDate: "2025-06-20"
+    },
+        {
+      id: 4,
+      title: "RMC",
+      department: "Engineering",
+      location: "Hyderabad, India",
+      type: "Full-time",
+      experience: "7 years",
+      vacancy: "1", 
+      description: "We are looking for a skilled Quality Engineer. You will ensure high standards on our projects. Mandatory experience in Mivan construction is required. You will implement quality control and assurance. This role helps us deliver excellent building projects.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering",
+        "Minimum 4+ years of experience in construction quality control/assurance",
+        "Mandatory, hands-on experience with Mivan construction quality processes",
+        "Deep understanding of Mivan formwork quality checks is essential",
+        "Ability to develop and implement Quality Management Plans (QMPs)",
+        "Good problem-solving skills are important. Identify and resolve quality issues"
+      ],
+      postedDate: "2025-06-23"
     }
   ];
 
