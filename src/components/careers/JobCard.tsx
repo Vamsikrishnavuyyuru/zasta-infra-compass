@@ -11,7 +11,7 @@ interface JobOpening {
   location: string;
   type: string;
   experience: string;
-  vacancy: string;
+  vacancy: number;
   description: string;
   requirements: string[];
   postedDate: string;
