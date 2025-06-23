@@ -26,6 +26,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       location: "Hyderabad, India",
       type: "Full-time",
       experience: "18+ years",
+      vacancy: "01",
       description: "We need a Senior Project Manager. You will join our Civil Engineering team. You must have extensive experience. Focus on large projects using Mivan technology. You will lead projects strategically. Ensure timely delivery. Manage budget and quality.",
       requirements: [
         "Bachelor's degree in Civil Engineering",
@@ -44,6 +45,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       location: "Hyderabad, India",
       type: "Full-time", 
       experience: "5 years",
+      vacancy: "01",
       description: "We need a skilled Planning Engineer. You must have at least 5 years of experience. Mandatory expertise in Mivan construction is required. You will develop project schedules. You will also monitor and update them. Ensure efficient resource use. Help achieve timely project completion.",
       requirements: [
         "Bachelor's degree in Civil Engineering",
@@ -62,6 +64,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       location: "Hyderabad, India",
       type: "Full-time",
       experience: "4+ years",
+      vacancy: "02", 
       description: "We are looking for a skilled Quality Engineer. You will ensure high standards on our projects. Mandatory experience in Mivan construction is required. You will implement quality control and assurance. This role helps us deliver excellent building projects.",
       requirements: [
         "Bachelor's degree in Civil Engineering",
