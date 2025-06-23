@@ -80,19 +80,19 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         {
       id: 4,
       title: "RMC Quality Engineer",
-      department: "Quality Engineering",
+      department: "Engineering",
       location: "Hyderabad, India",
       type: "Full-time",
       experience: "7 years",
       vacancy: 1, 
-      description: "We are looking for a skilled Quality Engineer. You will ensure high standards on our projects. Mandatory experience in Mivan construction is required. You will implement quality control and assurance. This role helps us deliver excellent building projects.",
+      description: "We are hiring an experienced RMC Quality Engineer. You will manage quality for Ready-Mix Concrete operations. Ensure all RMC products meet high standards. Oversee lab testing and quality checks. This role ensures top-quality concrete delivery for projects.",
       requirements: [
         "Bachelor's degree in Civil Engineering",
-        "Minimum 4+ years of experience in construction quality control/assurance",
-        "Mandatory, hands-on experience with Mivan construction quality processes",
-        "Deep understanding of Mivan formwork quality checks is essential",
-        "Ability to develop and implement Quality Management Plans (QMPs)",
-        "Good problem-solving skills are important. Identify and resolve quality issues"
+        "Minimum 7 years of experience in Ready-Mix Concrete (RMC) quality control",
+        "Deep knowledge of concrete mix design and optimization is essential",
+        "Proficiency in all RMC material testing. This includes aggregates, cement, and admixtures",
+        "Expertise in fresh and hardened concrete testing. Slump, cube compressive strength, etc",
+        "Excellent communication skills for interacting with plant staff and clients"
       ],
       postedDate: "2025-06-23"
     }
