@@ -94,7 +94,8 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Deep knowledge of concrete mix design and optimization is essential",
         "Proficiency in all RMC material testing. This includes aggregates, cement, and admixtures",
         "Expertise in fresh and hardened concrete testing. Slump, cube compressive strength, etc",
-        "Excellent communication skills for interacting with plant staff and clients"
+        "Excellent communication skills for interacting with plant staff and clients",
+        "Location - Tellapur, Hyderabad"
       ],
       postedDate: "2025-06-23"
     }
