@@ -35,7 +35,8 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Mandatory in-depth knowledge and hands-on experience with all aspects of Mivan construction",
         "Proven proficiency in AutoCAD, MS Project, Primavera P6, or other industry-standard project management tools.",
         "Demonstrated ability to manage project budgets, schedules, and resources effectively to ensure timely and cost-efficient project completion.",
-        "PMP (Project Management Professional) or equivalent certification is highly preferred."
+        "PMP (Project Management Professional) or equivalent certification is highly preferred.",
+        "Location - Tarnaka, Hyderabad"
       ],
       postedDate: "2025-06-20"
     },
