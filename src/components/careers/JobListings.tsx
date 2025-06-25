@@ -75,7 +75,8 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Mandatory, hands-on experience with Mivan construction quality processes",
         "Deep understanding of Mivan formwork quality checks is essential",
         "Ability to develop and implement Quality Management Plans (QMPs)",
-        "Good problem-solving skills are important. Identify and resolve quality issues"
+        "Good problem-solving skills are important. Identify and resolve quality issues",
+        "Location - Tellapur and Kokapeta Hyderabad"
       ],
       postedDate: "2025-06-20"
     },
