@@ -121,6 +121,28 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Location - Tellapur, Hyderabad"
       ],
       postedDate: "2025-06-25"
+    },
+                {
+      id: 5,
+      title: "Civil Engineer",
+      department: "Engineering",
+      location: "Hyderabad, India",
+      type: "Full-time",
+      experience: "5-6 years",
+      vacancy: 1, 
+      description: "We are seeking an experienced Civil Engineer. You will work on various civil projects. This includes design, supervision, and coordination. You will ensure project quality and timely completion. This role is crucial for our engineering team in Hyderabad.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering",
+        "Minimum 5-6 years of hands-on experience in civil construction projects",
+        "Strong understanding of civil engineering principles and practices",
+        "Proficiency in AutoCAD is essential. Knowledge of other design software is a plus",
+        "Experience in site supervision and project execution is required",
+        "Ability to read and interpret engineering drawings and specifications",
+        "Strong analytical and problem-solving skills are needed",
+        "Excellent communication and teamwork abilities",
+        "Location - Tellapur, Hyderabad"
+      ],
+      postedDate: "2025-06-25"
     }
   ];
 
