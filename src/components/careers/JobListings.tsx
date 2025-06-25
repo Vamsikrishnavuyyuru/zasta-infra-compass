@@ -101,24 +101,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       postedDate: "2025-06-23"
     },
             {
-      id: 4,
-      title: "RMC Quality Engineer",
+      id: 5,
+      title: "Civil Engineer",
       department: "Engineering",
       location: "Hyderabad, India",
       type: "Full-time",
-      experience: "7 years",
+      experience: "5-6 years",
       vacancy: 1, 
-      description: "We are hiring an experienced RMC Quality Engineer. You will manage quality for Ready-Mix Concrete operations. Ensure all RMC products meet high standards. Oversee lab testing and quality checks. This role ensures top-quality concrete delivery for projects.",
+      description: "We are seeking an experienced Civil Engineer. You will work on various civil projects. This includes design, supervision, and coordination. You will ensure project quality and timely completion. This role is crucial for our engineering team in Hyderabad.",
       requirements: [
         "Bachelor's degree in Civil Engineering",
-        "Minimum 7 years of experience in Ready-Mix Concrete (RMC) quality control",
-        "Deep knowledge of concrete mix design and optimization is essential",
-        "Proficiency in all RMC material testing. This includes aggregates, cement, and admixtures",
-        "Expertise in fresh and hardened concrete testing. Slump, cube compressive strength, etc",
-        "Excellent communication skills for interacting with plant staff and clients",
+        "Minimum 5-6 years of hands-on experience in civil construction projects",
+        "Strong understanding of civil engineering principles and practices",
+        "Proficiency in AutoCAD is essential. Knowledge of other design software is a plus",
+        "Experience in site supervision and project execution is required",
+        "Ability to read and interpret engineering drawings and specifications",
+        "Strong analytical and problem-solving skills are needed",
+        "Excellent communication and teamwork abilities",
         "Location - Tellapur, Hyderabad"
       ],
-      postedDate: "2025-06-23"
+      postedDate: "2025-06-25"
     }
   ];
 
