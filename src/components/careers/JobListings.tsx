@@ -55,7 +55,8 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Mandatory, deep knowledge of Mivan technology is required. This includes planning specifics.",
         "Ability to create detailed schedules is vital. Perform critical path analysis. Prepare earned value reports.",
         "Experience tracking project progress is necessary. Identify delays. Suggest solutions",
-        "Ability to create progress reports is needed. Also, look-ahead schedules and recovery plans."
+        "Ability to create progress reports is needed. Also, look-ahead schedules and recovery plans.",
+        "Location - Miyapur, Hyderabad"
       ],
       postedDate: "2025-06-20"
     },
