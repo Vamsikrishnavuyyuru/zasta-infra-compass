@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import { Linkedin, Mail, Phone, MapPin } from 'lucide-react';
+import { Linkedin, Mail, Phone, MapPin, Instagram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -26,6 +26,9 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a href="https://www.linkedin.com/company/zasta-engineers-consultancy-services" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-zasta-green-400 transition-colors">
                 <Linkedin size={24} />
+              </a>
+              <a href="https://www.instagram.com/zasta_enterprises?utm_source=qr&igsh=cW92bWM4NzZ0M2ww" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-zasta-green-400 transition-colors">
+                <Instagram size={24} />
               </a>
               <a href="mailto:hr@zastagroup.com" className="text-gray-400 hover:text-zasta-green-400 transition-colors">
                 <Mail size={24} />
