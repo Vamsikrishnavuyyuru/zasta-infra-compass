@@ -148,7 +148,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       id: 7,
       title: "Quantity Surveyor & Billing Engineer",
       department: "Engineering",
-      location: "Hyderabad, India",
+      location: "Delhi, India",
       type: "Full-time",
       experience: "5-6 years",
       vacancy: 3, 
@@ -161,9 +161,9 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Proficiency in MS Excel is a must. Knowledge of ERP systems is a plus",
         "Excellent negotiation and communication skills",
         "Strong analytical and numerical abilities",
-        "Location - Tellapur, Hyderabad"
+        "Location - Gurgaon, Delhi"
       ],
-      postedDate: "2025-06-25"
+      postedDate: "2025-07-05"
     }
   ];
 
