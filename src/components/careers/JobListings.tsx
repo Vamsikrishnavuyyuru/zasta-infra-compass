@@ -143,6 +143,28 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Location - Tellapur, Hyderabad"
       ],
       postedDate: "2025-06-25"
+    },
+                {
+      id: 7,
+      title: "Finishing Engineer",
+      department: "Engineering",
+      location: "Hyderabad, India",
+      type: "Full-time",
+      experience: "5-6 years",
+      vacancy: 1, 
+      description: "We are seeking a dedicated Finishing Engineer. You will manage all final stage works. This includes interior and exterior finishes. Ensure high-quality workmanship and timely completion. This role is vital for delivering ready-to-use properties.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or Architecture is required",
+        "Minimum 5-6 years of experience in managing finishing works for building projects",
+        "Strong knowledge of various finishing materials. This includes flooring, painting, tiling, and carpentry",
+        "Experience in quality inspection of finished surfaces and installations",
+        "Ability to coordinate with different finishing contractors and trades",
+        "Ability to ensure adherence to project specifications and quality standards.",
+        "Strong problem-solving skills for resolving site finishing issues",
+        "Excellent communication and supervision skills",
+        "Location - Tellapur, Hyderabad"
+      ],
+      postedDate: "2025-06-25"
     }
   ];
 
