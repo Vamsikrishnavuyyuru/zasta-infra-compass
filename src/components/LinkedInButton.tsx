@@ -11,10 +11,10 @@ const LinkedInButton = () => {
   return (
     <button
       onClick={handleLinkedInClick}
-      className="fixed bottom-24 right-6 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+      className="fixed bottom-20 right-6 bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
       aria-label="Connect on LinkedIn"
     >
-      <Linkedin size={24} />
+      <Linkedin size={20} />
     </button>
   );
 };

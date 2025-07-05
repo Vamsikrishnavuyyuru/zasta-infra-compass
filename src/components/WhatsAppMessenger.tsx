@@ -14,10 +14,10 @@ const WhatsAppMessenger = () => {
   return (
     <button
       onClick={handleWhatsAppClick}
-      className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 animate-bounce hover:animate-none"
+      className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50 animate-bounce hover:animate-none"
       aria-label="Chat on WhatsApp"
     >
-      <MessageCircle size={24} />
+      <MessageCircle size={20} />
     </button>
   );
 };
