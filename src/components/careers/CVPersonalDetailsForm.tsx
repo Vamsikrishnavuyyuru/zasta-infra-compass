@@ -89,14 +89,13 @@ const CVPersonalDetailsForm = ({
     </div>
 
     <div>
-      <Label htmlFor="skills">Key Skills </Label>
+      <Label htmlFor="skills">Key Skills</Label>
       <Textarea
         id="skills"
         name="skills"
         value={formData.skills}
         onChange={onChange}
         placeholder="List your key technical skills and competencies"
-        required
         className={`mt-2 ${formErrors.skills ? "border-red-500" : ""}`}
       />
       {formErrors.skills && (

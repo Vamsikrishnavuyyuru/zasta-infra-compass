@@ -61,9 +61,6 @@ const CVSubmissionForm = () => {
     if (!formData.experience.trim()) {
       errors.experience = 'Years of experience is required';
     }
-    if (!formData.skills.trim()) {
-      errors.skills = 'Key skills are required';
-    }
     if (!cvFile) {
       errors.cv = 'CV/Resume is required';
     }
