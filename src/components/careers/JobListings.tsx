@@ -186,6 +186,28 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Location - Gurgaon, India"
       ],
       postedDate: "2025-07-07"
+    },
+                  {
+      id: 9,
+      title: "Quantity Surveyor Engineer",
+      department: "Engineering",
+      location: "Gurgaon, India",
+      type: "Full-time",
+      experience: "5-8 years",
+      vacancy: 1, 
+      description: "We are looking for a skilled Quantity Surveyor Engineer. You must have experience in interior works. This role is based in Gurgaon. You will manage cost estimation and billing for interior projects. Ensure financial accuracy and control.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or Quantity Surveying is required",
+        "Minimum 5-8 years of experience in Quantity Surveying",
+        "Proven experience specifically in interior fit-out and finishing works is mandatory",
+        "Expertise in preparing Bill of Quantities (BoQ) for interior elements",
+        "Familiarity with tender analysis and contract administration for interior fit-outs",
+        "Proficiency in MS Excel is essential. Knowledge of relevant software is a plus",
+        "Good communication and negotiation skills are needed",
+        "Strong analytical and problem-solving abilities",
+        "Location - Gurgaon, India"
+      ],
+      postedDate: "2025-07-07"
     }
   ];
 
