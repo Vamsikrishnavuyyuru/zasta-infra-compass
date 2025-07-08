@@ -164,6 +164,27 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Location - Gurgaon, Delhi"
       ],
       postedDate: "2025-07-05"
+    },
+                  {
+      id: 8,
+      title: "Quantity Surveyor & Billing Engineer",
+      department: "Engineering",
+      location: "Delhi, India",
+      type: "Full-time",
+      experience: "5-6 years",
+      vacancy: 3, 
+      description: "We are seeking skilled Quantity Surveyors and Billing Engineers. We have 2-3 positions available. Mandatory experience in high-rise building projects is required. You will handle cost estimation, tendering, and billing. Ensure financial control for our projects.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering",
+        "Minimum 5-6 years of experience in Quantity Surveying and Billing roles",
+        "Mandatory proven experience on high-rise building projects",
+        "Expertise in preparing Bill of Quantities (BoQ) is essential",
+        "Proficiency in MS Excel is a must. Knowledge of ERP systems is a plus",
+        "Excellent negotiation and communication skills",
+        "Strong analytical and numerical abilities",
+        "Location - Gurgaon, Delhi"
+      ],
+      postedDate: "2025-07-05"
     }
   ];
 
