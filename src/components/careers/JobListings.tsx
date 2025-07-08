@@ -189,25 +189,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     },
                   {
       id: 9,
-      title: "Quantity Surveyor Engineer",
+      title: "Planning & Quantity Surveyor",
       department: "Engineering",
-      location: "Gurgaon, India",
+      location: "Hyderabad, India",
       type: "Full-time",
-      experience: "5-8 years",
+      experience: "9+ years",
       vacancy: 1, 
-      description: "We are looking for a skilled Quantity Surveyor Engineer. You must have experience in interior works. This role is based in Gurgaon. You will manage cost estimation and billing for interior projects. Ensure financial accuracy and control.",
+      description: "We are seeking a seasoned professional for a combined Planning and Quantity Surveyor role. You must have extensive experience in high-rise Mivan projects. This position requires strong skills in project scheduling and cost management. You will ensure efficient project execution and financial control.",
       requirements: [
-        "Bachelor's degree in Civil Engineering or Quantity Surveying is required",
-        "Minimum 5-8 years of experience in Quantity Surveying",
-        "Proven experience specifically in interior fit-out and finishing works is mandatory",
-        "Expertise in preparing Bill of Quantities (BoQ) for interior elements",
-        "Familiarity with tender analysis and contract administration for interior fit-outs",
-        "Proficiency in MS Excel is essential. Knowledge of relevant software is a plus",
-        "Good communication and negotiation skills are needed",
-        "Strong analytical and problem-solving abilities",
-        "Location - Gurgaon, India"
+        "Bachelor's degree in Civil Engineering is mandatory",
+        "Minimum 9+ years of experience in both project planning and quantity surveying",
+        "Mandatory and extensive proven experience on high-rise building projects using Mivan technology",
+        "Expertise in developing and monitoring project schedules. Use Primavera P6 and MS Project",
+        "In-depth knowledge of contract administration, variations, and claims management",
+        "Excellent analytical and problem-solving skills for complex project scenarios",
+        "Strong communication, negotiation, and leadership abilities",
+        "Proficiency in MS Excel and relevant ERP software",
+        "Thorough understanding of local building codes and construction standards",
+        "Location - Kollur, Hyderabad, India"
       ],
-      postedDate: "2025-07-07"
+      postedDate: "2025-07-08"
     }
   ];
 
