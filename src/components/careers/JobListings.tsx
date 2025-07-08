@@ -211,25 +211,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       postedDate: "2025-07-08"
     },
                   {
-      id: 9,
-      title: "Planning & Quantity Surveyor",
+      id: 10,
+      title: "MEP Engineer",
       department: "Engineering",
       location: "Hyderabad, India",
       type: "Full-time",
-      experience: "9+ years",
-      vacancy: 1, 
-      description: "We are seeking a seasoned professional for a combined Planning and Quantity Surveyor role. You must have extensive experience in high-rise Mivan projects. This position requires strong skills in project scheduling and cost management. You will ensure efficient project execution and financial control.",
+      experience: "5+ years",
+      vacancy: 2, 
+      description: "We are hiring two experienced MEP Engineers. You will work on various projects in Hyderabad, including Kollur and Tarnaka areas. You will manage Mechanical, Electrical, and Plumbing systems. This includes design, installation, and commissioning. Ensure all MEP systems meet project standards",
       requirements: [
-        "Bachelor's degree in Civil Engineering is mandatory",
-        "Minimum 9+ years of experience in both project planning and quantity surveying",
-        "Mandatory and extensive proven experience on high-rise building projects using Mivan technology",
-        "Expertise in developing and monitoring project schedules. Use Primavera P6 and MS Project",
-        "In-depth knowledge of contract administration, variations, and claims management",
-        "Excellent analytical and problem-solving skills for complex project scenarios",
-        "Strong communication, negotiation, and leadership abilities",
-        "Proficiency in MS Excel and relevant ERP software",
-        "Thorough understanding of local building codes and construction standards",
-        "Location - Kollur, Hyderabad, India"
+        "Bachelor's degree in Electrical, Mechanical, or Civil Engineering is required",
+        "Minimum 5+ years of experience in MEP design and execution for building projects",
+        "Strong knowledge of HVAC, electrical, plumbing, and fire fighting systems",
+        "Proficiency in AutoCAD is essential. Knowledge of Revit MEP is highly desirable",
+        "Experience in site supervision, installation, and testing of MEP systems",
+        "Ability to review and interpret MEP drawings and specifications",
+        "Familiarity with relevant Indian and international MEP codes and standards",
+        "Good understanding of project coordination with other disciplines (Civil, Architecture)",
+        "Strong problem-solving skills for on-site MEP challenges",
+        "Excellent communication and teamwork abilities",
+        "Location - Hyderabad Kollur and Tarnaka"
       ],
       postedDate: "2025-07-08"
     }
