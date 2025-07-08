@@ -167,24 +167,25 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     },
                   {
       id: 8,
-      title: "Quantity Surveyor & Billing Engineer",
+      title: "Quantity Surveyor Engineer",
       department: "Engineering",
-      location: "Delhi, India",
+      location: "Gurgaon, India",
       type: "Full-time",
-      experience: "5-6 years",
-      vacancy: 3, 
-      description: "We are seeking skilled Quantity Surveyors and Billing Engineers. We have 2-3 positions available. Mandatory experience in high-rise building projects is required. You will handle cost estimation, tendering, and billing. Ensure financial control for our projects.",
+      experience: "5-8 years",
+      vacancy: 1, 
+      description: "We are looking for a skilled Quantity Surveyor Engineer. You must have experience in interior works. This role is based in Gurgaon. You will manage cost estimation and billing for interior projects. Ensure financial accuracy and control.",
       requirements: [
-        "Bachelor's degree in Civil Engineering",
-        "Minimum 5-6 years of experience in Quantity Surveying and Billing roles",
-        "Mandatory proven experience on high-rise building projects",
-        "Expertise in preparing Bill of Quantities (BoQ) is essential",
-        "Proficiency in MS Excel is a must. Knowledge of ERP systems is a plus",
-        "Excellent negotiation and communication skills",
-        "Strong analytical and numerical abilities",
-        "Location - Gurgaon, Delhi"
+        "Bachelor's degree in Civil Engineering or Quantity Surveying is required",
+        "Minimum 5-8 years of experience in Quantity Surveying",
+        "Proven experience specifically in interior fit-out and finishing works is mandatory",
+        "Expertise in preparing Bill of Quantities (BoQ) for interior elements",
+        "Familiarity with tender analysis and contract administration for interior fit-outs",
+        "Proficiency in MS Excel is essential. Knowledge of relevant software is a plus",
+        "Good communication and negotiation skills are needed",
+        "Strong analytical and problem-solving abilities",
+        "Location - Gurgaon, India"
       ],
-      postedDate: "2025-07-05"
+      postedDate: "2025-07-07"
     }
   ];
 
