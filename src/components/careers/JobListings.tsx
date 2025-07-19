@@ -1,5 +1,7 @@
 
 import JobCard from './JobCard';
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { useState, useMemo } from 'react';
 
 interface JobOpening {
   id: number;
@@ -19,6 +21,10 @@ interface JobListingsProps {
 }
 
 const JobListings = ({ onApply }: JobListingsProps) => {
+  const [sortBy, setSortBy] = useState<'newest' | 'oldest' | 'title' | 'department'>('newest');
+  const [filterDepartment, setFilterDepartment] = useState<string>('all');
+  const [filterLocation, setFilterLocation] = useState<string>('all');
+
   const currentOpenings: JobOpening[] = [
     {
       id: 1,
@@ -237,6 +243,49 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     }
   ];
 
+  // Get unique departments and locations for filter options
+  const departments = useMemo(() => {
+    const unique = [...new Set(currentOpenings.map(job => job.department))];
+    return unique.sort();
+  }, []);
+
+  const locations = useMemo(() => {
+    const unique = [...new Set(currentOpenings.map(job => job.location))];
+    return unique.sort();
+  }, []);
+
+  // Filter and sort jobs
+  const filteredAndSortedJobs = useMemo(() => {
+    let filtered = currentOpenings;
+
+    // Apply filters
+    if (filterDepartment !== 'all') {
+      filtered = filtered.filter(job => job.department === filterDepartment);
+    }
+    
+    if (filterLocation !== 'all') {
+      filtered = filtered.filter(job => job.location === filterLocation);
+    }
+
+    // Apply sorting
+    const sorted = [...filtered].sort((a, b) => {
+      switch (sortBy) {
+        case 'newest':
+          return new Date(b.postedDate).getTime() - new Date(a.postedDate).getTime();
+        case 'oldest':
+          return new Date(a.postedDate).getTime() - new Date(b.postedDate).getTime();
+        case 'title':
+          return a.title.localeCompare(b.title);
+        case 'department':
+          return a.department.localeCompare(b.department);
+        default:
+          return 0;
+      }
+    });
+
+    return sorted;
+  }, [currentOpenings, sortBy, filterDepartment, filterLocation]);
+
   return (
     <div className="space-y-6">
       <div className="text-center mb-8">
@@ -246,7 +295,62 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         </p>
       </div>
 
-      {currentOpenings.map((job) => (
+      {/* Filters and Sort Controls */}
+      <div className="mb-8 p-6 bg-gray-50 rounded-lg">
+        <h3 className="text-lg font-semibold text-gray-900 mb-4">Filter & Sort Jobs</h3>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Sort by</label>
+            <Select value={sortBy} onValueChange={(value: 'newest' | 'oldest' | 'title' | 'department') => setSortBy(value)}>
+              <SelectTrigger>
+                <SelectValue placeholder="Sort by..." />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="newest">Newest First</SelectItem>
+                <SelectItem value="oldest">Oldest First</SelectItem>
+                <SelectItem value="title">Job Title (A-Z)</SelectItem>
+                <SelectItem value="department">Department (A-Z)</SelectItem>
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Department</label>
+            <Select value={filterDepartment} onValueChange={setFilterDepartment}>
+              <SelectTrigger>
+                <SelectValue placeholder="All Departments" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Departments</SelectItem>
+                {departments.map(dept => (
+                  <SelectItem key={dept} value={dept}>{dept}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Location</label>
+            <Select value={filterLocation} onValueChange={setFilterLocation}>
+              <SelectTrigger>
+                <SelectValue placeholder="All Locations" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="all">All Locations</SelectItem>
+                {locations.map(location => (
+                  <SelectItem key={location} value={location}>{location}</SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        </div>
+        
+        <div className="mt-4 text-sm text-gray-600">
+          Showing {filteredAndSortedJobs.length} of {currentOpenings.length} jobs
+        </div>
+      </div>
+
+      {filteredAndSortedJobs.map((job) => (
         <JobCard key={job.id} job={job} onApply={onApply} />
       ))}
     </div>
