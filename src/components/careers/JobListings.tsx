@@ -264,7 +264,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Excellent communication and teamwork abilities",
         "Location - Hyderabad Kollur and Tarnaka"
       ],
-      postedDate: "2025-07-08"
+      postedDate: "2025-07-21"
     }
   ];
 
