@@ -261,7 +261,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Good communication and teamwork abilities",
         "Location - Hyderabad Kokapeta and Tellapur"
       ],
-      postedDate: "2025-07-19"
+      postedDate: "2025-07-21"
     }
   ];
 
