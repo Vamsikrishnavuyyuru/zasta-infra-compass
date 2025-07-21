@@ -243,28 +243,25 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     },
                       {
       id: 11,
-      title: "MEP Engineer",
+      title: "Junior RMC Quality Engineer",
       department: "Engineering",
-      location: "Hyderabad, India",
+      location: "Kokapeta and Tellapur, Hyderabad, India",
       type: "Full-time",
-      experience: "5+ years",
-      vacancy: 2, 
-      description: "We are hiring two experienced MEP Engineers. You will work on high-rise projects. Mandatory experience with Mivan construction is essential. You will manage Mechanical, Electrical, and Plumbing systems. This includes design, installation, and commissioning. Ensure all MEP systems integrate well with Mivan structures.",
+      experience: "3-5 years",
+      vacancy: 4, 
+      description: "We are seeking Junior RMC Quality Engineers for our Tellapur plant. You will assist in maintaining high-quality standards for Ready-Mix Concrete. This involves lab testing and on-site quality checks. Support senior engineers in ensuring concrete quality.",
       requirements: [
-        "Bachelor's degree in Electrical, Mechanical, or Civil Engineering is required",
-        "Minimum 5+ years of experience in MEP design and execution for building projects",
-        "Mandatory proven experience in high-rise building projects",
-        "Mandatory specific experience in MEP coordination and execution for projects using Mivan construction technology",
-        "Strong knowledge of HVAC, electrical, plumbing, and fire fighting systems",
-        "Proficiency in AutoCAD is essential. Knowledge of Revit MEP is highly desirable.",
-        "Experience in site supervision, installation, testing, and commissioning of MEP systems",
-        "Ability to review and interpret complex MEP drawings and specifications",
-        "Good understanding of project coordination with other disciplines (Civil, Architecture) in a fast-paced Mivan environment",
-        "Strong problem-solving skills for on-site MEP challenges",
-        "Excellent communication and teamwork abilities",
-        "Location - Hyderabad Kollur and Tarnaka"
+        "Bachelor's degree or Diploma in Civil Engineering",
+        "Minimum 3-5 years of experience in Ready-Mix Concrete (RMC) quality control",
+        "Basic knowledge of concrete mix design and testing procedures",
+        "Familiarity with RMC plant operations is a plus",
+        "Ability to perform basic material and concrete tests (slump, cube casting)",
+        "Good observation and attention to detail",
+        "Basic computer skills for data entry and reporting",
+        "Good communication and teamwork abilities",
+        "Location - Hyderabad Kokapeta and Tellapur"
       ],
-      postedDate: "2025-07-21"
+      postedDate: "2025-07-19"
     }
   ];
 
