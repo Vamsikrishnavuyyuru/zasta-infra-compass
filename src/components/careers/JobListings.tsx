@@ -264,26 +264,25 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       postedDate: "2025-07-21"
     },
                       {
-      id: 11,
-      title: "Junior RMC Quality Engineer",
+      id: 12,
+      title: "Quality Lead",
       department: "Engineering",
-      location: "Kokapeta and Tellapur, Hyderabad, India",
+      location: "Shankarpally, Hyderabad, India",
       type: "Full-time",
-      experience: "3-5 years",
-      vacancy: 4, 
-      description: "We are seeking Junior RMC Quality Engineers for our Tellapur plant. You will assist in maintaining high-quality standards for Ready-Mix Concrete. This involves lab testing and on-site quality checks. Support senior engineers in ensuring concrete quality.",
+      experience: "10-12 years",
+      vacancy: 1, 
+      description: "We are seeking an experienced Quality Lead for our villa project. You will oversee all quality aspects. Ensure high standards are met throughout construction. Implement and maintain quality management systems.",
       requirements: [
-        "Bachelor's degree or Diploma in Civil Engineering",
-        "Minimum 3-5 years of experience in Ready-Mix Concrete (RMC) quality control",
-        "Basic knowledge of concrete mix design and testing procedures",
-        "Familiarity with RMC plant operations is a plus",
-        "Ability to perform basic material and concrete tests (slump, cube casting)",
-        "Good observation and attention to detail",
-        "Basic computer skills for data entry and reporting",
-        "Good communication and teamwork abilities",
-        "Location - Hyderabad Kokapeta and Tellapur"
+        "Bachelor's degree in Civil Engineering is preferred",
+        "Minimum 10-12 years of experience in construction quality control/assurance",
+        "Mandatory experience leading quality teams for residential/villa projects",
+        "Strong knowledge of construction materials, processes, and quality standards",
+        "Ability to develop and implement Quality Management Plans (QMPs)",
+        "Experience in conducting site audits and resolving quality issues",
+        "Excellent leadership, communication, and reporting skills",
+        "Location - Shankarpally, Hyderabad, India"
       ],
-      postedDate: "2025-07-21"
+      postedDate: "2025-07-22"
     }
   ];
 
