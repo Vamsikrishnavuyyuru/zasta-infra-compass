@@ -262,6 +262,28 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Location - Hyderabad Kokapeta and Tellapur"
       ],
       postedDate: "2025-07-21"
+    },
+                      {
+      id: 11,
+      title: "Junior RMC Quality Engineer",
+      department: "Engineering",
+      location: "Kokapeta and Tellapur, Hyderabad, India",
+      type: "Full-time",
+      experience: "3-5 years",
+      vacancy: 4, 
+      description: "We are seeking Junior RMC Quality Engineers for our Tellapur plant. You will assist in maintaining high-quality standards for Ready-Mix Concrete. This involves lab testing and on-site quality checks. Support senior engineers in ensuring concrete quality.",
+      requirements: [
+        "Bachelor's degree or Diploma in Civil Engineering",
+        "Minimum 3-5 years of experience in Ready-Mix Concrete (RMC) quality control",
+        "Basic knowledge of concrete mix design and testing procedures",
+        "Familiarity with RMC plant operations is a plus",
+        "Ability to perform basic material and concrete tests (slump, cube casting)",
+        "Good observation and attention to detail",
+        "Basic computer skills for data entry and reporting",
+        "Good communication and teamwork abilities",
+        "Location - Hyderabad Kokapeta and Tellapur"
+      ],
+      postedDate: "2025-07-21"
     }
   ];
 
