@@ -306,12 +306,12 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       postedDate: "2025-07-22"
     },
                       {
-      id: 12,
-      title: "Quality Lead",
+      id: 14,
+      title: "Finishing Engineer",
       department: "Engineering",
       location: "Shankarpally, Hyderabad, India",
       type: "Full-time",
-      experience: "10-12 years",
+      experience: "4+ years",
       vacancy: 1, 
       description: "We are seeking an experienced Quality Lead for our villa project. You will oversee all quality aspects. Ensure high standards are met throughout construction. Implement and maintain quality management systems.",
       requirements: [
