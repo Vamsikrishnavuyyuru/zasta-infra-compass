@@ -350,6 +350,30 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Location - Western Mumbai suburbs, Mumbai, India"
       ],
       postedDate: "2025-07-25"
+    },
+                        {
+      id: 16,
+      title: "Civil QA/QC Engineer - Structural",
+      department: "Engineering",
+      location: "Western Mumbai suburbs, Mumbai, India",
+      type: "Full-time",
+      experience: "10+ years",
+      vacancy: 5, 
+      description: "We are seeking a highly experienced Civil QA/QC Engineer focusing on structural works. Mandatory experience in high-rise Mivan construction is essential. You will ensure the quality of all structural elements. This includes concrete, rebar, and formwork.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering is mandatory",
+        "Minimum 10+ years of dedicated experience in civil quality assurance/control",
+        "Mandatory and extensive experience in structural QA/QC for high-rise building projects",
+        "Mandatory specific experience with Mivan construction technology and its structural quality requirements",
+        "Expertise in concrete technology, testing, and mix design compliance",
+        "Strong knowledge of rebar detailing, placement, and inspection",
+        "Proficiency in formwork inspections and quality checks specific to Mivan systems",
+        "Ability to implement structural quality control plans and procedures",
+        "Thorough understanding of relevant Indian Standards (IS Codes) for structural works",
+        "Excellent communication, documentation, and reporting skills",
+        "Location - Western Mumbai suburbs, Mumbai, India"
+      ],
+      postedDate: "2025-07-25"
     }
   ];
 
