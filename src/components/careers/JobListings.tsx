@@ -354,7 +354,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
                         {
       id: 16,
       title: "Construction Manager - High-Rise Mivan",
-      department: "Construction Operations",
+      department: "Civil Engineering",
       location: "Tarnaka, Hyderabad, India",
       type: "Full-time",
       experience: "10+ years",
