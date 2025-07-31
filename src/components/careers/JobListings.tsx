@@ -334,7 +334,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       location: "Western Mumbai suburbs, Mumbai, India",
       type: "Full-time",
       experience: "10+ years",
-      vacancy: 5, 
+      vacancy: 5,
       description: "We are seeking a highly experienced Civil QA/QC Engineer focusing on structural works. Mandatory experience in high-rise Mivan construction is essential. You will ensure the quality of all structural elements. This includes concrete, rebar, and formwork.",
       requirements: [
         "Bachelor's degree in Civil Engineering is mandatory",
@@ -353,27 +353,27 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     },
                         {
       id: 16,
-      title: "Civil QA/QC Engineer - Structural",
-      department: "Engineering",
-      location: "Western Mumbai suburbs, Mumbai, India",
+      title: "Construction Manager - High-Rise Mivan",
+      department: "Construction Operations",
+      location: "Tarnaka, Hyderabad, India",
       type: "Full-time",
       experience: "10+ years",
-      vacancy: 5, 
-      description: "We are seeking a highly experienced Civil QA/QC Engineer focusing on structural works. Mandatory experience in high-rise Mivan construction is essential. You will ensure the quality of all structural elements. This includes concrete, rebar, and formwork.",
+      vacancy: 1,
+      description: "We are seeking a highly accomplished and results-driven Construction Manager with extensive experience in high-rise building projects, specifically with mandatory expertise in Mivan construction technology. Based in Tarnaka, Hyderabad, you will lead and oversee all aspects of construction from planning to handover, ensuring projects are completed on time, within budget, and to the highest quality and safety standards. Your leadership will be crucial in managing site teams, subcontractors, and resources effectively to deliver complex high-rise structures.",
       requirements: [
-        "Bachelor's degree in Civil Engineering is mandatory",
-        "Minimum 10+ years of dedicated experience in civil quality assurance/control",
-        "Mandatory and extensive experience in structural QA/QC for high-rise building projects",
-        "Mandatory specific experience with Mivan construction technology and its structural quality requirements",
-        "Expertise in concrete technology, testing, and mix design compliance",
-        "Strong knowledge of rebar detailing, placement, and inspection",
-        "Proficiency in formwork inspections and quality checks specific to Mivan systems",
-        "Ability to implement structural quality control plans and procedures",
-        "Thorough understanding of relevant Indian Standards (IS Codes) for structural works",
-        "Excellent communication, documentation, and reporting skills",
-        "Location - Western Mumbai suburbs, Mumbai, India"
+        "Bachelor's degree in Civil Engineering or Construction Management.",
+        "Minimum 10+ years of progressive experience in managing large-scale civil construction projects, with a significant portion in high-rise residential or commercial buildings.",
+        "**Mandatory and demonstrable expertise in Mivan (Aluminum Formwork) construction technology is essential, including thorough knowledge of its erection, pouring, and stripping processes, quality control, and troubleshooting.**",
+        "Proven track record of successfully delivering high-rise projects from ground-breaking to completion.",
+        "Strong leadership and team management skills, with the ability to motivate, guide, and direct site teams and subcontractors.",
+        "Excellent understanding of project planning, scheduling (e.g., Primavera P6, MS Project), cost control, and resource management.",
+        "Proficiency in construction safety regulations and quality assurance/quality control (QA/QC) procedures.",
+        "Ability to effectively communicate with stakeholders at all levels, including clients, consultants, vendors, and internal teams.",
+        "Strong problem-solving abilities and decision-making skills under pressure.",
+        "Familiarity with local regulatory requirements and approvals in Hyderabad/Telangana.",
+        "Location - Tarnaka, Hyderabad."
       ],
-      postedDate: "2025-07-25"
+      postedDate: "2025-07-31"
     }
   ];
 
