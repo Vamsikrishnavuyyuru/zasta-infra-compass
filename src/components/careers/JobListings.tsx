@@ -374,6 +374,29 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Location - Tarnaka, Hyderabad."
       ],
       postedDate: "2025-07-31"
+    },
+    {
+      id: 17,
+      title: "Planning Engineer",
+      department: "Civil Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "10+ years",
+      vacancy: 1,
+      description: "We are seeking a highly accomplished and results-driven Planning Engineer with extensive experience in high-rise building projects, specifically with mandatory expertise in Mivan construction technology. Based in Tarnaka, Hyderabad, you will be responsible for developing, monitoring, and updating comprehensive project schedules, performing critical path analysis, and preparing earned value reports. Your role will be essential in ensuring efficient resource utilization and achieving timely project completion while upholding the highest quality and safety standards for complex high-rise structures.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or Construction Management.",
+        "Minimum 10+ years of progressive experience in project planning and scheduling for large-scale civil construction projects, with a significant portion in high-rise residential or commercial buildings.",
+        "Mandatory and demonstrable expertise in Mivan (Aluminum Formwork) construction technology is essential, including thorough knowledge of its planning specifics, erection sequences, cycle times, and quality control implications.",
+        "Proficiency in project management software such as Primavera P6 and MS Project for creating detailed schedules, resource leveling, and progress tracking.",
+        "Ability to perform critical path analysis, identify potential delays, and proactively suggest solutions and recovery plans.",
+        "Experience in preparing and presenting comprehensive progress reports, look-ahead schedules, and earned value reports to stakeholders.",
+        "Strong understanding of construction methodologies, resource allocation, and project cost control principles.",
+        "Excellent analytical, problem-solving, and communication skills to collaborate effectively with project managers, site teams, and clients.",
+        "Familiarity with local regulatory requirements and approvals in Hyderabad/Telangana.",
+        "Location - Tarnaka, Hyderabad."
+      ],
+      postedDate: "2025-08-01"
     }
   ];
 
