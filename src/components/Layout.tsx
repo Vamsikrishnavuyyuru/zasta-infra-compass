@@ -5,6 +5,7 @@ import Footer from './Footer';
 import WhatsAppMessenger from './WhatsAppMessenger';
 import LinkedInButton from './LinkedInButton';
 import InstagramButton from './InstagramButton';
+import YouTubeButton from './YouTubeButton';
 
 interface LayoutProps {
   children: ReactNode;
@@ -20,6 +21,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Footer />
       <LinkedInButton />
       <InstagramButton />
+      <YouTubeButton />
       <WhatsAppMessenger />
     </div>
   );
