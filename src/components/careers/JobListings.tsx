@@ -397,6 +397,29 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Location - Tarnaka, Hyderabad."
       ],
       postedDate: "2025-08-01"
+    },
+    {
+      id: 18,
+      title: "Quality Engineer",
+      department: "Civil Engineering",
+      location: "Kollur, Hyderabad, India",
+      type: "Full-time",
+      experience: "4+ years",
+      vacancy: 1,
+      description: "We are looking for a skilled and dedicated Civil QA/QC Engineer to join our high-rise building project team in Kollur, Hyderabad. The ideal candidate will have a minimum of 4 years of hands-on experience in quality assurance and quality control, with a mandatory specialization in Mivan construction technology. You will be responsible for meticulously inspecting all civil and structural works, ensuring strict adherence to project specifications, approved drawings, and quality standards, with a primary focus on the Mivan formwork system. Your role will be critical in preventing defects and ensuring the speed, safety, and quality of the construction process.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering.",
+        "Minimum 4+ years of experience in Civil QA/QC for high-rise residential or commercial projects.",
+        "Mandatory and in-depth knowledge of Mivan (Aluminum Formwork) technology is required, including its erection, rebar fixing, concreting, and de-shuttering processes.",
+        "Proven ability to develop and implement QA/QC checklists, Inspection & Test Plans (ITPs), and Method Statements for Mivan formwork.",
+        "Expertise in conducting thorough site inspections for structural components, including reinforcement, concrete grade, and formwork alignment.",
+        "Proficiency in performing and documenting quality control tests such as slump tests and cube strength tests.",
+        "Ability to identify non-conformances (NCRs), conduct root-cause analysis, and recommend corrective actions.",
+        "Excellent report writing, documentation, and communication skills to collaborate with site engineers and project managers.",
+        "Strong understanding of relevant Indian Standards (IS Codes) and safety regulations.",
+        "Location - Kollur, Hyderabad."
+      ],
+      postedDate: "2025-08-09"
     }
   ];
 
