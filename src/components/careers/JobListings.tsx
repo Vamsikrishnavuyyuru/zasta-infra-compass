@@ -445,7 +445,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     },
     {
       id: 20,
-      title: "Project Manager",
+      title: "Project Engineer",
       department: "Civil Engineering",
       location: "Ghanpur, Patighanpur, Hyderabad, India",
       type: "Full-time",
