@@ -420,6 +420,70 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Location - Kollur, Hyderabad."
       ],
       postedDate: "2025-08-09"
+    },
+    {
+      id: 19,
+      title: "Team Lead",
+      department: "Civil Engineering",
+      location: "Ghanpur, Patighanpur, Hyderabad, India",
+      type: "Full-time",
+      experience: "7-8 years",
+      vacancy: 1,
+      description: "We are looking for an experienced Team Lead to manage our project team. This role requires strong leadership skills. You will be responsible for day-to-day project execution, team coordination, and ensuring project milestones are met on time.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering is required.",
+        "Minimum 7-8 years of progressive experience in civil engineering or construction.",
+        "Mandatory proven experience in building projects.",
+        "Proven experience in a team leadership or supervisory role is essential.",
+        "Strong knowledge of project management principles and construction processes.",
+        "Ability to manage and mentor a team of engineers and site staff.",
+        "Excellent communication, leadership, and problem-solving skills.",
+        "Proficiency in project management software (e.g., MS Project).",
+        "Familiarity with local building codes and regulations in Hyderabad."
+      ],
+      postedDate: "2025-08-11"
+    },
+    {
+      id: 20,
+      title: "Project Manager",
+      department: "Civil Engineering",
+      location: "Ghanpur, Patighanpur, Hyderabad, India",
+      type: "Full-time",
+      experience: "5 years",
+      vacancy: 2,
+      description: "We are looking for a Project Manager to lead our on-site teams. This role involves managing projects from start to finish. You will be responsible for planning, execution, and client communication. Ensure projects are completed on time and within budget.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering is mandatory.",
+        "Minimum 5 years of experience in project management or a similar leadership role.",
+        "Mandatory proven experience in building projects.",
+        "Proven ability to manage project schedules, resources, and budgets.",
+        "Experience in team supervision and site coordination.",
+        "Proficiency in project management software (e.g., MS Project, Primavera P6).",
+        "Strong communication, leadership, and problem-solving skills.",
+        "Familiarity with local building codes and regulations in Hyderabad."
+      ],
+      postedDate: "2025-08-11"
+    },
+    {
+      id: 21,
+      title: "MEP Engineer",
+      department: "MEP Engineering",
+      location: "Ghanpur, Patighanpur, Hyderabad, India",
+      type: "Full-time",
+      experience: "5 years",
+      vacancy: 1,
+      description: "We are seeking a skilled MEP Engineer for our building projects. You will be responsible for the design, execution, and supervision of Mechanical, Electrical, and Plumbing systems. Ensure all systems are installed correctly and meet project specifications.",
+      requirements: [
+        "Bachelor's degree in Electrical or Mechanical Engineering is mandatory.",
+        "Minimum 5 years of experience in MEP engineering.",
+        "Mandatory proven experience in building projects.",
+        "Strong knowledge of HVAC, electrical, plumbing, and fire fighting systems.",
+        "Proficiency in AutoCAD is essential. Knowledge of Revit MEP is a plus.",
+        "Experience in site supervision and coordination with other trades.",
+        "Familiarity with relevant Indian MEP codes and standards.",
+        "Good communication and problem-solving skills."
+      ],
+      postedDate: "2025-08-11"
     }
   ];
 
