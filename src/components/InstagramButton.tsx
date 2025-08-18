@@ -10,7 +10,7 @@ const InstagramButton = () => {
   return (
     <button
       onClick={handleInstagramClick}
-      className="fixed bottom-32 right-6 bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 hover:from-purple-600 hover:via-pink-600 hover:to-orange-600 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+      className="fixed bottom-32 right-6 bg-gradient-to-r from-purple-400 via-pink-400 to-orange-400 hover:from-purple-500 hover:via-pink-500 hover:to-orange-500 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
       aria-label="Follow on Instagram"
     >
       <Instagram size={20} />
