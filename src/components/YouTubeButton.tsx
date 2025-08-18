@@ -10,7 +10,7 @@ const YouTubeButton = () => {
   return (
     <button
       onClick={handleYouTubeClick}
-      className="fixed bottom-44 right-6 bg-red-500 hover:bg-red-600 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
+      className="fixed bottom-44 right-6 bg-red-400 hover:bg-red-500 text-white p-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 z-50"
       aria-label="Subscribe on YouTube"
     >
       <Play size={20} />
