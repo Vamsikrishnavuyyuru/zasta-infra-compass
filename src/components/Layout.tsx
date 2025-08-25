@@ -6,6 +6,7 @@ import WhatsAppMessenger from './WhatsAppMessenger';
 import LinkedInButton from './LinkedInButton';
 import InstagramButton from './InstagramButton';
 import YouTubeButton from './YouTubeButton';
+import FacebookButton from './FacebookButton';
 
 interface LayoutProps {
   children: ReactNode;
@@ -22,6 +23,7 @@ const Layout = ({ children }: LayoutProps) => {
       <LinkedInButton />
       <InstagramButton />
       <YouTubeButton />
+      <FacebookButton />
       <WhatsAppMessenger />
     </div>
   );
