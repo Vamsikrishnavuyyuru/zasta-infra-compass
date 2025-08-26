@@ -1,7 +1,7 @@
 import { Facebook } from 'lucide-react';
 
 const FacebookButton = () => {
-  const facebookUrl = "https://www.facebook.com/profile.php?id=61571280825734";
+  const facebookUrl = "https://www.facebook.com/profile.php?id=61579775638868";
   
   const handleFacebookClick = () => {
     window.open(facebookUrl, '_blank');
