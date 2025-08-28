@@ -690,6 +690,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Excellent communication, documentation, and problem-solving skills."
       ],
       postedDate: "2025-08-18"
+    },
+    {
+      id: 32,
+      title: "Quality Engineer",
+      department: "Quality Assurance",
+      location: "Kollur, Hyderabad, India",
+      type: "Full-time",
+      experience: "4 years",
+      vacancy: 1,
+      description: "We are seeking a diligent Quality Engineer with mandatory experience in high-rise Miven projects. The candidate will be responsible for implementing and overseeing quality control procedures, conducting inspections, and ensuring all construction work adheres to project specifications and industry standards.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+        "Minimum 4 years of experience as a Quality Engineer.",
+        "Mandatory proven experience in high-rise building projects with Miven technology.",
+        "Strong knowledge of quality management systems and construction materials testing.",
+        "Experience in conducting on-site inspections and preparing quality reports.",
+        "Familiarity with relevant Indian building codes and quality standards.",
+        "Excellent communication, documentation, and problem-solving skills."
+      ],
+      postedDate: "2025-08-28"
     }
   ];
 
