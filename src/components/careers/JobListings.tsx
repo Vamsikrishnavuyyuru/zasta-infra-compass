@@ -484,6 +484,108 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Good communication and problem-solving skills."
       ],
       postedDate: "2025-08-11"
+    },
+    {
+      id: 22,
+      title: "Finishing Engineer",
+      department: "Civil Engineering",
+      location: "Kollur, Hyderabad, India",
+      type: "Full-time",
+      experience: "4 years",
+      vacancy: 1,
+      description: "We are looking for a Finishing Engineer with a proven track record in high-rise building projects. The ideal candidate will be responsible for overseeing all finishing work, ensuring quality, timely completion, and adherence to project specifications.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering is mandatory.",
+        "Minimum 4 years of experience as a Finishing Engineer.",
+        "Mandatory proven experience in high-rise building projects.",
+        "Strong knowledge of finishing materials and construction processes.",
+        "Experience in site supervision and quality control.",
+        "Familiarity with relevant Indian building codes and standards.",
+        "Good communication and problem-solving skills."
+      ],
+      postedDate: "2025-08-18"
+    },
+    {
+      id: 23,
+      title: "Finishing Engineer",
+      department: "Civil Engineering",
+      location: "Sankarpally, Hyderabad, India",
+      type: "Full-time",
+      experience: "4 years",
+      vacancy: 1,
+      description: "We are seeking a dedicated Finishing Engineer with a strong background in villa residential projects. The successful candidate will be responsible for supervising all finishing activities, ensuring high-quality standards and timely project completion.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering is mandatory.",
+        "Minimum 4 years of experience as a Finishing Engineer.",
+        "Mandatory proven experience in villa residential projects.",
+        "Strong knowledge of finishing materials, techniques, and quality control.",
+        "Experience in site supervision and coordination with various teams.",
+        "Familiarity with relevant Indian building codes and standards.",
+        "Excellent communication and problem-solving skills."
+      ],
+      postedDate: "2025-08-18"
+    },
+    {
+      id: 24,
+      title: "Site Engineer",
+      department: "Civil Engineering",
+      location: "Visakhapatnam, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "4+ years",
+      vacancy: 1,
+      description: "We are seeking an experienced Site Engineer with a strong background in industrial projects. The ideal candidate will be responsible for managing on-site construction activities, ensuring projects are completed safely, on time, and within budget.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering is mandatory.",
+        "Minimum 4 years of experience as a Site Engineer.",
+        "Mandatory proven experience in industrial construction projects.",
+        "Strong knowledge of construction methods, materials, and quality control.",
+        "Experience in site supervision, project coordination, and managing labor.",
+        "Familiarity with relevant Indian building codes and safety standards.",
+        "Excellent communication and leadership skills.",
+        "Proficiency in AutoCAD is a plus."
+      ],
+      postedDate: "2025-08-18"
+    },
+    {
+      id: 25,
+      title: "MEP Engineer",
+      department: "MEP Engineering",
+      location: "Kollur, Hyderabad, India",
+      type: "Full-time",
+      experience: "4 years",
+      vacancy: 1,
+      description: "We are looking for a skilled MEP Engineer with mandatory experience in residential projects. The candidate will be responsible for the design, execution, and supervision of all Mechanical, Electrical, and Plumbing systems, ensuring they meet project specifications and quality standards.",
+      requirements: [
+        "Bachelor's degree in Electrical or Mechanical Engineering is mandatory.",
+        "Minimum 4 years of experience in MEP engineering.",
+        "Mandatory proven experience in residential projects.",
+        "Strong knowledge of HVAC, electrical, plumbing, and fire fighting systems.",
+        "Proficiency in AutoCAD is essential. Knowledge of Revit MEP is a plus.",
+        "Experience in site supervision and coordination with other trades.",
+        "Familiarity with relevant Indian MEP codes and standards.",
+        "Good communication and problem-solving skills."
+      ],
+      postedDate: "2025-08-18"
+    },
+    {
+      id: 26,
+      title: "RMC Engineer",
+      department: "Civil Engineering",
+      location: "Kokapeta, Hyderabad, India",
+      type: "Full-time",
+      experience: "3 - 4 years",
+      vacancy: 1,
+      description: "We are looking for a skilled RMC (Ready-Mix Concrete) Engineer with proven experience in the field. The candidate will be responsible for overseeing all aspects of concrete production, quality control, and on-site delivery, ensuring compliance with project specifications.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering is mandatory.",
+        "Minimum 3 to 4 years of experience as an RMC Engineer.",
+        "Mandatory proven experience in RMC production, quality control, and site coordination.",
+        "Strong knowledge of concrete mix designs, materials, and testing procedures.",
+        "Familiarity with relevant Indian codes and standards for concrete.",
+        "Experience in managing RMC plant operations is a plus.",
+        "Good communication and problem-solving skills."
+      ],
+      postedDate: "2025-08-18"
     }
   ];
 
