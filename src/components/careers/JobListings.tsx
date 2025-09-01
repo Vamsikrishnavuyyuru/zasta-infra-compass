@@ -264,7 +264,131 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Excellent communication, documentation, and problem-solving skills."
       ],
       postedDate: "2025-08-28"
-    }
+    },
+    {
+  "id": 18,
+  "title": "Project Manager",
+  "department": "Project Management",
+  "location": "Tarnaka, Hyderabad, India",
+  "type": "Full-time",
+  "experience": "18 years",
+  "vacancy": 1,
+  "description": "We are seeking a highly experienced Project Manager with mandatory experience in high-rise building projects. The successful candidate will be responsible for the overall planning, execution, and closing of projects, ensuring they are completed on time, within budget, and to the highest quality standards.",
+  "requirements": [
+    "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+    "Minimum 18 years of experience in project management.",
+    "Mandatory proven experience in managing high-rise building projects.",
+    "Strong leadership, team management, and stakeholder communication skills.",
+    "Proficiency in project management software and tools.",
+    "Expert knowledge of project planning, budgeting, and risk management.",
+    "Familiarity with relevant Indian building codes, safety standards, and regulations.",
+    "Excellent problem-solving and decision-making abilities."
+  ],
+  "postedDate": "2025-08-18"
+},
+{
+  "id": 19,
+  "title": "Construction Manager",
+  "department": "Construction Management",
+  "location": "Tarnaka, Hyderabad, India",
+  "type": "Full-time",
+  "experience": "10 years",
+  "vacancy": 1,
+  "description": "We are seeking an experienced Construction Manager with mandatory expertise in high-rise building projects using Miven technology. The candidate will be responsible for overseeing all on-site construction activities, managing teams, and ensuring project completion on time, within budget, and to the required quality and safety standards.",
+  "requirements": [
+    "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+    "Minimum 10 years of experience in construction management.",
+    "Mandatory proven experience in high-rise building projects using Miven technology.",
+    "Strong leadership, planning, and communication skills.",
+    "Expert knowledge of construction methods, safety regulations, and quality control procedures.",
+    "Experience in coordinating with various stakeholders, including architects, engineers, and subcontractors.",
+    "Familiarity with relevant Indian building codes and standards.",
+    "Excellent problem-solving and decision-making abilities."
+  ],
+  "postedDate": "2025-08-18"
+      },
+{
+  "id": 20,
+  "title": "MEP Engineer",
+  "department": "MEP Engineering",
+  "location": "Tarnaka, Hyderabad, India",
+  "type": "Full-time",
+  "experience": "4+ years",
+  "vacancy": 1,
+  "description": "We are seeking a skilled MEP Engineer with mandatory experience in high-rise Miven projects. The candidate will be responsible for the design, execution, and supervision of all Mechanical, Electrical, and Plumbing systems, ensuring they meet project specifications and quality standards.",
+  "requirements": [
+    "Bachelor's degree in Electrical or Mechanical Engineering is mandatory.",
+    "Minimum 4 years of experience in MEP engineering.",
+    "Mandatory proven experience in high-rise building projects using Miven technology.",
+    "Strong knowledge of HVAC, electrical, plumbing, and fire fighting systems.",
+    "Proficiency in AutoCAD is essential. Knowledge of Revit MEP is a plus.",
+    "Experience in site supervision and coordination with other trades.",
+    "Familiarity with relevant Indian MEP codes and standards.",
+    "Good communication and problem-solving skills."
+  ],
+  "postedDate": "2025-08-18"
+},
+    {
+  "id": 21,
+  "title": "Planning Engineer",
+  "department": "Planning and Scheduling",
+  "location": "Tarnaka, Hyderabad, India",
+  "type": "Full-time",
+  "experience": "8 years",
+  "vacancy": 1,
+  "description": "We are looking for a highly skilled Planning Engineer with mandatory experience in high-rise building projects using Miven technology. The candidate will be responsible for developing, updating, and monitoring project schedules, ensuring all construction phases are aligned and on track for timely completion.",
+  "requirements": [
+    "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+    "Minimum 8 years of experience as a Planning Engineer.",
+    "Mandatory proven experience in planning and scheduling for high-rise building projects with Miven technology.",
+    "Proficiency in project management software such as Primavera P6 or Microsoft Project.",
+    "Strong analytical and problem-solving skills to manage project timelines and resource allocation.",
+    "Experience in risk analysis and mitigation planning.",
+    "Excellent communication and coordination skills to work with project teams and stakeholders.",
+    "Familiarity with relevant Indian building codes and standards."
+  ],
+  "postedDate": "2025-08-18"
+},
+{
+  "id": 22,
+  "title": "Quality Engineer",
+  "department": "Quality Assurance",
+  "location": "Kollur, Hyderabad, India",
+  "type": "Full-time",
+  "experience": "4 years",
+  "vacancy": 1,
+  "description": "We are seeking a diligent Quality Engineer with mandatory experience in high-rise Miven projects. The candidate will be responsible for implementing and overseeing quality control procedures, conducting inspections, and ensuring all construction work adheres to project specifications and industry standards.",
+  "requirements": [
+    "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+    "Minimum 4 years of experience as a Quality Engineer.",
+    "Mandatory proven experience in high-rise building projects with Miven technology.",
+    "Strong knowledge of quality management systems and construction materials testing.",
+    "Experience in conducting on-site inspections and preparing quality reports.",
+    "Familiarity with relevant Indian building codes and quality standards.",
+    "Excellent communication, documentation, and problem-solving skills."
+  ],
+  "postedDate": "2025-08-18"
+},
+{
+  "id": 23,
+  "title": "Quality Engineer",
+  "department": "Quality Assurance",
+  "location": "Kollur, Hyderabad, India",
+  "type": "Full-time",
+  "experience": "4 years",
+  "vacancy": 1,
+  "description": "We are seeking a diligent Quality Engineer with mandatory experience in high-rise Miven projects. The candidate will be responsible for implementing and overseeing quality control procedures, conducting inspections, and ensuring all construction work adheres to project specifications and industry standards.",
+  "requirements": [
+    "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+    "Minimum 4 years of experience as a Quality Engineer.",
+    "Mandatory proven experience in high-rise building projects with Miven technology.",
+    "Strong knowledge of quality management systems and construction materials testing.",
+    "Experience in conducting on-site inspections and preparing quality reports.",
+    "Familiarity with relevant Indian building codes and quality standards.",
+    "Excellent communication, documentation, and problem-solving skills."
+  ],
+  "postedDate": "2025-08-28"
+}
   ];
 
   // Get unique departments and locations for filter options
