@@ -10,7 +10,7 @@ const WhyZastaSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-zasta-green-50">
+    <section className="py-20 bg-zasta-blue-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Why Choose Zasta?</h2>
@@ -20,7 +20,7 @@ const WhyZastaSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {whyZasta.map((item, index) => (
             <div key={index} className="text-center group">
-              <div className="bg-gradient-to-br from-zasta-green-500 to-zasta-green-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
+              <div className="bg-gradient-to-br from-zasta-blue-500 to-zasta-blue-600 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform">
                 <item.icon className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{item.title}</h3>

@@ -40,8 +40,8 @@ const Header = () => {
               <Link 
                 key={item.name} 
                 to={item.path} 
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:bg-zasta-green-50 hover:text-zasta-green-600 ${
-                  isActive(item.path) ? 'bg-zasta-green-100 text-zasta-green-600' : 'text-gray-700'
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 hover:bg-zasta-blue-50 hover:text-zasta-blue-600 ${
+                  isActive(item.path) ? 'bg-zasta-blue-100 text-zasta-blue-600' : 'text-gray-700'
                 }`}
               >
                 {item.name}
@@ -67,7 +67,7 @@ const Header = () => {
                   key={item.name} 
                   to={item.path} 
                   className={`px-4 py-3 text-sm font-medium transition-colors ${
-                    isActive(item.path) ? 'bg-zasta-green-100 text-zasta-green-600' : 'text-gray-700 hover:bg-gray-50'
+                    isActive(item.path) ? 'bg-zasta-blue-100 text-zasta-blue-600' : 'text-gray-700 hover:bg-gray-50'
                   }`}
                   onClick={() => setIsMenuOpen(false)}
                 >

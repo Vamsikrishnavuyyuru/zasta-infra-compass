@@ -36,15 +36,15 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-8">
-                <div className="bg-zasta-green-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-zasta-green-600 transition-colors">
-                  <service.icon className="w-8 h-8 text-zasta-green-600 group-hover:text-white transition-colors" />
+                <div className="bg-zasta-blue-100 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-zasta-blue-600 transition-colors">
+                  <service.icon className="w-8 h-8 text-zasta-blue-600 group-hover:text-white transition-colors" />
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
                 <ul className="space-y-2">
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-center text-sm text-gray-600">
-                      <ChevronRight className="w-4 h-4 text-zasta-green-600 mr-2" />
+                      <ChevronRight className="w-4 h-4 text-zasta-blue-600 mr-2" />
                       {feature}
                     </li>
                   ))}

@@ -33,7 +33,7 @@ const CVAttachmentInput = ({
       <Label htmlFor="cv-upload">Upload CV/Resume *</Label>
       <div
         onClick={handleDivClick}
-        className={`mt-2 border-2 border-dashed rounded-lg p-6 text-center hover:border-zasta-green-500 transition-colors cursor-pointer ${
+        className={`mt-2 border-2 border-dashed rounded-lg p-6 text-center hover:border-zasta-blue-500 transition-colors cursor-pointer ${
           error ? "border-red-500" : "border-gray-300"
         }`}
         data-testid="cv-upload-area"

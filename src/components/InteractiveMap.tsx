@@ -34,7 +34,7 @@ const InteractiveMap = () => {
 
       // Add marker for office location
       new mapboxgl.Marker({
-        color: '#16a34a', // zasta-green-600
+        color: '#0077B5', // zasta-blue-600
       })
         .setLngLat(officeCoordinates)
         .setPopup(
@@ -65,36 +65,25 @@ const InteractiveMap = () => {
       <Card>
         <CardContent className="p-6">
           <div className="text-center space-y-4">
-            <MapPin className="w-12 h-12 text-zasta-green-600 mx-auto" />
-            <h3 className="text-lg font-semibold">Interactive Map</h3>
-            <p className="text-gray-600 text-sm">
-              To view our interactive map, please enter your Mapbox public token.
-              You can get one free at{' '}
-              <a 
-                href="https://mapbox.com/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-zasta-green-600 hover:underline"
-              >
-                mapbox.com
-              </a>
+            <MapPin className="w-12 h-12 text-zasta-blue-600 mx-auto" />
+            <h3 className="text-xl font-bold text-gray-900 mb-3">Interactive Map</h3>
+            <p className="text-gray-600 mb-4">
+              Enter your Mapbox access token to view our office location on an interactive map.
             </p>
-            <div className="space-y-2">
-              <Input
-                type="text"
-                placeholder="Enter your Mapbox public token"
-                value={mapboxToken}
-                onChange={(e) => setMapboxToken(e.target.value)}
-                className="w-full"
-              />
-              <Button 
-                onClick={initializeMap}
-                disabled={!mapboxToken.trim()}
-                className="w-full bg-zasta-green-600 hover:bg-zasta-green-700"
-              >
-                Load Map
-              </Button>
-            </div>
+            <Input
+              type="text"
+              placeholder="Enter Mapbox Access Token"
+              value={mapboxToken}
+              onChange={(e) => setMapboxToken(e.target.value)}
+              className="mb-4"
+            />
+            <Button 
+              onClick={initializeMap}
+              className="w-full bg-zasta-blue-600 hover:bg-zasta-blue-700"
+              disabled={!mapboxToken.trim()}
+            >
+              Load Map
+            </Button>
           </div>
         </CardContent>
       </Card>

@@ -14,7 +14,7 @@ const SectionHeaderWithCity = ({
   title, 
   subtitle, 
   children, 
-  bgGradient = "bg-gradient-to-r from-zasta-green-600 to-zasta-green-800",
+  bgGradient = "bg-gradient-to-r from-zasta-blue-600 to-zasta-blue-800",
   textColor = "text-white"
 }: SectionHeaderWithCityProps) => {
   return (

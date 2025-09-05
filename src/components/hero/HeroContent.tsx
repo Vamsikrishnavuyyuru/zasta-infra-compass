@@ -22,7 +22,7 @@ const HeroContent = ({ slides, currentSlide, onWorkWithUs }: HeroContentProps) =
       <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center animate-fade-in max-w-lg sm:max-w-none mx-auto" style={{ animationDelay: '0.4s' }}>
         <Button 
           size="lg" 
-          className="bg-zasta-green-600 hover:bg-zasta-green-700 text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 group w-full sm:w-auto font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl"
+          className="bg-zasta-blue-600 hover:bg-zasta-blue-700 text-sm sm:text-base md:text-lg lg:text-xl px-6 sm:px-8 md:px-10 py-3 sm:py-4 md:py-5 group w-full sm:w-auto font-semibold transform hover:scale-105 transition-all duration-300 shadow-xl"
           onClick={slides[currentSlide].ctaAction}
         >
           {slides[currentSlide].cta}

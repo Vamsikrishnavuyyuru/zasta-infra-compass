@@ -18,7 +18,7 @@ const CTASection = () => {
       <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
         <Button 
           size="lg"
-          className="bg-white text-zasta-green-600 hover:bg-gray-100 px-8 py-4 font-semibold text-lg"
+          className="bg-white text-zasta-blue-600 hover:bg-gray-100 px-8 py-4 font-semibold text-lg"
           onClick={handleContactClick}
         >
           Contact Us
