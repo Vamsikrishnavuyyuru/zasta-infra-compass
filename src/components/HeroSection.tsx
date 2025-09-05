@@ -39,12 +39,13 @@ const HeroSection = () => {
     navigate('/careers');
   };
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 6000);
-    return () => clearInterval(timer);
-  }, []);
+  // Auto-slide disabled to keep hero on first slide
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setCurrentSlide((prev) => (prev + 1) % slides.length);
+  //   }, 6000);
+  //   return () => clearInterval(timer);
+  // }, []);
 
   return (
     <section className="relative min-h-screen pt-16 flex items-center justify-center overflow-hidden">
