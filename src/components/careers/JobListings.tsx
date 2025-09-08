@@ -409,7 +409,27 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     "Excellent problem-solving and decision-making abilities."
   ],
   "postedDate": "2025-09-01"
-      }
+      },
+    {
+  "id": 25,
+  "title": "Quality Engineer",
+  "department": "Quality Assurance",
+  "location": "Gujarat,India",
+  "type": "Full-time",
+  "experience": "10+ years",
+  "vacancy": 1,
+  "description": "We are seeking a highly experienced and diligent Quality Engineer with mandatory expertise in high-rise building projects using Miven technology. The ideal candidate will be responsible for implementing and managing the entire quality assurance and quality control program, ensuring all construction work adheres to the highest standards and project specifications.",
+  "requirements": [
+    "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+    "Minimum 10 years of experience as a Quality Engineer.",
+    "Mandatory proven experience in high-rise building projects with Miven technology.",
+    "Strong knowledge of quality management systems, construction materials testing, and quality control protocols.",
+    "Experience in conducting comprehensive on-site inspections, audits, and preparing detailed quality reports.",
+    "Familiarity with relevant Indian building codes, safety standards, and quality certifications.",
+    "Excellent communication, leadership, and problem-solving skills."
+  ],
+  "postedDate": "2025-09-08"
+}
   ];
 
   // Get unique departments and locations for filter options
