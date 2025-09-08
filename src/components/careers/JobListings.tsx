@@ -413,7 +413,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     {
   "id": 25,
   "title": "Quality Engineer",
-  "department": "Quality Assurance",
+  "department": "Civil Engineering",
   "location": "Gujarat,India",
   "type": "Full-time",
   "experience": "10+ years",
