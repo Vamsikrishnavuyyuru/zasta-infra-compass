@@ -35,7 +35,7 @@ const ProcessSteps = () => {
   ];
 
   return (
-    <section className="py-20 bg-zasta-blue-50">
+    <section className="py-20 bg-zasta-green-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Process</h2>
@@ -47,17 +47,19 @@ const ProcessSteps = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {processSteps.slice(0, 4).map((step, index) => (
               <div key={index} className="text-center">
-                <div className="bg-gradient-to-br from-zasta-blue-500 to-zasta-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="bg-gradient-to-br from-zasta-green-500 to-zasta-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   {step.number}
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{step.title}</h3>
                 <p className="text-gray-600">{step.description}</p>
               </div>
             ))}
-            
-            {/* Connect lines */}
-            <div className="hidden lg:block">
-              <div className="bg-gradient-to-br from-zasta-blue-500 to-zasta-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+          </div>
+          
+          {/* Second row - Step 5 centered */}
+          <div className="flex justify-center">
+            <div className="text-center max-w-sm">
+              <div className="bg-gradient-to-br from-zasta-green-500 to-zasta-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                 {processSteps[4].number}
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-3">{processSteps[4].title}</h3>

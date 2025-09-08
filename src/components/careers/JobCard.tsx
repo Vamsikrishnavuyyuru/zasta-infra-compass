@@ -115,7 +115,7 @@ const JobCard = ({ job, onApply }: JobCardProps) => {
             </span>
             <Button
               onClick={handleJobApply}
-              className="bg-zasta-blue-600 hover:bg-zasta-blue-700"
+              className="bg-zasta-green-600 hover:bg-zasta-green-700"
             >
               Apply Now
             </Button>

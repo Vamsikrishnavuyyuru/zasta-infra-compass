@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
                 <p className="text-gray-300 mb-6 italic">"{testimonial.content}"</p>
                 <div>
                   <div className="font-semibold text-white">{testimonial.name}</div>
-                  <div className="text-zasta-blue-400">{testimonial.position}</div>
+                  <div className="text-zasta-green-400">{testimonial.position}</div>
                   <div className="text-gray-400 text-sm">{testimonial.company}</div>
                 </div>
               </CardContent>
