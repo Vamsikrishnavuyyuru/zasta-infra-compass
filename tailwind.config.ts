@@ -62,19 +62,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Zasta brand colors
+				// Zasta brand colors - Updated to LinkedIn Blue
 				zasta: {
-					green: {
-						50: '#f0f9f4',
-						100: '#dcf3e3',
-						200: '#bce6ca',
-						300: '#8dd4a5',
-						400: '#57bc77',
-						500: '#2f9354',
-						600: '#1e7a3f',
-						700: '#196135',
-						800: '#184e2c',
-						900: '#144024',
+					blue: {
+						50: '#e7f3ff',
+						100: '#d1e7ff',
+						200: '#aed6ff',
+						300: '#7cc2ff',
+						400: '#47a3ff',
+						500: '#1d85ff',
+						600: '#0077B5',
+						700: '#005e91',
+						800: '#004f78',
+						900: '#003a5a',
 					},
 					gold: {
 						50: '#fefbec',
