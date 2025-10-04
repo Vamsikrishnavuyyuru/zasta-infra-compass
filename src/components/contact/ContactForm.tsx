@@ -171,7 +171,7 @@ const ContactForm = () => {
 
             <Button 
               type="submit" 
-              className="w-full bg-zasta-blue-600 hover:bg-zasta-blue-700 disabled:opacity-50" 
+              className="w-full bg-zasta-green-600 hover:bg-zasta-green-700 disabled:opacity-50" 
               disabled={isSubmitting}
             >
               {isSubmitting ? 'Sending...' : 'Send Message'}

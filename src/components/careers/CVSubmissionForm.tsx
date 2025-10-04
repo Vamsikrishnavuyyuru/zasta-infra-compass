@@ -231,7 +231,7 @@ const CVSubmissionForm = () => {
           <Button
             type="submit"
             size="lg"
-            className="w-full bg-zasta-blue-600 hover:bg-zasta-blue-700"
+            className="w-full bg-zasta-green-600 hover:bg-zasta-green-700"
             disabled={isSubmitting}
           >
             {isSubmitting ? "Submitting..." : "Submit Application"}

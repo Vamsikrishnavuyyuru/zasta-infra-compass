@@ -62,19 +62,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Zasta brand colors - Updated to Modern Blue
+				// Zasta brand colors
 				zasta: {
-					blue: {
-						50: '#eff6ff',
-						100: '#dbeafe',
-						200: '#bfdbfe',
-						300: '#93c5fd',
-						400: '#60a5fa',
-						500: '#3b82f6',
-						600: '#2563eb',
-						700: '#1d4ed8',
-						800: '#1e40af',
-						900: '#1e3a8a',
+					green: {
+						50: '#f0f9f4',
+						100: '#dcf3e3',
+						200: '#bce6ca',
+						300: '#8dd4a5',
+						400: '#57bc77',
+						500: '#2f9354',
+						600: '#1e7a3f',
+						700: '#196135',
+						800: '#184e2c',
+						900: '#144024',
 					},
 					gold: {
 						50: '#fefbec',

@@ -17,21 +17,21 @@ const HeroSection = () => {
       subtitle: "Comprehensive workforce solutions and construction management for mega-projects",
       cta: "Explore Our Services",
       ctaAction: () => navigate('/services'),
-      bg: "bg-gradient-to-br from-zasta-blue-900 via-zasta-blue-700 to-zasta-blue-500"
+      bg: "bg-gradient-to-br from-zasta-green-900 via-zasta-green-700 to-zasta-green-500"
     },
     {
       title: "Construction Quality Management Software",
       subtitle: "SiteSync - Advanced field quality control with 2000+ checklists",
       cta: "Discover SiteSync",
       ctaAction: () => navigate('/services'),
-      bg: "bg-gradient-to-br from-zasta-gold-800 via-zasta-gold-600 to-zasta-blue-600"
+      bg: "bg-gradient-to-br from-zasta-gold-800 via-zasta-gold-600 to-zasta-green-600"
     },
     {
       title: "Expert Engineering Consultancy",
       subtitle: "Delivering specialized engineering solutions across real estate, power, transportation, and industrial sectors",
       cta: "Our Expertise",
       ctaAction: () => navigate('/about'),
-      bg: "bg-gradient-to-br from-zasta-blue-800 via-zasta-gold-700 to-zasta-blue-600"
+      bg: "bg-gradient-to-br from-zasta-green-800 via-zasta-gold-700 to-zasta-green-600"
     }
   ];
 
@@ -39,13 +39,12 @@ const HeroSection = () => {
     navigate('/careers');
   };
 
-  // Auto-slide disabled to keep hero on first slide
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setCurrentSlide((prev) => (prev + 1) % slides.length);
-  //   }, 6000);
-  //   return () => clearInterval(timer);
-  // }, []);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev + 1) % slides.length);
+    }, 6000);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section className="relative min-h-screen pt-16 flex items-center justify-center overflow-hidden">
