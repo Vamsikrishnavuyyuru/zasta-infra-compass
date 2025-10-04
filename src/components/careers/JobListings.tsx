@@ -490,6 +490,27 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     "Excellent analytical, negotiation, and communication skills."
   ],
   "postedDate": "2025-10-04"
+},
+    {
+  "id": 29,
+  "title": "Project Engineer - Civil & PEB",
+  "department": "Civil Engineering",
+  "location": "Jodhpur, Rajasthan, India",
+  "type": "Full-time",
+  "experience": "6+ years",
+  "vacancy": 1,
+  "description": "We are seeking a qualified Project Engineer with mandatory experience in both Civil construction and Pre-Engineered Building (PEB) structures. The candidate will be responsible for the execution, supervision, and quality control of on-site civil and PEB works, ensuring timely and quality project delivery.",
+  "requirements": [
+    "Bachelor's degree in Civil Engineering is mandatory.",
+    "Minimum 6 years of experience as a Project Engineer.",
+    "Mandatory proven experience in managing and executing Civil construction projects.",
+    "Mandatory proven experience in handling Pre-Engineered Building (PEB) structures.",
+    "Strong knowledge of foundation works, concrete technology, and structural steel erection processes.",
+    "Experience in site supervision, coordination with subcontractors, and adherence to safety protocols.",
+    "Familiarity with relevant Indian building codes and standards.",
+    "Excellent communication and problem-solving skills."
+  ],
+  "postedDate": "2025-10-04"
 }
   ];
 
