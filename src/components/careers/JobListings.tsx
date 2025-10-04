@@ -412,24 +412,23 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       },
         {
   "id": 25,
-  "title": "Construction Manager",
-  "department": "Construction Management",
-  "location": "Tarnaka, Hyderabad, India",
+  "title": "Senior Civil Engineer",
+  "department": "Civil Engineering",
+  "location": "Hyderabad, Telangana, India",
   "type": "Full-time",
-  "experience": "10 years",
+  "experience": "10 - 15 years",
   "vacancy": 1,
-  "description": "We are seeking an experienced Construction Manager with mandatory expertise in high-rise building projects using Miven technology. The candidate will be responsible for overseeing all on-site construction activities, managing teams, and ensuring project completion on time, within budget, and to the required quality and safety standards.",
+  "description": "We are seeking a highly experienced Senior Civil Engineer to manage and lead construction activities for our premium villas projects. The candidate will be responsible for overseeing the entire construction lifecycle, ensuring quality, timely delivery, and adherence to project specifications and safety standards.",
   "requirements": [
-    "Bachelor's degree in Civil Engineering or a related field is mandatory.",
-    "Minimum 10 years of experience in construction management.",
-    "Mandatory proven experience in high-rise building projects using Miven technology.",
-    "Strong leadership, planning, and communication skills.",
-    "Expert knowledge of construction methods, safety regulations, and quality control procedures.",
-    "Experience in coordinating with various stakeholders, including architects, engineers, and subcontractors.",
-    "Familiarity with relevant Indian building codes and standards.",
-    "Excellent problem-solving and decision-making abilities."
+    "Bachelor's degree in Civil Engineering is mandatory.",
+    "Minimum 10 to 15 years of experience in civil engineering and construction.",
+    "Mandatory proven experience in managing and executing villas or independent residential projects.",
+    "Strong knowledge of construction methods, materials, structural elements, and quality control procedures.",
+    "Experience in site management, team leadership, and coordination with subcontractors and consultants.",
+    "Familiarity with relevant Indian building codes and safety regulations.",
+    "Excellent communication, project planning, and problem-solving skills."
   ],
-  "postedDate": "2025-09-01"
+  "postedDate": "2025-09-26"
       }
   ];
 
