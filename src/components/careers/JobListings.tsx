@@ -469,7 +469,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     "Familiarity with relevant Indian building codes, safety standards, and local regulations in Rajasthan.",
     "Excellent problem-solving and decision-making abilities."
   ],
-  "postedDate": "2025-09-04"
+  "postedDate": "2025-10-04"
 }
   ];
 
