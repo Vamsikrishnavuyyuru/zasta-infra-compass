@@ -412,24 +412,45 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       },
         {
   "id": 25,
-  "title": "Senior Civil Engineer",
-  "department": "Civil Engineering",
-  "location": "Jodhpur, Rajasthan, India",
+  "title": "Construction Manager",
+  "department": "Construction Management",
+  "location": "Tarnaka, Hyderabad, India",
   "type": "Full-time",
-  "experience": "10 - 15 years",
+  "experience": "10 years",
   "vacancy": 1,
-  "description": "We are seeking a highly experienced Senior Civil Engineer to manage and lead construction activities for our premium villas projects. The candidate will be responsible for overseeing the entire construction lifecycle, ensuring quality, timely delivery, and adherence to project specifications and safety standards.",
+  "description": "We are seeking an experienced Construction Manager with mandatory expertise in high-rise building projects using Miven technology. The candidate will be responsible for overseeing all on-site construction activities, managing teams, and ensuring project completion on time, within budget, and to the required quality and safety standards.",
   "requirements": [
-    "Bachelor's degree in Civil Engineering is mandatory.",
-    "Minimum 10 to 15 years of experience in civil engineering and construction.",
-    "Mandatory proven experience in managing and executing villas or independent residential projects.",
-    "Strong knowledge of construction methods, materials, structural elements, and quality control procedures.",
-    "Experience in site management, team leadership, and coordination with subcontractors and consultants.",
-    "Familiarity with relevant Indian building codes and safety regulations.",
-    "Excellent communication, project planning, and problem-solving skills."
+    "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+    "Minimum 10 years of experience in construction management.",
+    "Mandatory proven experience in high-rise building projects using Miven technology.",
+    "Strong leadership, planning, and communication skills.",
+    "Expert knowledge of construction methods, safety regulations, and quality control procedures.",
+    "Experience in coordinating with various stakeholders, including architects, engineers, and subcontractors.",
+    "Familiarity with relevant Indian building codes and standards.",
+    "Excellent problem-solving and decision-making abilities."
+  ],
+  "postedDate": "2025-09-01"
+      },
+{
+  "id": 26,
+  "title": "Junior Finishing Engineer",
+  "department": "Civil Engineering",
+  "location": " Hyderabad, Telangana, India",
+  "type": "Full-time",
+  "experience": "5-7 years",
+  "vacancy": 1,
+  "description": "We are seeking a dedicated Junior Finishing Engineer with experience in villa projects. The candidate will assist the senior team in supervising all finishing works, ensuring quality standards, coordinating site activities, and maintaining project schedules.",
+  "requirements": [
+    "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+    "Minimum 5 to 7 years of experience as a Finishing Engineer, preferably in a junior or similar capacity.",
+    "Mandatory proven experience in villas or residential construction projects.",
+    "Strong knowledge of finishing materials, quality control checks, and construction processes (tiling, painting, joinery, etc.).",
+    "Experience in site supervision and coordination with subcontractors.",
+    "Familiarity with relevant Indian building codes and quality standards.",
+    "Good communication and organizational skills."
   ],
   "postedDate": "2025-09-26"
-      }
+}
   ];
 
   // Get unique departments and locations for filter options
