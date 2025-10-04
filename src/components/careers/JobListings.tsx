@@ -414,7 +414,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
   "id": 25,
   "title": "Senior Civil Engineer",
   "department": "Civil Engineering",
-  "location": "Hyderabad, Telangana, India",
+  "location": "Jodhpur, Rajasthan, India",
   "type": "Full-time",
   "experience": "10 - 15 years",
   "vacancy": 1,
