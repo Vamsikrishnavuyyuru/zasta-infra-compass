@@ -511,6 +511,47 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     "Excellent communication and problem-solving skills."
   ],
   "postedDate": "2025-10-04"
+},
+    {
+  "id": 30,
+  "title": "Project Engineer - MEP",
+  "department": "MEP Engineering",
+  "location": "Jodhpur, Rajasthan, India",
+  "type": "Full-time",
+  "experience": "6+ years",
+  "vacancy": 1,
+  "description": "We are seeking an experienced Project Engineer to manage the execution and supervision of Mechanical, Electrical, and Plumbing (MEP) systems for our projects in Jodhpur. The candidate will ensure all MEP installations comply with design specifications, quality standards, and project schedules.",
+  "requirements": [
+    "Bachelor's degree in Electrical or Mechanical Engineering is mandatory.",
+    "Minimum 6 years of experience as a Project Engineer in MEP execution.",
+    "Mandatory proven experience in managing and supervising site installation of HVAC, electrical, plumbing, and fire fighting systems.",
+    "Strong technical knowledge of MEP system design, installation, and testing & commissioning procedures.",
+    "Experience in site coordination with civil teams and subcontractors.",
+    "Proficiency in reading and interpreting MEP drawings and specifications.",
+    "Familiarity with relevant Indian MEP codes and safety standards.",
+    "Good communication and problem-solving skills."
+  ],
+  "postedDate": "2025-10-04"
+},
+    {
+  "id": 31,
+  "title": "Project Engineer - Safety",
+  "department": "Health, Safety, and Environment (HSE)",
+  "location": "Jodhpur, Rajasthan, India",
+  "type": "Full-time",
+  "experience": "6+ years",
+  "vacancy": 1,
+  "description": "We are seeking a dedicated Project Engineer focused on Safety (HSE) to manage and implement all safety protocols and regulations at our construction sites in Jodhpur. The candidate will be responsible for ensuring a safe working environment, conducting regular audits, and leading safety training programs.",
+  "requirements": [
+    "Bachelor's degree in Civil/Mechanical Engineering with a Post Graduate Diploma in Industrial Safety or relevant certification (e.g., NEBOSH) is mandatory.",
+    "Minimum 6 years of experience in site safety management for construction projects.",
+    "Mandatory proven experience in developing, implementing, and enforcing site-specific safety plans.",
+    "Strong knowledge of construction safety hazards, risk assessment techniques, and mitigation strategies.",
+    "Experience in conducting safety training, toolbox talks, and incident investigation.",
+    "Familiarity with relevant Indian safety codes, standards, and labor laws.",
+    "Excellent communication and leadership skills to promote a strong safety culture."
+  ],
+  "postedDate": "2025-10-04"
 }
   ];
 
