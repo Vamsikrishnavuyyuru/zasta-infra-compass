@@ -470,6 +470,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     "Excellent problem-solving and decision-making abilities."
   ],
   "postedDate": "2025-10-04"
+},
+    {
+  "id": 28,
+  "title": "Planning & QS Engineer",
+  "department": "Planning and Quantity Surveying",
+  "location": "Jodhpur, Rajasthan, India",
+  "type": "Full-time",
+  "experience": "6+ years",
+  "vacancy": 1,
+  "description": "We are seeking a versatile Planning and Quantity Surveying (QS) Engineer to join our team in Jodhpur. The candidate will be responsible for both developing and monitoring project schedules and managing all aspects of quantity surveying, cost estimation, and contract administration for construction projects.",
+  "requirements": [
+    "Bachelor's degree in Civil Engineering is mandatory.",
+    "Minimum 6 years of experience in both project planning/scheduling and quantity surveying.",
+    "Proficiency in project management software (e.g., Primavera P6, MS Project) is essential.",
+    "Strong knowledge of taking off quantities, preparing Bills of Quantities (BOQ), and estimating costs for civil works.",
+    "Experience in contract administration, rate analysis, and vendor/subcontractor billing.",
+    "Familiarity with relevant Indian building codes and measurement standards.",
+    "Excellent analytical, negotiation, and communication skills."
+  ],
+  "postedDate": "2025-10-04"
 }
   ];
 
