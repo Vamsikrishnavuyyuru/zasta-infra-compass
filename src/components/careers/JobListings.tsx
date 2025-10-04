@@ -449,6 +449,27 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     "Good communication and organizational skills."
   ],
   "postedDate": "2025-09-26"
+},
+{
+  "id": 27,
+  "title": "Project Manager",
+  "department": "Project Management",
+  "location": "Jodhpur, Rajasthan, India",
+  "type": "Full-time",
+  "experience": "15 years",
+  "vacancy": 1,
+  "description": "We are seeking a seasoned Project Manager to oversee large-scale construction projects in Jodhpur, Rajasthan. The ideal candidate will be responsible for the overall planning, execution, monitoring, and closing of projects, ensuring they are completed on time, within budget, and meet all quality and safety specifications.",
+  "requirements": [
+    "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+    "Minimum 15 years of experience in project management within the construction industry.",
+    "Mandatory proven experience in managing and delivering large residential or commercial projects.",
+    "Strong leadership, team management, and stakeholder communication skills.",
+    "Proficiency in project management software (e.g., Primavera P6, MS Project).",
+    "Expert knowledge of project planning, budgeting, risk management, and resource allocation.",
+    "Familiarity with relevant Indian building codes, safety standards, and local regulations in Rajasthan.",
+    "Excellent problem-solving and decision-making abilities."
+  ],
+  "postedDate": "2025-09-04"
 }
   ];
 
