@@ -599,6 +599,28 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2025-10-10",
     },
+    {
+      id: 33,
+      title: "Construction Manager",
+      department: "Construction Management",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "12 years",
+      vacancy: 1,
+      description:
+        "We are seeking an experienced Construction Manager to oversee all on-site construction activities in Tarnaka, Hyderabad. The candidate will be responsible for managing day-to-day operations, ensuring project execution aligns with plans, and achieving project completion on time, within budget, and to the highest quality and safety standards.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+        "Minimum 12 years of experience in construction management.",
+        "Mandatory proven experience in managing and delivering large-scale residential or commercial building projects.",
+        "Strong leadership, planning, and communication skills.",
+        "Expert knowledge of construction methods, safety regulations, and quality control procedures.",
+        "Experience in coordinating with various stakeholders, including architects, engineers, and subcontractors.",
+        "Familiarity with relevant Indian building codes and standards.",
+        "Excellent problem-solving and decision-making abilities.",
+      ],
+      postedDate: "2025-10-14",
+    },
   ];
 
   // Get unique departments and locations for filter options
