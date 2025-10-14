@@ -619,7 +619,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Familiarity with relevant Indian building codes and standards.",
         "Excellent problem-solving and decision-making abilities.",
       ],
-      postedDate: "2025-10-14",
+      postedDate: "2025-10-10",
     },
   ];
 
