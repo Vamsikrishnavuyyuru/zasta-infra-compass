@@ -621,6 +621,27 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2025-10-10",
     },
+    {
+      id: 34,
+      title: "Quality Engineer",
+      department: "Quality Assurance",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "5 years",
+      vacancy: 1,
+      description:
+        "We are seeking a diligent Quality Engineer to implement and oversee quality control procedures for our construction projects. The candidate will be responsible for conducting inspections, testing materials, and ensuring all work adheres to project specifications and industry standards.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+        "Minimum 5 years of experience as a Quality Engineer in the construction industry.",
+        "Mandatory proven experience in implementing quality assurance/quality control (QA/QC) protocols on construction sites.",
+        "Strong knowledge of construction materials testing, quality management systems, and inspection procedures.",
+        "Experience in preparing quality documentation, inspection reports (IRs), and non-conformance reports (NCRs).",
+        "Familiarity with relevant Indian building codes and quality standards.",
+        "Excellent communication, documentation, and problem-solving skills.",
+      ],
+      postedDate: "2025-10-10",
+    },
   ];
 
   // Get unique departments and locations for filter options
