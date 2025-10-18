@@ -642,6 +642,50 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2025-10-10",
     },
+    {
+      id: 35,
+      title: "MEP Manager",
+      department: "MEP Engineering",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "10-12 years",
+      vacancy: 1,
+      description:
+        "We are seeking an experienced MEP Manager to lead the Mechanical, Electrical, and Plumbing team for our residential projects (villas or apartments). The candidate will be responsible for the overall design review, planning, execution, budget control, and quality assurance of all MEP systems.",
+      requirements: [
+        "Bachelor's degree in Electrical or Mechanical Engineering is mandatory.",
+        "Minimum 10 to 12 years of experience in MEP management in the construction sector.",
+        "Mandatory proven experience in managing and executing **villas or large residential projects**.",
+        "Expert knowledge of HVAC, electrical, plumbing, and fire fighting systems and latest industry trends.",
+        "Experience in team leadership, vendor management, project planning, and cost control.",
+        "Proficiency in design software and project management tools is a plus.",
+        "Familiarity with relevant Indian MEP codes and safety standards.",
+        "Excellent communication and decision-making skills.",
+      ],
+      postedDate: "2025-10-18",
+    },
+    {
+      id: 36,
+      title: "QS and Contracts Manager",
+      department: "Quantity Surveying and Contracts",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "10-12 years",
+      vacancy: 1,
+      description:
+        "We are seeking a highly experienced QS and Contracts Manager to oversee all commercial aspects of our residential projects (villas or apartments). The candidate will be responsible for quantity surveying, cost control, contract administration, procurement management, and vendor/subcontractor billing.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or Quantity Surveying is mandatory.",
+        "Minimum 10 to 12 years of experience in Quantity Surveying and Contracts Management.",
+        "Mandatory proven experience in managing and executing **villas or large residential projects**.",
+        "Expert knowledge of tender documentation, contract drafting, B.O.Q. preparation, and cost estimation.",
+        "Strong understanding of contract laws and administration (e.g., FIDIC, Indian standard contracts).",
+        "Experience in vendor negotiation, procurement, and managing subcontractor billing and claims.",
+        "Proficiency in relevant QS software and MS Excel.",
+        "Excellent communication, negotiation, and analytical skills.",
+      ],
+      postedDate: "2025-10-18",
+    },
   ];
 
   // Get unique departments and locations for filter options
