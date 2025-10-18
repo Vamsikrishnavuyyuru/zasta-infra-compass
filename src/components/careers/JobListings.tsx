@@ -655,7 +655,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       requirements: [
         "Bachelor's degree in Electrical or Mechanical Engineering is mandatory.",
         "Minimum 10 to 12 years of experience in MEP management in the construction sector.",
-        "Mandatory proven experience in managing and executing **villas or large residential projects**.",
+        "Mandatory proven experience in managing and executing villas or large residential projects.",
         "Expert knowledge of HVAC, electrical, plumbing, and fire fighting systems and latest industry trends.",
         "Experience in team leadership, vendor management, project planning, and cost control.",
         "Proficiency in design software and project management tools is a plus.",
@@ -677,7 +677,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       requirements: [
         "Bachelor's degree in Civil Engineering or Quantity Surveying is mandatory.",
         "Minimum 10 to 12 years of experience in Quantity Surveying and Contracts Management.",
-        "Mandatory proven experience in managing and executing **villas or large residential projects**.",
+        "Mandatory proven experience in managing and executing villas or large residential projects.",
         "Expert knowledge of tender documentation, contract drafting, B.O.Q. preparation, and cost estimation.",
         "Strong understanding of contract laws and administration (e.g., FIDIC, Indian standard contracts).",
         "Experience in vendor negotiation, procurement, and managing subcontractor billing and claims.",
