@@ -1,29 +1,28 @@
-
-import { Card, CardContent } from '@/components/ui/card';
-import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Card, CardContent } from "@/components/ui/card";
+import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const ContactInfo = () => {
   const contactInfo = [
     {
       icon: MapPin,
       title: "Office Address",
-      details: "Flat no - 1505, Tower - 1, Emami Swanlake Apartments, Opposite Metro cash & carry, Balaji nagar, Kukatpally, Hyderabad - 500072, India"
+      details: "FLAT NO:904-A,SY NO:150,VAZHRAA PRATHIK,BLOCK-A,Nizampet, Hyderabad- 500090.",
     },
     {
       icon: Phone,
       title: "Phone Number",
-      details: "+91 9701620621"
+      details: "+91 9701620621",
     },
     {
       icon: Mail,
       title: "Email Address",
-      details: "info@zastagroup.com"
+      details: "info@zastagroup.com",
     },
     {
       icon: Clock,
       title: "Business Hours",
-      details: "Mon - Fri: 9:00 AM - 6:00 PM"
-    }
+      details: "Mon - Fri: 9:00 AM - 6:00 PM",
+    },
   ];
 
   return (
