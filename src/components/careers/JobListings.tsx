@@ -524,6 +524,50 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2025-11-10",
     },
+    {
+      id: 47,
+      title: "Planning Engineer",
+      department: "Civil Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "10+ years",
+      vacancy: 1,
+      description:
+        "We are looking for a highly experienced Planning Engineer with mandatory expertise in high-rise building projects using Miven technology. The role involves developing, updating, and monitoring detailed project schedules, ensuring timely and efficient execution across all phases.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+        "Minimum 10 years of experience as a Planning Engineer.",
+        "Mandatory proven experience in planning and scheduling for high-rise building projects with Miven technology.",
+        "Proficiency in project management software such as Primavera P6 or Microsoft Project is essential.",
+        "Strong analytical skills to analyze progress, identify critical paths, and manage resource allocation.",
+        "Experience in risk analysis and mitigation planning.",
+        "Excellent communication and coordination skills.",
+        "Familiarity with relevant Indian building codes and standards.",
+      ],
+      postedDate: "2025-11-12",
+    },
+    {
+      id: 48,
+      title: "QS and Billing Engineer",
+      department: "Quantity Surveying and Contracts",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "6-8 years",
+      vacancy: 1,
+      description:
+        "We are seeking a detail-oriented QS and Billing Engineer responsible for managing all aspects of quantity surveying, cost estimation, and financial billing for our residential projects. The role ensures accurate measurement of work and timely processing of payments to subcontractors.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or Quantity Surveying is mandatory.",
+        "Minimum 6 to 8 years of experience in Quantity Surveying and Billing.",
+        "Mandatory proven experience in **residential construction projects** (villas or apartments).",
+        "Strong knowledge of taking off quantities, preparing Bills of Quantities (BOQ), and cost estimation.",
+        "Expertise in preparing and checking interim and final bills for subcontractors and vendors.",
+        "Experience in rate analysis, budget monitoring, and reconciliation of material consumption.",
+        "Familiarity with relevant Indian measurement and contract codes.",
+        "Excellent analytical, negotiation, and documentation skills.",
+      ],
+      postedDate: "2025-11-12",
+    },
   ];
 
   // Get unique departments and locations for filter options
