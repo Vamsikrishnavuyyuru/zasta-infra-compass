@@ -706,7 +706,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Good communication and coordination skills to interact with various departments.",
         "Familiarity with standard construction documentation procedures is a plus.",
       ],
-      postedDate: "2025-11-25",
+      postedDate: "2025-10-18",
     },
   ];
 
