@@ -480,6 +480,28 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2025-11-06",
     },
+    {
+      id: 45,
+      title: "Document Controller",
+      department: "Bachelor's degree in Engineering",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "We are seeking an experienced Document Controller responsible for managing all project documentation, including drawings, technical specifications, correspondence, and reports. The role ensures proper document control processes are implemented, maintained, and accessible to the project team.",
+      requirements: [
+        "Bachelor's degree or equivalent certification in Document Control, Administration, or a related field is preferred.",
+        "Minimum 5 years of experience as a Document Controller in the construction or engineering industry.",
+        "Mandatory proven experience in setting up and maintaining document control systems (electronic and hard copy).",
+        "Proficiency in software like MS Office, and document management systems (DMS/EDMS) is essential.",
+        "Strong organizational skills, attention to detail, and ability to manage large volumes of data.",
+        "Experience in handling confidential documents, tracking revisions, and issuing controlled copies to the site team.",
+        "Good communication and coordination skills to interact with various departments.",
+        "Familiarity with standard construction documentation procedures is a plus.",
+      ],
+      postedDate: "2025-11-06",
+    },
   ];
 
   // Get unique departments and locations for filter options
