@@ -394,6 +394,27 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2025-10-30",
     },
+    {
+      id: 41,
+      title: "Civil Engineer",
+      department: "Civil Engineering",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5-8 years",
+      vacancy: 1,
+      description:
+        "We are seeking an experienced Civil Engineer to manage and supervise core construction activities for our residential projects. The role involves overseeing structural work, foundational work, concrete placement, and ensuring all stages of construction comply with engineering plans, safety standards, and quality specifications.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering is mandatory.",
+        "Minimum 5 to 8 years of experience as a Site/Civil Engineer.",
+        "Mandatory proven experience in **residential construction projects** (villas or apartments).",
+        "Strong knowledge of construction methods, materials, structural elements, and quality control procedures.",
+        "Experience in site supervision, labor management, resource allocation, and coordination of core civil activities.",
+        "Familiarity with relevant Indian building codes and safety regulations.",
+        "Proficiency in reading engineering drawings and excellent communication skills.",
+      ],
+      postedDate: "2025-11-01",
+    },
   ];
 
   // Get unique departments and locations for filter options
