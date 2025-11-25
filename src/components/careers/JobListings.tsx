@@ -568,6 +568,28 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2025-11-12",
     },
+    {
+      id: 49,
+      title: "Billing Engineer",
+      department: "Quantity Surveying and Contracts",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5 years",
+      vacancy: 1,
+      description:
+        "We are seeking a dedicated Billing Engineer responsible for managing all aspects of financial billing, measurement of work, and contract administration for our residential projects. The role ensures timely and accurate processing of payments to subcontractors and suppliers.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or Quantity Surveying is mandatory.",
+        "Minimum 5 years of experience as a Billing Engineer.",
+        "Mandatory proven experience in **residential construction projects** (villas or apartments).",
+        "Strong knowledge of taking off quantities, preparing Bills of Quantities (BOQ), and cost estimation.",
+        "Expertise in preparing and checking interim and final bills for subcontractors and vendors based on measured work.",
+        "Experience in rate analysis, budget monitoring, and reconciliation of material consumption.",
+        "Familiarity with relevant Indian measurement and contract codes.",
+        "Excellent analytical, negotiation, and documentation skills.",
+      ],
+      postedDate: "2025-11-12",
+    },
   ];
 
   // Get unique departments and locations for filter options
