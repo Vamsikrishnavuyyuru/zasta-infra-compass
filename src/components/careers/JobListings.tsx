@@ -709,7 +709,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       postedDate: "2025-10-18",
     },
     {
-      id: 53,
+      id: 38,
       title: "Planning Engineer",
       department: "Civil Engineering",
       location: "Tarnaka, Hyderabad, India",
@@ -731,7 +731,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       postedDate: "2025-10-30",
     },
     {
-      id: 54,
+      id: 39,
       title: "Planning Engineer",
       department: "Civil Engineering",
       location: "Chevella, Hyderabad, India",
@@ -753,7 +753,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       postedDate: "2025-10-30",
     },
     {
-      id: 55,
+      id: 40,
       title: "MEP Manager",
       department: "Mechanical Engineering",
       location: "Chevella, Hyderabad, India",
