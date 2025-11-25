@@ -502,6 +502,28 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2025-11-06",
     },
+    {
+      id: 46,
+      title: "MEP Engineer",
+      department: "Mechanical Engineer",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5-8 years",
+      vacancy: 1,
+      description:
+        "We are seeking a skilled MEP Engineer with mandatory experience in residential projects. The candidate will be responsible for the execution, supervision, and quality control of all Mechanical, Electrical, and Plumbing systems, ensuring they meet project specifications and quality standards for residential developments.",
+      requirements: [
+        "Bachelor's degree in Electrical or Mechanical Engineering is mandatory.",
+        "Minimum 5 to 8 years of experience in MEP engineering.",
+        "Mandatory proven experience in **residential construction projects** (villas or apartments).",
+        "Strong knowledge of HVAC, electrical (including low tension), plumbing, and fire fighting systems.",
+        "Proficiency in AutoCAD is essential. Knowledge of Revit MEP is a plus.",
+        "Experience in site supervision, testing & commissioning, and coordination with civil and finishing teams.",
+        "Familiarity with relevant Indian MEP codes and standards.",
+        "Good communication and problem-solving skills.",
+      ],
+      postedDate: "2025-11-10",
+    },
   ];
 
   // Get unique departments and locations for filter options
