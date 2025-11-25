@@ -415,6 +415,28 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2025-11-01",
     },
+    {
+      id: 42,
+      title: "Planning Engineer",
+      department: "Civil Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "10+ years",
+      vacancy: 1,
+      description:
+        "We are looking for a highly experienced Planning Engineer with mandatory expertise in high-rise building projects using Miven technology. The role involves developing, updating, and monitoring detailed project schedules, ensuring timely and efficient execution across all phases.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering or a related field is mandatory.",
+        "Minimum 10 years of experience as a Planning Engineer.",
+        "Mandatory proven experience in planning and scheduling for high-rise building projects with Miven technology.",
+        "Proficiency in project management software such as Primavera P6 or Microsoft Project is essential.",
+        "Strong analytical skills to analyze progress, identify critical paths, and manage resource allocation.",
+        "Experience in risk analysis and mitigation planning.",
+        "Excellent communication and coordination skills.",
+        "Familiarity with relevant Indian building codes and standards.",
+      ],
+      postedDate: "2025-11-02",
+    },
   ];
 
   // Get unique departments and locations for filter options
