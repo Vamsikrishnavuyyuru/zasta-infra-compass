@@ -387,6 +387,82 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-01-13",
     },
+    {
+      id: 20,
+      title: "Project Manager",
+      department: "Project Management",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "18+ years",
+      vacancy: 1,
+      description:
+        "We are seeking a veteran Project Manager to lead our flagship residential developments. This role requires a strategic leader capable of managing end-to-end project lifecycles, ensuring financial targets are met, and maintaining high standards of engineering excellence.",
+      requirements: [
+        "Bachelor’s or Master’s degree in Civil Engineering.",
+        "18+ years of experience in the construction industry with a focus on large-scale residential projects.",
+        "Proven track record in managing project P&L and stakeholder relations.",
+        "Expertise in resource optimization and strategic project planning.",
+        "Excellent leadership, communication, and crisis management skills.",
+      ],
+      postedDate: "2026-01-20",
+    },
+    {
+      id: 21,
+      title: "Project Coordinator",
+      department: "Civil Engineering",
+      location: "Hyderabad, India",
+      type: "Full-time",
+      experience: "3-5 years",
+      vacancy: 1,
+      description:
+        "The Project Coordinator will support the management team by facilitating communication between the site and the head office. You will track project milestones, manage documentation, and ensure that all departments are aligned with the project schedule.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering or Business Management.",
+        "3 to 5 years of experience in project coordination within the construction sector.",
+        "Strong proficiency in MS Office, particularly Excel and PowerPoint.",
+        "Exceptional organizational and multitasking abilities.",
+        "Familiarity with project management software and reporting tools.",
+      ],
+      postedDate: "2026-01-20",
+    },
+    {
+      id: 22,
+      title: "Quality Surveyor",
+      department: "Civil Engineering",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5 years",
+      vacancy: 1,
+      description:
+        "We are looking for a Quality Surveyor (QS) to manage material take-offs and cost estimations. You will be responsible for ensuring that quantities are accurately measured and that the project adheres to the specified material quality and budget.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "5 years of experience as a Quantity Surveyor in residential construction.",
+        "In-depth knowledge of rate analysis and Bill of Quantities (BOQ) preparation.",
+        "Proficiency in AutoCAD and estimation software.",
+        "Strong analytical skills and attention to detail.",
+      ],
+      postedDate: "2026-01-20",
+    },
+    {
+      id: 23,
+      title: "Project Engineer",
+      department: "Civil Engineering",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5 years",
+      vacancy: 1,
+      description:
+        "The Project Engineer will be responsible for technical site supervision and ensuring that construction works align with approved drawings. You will coordinate with sub-contractors and monitor daily progress to ensure timely completion.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "5 years of on-site experience in project execution.",
+        "Strong technical understanding of structural and finishing works.",
+        "Ability to read and interpret complex architectural and structural drawings.",
+        "Commitment to maintaining site safety and quality standards.",
+      ],
+      postedDate: "2026-01-20",
+    },
   ];
 
   // Get unique departments and locations for filter options
