@@ -82,6 +82,78 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-01-02",
     },
+    {
+    "id": 04,
+    "title": "Quality Manager",
+    "department": "Quality Assurance & Control",
+    "location": "Tarnaka, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "10+ years",
+    "vacancy": 1,
+    "description": "We are seeking a seasoned Quality Manager to oversee the QA/QC functions for our high-end residential projects. This role involves establishing quality benchmarks, conducting rigorous site inspections, and ensuring all construction activities meet international and Indian standards.",
+    "requirements": [
+      "Bachelor's degree in Civil Engineering or related field.",
+      "10+ years of experience in Quality Management within the construction industry.",
+      "Lead Auditor certification in ISO 9001 is highly preferred.",
+      "Proven expertise in material testing, concrete technology, and finish quality.",
+      "Strong leadership skills with the ability to manage a team of site inspectors."
+    ],
+    "postedDate": "2026-01-02"
+  },
+  {
+    "id": 05,
+    "title": "QS Engineer",
+    "department": "Quantity Surveying & Billing",
+    "location": "Tarnaka, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "8 years",
+    "vacancy": 1,
+    "description": "The QS Engineer will be responsible for cost estimation, quantity take-offs, and preparation of Bills of Quantities (BOQ). You will manage contractor billing and ensure the project stays within the approved commercial budget.",
+    "requirements": [
+      "Bachelor's degree in Civil Engineering.",
+      "Minimum 8 years of experience in Quantity Surveying and Billing.",
+      "Proficiency in MS Excel and specialized cost-estimation software.",
+      "Strong knowledge of rate analysis and market prices for construction materials.",
+      "Excellent negotiation skills for managing sub-contractor claims."
+    ],
+    "postedDate": "2026-01-02"
+  },
+  {
+    "id": 06,
+    "title": "Planning Engineer",
+    "department": "Project Planning & Controls",
+    "location": "Tarnaka, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "7-8 years",
+    "vacancy": 1,
+    "description": "We are looking for a Planning Engineer to develop and maintain project schedules. You will be responsible for progress monitoring, delay analysis, and resource forecasting to ensure timely project delivery.",
+    "requirements": [
+      "Bachelor's degree in Civil Engineering.",
+      "7 to 8 years of core experience in project planning and scheduling.",
+      "Expert-level proficiency in Primavera P6 and Microsoft Project.",
+      "Experience in generating S-curves, histograms, and daily/weekly progress reports.",
+      "Strong analytical skills to identify and mitigate potential project delays."
+    ],
+    "postedDate": "2026-01-02"
+  },
+  {
+    "id": 07,
+    "title": "Construction Manager",
+    "department": "Operations",
+    "location": "Tarnaka, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "10+ years",
+    "vacancy": 1,
+    "description": "The Construction Manager will lead the overall site execution, ensuring that projects are completed on time, within budget, and to the highest quality. You will manage large site teams and coordinate with consultants and stakeholders.",
+    "requirements": [
+      "Bachelor’s or Master’s degree in Civil Engineering/Construction Management.",
+      "10+ years of proven experience in managing large-scale residential or commercial projects.",
+      "Exceptional leadership and onsite problem-solving capabilities.",
+      "Deep understanding of safety regulations, labor management, and project lifecycles.",
+      "Ability to drive project milestones under tight deadlines."
+    ],
+    "postedDate": "2026-01-02"
+  }
   ];
 
   // Get unique departments and locations for filter options
