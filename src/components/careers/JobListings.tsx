@@ -90,13 +90,14 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       type: "Full-time",
       experience: "10+ years",
       vacancy: 1,
-      description: "We are seeking a seasoned Quality Manager to oversee the QA/QC functions for our high-end residential projects. This role involves establishing quality benchmarks, conducting rigorous site inspections, and ensuring all construction activities meet international and Indian standards.",
+      description:
+        "We are seeking a seasoned Quality Manager to oversee the QA/QC functions for our high-end residential projects. This role involves establishing quality benchmarks, conducting rigorous site inspections, and ensuring all construction activities meet international and Indian standards.",
       requirements: [
         "Bachelor's degree in Civil Engineering or related field.",
         "10+ years of experience in Quality Management within the construction industry.",
         "Lead Auditor certification in ISO 9001 is highly preferred.",
         "Proven expertise in material testing, concrete technology, and finish quality.",
-        "Strong leadership skills with the ability to manage a team of site inspectors."
+        "Strong leadership skills with the ability to manage a team of site inspectors.",
       ],
       postedDate: "2026-01-02",
     },
@@ -108,13 +109,14 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       type: "Full-time",
       experience: "8 years",
       vacancy: 1,
-      description: "The QS Engineer will be responsible for cost estimation, quantity take-offs, and preparation of Bills of Quantities (BOQ). You will manage contractor billing and ensure the project stays within the approved commercial budget.",
+      description:
+        "The QS Engineer will be responsible for cost estimation, quantity take-offs, and preparation of Bills of Quantities (BOQ). You will manage contractor billing and ensure the project stays within the approved commercial budget.",
       requirements: [
         "Bachelor's degree in Civil Engineering.",
         "Minimum 8 years of experience in Quantity Surveying and Billing.",
         "Proficiency in MS Excel and specialized cost-estimation software.",
         "Strong knowledge of rate analysis and market prices for construction materials.",
-        "Excellent negotiation skills for managing sub-contractor claims."
+        "Excellent negotiation skills for managing sub-contractor claims.",
       ],
       postedDate: "2026-01-02",
     },
@@ -126,13 +128,14 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       type: "Full-time",
       experience: "7-8 years",
       vacancy: 1,
-      description: "We are looking for a Planning Engineer to develop and maintain project schedules. You will be responsible for progress monitoring, delay analysis, and resource forecasting to ensure timely project delivery.",
+      description:
+        "We are looking for a Planning Engineer to develop and maintain project schedules. You will be responsible for progress monitoring, delay analysis, and resource forecasting to ensure timely project delivery.",
       requirements: [
         "Bachelor's degree in Civil Engineering.",
         "7 to 8 years of core experience in project planning and scheduling.",
         "Expert-level proficiency in Primavera P6 and Microsoft Project.",
         "Experience in generating S-curves, histograms, and daily/weekly progress reports.",
-        "Strong analytical skills to identify and mitigate potential project delays."
+        "Strong analytical skills to identify and mitigate potential project delays.",
       ],
       postedDate: "2026-01-02",
     },
@@ -144,34 +147,36 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       type: "Full-time",
       experience: "10+ years",
       vacancy: 1,
-      description: "The Construction Manager will lead the overall site execution, ensuring that projects are completed on time, within budget, and to the highest quality. You will manage large site teams and coordinate with consultants and stakeholders.",
+      description:
+        "The Construction Manager will lead the overall site execution, ensuring that projects are completed on time, within budget, and to the highest quality. You will manage large site teams and coordinate with consultants and stakeholders.",
       requirements: [
         "Bachelor's or Master's degree in Civil Engineering/Construction Management.",
         "10+ years of proven experience in managing large-scale residential or commercial projects.",
         "Exceptional leadership and onsite problem-solving capabilities.",
         "Deep understanding of safety regulations, labor management, and project lifecycles.",
-        "Ability to drive project milestones under tight deadlines."
+        "Ability to drive project milestones under tight deadlines.",
       ],
       postedDate: "2026-01-02",
     },
     {
-  "id": 8,
-  "title": "Safety Engineer",
-  "department": "HSE (Health, Safety, and Environment)",
-  "location": "Chevella, Hyderabad, India",
-  "type": "Full-time",
-  "experience": "5+ years",
-  "vacancy": 1,
-  "description": "We are looking for a Safety Engineer to develop and implement health and safety strategies on-site. You will be responsible for identifying potential hazards, conducting safety audits, and ensuring that all construction activities comply with legal and organizational safety standards to maintain a zero-incident environment.",
-  "requirements": [
-    "Bachelor’s degree in Engineering with a specialized Diploma in Industrial Safety or Fire & Safety.",
-    "Minimum 5 years of experience as a Safety Engineer in the construction industry.",
-    "Thorough knowledge of Indian Safety Standards, OSHA guidelines, and environmental regulations.",
-    "Proven experience in conducting safety induction training and emergency mock drills.",
-    "Strong ability to perform Hazard Identification and Risk Assessment (HIRA).",
-    "Excellent communication skills for coordinating with workers and project management teams."
-  ],
-      postedDate: "2026-01-06"
+      id: 8,
+      title: "Safety Engineer",
+      department: "HSE (Health, Safety, and Environment)",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "We are looking for a Safety Engineer to develop and implement health and safety strategies on-site. You will be responsible for identifying potential hazards, conducting safety audits, and ensuring that all construction activities comply with legal and organizational safety standards to maintain a zero-incident environment.",
+      requirements: [
+        "Bachelor’s degree in Engineering with a specialized Diploma in Industrial Safety or Fire & Safety.",
+        "Minimum 5 years of experience as a Safety Engineer in the construction industry.",
+        "Thorough knowledge of Indian Safety Standards, OSHA guidelines, and environmental regulations.",
+        "Proven experience in conducting safety induction training and emergency mock drills.",
+        "Strong ability to perform Hazard Identification and Risk Assessment (HIRA).",
+        "Excellent communication skills for coordinating with workers and project management teams.",
+      ],
+      postedDate: "2026-01-06",
     },
     {
       id: 9,
@@ -181,15 +186,16 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       type: "Full-time",
       experience: "8 years",
       vacancy: 1,
-      description: "The Design Coordinator will be responsible for synchronizing architectural, structural, and MEP drawings. You will ensure that design outputs are consistent, clash-free, and delivered according to the project timeline.",
+      description:
+        "The Design Coordinator will be responsible for synchronizing architectural, structural, and MEP drawings. You will ensure that design outputs are consistent, clash-free, and delivered according to the project timeline.",
       requirements: [
         "Bachelor's degree in Architecture or Civil Engineering.",
         "8 years of experience in design coordination for large-scale residential projects.",
         "Proficiency in AutoCAD, Revit, and BIM coordination.",
         "Strong ability to identify design discrepancies and provide technical solutions.",
-        "Excellent communication skills to liaison between consultants and site teams."
+        "Excellent communication skills to liaison between consultants and site teams.",
       ],
-      postedDate: "2026-01-13"
+      postedDate: "2026-01-13",
     },
     {
       id: 10,
@@ -199,15 +205,16 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       type: "Full-time",
       experience: "5 years",
       vacancy: 1,
-      description: "We are seeking a QS Engineer to handle quantity take-offs, prepare Bills of Quantities (BOQ), and process contractor bills. You will play a key role in monitoring project costs and material consumption.",
+      description:
+        "We are seeking a QS Engineer to handle quantity take-offs, prepare Bills of Quantities (BOQ), and process contractor bills. You will play a key role in monitoring project costs and material consumption.",
       requirements: [
         "Bachelor's degree in Civil Engineering.",
         "5 years of core experience in Quantity Surveying and material reconciliation.",
         "Expertise in MS Excel and billing software.",
         "Strong understanding of IS codes for measurement and rate analysis.",
-        "Detail-oriented with a focus on cost optimization."
+        "Detail-oriented with a focus on cost optimization.",
       ],
-      postedDate: "2026-01-13"
+      postedDate: "2026-01-13",
     },
     {
       id: 11,
@@ -217,15 +224,16 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       type: "Full-time",
       experience: "8 years",
       vacancy: 1,
-      description: "The Planning Manager will lead the scheduling and progress monitoring functions. You will develop master project schedules, identify critical path risks, and provide strategic reports to senior management.",
+      description:
+        "The Planning Manager will lead the scheduling and progress monitoring functions. You will develop master project schedules, identify critical path risks, and provide strategic reports to senior management.",
       requirements: [
         "Bachelor's degree in Civil Engineering; PMP certification is an advantage.",
         "8 years of experience in project planning, preferably in the residential sector.",
         "Mastery of Primavera P6 and Microsoft Project.",
         "Proven track record in delay analysis and resource leveling.",
-        "Analytical mindset with the ability to forecast project trends."
+        "Analytical mindset with the ability to forecast project trends.",
       ],
-      postedDate: "2026-01-13"
+      postedDate: "2026-01-13",
     },
     {
       id: 12,
@@ -235,15 +243,16 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       type: "Full-time",
       experience: "18+ years",
       vacancy: 1,
-      description: "We are looking for a veteran Project Manager to lead high-value residential developments from inception to completion. You will be responsible for overall project P&L, stakeholder management, and ensuring world-class construction quality.",
+      description:
+        "We are looking for a veteran Project Manager to lead high-value residential developments from inception to completion. You will be responsible for overall project P&L, stakeholder management, and ensuring world-class construction quality.",
       requirements: [
         "Bachelor's or Master's degree in Civil Engineering.",
         "18+ years of experience with a strong portfolio of successfully delivered high-rise or luxury villa projects.",
         "Exceptional leadership skills and experience managing multi-disciplinary teams.",
         "Strong commercial acumen and contract management expertise.",
-        "Ability to represent the company in high-level stakeholder and client meetings."
+        "Ability to represent the company in high-level stakeholder and client meetings.",
       ],
-      postedDate: "2026-01-13"
+      postedDate: "2026-01-13",
     },
     {
       id: 13,
@@ -253,15 +262,16 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       type: "Full-time",
       experience: "5+ years",
       vacancy: 1,
-      description: "The Safety Engineer will implement and enforce rigorous HSE protocols on-site. You will be responsible for maintaining a hazard-free work environment through regular audits, training, and risk assessments.",
+      description:
+        "The Safety Engineer will implement and enforce rigorous HSE protocols on-site. You will be responsible for maintaining a hazard-free work environment through regular audits, training, and risk assessments.",
       requirements: [
         "Degree in Engineering with a recognized Safety Diploma (ADIS/NEBOSH).",
         "5+ years of experience as a Safety professional in construction.",
         "Expertise in safety documentation, incident reporting, and compliance audits.",
         "Proactive approach to site safety and emergency response management.",
-        "Good command of local safety regulations and international standards."
+        "Good command of local safety regulations and international standards.",
       ],
-      postedDate: "2026-01-13"
+      postedDate: "2026-01-13",
     },
     {
       id: 14,
@@ -271,16 +281,112 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       type: "Full-time",
       experience: "5+ years",
       vacancy: 1,
-      description: "We are seeking a PE Civil (Project Engineer) to oversee on-site execution and ensure technical specifications are met. You will bridge the gap between design and physical construction, ensuring structural integrity and efficiency.",
+      description:
+        "We are seeking a PE Civil (Project Engineer) to oversee on-site execution and ensure technical specifications are met. You will bridge the gap between design and physical construction, ensuring structural integrity and efficiency.",
       requirements: [
         "Bachelor's degree in Civil Engineering.",
         "5+ years of experience in site execution and technical engineering roles.",
         "Strong knowledge of structural drawings, concrete technology, and finishing works.",
         "Ability to resolve technical issues on-site and supervise sub-contractors.",
-        "Commitment to quality and project timelines."
+        "Commitment to quality and project timelines.",
       ],
-      postedDate: "2026-01-13"
-    }
+      postedDate: "2026-01-13",
+    },
+    {
+      id: 15,
+      title: "QS Cum Contracts",
+      department: "Commercial & Contracts",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "8+ years",
+      vacancy: 1,
+      description:
+        "The QS Cum Contracts Manager will manage all commercial aspects of the project, including quantity surveying, contract administration, and dispute resolution. You will ensure that all agreements are legally sound and that project costs remain within contractual budgets.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering; MRICS or equivalent certification is a plus.",
+        "8+ years of experience in quantity surveying and contract management.",
+        "Expertise in FIDIC conditions, tender preparation, and claim management.",
+        "Strong proficiency in cost control and vendor management.",
+        "Excellent negotiation skills and legal acumen regarding construction contracts.",
+      ],
+      postedDate: "2026-01-13",
+    },
+    {
+      id: 16,
+      title: "Planning Engineer",
+      department: "Civil Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "7-8 years",
+      vacancy: 1,
+      description:
+        "The Planning Engineer will develop detailed project schedules and monitor physical progress against targets. You will be responsible for identifying potential bottlenecks and providing data-driven recommendations to keep the project on track.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "7-8 years of experience in project planning for residential or commercial buildings.",
+        "Advanced knowledge of Primavera P6 and Microsoft Project.",
+        "Experience in Earned Value Management (EVM) and resource scheduling.",
+        "Strong analytical skills for delay analysis and mitigation planning.",
+      ],
+      postedDate: "2026-01-13",
+    },
+    {
+      id: 17,
+      title: "Construction Manager",
+      department: "Civil Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "10+ years",
+      vacancy: 1,
+      description:
+        "We are looking for a Construction Manager to lead site execution teams. You will ensure that all construction activities are performed according to design specifications, safety standards, and project timelines.",
+      requirements: [
+        "Bachelor’s or Master’s degree in Civil Engineering.",
+        "Minimum 10 years of experience in site management for large-scale projects.",
+        "Proven track record in managing labor, materials, and equipment efficiently.",
+        "Strong leadership and site-level problem-solving abilities.",
+        "In-depth knowledge of safety codes and construction quality standards.",
+      ],
+      postedDate: "2026-01-13",
+    },
+    {
+      id: 18,
+      title: "Finishes Engineer",
+      department: "Civil Engineering - Finishing",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "The Finishes Engineer will oversee all interior and exterior finishing works, including flooring, painting, woodwork, and façade. You will be responsible for ensuring the highest aesthetic and structural quality during the final phases of construction.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering or Architecture.",
+        "5+ years of experience specifically focusing on finishing works for residential projects.",
+        "Eye for detail and high standards for workmanship and material quality.",
+        "Ability to coordinate with interior designers and specialized sub-contractors.",
+        "Knowledge of modern finishing materials and installation techniques.",
+      ],
+      postedDate: "2026-01-13",
+    },
+    {
+      id: 19,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "We are seeking an MEP Engineer to coordinate the installation of Mechanical, Electrical, and Plumbing systems. You will ensure that all systems are integrated correctly and function according to the project’s technical specifications.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "5+ years of experience in MEP site execution.",
+        "Proficiency in interpreting MEP drawings and coordinating with the civil team.",
+        "Working knowledge of HVAC, fire fighting, and plumbing systems.",
+        "Strong troubleshooting and site-supervision skills.",
+      ],
+      postedDate: "2026-01-13",
+    },
   ];
 
   // Get unique departments and locations for filter options
