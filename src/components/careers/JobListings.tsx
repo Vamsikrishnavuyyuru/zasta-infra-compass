@@ -172,7 +172,116 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     "Excellent communication skills for coordinating with workers and project management teams."
   ],
   "postedDate": "2026-01-06"
-}
+},
+    [
+  {
+    "id": 9,
+    "title": "Design Coordinator",
+    "department": "Civil Engineering",
+    "location": "Chevella, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "8 years",
+    "vacancy": 1,
+    "description": "The Design Coordinator will be responsible for synchronizing architectural, structural, and MEP drawings. You will ensure that design outputs are consistent, clash-free, and delivered according to the project timeline.",
+    "requirements": [
+      "Bachelor’s degree in Architecture or Civil Engineering.",
+      "8 years of experience in design coordination for large-scale residential projects.",
+      "Proficiency in AutoCAD, Revit, and BIM coordination.",
+      "Strong ability to identify design discrepancies and provide technical solutions.",
+      "Excellent communication skills to liaison between consultants and site teams."
+    ],
+    "postedDate": "2026-01-13"
+  },
+  {
+    "id": 10,
+    "title": "QS Engineer",
+    "department": "Quantity Surveying & Billing",
+    "location": "Chevella, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "5 years",
+    "vacancy": 1,
+    "description": "We are seeking a QS Engineer to handle quantity take-offs, prepare Bills of Quantities (BOQ), and process contractor bills. You will play a key role in monitoring project costs and material consumption.",
+    "requirements": [
+      "Bachelor’s degree in Civil Engineering.",
+      "5 years of core experience in Quantity Surveying and material reconciliation.",
+      "Expertise in MS Excel and billing software.",
+      "Strong understanding of IS codes for measurement and rate analysis.",
+      "Detail-oriented with a focus on cost optimization."
+    ],
+    "postedDate": "2026-01-13"
+  },
+  {
+    "id": 11,
+    "title": "Planning Manager",
+    "department": "Civil Engineering",
+    "location": "Chevella, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "8 years",
+    "vacancy": 1,
+    "description": "The Planning Manager will lead the scheduling and progress monitoring functions. You will develop master project schedules, identify critical path risks, and provide strategic reports to senior management.",
+    "requirements": [
+      "Bachelor's degree in Civil Engineering; PMP certification is an advantage.",
+      "8 years of experience in project planning, preferably in the residential sector.",
+      "Mastery of Primavera P6 and Microsoft Project.",
+      "Proven track record in delay analysis and resource leveling.",
+      "Analytical mindset with the ability to forecast project trends."
+    ],
+    "postedDate": "2026-01-13"
+  },
+  {
+    "id": 12,
+    "title": "Project Manager",
+    "department": "Civil Engineering",
+    "location": "Chevella, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "18+ years",
+    "vacancy": 1,
+    "description": "We are looking for a veteran Project Manager to lead high-value residential developments from inception to completion. You will be responsible for overall project P&L, stakeholder management, and ensuring world-class construction quality.",
+    "requirements": [
+      "Bachelor’s or Master’s degree in Civil Engineering.",
+      "18+ years of experience with a strong portfolio of successfully delivered high-rise or luxury villa projects.",
+      "Exceptional leadership skills and experience managing multi-disciplinary teams.",
+      "Strong commercial acumen and contract management expertise.",
+      "Ability to represent the company in high-level stakeholder and client meetings."
+    ],
+    "postedDate": "2026-01-13"
+  },
+  {
+    "id": 13,
+    "title": "Safety Engineer",
+    "department": "HSE (Health, Safety, and Environment)",
+    "location": "Chevella, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "5+ years",
+    "vacancy": 1,
+    "description": "The Safety Engineer will implement and enforce rigorous HSE protocols on-site. You will be responsible for maintaining a hazard-free work environment through regular audits, training, and risk assessments.",
+    "requirements": [
+      "Degree in Engineering with a recognized Safety Diploma (ADIS/NEBOSH).",
+      "5+ years of experience as a Safety professional in construction.",
+      "Expertise in safety documentation, incident reporting, and compliance audits.",
+      "Proactive approach to site safety and emergency response management.",
+      "Good command of local safety regulations and international standards."
+    ],
+    "postedDate": "2026-01-13"
+  },
+  {
+    "id": 14,
+    "title": "PE Civil",
+    "department": "Civil Engineering",
+    "location": "Chevella, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "5+ years",
+    "vacancy": 1,
+    "description": "We are seeking a PE Civil (Project Engineer) to oversee on-site execution and ensure technical specifications are met. You will bridge the gap between design and physical construction, ensuring structural integrity and efficiency.",
+    "requirements": [
+      "Bachelor’s degree in Civil Engineering.",
+      "5+ years of experience in site execution and technical engineering roles.",
+      "Strong knowledge of structural drawings, concrete technology, and finishing works.",
+      "Ability to resolve technical issues on-site and supervise sub-contractors.",
+      "Commitment to quality and project timelines."
+    ],
+    "postedDate": "2026-01-13"
+  }
   ];
 
   // Get unique departments and locations for filter options
