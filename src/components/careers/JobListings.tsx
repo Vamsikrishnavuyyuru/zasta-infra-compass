@@ -47,7 +47,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     {
       id: 2,
       title: "Design Coordinator",
-      department: "Architecture & Design",
+      department: "Civil Engineering",
       location: "Chevella, Hyderabad, India",
       type: "Full-time",
       experience: "8+ years",
@@ -121,7 +121,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     {
       id: 6,
       title: "Planning Engineer",
-      department: "Project Planning & Controls",
+      department: "Civil Engineering",
       location: "Tarnaka, Hyderabad, India",
       type: "Full-time",
       experience: "7-8 years",
@@ -139,7 +139,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     {
       id: 7,
       title: "Construction Manager",
-      department: "Operations",
+      department: "Civil Engineering",
       location: "Tarnaka, Hyderabad, India",
       type: "Full-time",
       experience: "10+ years",
@@ -153,7 +153,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Ability to drive project milestones under tight deadlines."
       ],
       postedDate: "2026-01-02",
-    }
+    },
+    {
+  "id": 08,
+  "title": "Safety Engineer",
+  "department": "HSE (Health, Safety, and Environment)",
+  "location": "Chevella, Hyderabad, India",
+  "type": "Full-time",
+  "experience": "5+ years",
+  "vacancy": 1,
+  "description": "We are looking for a Safety Engineer to develop and implement health and safety strategies on-site. You will be responsible for identifying potential hazards, conducting safety audits, and ensuring that all construction activities comply with legal and organizational safety standards to maintain a zero-incident environment.",
+  "requirements": [
+    "Bachelor’s degree in Engineering with a specialized Diploma in Industrial Safety or Fire & Safety.",
+    "Minimum 5 years of experience as a Safety Engineer in the construction industry.",
+    "Thorough knowledge of Indian Safety Standards, OSHA guidelines, and environmental regulations.",
+    "Proven experience in conducting safety induction training and emergency mock drills.",
+    "Strong ability to perform Hazard Identification and Risk Assessment (HIRA).",
+    "Excellent communication skills for coordinating with workers and project management teams."
+  ],
+  "postedDate": "2026-01-06"
+}
   ];
 
   // Get unique departments and locations for filter options
