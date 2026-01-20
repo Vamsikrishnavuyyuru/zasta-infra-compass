@@ -26,59 +26,62 @@ const JobListings = ({ onApply }: JobListingsProps) => {
 
   const currentOpenings: JobOpening[] = [
     {
-    "id": 1,
-    "title": "MEP Engineer",
-    "department": "Mechanical Engineering",
-    "location": "Chevella, Hyderabad, India",
-    "type": "Full-time",
-    "experience": "5+ years",
-    "vacancy": 1,
-    "description": "We are looking for a dedicated MEP Engineer to oversee the on-site installation and coordination of Mechanical, Electrical, and Plumbing services. The ideal candidate will ensure that all MEP works are executed according to approved drawings and quality standards.",
-    "requirements": [
-      "Bachelor’s degree in Mechanical or Electrical Engineering.",
-      "Minimum 5 years of experience in site-level MEP execution for residential projects.",
-      "Strong understanding of HVAC, plumbing, and fire fighting system installations.",
-      "Ability to coordinate with sub-contractors and site supervisors effectively.",
-      "Proficiency in AutoCAD for reviewing and modifying shop drawings."
-    ],
-    "postedDate": "2025-11-05"
-  },
-  {
-    "id": 2,
-    "title": "Design Coordinator",
-    "department": "Architecture & Design",
-    "location": "Chevella, Hyderabad, India",
-    "type": "Full-time",
-    "experience": "8+ years",
-    "vacancy": 1,
-    "description": "The Design Coordinator will act as the bridge between the design consultants and the construction team. This role focuses on streamlining information flow, resolving design conflicts, and ensuring that project timelines are met through efficient technical coordination.",
-    "requirements": [
-      "Bachelor's degree in Architecture or Civil Engineering.",
-      "8+ years of experience in design management or coordination within the construction industry.",
-      "Expertise in managing architectural, structural, and MEP drawing sets.",
-      "High proficiency in Revit, BIM, and AutoCAD.",
-      "Strong organizational skills and the ability to manage multiple stakeholders."
-    ],
-    "postedDate": "2025-11-05"
-  },
-  {
-    "id": 3,
-    "title": "Quality Manager",
-    "department": "Quality Assurance & Control",
-    "location": "Chevella, Hyderabad, India",
-    "type": "Full-time",
-    "experience": "10+ years",
-    "vacancy": 1,
-    "description": "We are seeking a Quality Manager to lead our QA/QC department. You will be responsible for developing, implementing, and maintaining quality management systems across our residential projects to ensure excellence in every phase of construction.",
-    "requirements": [
-      "Bachelor's degree in Civil Engineering; QA/QC certifications (ISO) are a plus.",
-      "Minimum 10 years of experience in Quality Management for large-scale residential developments.",
-      "Expert knowledge of material testing, site inspections, and construction safety standards.",
-      "Proven track record in implementing quality audit processes.",
-      "Strong leadership skills and attention to detail."
-    ],
-    "postedDate": "2025-11-05"
-  },
+      id: 1,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "We are looking for a dedicated MEP Engineer to oversee the on-site installation and coordination of Mechanical, Electrical, and Plumbing services. The ideal candidate will ensure that all MEP works are executed according to approved drawings and quality standards.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "Minimum 5 years of experience in site-level MEP execution for residential projects.",
+        "Strong understanding of HVAC, plumbing, and fire fighting system installations.",
+        "Ability to coordinate with sub-contractors and site supervisors effectively.",
+        "Proficiency in AutoCAD for reviewing and modifying shop drawings.",
+      ],
+      postedDate: "2026-01-02",
+    },
+    {
+      id: 2,
+      title: "Design Coordinator",
+      department: "Architecture & Design",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "8+ years",
+      vacancy: 1,
+      description:
+        "The Design Coordinator will act as the bridge between the design consultants and the construction team. This role focuses on streamlining information flow, resolving design conflicts, and ensuring that project timelines are met through efficient technical coordination.",
+      requirements: [
+        "Bachelor's degree in Architecture or Civil Engineering.",
+        "8+ years of experience in design management or coordination within the construction industry.",
+        "Expertise in managing architectural, structural, and MEP drawing sets.",
+        "High proficiency in Revit, BIM, and AutoCAD.",
+        "Strong organizational skills and the ability to manage multiple stakeholders.",
+      ],
+      postedDate: "2026-01-02",
+    },
+    {
+      id: 3,
+      title: "Quality Manager",
+      department: "Quality Assurance & Control",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "10+ years",
+      vacancy: 1,
+      description:
+        "We are seeking a Quality Manager to lead our QA/QC department. You will be responsible for developing, implementing, and maintaining quality management systems across our residential projects to ensure excellence in every phase of construction.",
+      requirements: [
+        "Bachelor's degree in Civil Engineering; QA/QC certifications (ISO) are a plus.",
+        "Minimum 10 years of experience in Quality Management for large-scale residential developments.",
+        "Expert knowledge of material testing, site inspections, and construction safety standards.",
+        "Proven track record in implementing quality audit processes.",
+        "Strong leadership skills and attention to detail.",
+      ],
+      postedDate: "2026-01-02",
+    },
   ];
 
   // Get unique departments and locations for filter options
