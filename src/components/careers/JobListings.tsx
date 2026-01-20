@@ -463,6 +463,63 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-01-20",
     },
+    {
+      id: 24,
+      title: "QS Cum Contracts",
+      department: "Commercial & Contracts",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "8+ years",
+      vacancy: 1,
+      description:
+        "We are seeking a dual-role professional to manage both Quantity Surveying and Contractual obligations. You will lead the commercial team in cost planning, procurement advice, and the administration of construction contracts to mitigate financial and legal risks.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering; additional certification in Contract Management is preferred.",
+        "8+ years of experience in QS and handling diverse contract types (Fixed Price, Item Rate, etc.).",
+        "Expertise in pre-and-post contract activities, including tender evaluation and final account settlement.",
+        "Strong understanding of legal clauses, arbitration, and local construction laws.",
+        "Proficient in cost management software and advanced Excel.",
+      ],
+      postedDate: "2026-01-20",
+    },
+    {
+      id: 25,
+      title: "Planning Engineer",
+      department: "Civil Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "7-8 years",
+      vacancy: 1,
+      description:
+        "The Planning Engineer will be responsible for creating and managing the master project schedule. You will perform critical path analysis and resource leveling to ensure that the project milestones are met within the specified timeframe.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "7 to 8 years of core planning experience in residential or commercial high-rise projects.",
+        "Advanced proficiency in Primavera P6 and Microsoft Project is mandatory.",
+        "Strong skill set in generating progress dashboards, S-Curves, and productivity reports.",
+        "Ability to coordinate with site teams to capture accurate progress data and identify potential delays.",
+      ],
+      postedDate: "2026-01-20",
+    },
+    {
+      id: 26,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "We are looking for an MEP Engineer to supervise the installation of Mechanical, Electrical, and Plumbing systems. You will ensure that all MEP installations are integrated seamlessly with the civil structure and comply with safety and performance standards.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "5+ years of hands-on experience in MEP site execution and coordination.",
+        "Deep understanding of HVAC, fire suppression, and electrical distribution systems.",
+        "Ability to review shop drawings and ensure compliance with local building codes.",
+        "Strong coordination skills for managing specialized MEP sub-contractors.",
+      ],
+      postedDate: "2026-01-20",
+    },
   ];
 
   // Get unique departments and locations for filter options
