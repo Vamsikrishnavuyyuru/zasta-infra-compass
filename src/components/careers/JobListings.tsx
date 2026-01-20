@@ -26,7 +26,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
 
   const currentOpenings: JobOpening[] = [
     {
-    "id": 01,
+    "id": 1,
     "title": "MEP Engineer",
     "department": "Mechanical Engineering",
     "location": "Chevella, Hyderabad, India",
@@ -44,7 +44,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     "postedDate": "2025-11-05"
   },
   {
-    "id": 02,
+    "id": 2,
     "title": "Design Coordinator",
     "department": "Architecture & Design",
     "location": "Chevella, Hyderabad, India",
@@ -62,7 +62,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     "postedDate": "2025-11-05"
   },
   {
-    "id": 03,
+    "id": 3,
     "title": "Quality Manager",
     "department": "Quality Assurance & Control",
     "location": "Chevella, Hyderabad, India",
