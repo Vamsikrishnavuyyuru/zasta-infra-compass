@@ -155,7 +155,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       postedDate: "2026-01-02",
     },
     {
-  "id": 08,
+  "id": 8,
   "title": "Safety Engineer",
   "department": "HSE (Health, Safety, and Environment)",
   "location": "Chevella, Hyderabad, India",
