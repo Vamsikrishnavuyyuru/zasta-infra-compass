@@ -634,6 +634,27 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-01-23",
     },
+    {
+      id: 33,
+      title: "Mechanical Inspection Engineer",
+      department: "Quality Assurance & Inspection",
+      location: "Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "7 years",
+      vacancy: 1,
+      description:
+        "We are seeking a Mechanical Inspection Engineer to oversee the quality and compliance of mechanical installations at our Effluent Treatment Plant (ETP) in Vizag. This role involves rigorous testing, material verification, and ensuring that all industrial equipment meets technical and environmental specifications.",
+      requirements: [
+        "Bachelor’s degree in Mechanical Engineering.",
+        "Minimum 7 years of experience in mechanical inspection and quality control.",
+        "Mandatory experience in Effluent Treatment Plant (ETP) or industrial water treatment projects.",
+        "Expertise in inspecting pumps, piping systems, valves, and heavy mechanical machinery.",
+        "Proficiency in non-destructive testing (NDT) methods and pressure testing protocols.",
+        "Knowledge of corrosion protection and coating standards for industrial environments.",
+        "Excellent documentation skills for inspection reports and compliance certificates.",
+      ],
+      postedDate: "2026-01-27",
+    },
   ];
 
   // Get unique departments and locations for filter options
