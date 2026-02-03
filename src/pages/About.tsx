@@ -59,9 +59,9 @@ const About = () => {
   ];
 
   const stats = [
-    { icon: Users, number: "150+", label: "Skilled Professionals" },
-    { icon: Building, number: "35+", label: "Projects Completed" },
-    { icon: Calendar, number: "9+", label: "Years of Experience" },
+    { icon: Users, number: "170+", label: "Skilled Professionals" },
+    { icon: Building, number: "40+", label: "Projects Completed" },
+    { icon: Calendar, number: "10+", label: "Years of Experience" },
   ];
 
   return (
