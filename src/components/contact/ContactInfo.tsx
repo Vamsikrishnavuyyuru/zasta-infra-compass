@@ -6,7 +6,7 @@ const ContactInfo = () => {
     {
       icon: MapPin,
       title: "Office Address",
-      details: "Address: FLAT NO:904-A, SY NO:150, VAZHRAA PRATHIK, BLOCK-A, Nizampet, Qutubullapur, Hyderabad- 500090",
+      details: "FLAT NO:904-A, SY NO:150, VAZHRAA PRATHIK, BLOCK-A, Nizampet, Qutubullapur, Hyderabad- 500090",
     },
     {
       icon: Phone,
