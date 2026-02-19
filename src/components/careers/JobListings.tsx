@@ -1129,6 +1129,44 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-02-11",
     },
+    {
+      id: 65,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: " Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Responsible for the end-to-end execution of Mechanical, Electrical, and Plumbing services for premium villa developments. You will ensure that independent infrastructure and luxury finishes for villas are delivered to high standards.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "5+ years of experience in MEP site execution.",
+        "Specific experience in luxury Villa projects is mandatory.",
+        "Proven ability to coordinate HVAC, domestic water, and electrical services for independent units.",
+        "Experience in sub-contractor management and material reconciliation.",
+      ],
+      postedDate: "2026-02-15",
+    },
+    {
+      id: 66,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: " Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "This role involves the coordination and integration of MEP services within a high-rise residential tower. You will focus on the unique service requirements and sleeve planning associated with Mivan aluminum formwork.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "5+ years of experience in MEP engineering roles.",
+        "Mandatory experience in High-Rise projects utilizing Mivan technology.",
+        "Expertise in vertical service distribution and coordinating with the structural team.",
+        "Strong knowledge of high-rise building and safety codes.",
+      ],
+      postedDate: "2026-02-15",
+    },
   ];
 
   // Get unique departments and locations for filter options
