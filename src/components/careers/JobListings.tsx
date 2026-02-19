@@ -1071,6 +1071,64 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-02-09",
     },
+    {
+      id: 62,
+      title: "Safety Engineer",
+      department: "HSE (Health, Safety, and Environment)",
+      location: "Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "The Safety Engineer will be responsible for implementing and enforcing industrial HSE standards at our Effluent Treatment Plant (ETP). This role involves managing chemical hazards, confined space safety, and ensuring total compliance with environmental and industrial safety regulations.",
+      requirements: [
+        "Degree/Diploma in Engineering with a specialized Safety certification (ADIS/NEBOSH).",
+        "5+ years of core experience in industrial safety management.",
+        "Mandatory experience in Effluent Treatment Plants (ETP) or large-scale Industrial plants.",
+        "Strong knowledge of Hazard Identification and Risk Assessment (HIRA) for chemical environments.",
+        "Proven ability to manage emergency response plans and industrial safety training.",
+      ],
+      postedDate: "2026-02-11",
+    },
+    {
+      id: 63,
+      title: "Mechanical Inspection Engineer",
+      department: "Mechanical Department ",
+      location: "Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "7 years",
+      vacancy: 1,
+      description:
+        "Senior-level mechanical inspection role overseeing the quality and reliability of ETP infrastructure. You will lead the verification of industrial equipment, material compliance, and specialized mechanical testing for heavy-duty industrial systems.",
+      requirements: [
+        "Bachelor’s degree in Mechanical Engineering.",
+        "7 years of experience in mechanical inspection and industrial QA/QC.",
+        "Mandatory proven experience in Effluent Treatment Plants (ETP) or Industrial plants.",
+        "Expertise in inspecting pumps, blowers, agitators, and industrial piping networks.",
+        "Advanced knowledge of Non-Destructive Testing (NDT) and pressure testing standards.",
+        "Strong technical reporting and equipment commissioning skills.",
+      ],
+      postedDate: "2026-02-11",
+    },
+    {
+      id: 64,
+      title: "Mechanical Inspection Engineer",
+      department: "Mechanical Department ",
+      location: "Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "4 years",
+      vacancy: 1,
+      description:
+        "We are looking for a Mechanical Inspection Engineer to conduct site inspections for our industrial ETP project. You will verify that mechanical installations align with technical drawings and meet the operational standards required for industrial waste treatment.",
+      requirements: [
+        "Bachelor’s degree in Mechanical Engineering.",
+        "4 years of experience in mechanical site inspection.",
+        "Previous experience in Effluent Treatment Plants (ETP) or Industrial projects is mandatory.",
+        "Strong ability to read and interpret mechanical P&IDs and GA drawings.",
+        "Detail-oriented approach to monitoring installation quality and documenting site reports.",
+      ],
+      postedDate: "2026-02-11",
+    },
   ];
 
   // Get unique departments and locations for filter options
