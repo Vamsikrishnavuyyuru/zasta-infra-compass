@@ -28,7 +28,7 @@ const About = () => {
     },
     {
       year: "2024",
-      title: "Launched Sitesync - Construction Quality Management Software",
+      title: "Launched Conqual - Construction Quality Management Software",
       description: "Introduced advanced digital quality management solution for construction projects",
     },
     { year: "2025", title: "100+ Employees Milestone", description: "Zasta reaches 100+ skilled professionals." },
