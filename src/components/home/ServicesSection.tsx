@@ -1,27 +1,29 @@
-
-import { Card, CardContent } from '@/components/ui/card';
-import { Users, Building, Smartphone, ChevronRight } from 'lucide-react';
+import { Card, CardContent } from "@/components/ui/card";
+import { Users, Building, Smartphone, ChevronRight } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
     {
       icon: Users,
       title: "Workforce Solutions",
-      description: "Civil, Mechanical, Electrical, Instrumentation & Software Engineers with complete onboarding and compliance support.",
-      features: ["Sourcing & Onboarding", "Payroll Management", "Flexi-deployment", "Project-based roles"]
+      description:
+        "Civil, Mechanical, Electrical, Instrumentation & Software Engineers with complete onboarding and compliance support.",
+      features: ["Sourcing & Onboarding", "Payroll Management", "Flexi-deployment", "Project-based roles"],
     },
     {
       icon: Building,
       title: "Construction Project Management",
-      description: "End-to-end project planning, scheduling, quality control, safety management, and execution support.",
-      features: ["Planning & Scheduling", "Quality Control", "Safety Management", "Value Engineering"]
+      description:
+        "End-to-end project planning, scheduling, quality control, safety management, and execution support.",
+      features: ["Planning & Scheduling", "Quality Control", "Safety Management", "Value Engineering"],
     },
     {
       icon: Smartphone,
-      title: "SiteSync Digital Suite",
-      description: "Advanced field quality app with 2000+ checklists, offline functionality, and real-time auditing capabilities.",
-      features: ["2000+ Checklists", "Offline Functionality", "Real-time Audits", "Photo Tagging"]
-    }
+      title: "Conqual Digital Suite",
+      description:
+        "Advanced field quality app with 2000+ checklists, offline functionality, and real-time auditing capabilities.",
+      features: ["2000+ Checklists", "Offline Functionality", "Real-time Audits", "Photo Tagging"],
+    },
   ];
 
   return (
@@ -31,7 +33,7 @@ const ServicesSection = () => {
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h2>
           <p className="text-xl text-gray-600">Comprehensive solutions for your infrastructure needs</p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
