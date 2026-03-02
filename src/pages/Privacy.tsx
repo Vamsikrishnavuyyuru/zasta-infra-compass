@@ -80,7 +80,7 @@ const Privacy = () => {
                   <br />
                   Phone: +91 9701620621
                   <br />
-                  Address: FLAT NO:904-A, SY NO:150, VAZHRAA PRATHIK, BLOCK-A, Nizampet, Qutubullapur, Hyderabad-
+                  Address: Flat No:904-A, SY NO:150, VAZHRAA PRATHIK, BLOCK-A, Nizampet, Qutubullapur, Hyderabad-
                   500090, India
                 </p>
               </CardContent>
