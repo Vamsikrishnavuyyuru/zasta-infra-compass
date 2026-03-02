@@ -88,7 +88,7 @@ const Privacy = () => {
 
             <Card>
               <CardContent className="pt-6">
-                <p className="text-gray-500 text-sm">Last updated: January 2025</p>
+                <p className="text-gray-500 text-sm">Last updated: March 2026</p>
               </CardContent>
             </Card>
           </div>
