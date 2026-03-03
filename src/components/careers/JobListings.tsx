@@ -1357,6 +1357,82 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-02-24",
     },
+    {
+      id: 77,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5-8 years",
+      vacancy: 1,
+      description:
+        "We are seeking an MEP Engineer to lead the service installations for a luxury villa project. You will manage the integration of high-end mechanical, electrical, and plumbing systems, ensuring they meet the custom architectural requirements of independent residential units.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "5 to 8 years of experience in MEP site execution.",
+        "Mandatory proven experience in luxury Villa projects.",
+        "Expertise in coordinating independent unit service connections and site-wide utilities.",
+        "Strong sub-contractor management and quality control skills.",
+      ],
+      postedDate: "2026-02-25",
+    },
+    {
+      id: 78,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "5-8 years",
+      vacancy: 1,
+      description:
+        "Responsible for managing MEP services for a high-rise residential development. This role requires specialized knowledge of integrating services within the Mivan aluminum formwork construction cycle to ensure zero-conflict vertical distribution.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "5 to 8 years of experience in high-rise MEP coordination.",
+        "Mandatory experience in projects utilizing Mivan technology.",
+        "Proficiency in planning electrical conduits and plumbing sleeves within structural casting schedules.",
+        "Technical knowledge of high-rise firefighting and vertical service integration.",
+      ],
+      postedDate: "2026-02-25",
+    },
+    {
+      id: 79,
+      title: "Mechanical Inspection Senior Engineer",
+      department: "Quality Assurance & Inspection",
+      location: "Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "7 years",
+      vacancy: 1,
+      description:
+        "Senior inspection role for an industrial Effluent Treatment Plant (ETP). You will lead the QA/QC process, verifying the mechanical integrity of heavy-duty pumps, blowers, and chemical filtration systems according to industrial standards.",
+      requirements: [
+        "Bachelor’s degree in Mechanical Engineering.",
+        "7 years of core experience in mechanical inspection for industrial plants.",
+        "Mandatory experience in Effluent Treatment Plants (ETP) or similar industrial wastewater projects.",
+        "Expertise in NDT, pressure testing, and P&ID verification.",
+        "Advanced reporting skills for equipment commissioning and compliance.",
+      ],
+      postedDate: "2026-02-25",
+    },
+    {
+      id: 80,
+      title: "QS and Billing Engineer",
+      department: "Quantity Surveying & Billing",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "4-6 years",
+      vacancy: 1,
+      description:
+        "We are looking for a QS and Billing Engineer to handle quantity take-offs, prepare Bills of Quantities (BOQ), and process contractor bills for residential developments. You will play a key role in monitoring project costs and material reconciliation.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "4 to 6 years of experience in QS and Billing roles.",
+        "Mandatory experience in residential construction projects.",
+        "Strong proficiency in MS Excel and specialized billing software.",
+        "Ability to handle rate analysis, measurements, and sub-contractor bill verification.",
+      ],
+      postedDate: "2026-02-25",
+    },
   ];
 
   // Get unique departments and locations for filter options
