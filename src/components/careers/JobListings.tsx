@@ -1674,9 +1674,8 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-02-27",
     },
-    [
-      {
-        id: 94,
+    {
+      id: 94,
         title: "Mechanical Inspection Junior Engineer",
         department: "Quality Assurance & Inspection",
         location: "Vizag, Andhra Pradesh, India",
@@ -1916,7 +1915,6 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         ],
         postedDate: "2026-03-03",
       },
-    ],
   ];
 
   // Get unique departments and locations for filter options
