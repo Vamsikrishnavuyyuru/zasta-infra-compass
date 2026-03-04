@@ -31,7 +31,7 @@ const About = () => {
       title: "Launched Conqual - Construction Quality Management Software",
       description: "Introduced advanced digital quality management solution for construction projects",
     },
-    { year: "2025", title: "100+ Employees Milestone", description: "Zasta reaches 100+ skilled professionals." },
+    { year: "2025", title: "170+ Employees Milestone", description: "Zasta reaches 170+ skilled professionals." },
     { year: "2025", title: "Company Rebranding", description: "Name changed to Zasta Enterprises Pvt Ltd" },
   ];
 
