@@ -33,6 +33,13 @@ const HeroSection = () => {
       ctaAction: () => navigate("/about"),
       bg: "bg-gradient-to-br from-zasta-green-800 via-zasta-gold-700 to-zasta-green-600",
     },
+    {
+      title: "Smart Hiring for Construction Industry",
+      subtitle: "NirmanJobs – Connecting employers and skilled professionals across infrastructure, real estate, power, transportation, and industrial sectors through a modern digital recruitment platform.",
+      cta: "Explore NirmanJobs",
+      ctaAction: () => window.open("https://nirmanjobs.com/", "_blank"),
+      bg: "bg-gradient-to-br from-zasta-green-900 via-zasta-gold-600 to-zasta-green-700",
+    },
   ];
 
   const handleWorkWithUs = () => {
