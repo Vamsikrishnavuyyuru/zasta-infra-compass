@@ -22,7 +22,7 @@ const HeroSection = () => {
       title: "Construction Quality Management Software",
       subtitle: "Conqual - Advanced field quality control with 2000+ checklists",
       cta: "Discover Conqual",
-      ctaAction: () => navigate("/services"),
+      ctaAction: () => window.open("https://www.conqual.net/", "_blank"),
       bg: "bg-gradient-to-br from-zasta-gold-800 via-zasta-gold-600 to-zasta-green-600",
     },
     {
