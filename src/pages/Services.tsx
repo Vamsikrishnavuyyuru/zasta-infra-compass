@@ -17,7 +17,7 @@ const Services = () => {
         {
           name: "Sourcing & Onboarding",
           details:
-            "Comprehensive talent acquisition process including skill assessment, background verification, and seamless onboarding procedures for both infrastructure and IT sectors.",
+            "Comprehensive talent acquisition process including skill assessment, background verification, and seamless onboarding procedures for both Real-Estate and infrastructure.",
         },
         {
           name: "Payroll Management",
