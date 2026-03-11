@@ -59,7 +59,7 @@ const About = () => {
   ];
 
   const stats = [
-    { icon: Users, number: "170+", label: "Skilled Professionals" },
+    { icon: Users, number: "170+", label: "Expert Engineers" },
     { icon: Building, number: "40+", label: "Projects Completed" },
     { icon: Calendar, number: "10+", label: "Years of Experience" },
   ];
