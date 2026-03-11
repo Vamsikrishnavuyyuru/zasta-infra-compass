@@ -46,7 +46,7 @@ const Services = () => {
         },
       ],
       detailedDescription:
-        "Our workforce solutions provide end-to-end talent management for infrastructure and IT projects. We specialize in sourcing highly skilled engineers and IT professionals across multiple disciplines, ensuring they're project-ready through comprehensive onboarding processes.",
+        "Our workforce solutions provide end-to-end talent management for Real-Estate and infrastructure projects. We specialize in sourcing highly skilled engineers and IT professionals across multiple disciplines, ensuring they're project-ready through comprehensive onboarding processes.",
     },
     {
       icon: Building,
