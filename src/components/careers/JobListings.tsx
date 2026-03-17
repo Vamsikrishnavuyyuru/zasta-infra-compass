@@ -2391,6 +2391,46 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-03-16",
     },
+    {
+      id: 133,
+      title: "Quality Manager",
+      department: "Quality Management",
+      location: "Noida, Uttar Pradesh, India",
+      type: "Full-time",
+      experience: "12+ years",
+      vacancy: 1,
+      description:
+        "We are looking for a veteran Quality Manager to lead the QA/QC department for a high-rise residential project in Noida. This is a critical role requiring an immediate joiner to oversee Mivan formwork quality, concrete durability, and structural compliance.",
+      requirements: [
+        "Bachelor’s or Master’s degree in Civil Engineering.",
+        "12+ years of experience in construction quality management.",
+        "Mandatory expertise in High-Rise projects utilizing Mivan technology.",
+        "Proven track record in implementing Quality Management Systems (QMS) and handling external audits.",
+        "Immediate availability to join is highly preferred.",
+        "Strong leadership skills to manage site-level quality teams and vendor compliance.",
+      ],
+      postedDate: "2026-03-16",
+    },
+    {
+      id: 134,
+      title: "Quality Engineer",
+      department: "Civil Engineer",
+      location: "Gurugram, Haryana, India",
+      type: "Full-time",
+      experience: "7+ years",
+      vacancy: 1,
+      description:
+        "Responsible for maintaining high quality standards at our Gurugram residential site. You will monitor material testing, site execution, and finishing works to ensure they align with approved project specifications. Immediate joiners are required.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "7+ years of experience in QA/QC for residential construction.",
+        "In-depth knowledge of IS codes, material testing procedures (concrete, steel, finishing), and documentation.",
+        "Experience in preparing and maintaining Pour Cards, Test Reports, and Non-Conformance Reports (NCR).",
+        "Must be available to join immediately.",
+        "Detail-oriented approach with a focus on delivering zero-defect construction.",
+      ],
+      postedDate: "2026-03-16",
+    },
   ];
 
   // Get unique departments and locations for filter options
