@@ -2431,6 +2431,162 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-03-16",
     },
+    {
+    "id": 135,
+    "title": "Mechanical Inspection Senior Engineer",
+    "department": "Mechanical Engineering,
+    "location": "Vizag, Andhra Pradesh, India",
+    "type": "Full-time",
+    "experience": "7 years",
+    "vacancy": 1,
+    "description": "Senior-level mechanical inspection role for an Effluent Treatment Plant (ETP). You will lead the QA/QC of industrial infrastructure, ensuring heavy-duty mechanical systems meet industrial plant standards.",
+    "requirements": [
+      "Bachelor’s degree in Mechanical Engineering.",
+      "7 years of experience in industrial mechanical inspection.",
+      "Mandatory experience in Effluent Treatment Plants (ETP) or Industrial plants.",
+      "Expertise in NDT, pressure testing, and P&ID verification.",
+      "Proven ability to manage vendor compliance and site-level quality audits."
+    ],
+    "postedDate": "2026-03-21"
+  },
+  {
+    "id": 136,
+    "title": "QS and Billing Engineer",
+    "department": "Quantity Surveying & Billing",
+    "location": "Chevella, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "4-6 years",
+    "vacancy": 1,
+    "description": "Responsible for managing quantity take-offs and contractor billing for residential developments. This role involves precise cost monitoring and material reconciliation.",
+    "requirements": [
+      "Bachelor’s degree in Civil Engineering.",
+      "4 to 6 years of experience in QS and Billing roles.",
+      "Mandatory experience in residential construction projects.",
+      "Strong proficiency in MS Excel and billing documentation.",
+      "Detail-oriented approach to measurement and rate analysis."
+    ],
+    "postedDate": "2026-03-21"
+  },
+  {
+    "id": 137,
+    "title": "MEP Engineer",
+    "department": "Mechanical Engineering",
+    "location": "Chevella, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "4-6 years",
+    "vacancy": 1,
+    "description": "Coordinate MEP services for residential projects. Focus on the seamless integration of electrical, plumbing, and HVAC systems within residential unit specifications.",
+    "requirements": [
+      "Bachelor’s degree in Mechanical or Electrical Engineering.",
+      "4 to 6 years of residential MEP site experience.",
+      "Ability to plan conduits and sleeves in coordination with civil teams.",
+      "Knowledge of residential firefighting and domestic water systems."
+    ],
+    "postedDate": "2026-03-21"
+  },
+  {
+    "id": 138,
+    "title": "MEP Engineer",
+    "department": "Mechanical Engineering",
+    "location": "Tellapur, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "4-6 years",
+    "vacancy": 1,
+    "description": "Oversee MEP installations at the Tellapur residential site. Ensure high-quality execution of internal services and infrastructure for premium residential units.",
+    "requirements": [
+      "Bachelor’s degree in Mechanical or Electrical Engineering.",
+      "4 to 6 years of experience in residential construction.",
+      "Strong site supervision and sub-contractor management skills.",
+      "Familiarity with luxury residential finishes and service standards."
+    ],
+    "postedDate": "2026-03-21"
+  },
+  {
+    "id": 139,
+    "title": "MEP Engineer",
+    "department": "Mechanical Engineering",
+    "location": "Miyapur, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "4-6 years",
+    "vacancy": 1,
+    "description": "Lead MEP coordination for a Mivan-based high-rise in Miyapur. Ensure service integration aligns with the aluminum formwork construction cycles.",
+    "requirements": [
+      "Bachelor’s degree in Mechanical or Electrical Engineering.",
+      "4 to 6 years of experience in High-Rise construction.",
+      "Mandatory experience in projects utilizing Mivan technology.",
+      "Expertise in vertical service distribution and sleeve planning."
+    ],
+    "postedDate": "2026-03-21"
+  },
+  {
+    "id": 140,
+    "title": "MEP Engineer",
+    "department": "Mechanical Engineering",
+    "location": "Tarnaka, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "5+ years",
+    "vacancy": 1,
+    "description": "Oversee MEP execution for a Mivan high-rise tower. Focus on technical coordination of services, fire safety infrastructure, and high-density MEP distribution.",
+    "requirements": [
+      "Bachelor’s degree in Mechanical or Electrical Engineering.",
+      "5+ years of MEP experience in High-Rise buildings.",
+      "Mandatory experience with Mivan formwork service integration.",
+      "Strong coordination skills between consultants and site teams."
+    ],
+    "postedDate": "2026-03-21"
+  },
+  {
+    "id": 141,
+    "title": "Structural Engineer",
+    "department": "Civil Engineering",
+    "location": "Nanakramguda, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "5+ years",
+    "vacancy": 1,
+    "description": "Manage structural site execution for a Mivan high-rise development. Ensure reinforcement precision and structural integrity during rapid casting cycles.",
+    "requirements": [
+      "Bachelor’s or Master’s degree in Civil Engineering.",
+      "5+ years of experience in High-Rise structural execution.",
+      "Mandatory experience in Mivan/Aluminum formwork technology.",
+      "Advanced skills in BBS checking and structural quality control."
+    ],
+    "postedDate": "2026-03-21"
+  },
+  {
+    "id": 142,
+    "title": "Quality Manager",
+    "department": "Civil Engineering",
+    "location": "Noida, Uttar Pradesh, India",
+    "type": "Full-time",
+    "experience": "12+ years",
+    "vacancy": 1,
+    "description": "Lead the QA/QC department for a high-rise project in Noida. We require a veteran manager capable of overseeing Mivan-based construction and finishing quality. Immediate joiner required.",
+    "requirements": [
+      "Bachelor’s or Master’s degree in Civil Engineering.",
+      "12+ years of experience in construction quality management.",
+      "Mandatory experience in High-Rise projects using Mivan technology.",
+      "Ability to join immediately.",
+      "Strong leadership to manage site audits and QMS implementation."
+    ],
+    "postedDate": "2026-03-21"
+  },
+  {
+    "id": 143,
+    "title": "Quality Engineer",
+    "department": "Civil Engineering",
+    "location": "Gurugram, Haryana, India",
+    "type": "Full-time",
+    "experience": "7+ years",
+    "vacancy": 1,
+    "description": "Responsible for quality standards at a residential site in Gurugram. Monitor material testing and site execution to ensure zero-defect construction. Immediate joiner required.",
+    "requirements": [
+      "Bachelor’s degree in Civil Engineering.",
+      "7+ years of experience in QA/QC for residential projects.",
+      "Ability to join immediately.",
+      "Expertise in IS codes, material testing, and documentation."
+    ],
+    "postedDate": "2026-03-21"
+  }, 
   ];
 
   // Get unique departments and locations for filter options
