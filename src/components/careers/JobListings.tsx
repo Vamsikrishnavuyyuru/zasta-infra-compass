@@ -2434,7 +2434,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     {
     "id": 135,
     "title": "Mechanical Inspection Senior Engineer",
-    "department": "Mechanical Engineering,
+    "department": "Mechanical Engineering",
     "location": "Vizag, Andhra Pradesh, India",
     "type": "Full-time",
     "experience": "7 years",
