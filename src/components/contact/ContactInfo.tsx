@@ -11,7 +11,7 @@ const ContactInfo = () => {
     {
       icon: Phone,
       title: "Phone Number",
-      details: "+91 9701620621",
+      details: "+91 8977731709",
     },
     {
       icon: Mail,
