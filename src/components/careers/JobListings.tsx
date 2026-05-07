@@ -3418,6 +3418,44 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-05-04",
     },
+    {
+      id: 188,
+      title: "Quality Engineer",
+      department: "Quality Assurance & Control",
+      location: "Mumbai, Maharashtra, India",
+      type: "Full-time",
+      experience: "7-10 years",
+      vacancy: 1,
+      description:
+        "We are seeking an experienced Quality Engineer for our industrial project in Mumbai. You will be responsible for maintaining rigorous quality standards, conducting material inspections, and ensuring all industrial construction processes comply with safety and technical specifications.",
+      requirements: [
+        "Bachelor’s degree in Civil or Mechanical Engineering.",
+        "7 to 10 years of core experience in QA/QC roles.",
+        "Mandatory experience in Industrial projects (Plants, Refineries, or Factories).",
+        "In-depth knowledge of industrial IS codes, NDT procedures, and welding/coating inspections if applicable.",
+        "Proficiency in maintaining technical documentation, NCRs, and quality audits.",
+      ],
+      postedDate: "2026-05-06",
+    },
+    {
+      id: 189,
+      title: "Safety Officer",
+      department: "HSE (Health, Safety & Environment)",
+      location: "Mumbai, Maharashtra, India",
+      type: "Full-time",
+      experience: "7-10 years",
+      vacancy: 1,
+      description:
+        "The Safety Officer will lead the HSE initiatives at our Mumbai industrial site. You will be responsible for hazard identification, implementing safety protocols, and fostering a zero-accident culture in a high-risk industrial environment.",
+      requirements: [
+        "Diploma or Degree in Engineering with a recognized Safety certification (e.g., ADIS, NEBOSH, or RLI/CLI).",
+        "7 to 10 years of experience in industrial safety management.",
+        "Mandatory experience in Industrial plant construction or heavy engineering environments.",
+        "Expertise in conducting risk assessments, safety audits, and emergency response planning.",
+        "Strong leadership skills to conduct tool-box talks and safety training for large workforces.",
+      ],
+      postedDate: "2026-05-06",
+    },
   ];
 
   // Get unique departments and locations for filter options
