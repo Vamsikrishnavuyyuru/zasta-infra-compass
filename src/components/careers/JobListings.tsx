@@ -3456,6 +3456,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-05-06",
     },
+    {
+      id: 190,
+      title: "Quality Manager",
+      department: "Quality Management",
+      location: "Jharkhand, India",
+      type: "Full-time",
+      experience: "12+ years",
+      vacancy: 1,
+      description:
+        "We are seeking a senior Quality Manager to lead the QA/QC department for a major Highway Project in Jharkhand. You will be responsible for ensuring that all pavement, structural, and earthworks meet the stringent standards set by the NHAI/MoRTH.",
+      requirements: [
+        "Bachelor’s or Master’s degree in Civil Engineering.",
+        "12+ years of experience in construction quality management.",
+        "Mandatory expertise in large-scale Highway/Expressway projects.",
+        "In-depth knowledge of MoRTH specifications and IRC codes.",
+        "Experience in setting up and managing site laboratories for soil, bitumen, and concrete testing.",
+        "Proven track record in handling quality audits and implementing Quality Assurance Plans (QAP).",
+      ],
+      postedDate: "2026-05-11",
+    },
   ];
 
   // Get unique departments and locations for filter options
