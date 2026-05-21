@@ -78,7 +78,7 @@ const Privacy = () => {
                 <p className="text-gray-600">
                   Email: info@zastagroup.com
                   <br />
-                  Phone: +91 9701620621
+                  Phone: +91 8977731709
                   <br />
                   Address: Flat No:904-A, SY NO:150, VAZHRAA PRATHIK, BLOCK-A, Nizampet, Qutubullapur, Hyderabad-
                   500090, India
