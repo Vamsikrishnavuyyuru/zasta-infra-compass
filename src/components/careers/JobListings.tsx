@@ -3616,7 +3616,10 @@ const JobListings = ({ onApply }: JobListingsProps) => {
 
   // Filter and sort jobs
   const filteredAndSortedJobs = useMemo(() => {
-    let filtered = currentOpenings;
+    // Exclude January 2026 postings from current openings display
+    let filtered = currentOpenings.filter((job) => !job.postedDate.startsWith("2026-01"));
+
+
 
     // Apply filters
     if (filterDepartment !== "all") {
