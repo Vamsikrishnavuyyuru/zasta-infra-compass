@@ -1,7 +1,7 @@
 
 
 const ServicesCTA = () => {
-  const phoneNumber = "919701620621";
+  const phoneNumber = "918977731709";
   const message = "Hello! I'm interested in Zasta Group's services and would like to discuss my infrastructure project requirements.";
   
   const handleWhatsAppClick = () => {
