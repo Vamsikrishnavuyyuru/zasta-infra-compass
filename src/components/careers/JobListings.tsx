@@ -3601,6 +3601,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-05-16",
     },
+  {
+    "id": 198,
+    "title": "Freelance Field Inspection Associate",
+    "department": "Field Operations & Inspection",
+    "location": "All districts of Maharashtra, Telangana, Gujarat, Rajasthan",
+    "type": "Freelance / On-demand",
+    "experience": "0-3 years (Freshers can also apply)",
+    "vacancy": 50,
+    "description": "Looking for Freelance Field Inspection Associates for on-demand site inspection activities across various districts. This is a flexible, assignment-based role where you will visit sites, perform field checks using a mobile application, and report data in real time. Payment is structured on a per-assignment or man-day basis, and complete online training will be provided.",
+    "requirements": [
+      "Any graduation degree or B.Tech (Civil, Mechanical, or Electrical engineering backgrounds are highly preferred).",
+      "Must own and be proficient with an Android smartphone (mandatory for app-based reporting).",
+      "Ready for frequent field visits and active travel within your assigned district.",
+      "Basic communication skills to interact with on-site coordinators.",
+      "Self-motivated individuals capable of following step-by-step inspection instructions accurately.",
+      "Male candidates are preferred due to extensive site travel requirements."
+    ],
+    "postedDate": "2026-05-26"
+  }
+]
   ];
 
   // Get unique departments and locations for filter options
