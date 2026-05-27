@@ -3620,7 +3620,6 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     ],
     "postedDate": "2026-05-26"
   }
-]
   ];
 
   // Get unique departments and locations for filter options
