@@ -3619,7 +3619,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       "Male candidates are preferred due to extensive site travel requirements."
     ],
     "postedDate": "2026-05-26"
-  }
+  },
     {
     "id": 199,
     "title": "Electrical Inspector",
