@@ -15,6 +15,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Privacy = lazy(() => import("./pages/Privacy"));
 const Terms = lazy(() => import("./pages/Terms"));
 const NotFound = lazy(() => import("./pages/NotFound"));
+const Credentials = lazy(() => import("./pages/Credentials"));
 
 const queryClient = new QueryClient();
 
