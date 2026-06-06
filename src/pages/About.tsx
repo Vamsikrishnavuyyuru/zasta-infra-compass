@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import SectionHeaderWithCity from "@/components/shared/SectionHeaderWithCity";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Heart, Award, Users, Building, Calendar, TrendingUp } from "lucide-react";
@@ -66,6 +67,11 @@ const About = () => {
 
   return (
     <Layout>
+      <SEO
+        title="About Zasta Group — Infrastructure Experts Since 2016"
+        description="Learn about Zasta Group, a Hyderabad-based infrastructure services company delivering workforce and construction management worldwide since 2016."
+        path="/about"
+      />
       {/* Hero Section with City Animation */}
       <SectionHeaderWithCity
         title="About Zasta"

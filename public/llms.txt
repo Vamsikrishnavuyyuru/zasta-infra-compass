@@ -1,0 +1,17 @@
+# Zasta Group
+
+> Zasta Group delivers infrastructure workforce solutions, construction management, and digital project tools for mega-projects worldwide. Based in Hyderabad since 2016.
+
+## Pages
+
+- [Home](/): Overview of Zasta Group's infrastructure services and global capabilities.
+- [About](/about): Company history, leadership, and mission.
+- [Services](/services): Workforce deployment, construction management, and engineering consultancy.
+- [Careers](/careers): Open roles and CV submission for construction and engineering professionals.
+- [Credentials](/credentials): D-U-N-S Number, registrations, and verified business identity.
+- [Contact](/contact): Hyderabad office details and inquiry form.
+
+## Optional
+
+- [Privacy](/privacy)
+- [Terms](/terms)

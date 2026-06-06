@@ -11,6 +11,7 @@ const SlideIndicators = ({ totalSlides, currentSlide, onSlideChange }: SlideIndi
       {Array.from({ length: totalSlides }).map((_, index) => (
         <button
           key={index}
+          aria-label={`Go to slide ${index + 1}`}
           className={`w-3 h-3 rounded-full transition-all duration-300 ${
             index === currentSlide ? 'bg-white' : 'bg-white/40'
           }`}

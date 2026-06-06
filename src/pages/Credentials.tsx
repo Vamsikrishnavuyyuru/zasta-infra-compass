@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 import { BadgeCheck, Building2, Award, ShieldCheck, Phone, Mail, MapPin, Info } from "lucide-react";
@@ -6,6 +7,11 @@ import { BadgeCheck, Building2, Award, ShieldCheck, Phone, Mail, MapPin, Info } 
 const Credentials = () => {
   return (
     <Layout>
+      <SEO
+        title="Company Credentials — Zasta Group D-U-N-S & Registrations"
+        description="Verified business identity for Zasta Enterprises Private Limited: D-U-N-S number, registrations, certifications, and contact details."
+        path="/credentials"
+      />
       <div className="min-h-screen bg-gray-50 py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
