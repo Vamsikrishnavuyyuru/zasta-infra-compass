@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Linkedin, Mail, Phone, MapPin, Instagram } from "lucide-react";
+import { Linkedin, Mail, Phone, MapPin, Instagram, BadgeCheck, Info, ArrowRight } from "lucide-react";
+import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip";
 
 const Footer = () => {
   return (
