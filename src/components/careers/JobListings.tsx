@@ -3620,6 +3620,42 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     ],
     "postedDate": "2026-05-26"
   }
+    {
+    "id": 199,
+    "title": "Electrical Inspector",
+    "department": "Quality Control & Inspection",
+    "location": "Vizag, Andhra Pradesh, India",
+    "type": "Full-time",
+    "experience": "10+ years",
+    "vacancy": 1,
+    "description": "Seeking a senior-level Electrical Inspector to oversee QA/QC, testing, and commissioning of electrical systems for industrial or large-scale infrastructure projects in Vizag. You will ensure all installations comply with statutory safety codes and project specifications.",
+    "requirements": [
+      "Bachelor’s degree or Diploma in Electrical Engineering.",
+      "10+ years of core experience in electrical inspection and QA/QC.",
+      "Expertise in inspecting HT/LT panels, cabling, transformers, switchgears, and earthing systems.",
+      "Strong knowledge of Indian Electricity (IE) rules, CEA regulations, and standard testing protocols.",
+      "Experience in reviewing single-line diagrams (SLDs), schematic drawings, and managing compliance documentation."
+    ],
+    "postedDate": "2026-06-06"
+  },
+  {
+    "id": 200,
+    "title": "Civil Inspector",
+    "department": "Quality Control & Inspection",
+    "location": "Vizag, Andhra Pradesh, India",
+    "type": "Full-time",
+    "experience": "10+ years",
+    "vacancy": 1,
+    "description": "We are looking for a veteran Civil Inspector to handle structural and civil execution quality checks in Vizag. This role demands meticulous monitoring of material testing, structural integrity, and casting protocols to deliver zero-defect infrastructure.",
+    "requirements": [
+      "Bachelor’s degree or Diploma in Civil Engineering.",
+      "10+ years of site execution and structural inspection experience.",
+      "In-depth knowledge of IS codes, concrete mix designs, reinforcement checking, and BBS verification.",
+      "Proven track record in managing structural pour cards, cube testing logs, and non-conformance reports (NCR).",
+      "Excellent technical eye for alignment, leveling, and overall civil finishing quality."
+    ],
+    "postedDate": "2026-06-06"
+  }, 
   ];
 
   // Get unique departments and locations for filter options
