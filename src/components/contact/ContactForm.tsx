@@ -46,10 +46,8 @@ const ContactForm = () => {
         to_email: 'hr@zastagroup.com'
       };
 
-      console.log('Sending email with EmailJS...');
-      console.log('Service ID:', serviceId);
-      console.log('Template ID:', templateId);
-      console.log('Template params:', templateParams);
+
+
 
       await emailjs.send(serviceId, templateId, templateParams, publicKey);
 
