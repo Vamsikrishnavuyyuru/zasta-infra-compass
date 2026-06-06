@@ -100,6 +100,55 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Verified Business / D-U-N-S */}
+        <div className="border-t border-gray-800 mt-8 pt-6">
+          <div className="group flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 text-center sm:text-left">
+            <div className="flex items-center gap-2">
+              <BadgeCheck
+                size={22}
+                className="text-zasta-green-400 transition-transform group-hover:scale-110"
+                aria-hidden="true"
+              />
+              <span className="text-white font-semibold tracking-wide text-sm uppercase">
+                Verified Business Identity
+              </span>
+            </div>
+            <span className="hidden sm:inline text-gray-600">|</span>
+            <span className="text-gray-300 text-sm">Zasta Enterprises Private Limited</span>
+            <div className="flex items-center gap-2">
+              <span className="text-gray-400 text-xs uppercase tracking-wider">D-U-N-S</span>
+              <span
+                className="font-mono text-sm text-white whitespace-nowrap select-all bg-white/5 border border-zasta-green-400/30 rounded-md px-3 py-1 hover:bg-white/10 hover:border-zasta-green-400 transition-colors"
+                aria-label="D-U-N-S Number 77-141-6338"
+              >
+                77-141-6338
+              </span>
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <button
+                    type="button"
+                    aria-label="What is a D-U-N-S Number?"
+                    className="text-gray-400 hover:text-zasta-green-400 transition-colors"
+                  >
+                    <Info size={16} />
+                  </button>
+                </TooltipTrigger>
+                <TooltipContent side="top" className="max-w-xs text-xs">
+                  A D-U-N-S Number is a unique business identifier issued by Dun &amp; Bradstreet and used globally to
+                  verify business entities.
+                </TooltipContent>
+              </Tooltip>
+            </div>
+            <Link
+              to="/credentials"
+              className="inline-flex items-center gap-1 text-zasta-green-400 hover:text-zasta-green-300 text-sm font-medium transition-colors"
+            >
+              View credentials
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+        </div>
+
         <div className="border-t border-gray-800 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">© 2025 Zasta Enterprises Pvt Ltd. All rights reserved.</p>
