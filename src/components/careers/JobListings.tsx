@@ -3619,7 +3619,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       "Male candidates are preferred due to extensive site travel requirements."
     ],
     "postedDate": "2026-05-26"
-  },
+  }
     {
     "id": 199,
     "title": "Electrical Inspector",
@@ -3655,6 +3655,24 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       "Excellent technical eye for alignment, leveling, and overall civil finishing quality."
     ],
     "postedDate": "2026-06-03"
+  }, 
+    {
+    "id": 201,
+    "title": "QA/QC E&I Inspector",
+    "department": "Quality Assurance & Control",
+    "location": "Uttar Pradesh, India",
+    "type": "Full-time",
+    "experience": "10 years",
+    "vacancy": 1,
+    "description": "Seeking a seasoned QA/QC Electrical & Instrumentation (E&I) Inspector to lead quality assurance protocols for industrial, power, or infrastructure projects in Uttar Pradesh. The ideal candidate will manage comprehensive inspections, instrument calibrations, and electrical system validations to meet international and national project quality benchmarks.",
+    "requirements": [
+      "Bachelor’s degree or Diploma in Electrical / Electronics / Instrumentation Engineering.",
+      "10 years of core experience in QA/QC inspection within E&I disciplines.",
+      "Proficiency in inspecting cable tray installations, loop checks, calibration of field instruments, and panels.",
+      "Thorough understanding of hazardous area classifications, ATEX standards, and standard testing codes.",
+      "Proven track record in preparing Quality Control procedures, inspection test plans (ITP), and final handover documentation."
+    ],
+    "postedDate": "2026-06-04"
   }, 
   ];
 
