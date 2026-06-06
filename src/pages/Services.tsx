@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Users, Building, Smartphone } from "lucide-react";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCard from "@/components/services/ServiceCard";
@@ -138,6 +139,11 @@ const Services = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Services — Workforce, Construction Management & Digital Tools"
+        description="Zasta Group services: workforce deployment, construction management, and digital project tools for infrastructure, oil & gas, power, and transportation."
+        path="/services"
+      />
       <ServiceHero />
 
       {/* Services Detail Section */}

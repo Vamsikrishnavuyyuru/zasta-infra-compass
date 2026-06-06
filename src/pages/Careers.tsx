@@ -1,5 +1,6 @@
 
 import Layout from '@/components/Layout';
+import SEO from '@/components/SEO';
 import SectionHeaderWithCity from '@/components/shared/SectionHeaderWithCity';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Upload, Briefcase } from 'lucide-react';
@@ -16,6 +17,11 @@ const Careers = () => {
 
   return (
     <Layout>
+      <SEO
+        title="Careers at Zasta Group — Join Our Infrastructure Team"
+        description="Explore careers at Zasta Group. Submit your CV or browse current openings across construction, engineering, and digital project roles."
+        path="/careers"
+      />
       {/* Hero Section with City Animation */}
       <SectionHeaderWithCity
         title="Join Our Team"

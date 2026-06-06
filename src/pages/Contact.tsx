@@ -1,5 +1,6 @@
 
 import Layout from '@/components/Layout';
+import SEO from '@/components/SEO';
 import SectionHeaderWithCity from '@/components/shared/SectionHeaderWithCity';
 import ContactForm from '@/components/contact/ContactForm';
 import ContactInfo from '@/components/contact/ContactInfo';
@@ -7,6 +8,11 @@ import ContactInfo from '@/components/contact/ContactInfo';
 const Contact = () => {
   return (
     <Layout>
+      <SEO
+        title="Contact Zasta Group — Get in Touch with Our Experts"
+        description="Contact Zasta Group's Hyderabad team for workforce solutions, construction management, and infrastructure project enquiries."
+        path="/contact"
+      />
       {/* Hero Section with City Animation */}
       <SectionHeaderWithCity
         title="Contact Us"

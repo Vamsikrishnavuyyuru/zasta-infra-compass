@@ -1,9 +1,15 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Privacy = () => {
   return (
     <Layout>
+      <SEO
+        title="Privacy Policy — Zasta Group"
+        description="How Zasta Enterprises Private Limited collects, uses, and protects your personal information."
+        path="/privacy"
+      />
       <div className="min-h-screen bg-gray-50 py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
