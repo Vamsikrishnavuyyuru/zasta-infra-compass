@@ -1,4 +1,5 @@
 import Layout from "@/components/Layout";
+import SEO from "@/components/SEO";
 import SectionHeaderWithCity from "@/components/shared/SectionHeaderWithCity";
 import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Heart, Award, Users, Building, Calendar, TrendingUp } from "lucide-react";
