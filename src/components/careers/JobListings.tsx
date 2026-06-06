@@ -3619,7 +3619,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       "Male candidates are preferred due to extensive site travel requirements."
     ],
     "postedDate": "2026-05-26"
-  },
+  }
     {
     "id": 199,
     "title": "Electrical Inspector",
@@ -3674,6 +3674,24 @@ const JobListings = ({ onApply }: JobListingsProps) => {
     ],
     "postedDate": "2026-06-04"
   }, 
+    {
+    "id": 202,
+    "title": "QS and Billing Engineer",
+    "department": "Quantity Surveying & Billing",
+    "location": "Chevella, Hyderabad, India",
+    "type": "Full-time",
+    "experience": "5+ years",
+    "vacancy": 1,
+    "description": "Manage quantity take-offs, client billing, and contractor bill processing for a major residential development in Chevella. This role focuses on strict cost control, material reconciliation, and variation tracking.",
+    "requirements": [
+      "Bachelor’s degree or Diploma in Civil Engineering.",
+      "5+ years of core experience in Quantity Surveying and Billing.",
+      "Mandatory experience working on residential construction projects.",
+      "Proficiency in structural and finishing measurements, client billing, and sub-contractor bill verification.",
+      "Advanced skills in MS Excel and auto-estimates; familiarity with ERP/billing software is highly preferred."
+    ],
+    "postedDate": "2026-06-05"
+  }
   ];
 
   // Get unique departments and locations for filter options
