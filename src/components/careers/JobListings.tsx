@@ -3619,7 +3619,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       "Male candidates are preferred due to extensive site travel requirements."
     ],
     "postedDate": "2026-05-26"
-  },
+  }
     {
     "id": 199,
     "title": "Electrical Inspector",
@@ -3636,7 +3636,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       "Strong knowledge of Indian Electricity (IE) rules, CEA regulations, and standard testing protocols.",
       "Experience in reviewing single-line diagrams (SLDs), schematic drawings, and managing compliance documentation."
     ],
-    "postedDate": "2026-06-06"
+    "postedDate": "2026-06-03"
   },
   {
     "id": 200,
@@ -3654,7 +3654,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       "Proven track record in managing structural pour cards, cube testing logs, and non-conformance reports (NCR).",
       "Excellent technical eye for alignment, leveling, and overall civil finishing quality."
     ],
-    "postedDate": "2026-06-06"
+    "postedDate": "2026-06-03"
   }, 
   ];
 
