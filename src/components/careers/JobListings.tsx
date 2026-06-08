@@ -3601,97 +3601,158 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-05-16",
     },
-  {
-    "id": 198,
-    "title": "Freelance Field Inspection Associate",
-    "department": "Field Operations & Inspection",
-    "location": "All districts of Maharashtra, Telangana, Gujarat, Rajasthan",
-    "type": "Freelance / On-demand",
-    "experience": "0-3 years (Freshers can also apply)",
-    "vacancy": 50,
-    "description": "Looking for Freelance Field Inspection Associates for on-demand site inspection activities across various districts. This is a flexible, assignment-based role where you will visit sites, perform field checks using a mobile application, and report data in real time. Payment is structured on a per-assignment or man-day basis, and complete online training will be provided.",
-    "requirements": [
-      "Any graduation degree or B.Tech (Civil, Mechanical, or Electrical engineering backgrounds are highly preferred).",
-      "Must own and be proficient with an Android smartphone (mandatory for app-based reporting).",
-      "Ready for frequent field visits and active travel within your assigned district.",
-      "Basic communication skills to interact with on-site coordinators.",
-      "Self-motivated individuals capable of following step-by-step inspection instructions accurately.",
-      "Male candidates are preferred due to extensive site travel requirements."
-    ],
-    "postedDate": "2026-05-26"
-  },
     {
-    "id": 199,
-    "title": "Electrical Inspector",
-    "department": "Quality Control & Inspection",
-    "location": "Vizag, Andhra Pradesh, India",
-    "type": "Full-time",
-    "experience": "10+ years",
-    "vacancy": 1,
-    "description": "Seeking a senior-level Electrical Inspector to oversee QA/QC, testing, and commissioning of electrical systems for industrial or large-scale infrastructure projects in Vizag. You will ensure all installations comply with statutory safety codes and project specifications.",
-    "requirements": [
-      "Bachelor’s degree or Diploma in Electrical Engineering.",
-      "10+ years of core experience in electrical inspection and QA/QC.",
-      "Expertise in inspecting HT/LT panels, cabling, transformers, switchgears, and earthing systems.",
-      "Strong knowledge of Indian Electricity (IE) rules, CEA regulations, and standard testing protocols.",
-      "Experience in reviewing single-line diagrams (SLDs), schematic drawings, and managing compliance documentation."
-    ],
-    "postedDate": "2026-06-03"
-  },
-  {
-    "id": 200,
-    "title": "Civil Inspector",
-    "department": "Quality Control & Inspection",
-    "location": "Vizag, Andhra Pradesh, India",
-    "type": "Full-time",
-    "experience": "10+ years",
-    "vacancy": 1,
-    "description": "We are looking for a veteran Civil Inspector to handle structural and civil execution quality checks in Vizag. This role demands meticulous monitoring of material testing, structural integrity, and casting protocols to deliver zero-defect infrastructure.",
-    "requirements": [
-      "Bachelor’s degree or Diploma in Civil Engineering.",
-      "10+ years of site execution and structural inspection experience.",
-      "In-depth knowledge of IS codes, concrete mix designs, reinforcement checking, and BBS verification.",
-      "Proven track record in managing structural pour cards, cube testing logs, and non-conformance reports (NCR).",
-      "Excellent technical eye for alignment, leveling, and overall civil finishing quality."
-    ],
-    "postedDate": "2026-06-03"
-  }, 
+      id: 198,
+      title: "Freelance Field Inspection Associate",
+      department: "Field Operations & Inspection",
+      location: "All districts of Maharashtra, Telangana, Gujarat, Rajasthan",
+      type: "Freelance / On-demand",
+      experience: "0-3 years (Freshers can also apply)",
+      vacancy: 50,
+      description:
+        "Looking for Freelance Field Inspection Associates for on-demand site inspection activities across various districts. This is a flexible, assignment-based role where you will visit sites, perform field checks using a mobile application, and report data in real time. Payment is structured on a per-assignment or man-day basis, and complete online training will be provided.",
+      requirements: [
+        "Any graduation degree or B.Tech (Civil, Mechanical, or Electrical engineering backgrounds are highly preferred).",
+        "Must own and be proficient with an Android smartphone (mandatory for app-based reporting).",
+        "Ready for frequent field visits and active travel within your assigned district.",
+        "Basic communication skills to interact with on-site coordinators.",
+        "Self-motivated individuals capable of following step-by-step inspection instructions accurately.",
+        "Male candidates are preferred due to extensive site travel requirements.",
+      ],
+      postedDate: "2026-05-26",
+    },
     {
-    "id": 201,
-    "title": "QA/QC E&I Inspector",
-    "department": "Quality Assurance & Control",
-    "location": "Uttar Pradesh, India",
-    "type": "Full-time",
-    "experience": "10 years",
-    "vacancy": 1,
-    "description": "Seeking a seasoned QA/QC Electrical & Instrumentation (E&I) Inspector to lead quality assurance protocols for industrial, power, or infrastructure projects in Uttar Pradesh. The ideal candidate will manage comprehensive inspections, instrument calibrations, and electrical system validations to meet international and national project quality benchmarks.",
-    "requirements": [
-      "Bachelor’s degree or Diploma in Electrical / Electronics / Instrumentation Engineering.",
-      "10 years of core experience in QA/QC inspection within E&I disciplines.",
-      "Proficiency in inspecting cable tray installations, loop checks, calibration of field instruments, and panels.",
-      "Thorough understanding of hazardous area classifications, ATEX standards, and standard testing codes.",
-      "Proven track record in preparing Quality Control procedures, inspection test plans (ITP), and final handover documentation."
-    ],
-    "postedDate": "2026-06-04"
-  }, 
+      id: 199,
+      title: "Electrical Inspector",
+      department: "Quality Control & Inspection",
+      location: "Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "10+ years",
+      vacancy: 1,
+      description:
+        "Seeking a senior-level Electrical Inspector to oversee QA/QC, testing, and commissioning of electrical systems for industrial or large-scale infrastructure projects in Vizag. You will ensure all installations comply with statutory safety codes and project specifications.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Electrical Engineering.",
+        "10+ years of core experience in electrical inspection and QA/QC.",
+        "Expertise in inspecting HT/LT panels, cabling, transformers, switchgears, and earthing systems.",
+        "Strong knowledge of Indian Electricity (IE) rules, CEA regulations, and standard testing protocols.",
+        "Experience in reviewing single-line diagrams (SLDs), schematic drawings, and managing compliance documentation.",
+      ],
+      postedDate: "2026-06-03",
+    },
     {
-    "id": 202,
-    "title": "QS and Billing Engineer",
-    "department": "Quantity Surveying & Billing",
-    "location": "Chevella, Hyderabad, India",
-    "type": "Full-time",
-    "experience": "5+ years",
-    "vacancy": 1,
-    "description": "Manage quantity take-offs, client billing, and contractor bill processing for a major residential development in Chevella. This role focuses on strict cost control, material reconciliation, and variation tracking.",
-    "requirements": [
-      "Bachelor’s degree or Diploma in Civil Engineering.",
-      "5+ years of core experience in Quantity Surveying and Billing.",
-      "Mandatory experience working on residential construction projects.",
-      "Proficiency in structural and finishing measurements, client billing, and sub-contractor bill verification.",
-      "Advanced skills in MS Excel and auto-estimates; familiarity with ERP/billing software is highly preferred."
-    ],
-    "postedDate": "2026-06-05"
-  }
+      id: 200,
+      title: "Civil Inspector",
+      department: "Quality Control & Inspection",
+      location: "Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "10+ years",
+      vacancy: 1,
+      description:
+        "We are looking for a veteran Civil Inspector to handle structural and civil execution quality checks in Vizag. This role demands meticulous monitoring of material testing, structural integrity, and casting protocols to deliver zero-defect infrastructure.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "10+ years of site execution and structural inspection experience.",
+        "In-depth knowledge of IS codes, concrete mix designs, reinforcement checking, and BBS verification.",
+        "Proven track record in managing structural pour cards, cube testing logs, and non-conformance reports (NCR).",
+        "Excellent technical eye for alignment, leveling, and overall civil finishing quality.",
+      ],
+      postedDate: "2026-06-03",
+    },
+    {
+      id: 201,
+      title: "QA/QC E&I Inspector",
+      department: "Quality Assurance & Control",
+      location: "Uttar Pradesh, India",
+      type: "Full-time",
+      experience: "10 years",
+      vacancy: 1,
+      description:
+        "Seeking a seasoned QA/QC Electrical & Instrumentation (E&I) Inspector to lead quality assurance protocols for industrial, power, or infrastructure projects in Uttar Pradesh. The ideal candidate will manage comprehensive inspections, instrument calibrations, and electrical system validations to meet international and national project quality benchmarks.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Electrical / Electronics / Instrumentation Engineering.",
+        "10 years of core experience in QA/QC inspection within E&I disciplines.",
+        "Proficiency in inspecting cable tray installations, loop checks, calibration of field instruments, and panels.",
+        "Thorough understanding of hazardous area classifications, ATEX standards, and standard testing codes.",
+        "Proven track record in preparing Quality Control procedures, inspection test plans (ITP), and final handover documentation.",
+      ],
+      postedDate: "2026-06-04",
+    },
+    {
+      id: 202,
+      title: "QS and Billing Engineer",
+      department: "Quantity Surveying & Billing",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Manage quantity take-offs, client billing, and contractor bill processing for a major residential development in Chevella. This role focuses on strict cost control, material reconciliation, and variation tracking.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "5+ years of core experience in Quantity Surveying and Billing.",
+        "Mandatory experience working on residential construction projects.",
+        "Proficiency in structural and finishing measurements, client billing, and sub-contractor bill verification.",
+        "Advanced skills in MS Excel and auto-estimates; familiarity with ERP/billing software is highly preferred.",
+      ],
+      postedDate: "2026-06-05",
+    },
+    {
+      id: 203,
+      title: "Planning Engineer",
+      department: "Project Planning",
+      location: "Nanakramguda, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Responsible for developing, updating, and tracking project schedules for a high-rise tower in Nanakramguda. This role centers on monitoring active cycle times and resource metrics within a Mivan structural framework.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "5+ years of core construction project planning experience.",
+        "Mandatory experience on High-Rise projects utilizing Mivan technology.",
+        "Proficiency in project management software such as Primavera P6 or MS Project.",
+        "Strong capability in critical path analysis, material forecasting, and progress reporting.",
+      ],
+      postedDate: "2026-06-08",
+    },
+    {
+      id: 204,
+      title: "QS and Contracts Engineer",
+      department: "Contracts & Commercial",
+      location: "Himayat Nagar, Hyderabad, India",
+      type: "Full-time",
+      experience: "10 years",
+      vacancy: 1,
+      description:
+        "Manage the quantity surveying, estimation, and contract management workflows for residential developments. This position handles vendor evaluations, contract drafting, cost controls, and dispute avoidance protocols.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering or Quantity Surveying.",
+        "10 years of professional experience handling QS, billing, and contract administration.",
+        "Mandatory background working on Residential construction projects.",
+        "Expertise in contract conditions, rate analysis, claims handling, and final accounts closing.",
+        "Strong negotiation and commercial management skills.",
+      ],
+      postedDate: "2026-06-08",
+    },
+    {
+      id: 205,
+      title: "Planning Engineer",
+      department: "Project Planning",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Lead scheduling control and resource tracking for a high-rise residential project in Chevella. Manage structural timelines and monitor daily progress parameters matching high-speed Mivan casting cycles.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "5+ years of dedicated project planning experience.",
+        "Mandatory track record on High-Rise projects using Mivan (Aluminum Formwork) technology.",
+        "Proficient in generating baseline schedules, delay analysis, and daily/weekly progress variants using MS Project or Primavera P6.",
+      ],
+      postedDate: "2026-06-08",
+    },
   ];
 
   // Get unique departments and locations for filter options
@@ -3709,8 +3770,6 @@ const JobListings = ({ onApply }: JobListingsProps) => {
   const filteredAndSortedJobs = useMemo(() => {
     // Exclude January 2026 postings from current openings display
     let filtered = currentOpenings.filter((job) => !job.postedDate.startsWith("2026-01"));
-
-
 
     // Apply filters
     if (filterDepartment !== "all") {
