@@ -3793,6 +3793,63 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-06-09",
     },
+    {
+      id: 208,
+      title: "QA/QC Head",
+      department: "Quality Management",
+      location: "Vijayawada, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "15 years",
+      vacancy: 1,
+      description:
+        "Seeking a veteran QA/QC Head to establish and lead the quality management framework for a luxury villa project in Vijayawada. This senior leadership role mandates comprehensive oversight of ultra-premium structural finishing, material standards, and structural durability benchmarks unique to high-end gated communities.",
+      requirements: [
+        "Bachelor’s or Master’s degree in Civil Engineering.",
+        "Minimum 15 years of construction quality management experience.",
+        "Mandatory extensive experience in high-end luxury Villa developments.",
+        "Proven expertise in setting up premium finish checklists, conducting strict site audits, and implementing robust Quality Management Systems (QMS).",
+        "Exceptional leadership and stakeholder management skills to coordinate with high-profile clients, architects, and site consultants.",
+      ],
+      postedDate: "2026-06-09",
+    },
+    {
+      id: 209,
+      title: "Civil Engineer",
+      department: "Civil Engineering",
+      location: "Vijayawada, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "6-8 years",
+      vacancy: 1,
+      description:
+        "Responsible for hands-on site execution, structural coordination, and finishing oversight for premium villas in Vijayawada. Ensure day-to-day work closely aligns with strict architectural drawings, micro-level structural designs, and luxury finishing timelines.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "6 to 8 years of active on-site civil execution experience.",
+        "Mandatory project execution background in horizontal premium residential housing or Gated Villa communities.",
+        "Strong technical proficiency in managing brickwork, plastering, high-end tiling, external development layouts, and structural checking.",
+        "Ability to effectively supervise sub-contractors and maintain micro-schedules.",
+      ],
+      postedDate: "2026-06-09",
+    },
+    {
+      id: 210,
+      title: "Electrical Engineer",
+      department: "Electrical Engineering",
+      location: "Vijayawada, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "6-8 years",
+      vacancy: 1,
+      description:
+        "Manage the end-to-end electrical distribution, internal wiring routing, high-end automated fixtures, and low-voltage systems for a luxury villa development in Vijayawada. Ensure seamless integration with structural and architectural themes.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Electrical Engineering.",
+        "6 to 8 years of site engineering experience handling internal and external electrical utilities.",
+        "Mandatory execution background in premium residential complexes or luxury Villa setups.",
+        "Expertise in internal conduits layout, home automation wiring, landscape lighting setups, safety earthing, and LT distribution networks.",
+        "Proficiency in translating detailed electrical layout drawings to actual site execution with zero tolerance for deviations.",
+      ],
+      postedDate: "2026-06-09",
+    },
   ];
 
   // Get unique departments and locations for filter options
