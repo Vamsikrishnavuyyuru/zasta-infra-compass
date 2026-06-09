@@ -3753,6 +3753,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-06-08",
     },
+    {
+      id: 206,
+      title: "Quality Manager",
+      department: "Quality Management",
+      location: "Jharkhand / Hyderabad, India",
+      type: "Full-time",
+      experience: "15 years",
+      vacancy: 1,
+      description:
+        "We are seeking a senior Quality Manager with 15 years of experience to lead the QA/QC department for large-scale infrastructure projects, including highways, roads, bridges, or major structural works. This role is responsible for driving the quality strategy, managing site laboratory operations, and ensuring total compliance with design and statutory project specifications.",
+      requirements: [
+        "Bachelor’s or Master’s degree in Civil Engineering.",
+        "Minimum 15 years of dedicated experience in Quality Management for highway, road, bridge, or large-scale infrastructure projects.",
+        "Deep technical knowledge of QA/QC procedures, quality assurance systems, material testing protocols, and compliance frameworks.",
+        "Proven track record in managing fully equipped site laboratory operations, conducting quality audits, managing inspections, raising Non-Conformance Reports (NCRs), and executing effective CAPA (Corrective and Preventive Actions).",
+        "Demonstrated leadership capability to manage multi-location quality teams and coordinate seamlessly with clients, consultants, contractors, and key project stakeholders.",
+        "Proficiency in drafting, reviewing, and implementing comprehensive Quality Management Plans (QMP), quality documentation, engineering reports, and test records.",
+      ],
+      postedDate: "2026-06-09",
+    },
   ];
 
   // Get unique departments and locations for filter options
