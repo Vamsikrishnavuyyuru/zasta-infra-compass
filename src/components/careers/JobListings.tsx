@@ -3773,6 +3773,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-06-09",
     },
+    {
+      id: 207,
+      title: "QA/QC Lead",
+      department: "Quality Management",
+      location: "Mumbai, Maharashtra, India",
+      type: "Full-time",
+      experience: "15 years",
+      vacancy: 1,
+      description:
+        "We are seeking a high-caliber QA/QC Lead with 15 years of experience to champion the quality strategy for heavy construction, industrial, infrastructure, or EPC projects in Mumbai. This leadership role is responsible for establishing standard quality metrics, overseeing large-scale inspection programs, and driving full alignment between project execution and world-class quality standards.",
+      requirements: [
+        "Bachelor’s or Master’s degree in Civil or Mechanical Engineering.",
+        "Minimum 15 years of definitive experience in QA/QC management for large-scale construction, industrial, infrastructure, or EPC projects.",
+        "Strong expertise in developing, customizing, and implementing corporate Quality Management Systems (QMS), project-specific quality plans, and QA/QC workflows.",
+        "Proven track record in driving site inspections, conducting rigorous internal/external audits, and ensuring total compliance with design specifications and global industry standards.",
+        "High level of proficiency in drafting and reviewing technical quality documentation, including Inspection and Test Plans (ITPs), method statements, Non-Conformance Reports (NCRs), Root Cause Analysis (RCA), and corrective actions.",
+        "Excellent leadership, stakeholder management, and cross-functional coordination skills to interface smoothly with clients, statutory consultants, contractors, and internal project teams.",
+      ],
+      postedDate: "2026-06-09",
+    },
   ];
 
   // Get unique departments and locations for filter options
