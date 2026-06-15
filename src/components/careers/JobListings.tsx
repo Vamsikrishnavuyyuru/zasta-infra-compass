@@ -3850,6 +3850,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-06-09",
     },
+    {
+      id: 211,
+      title: "Mechanical Inspection Engineer",
+      department: "Mechanical Engineering",
+      location: "Parwada, Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "8+ years",
+      vacancy: 1,
+      description:
+        "Seeking an experienced Mechanical Inspection Engineer to drive the piping fabrication, alignment, and execution processes for industrial or EPC projects in Parwada, Vizag. This position is responsible for rigorous physical site inspections, welding validations, and system hydrotesting to maintain seamless execution timelines and absolute compliance with engineering specifications.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Mechanical Engineering.",
+        "Minimum 8+ years of proven hands-on experience in mechanical inspection, piping networks, and industrial site execution.",
+        "Strong technical knowledge of piping installation, structural fabrication, system alignments, and testing workflows governed by applicable ASME/API codes.",
+        "Demonstrated experience in conducting field inspections for piping systems, welding quality, NDT review, hydrotesting protocols, and heavy mechanical equipment placement.",
+        "Proficiency in accurately reviewing complex engineering drawings, piping isometrics, construction method statements, field inspection checklists, and formal quality documentation.",
+        "Good coordination and collaborative skills to interface efficiently with construction crews, internal QA/QC leads, client representatives, and third-party contractors to guarantee milestone delivery.",
+      ],
+      postedDate: "2026-06-15",
+    },
   ];
 
   // Get unique departments and locations for filter options
