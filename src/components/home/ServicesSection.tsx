@@ -19,7 +19,7 @@ const ServicesSection = () => {
     },
     {
       icon: Smartphone,
-      title: "Conqual Digital Suite",
+      title: "Construction Quality Management Platform",
       description:
         "Advanced field quality app with 2000+ checklists, offline functionality, and real-time auditing capabilities.",
       features: ["2000+ Checklists", "Offline Functionality", "Real-time Audits", "Photo Tagging"],

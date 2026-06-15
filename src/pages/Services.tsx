@@ -97,7 +97,7 @@ const Services = () => {
     },
     {
       icon: Smartphone,
-      title: "Conqual Digital Suite",
+      title: "Construction Quality Management Platform",
       description: "AI-powered construction quality management with advanced digital tools",
       illustration: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
       illustrationAlt: "Advanced digital interface and mobile technology",
@@ -133,7 +133,7 @@ const Services = () => {
         },
       ],
       detailedDescription:
-        "Our proprietary Conqual software revolutionizes construction quality management with AI-powered analytics, comprehensive checklists, real-time monitoring, and detailed reporting capabilities for enhanced project oversight.",
+        "Our proprietary construction quality management platform revolutionizes construction quality management with AI-powered analytics, comprehensive checklists, real-time monitoring, and detailed reporting capabilities for enhanced project oversight.",
     },
   ];
 

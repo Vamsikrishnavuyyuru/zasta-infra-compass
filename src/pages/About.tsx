@@ -29,7 +29,7 @@ const About = () => {
     },
     {
       year: "2024",
-      title: "Launched Conqual - Construction Quality Management Software",
+      title: "Launched Our Construction Quality Management Software",
       description: "Introduced advanced digital quality management solution for construction projects",
     },
     { year: "2025", title: "170+ Employees Milestone", description: "Zasta reaches 170+ skilled professionals." },
