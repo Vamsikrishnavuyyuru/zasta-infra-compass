@@ -14,7 +14,7 @@ const TestimonialsSection = () => {
       name: "Priya Sharma",
       position: "Operations Manager",
       company: "India's Leading Construction PMC",
-      content: "Conqual has revolutionized our quality control process with real-time monitoring capabilities.",
+      content: "Their construction quality management platform has revolutionized our quality control process with real-time monitoring capabilities.",
       rating: 5,
     },
   ];
