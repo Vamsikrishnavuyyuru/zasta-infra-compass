@@ -133,7 +133,7 @@ const Services = () => {
         },
       ],
       detailedDescription:
-        "Our proprietary Conqual software revolutionizes construction quality management with AI-powered analytics, comprehensive checklists, real-time monitoring, and detailed reporting capabilities for enhanced project oversight.",
+        "Our proprietary construction quality management platform revolutionizes construction quality management with AI-powered analytics, comprehensive checklists, real-time monitoring, and detailed reporting capabilities for enhanced project oversight.",
     },
   ];
 
