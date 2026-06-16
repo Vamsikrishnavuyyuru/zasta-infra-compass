@@ -41,7 +41,7 @@ const ServicesSection = () => {
           <p className="text-xl text-gray-600">Comprehensive solutions for your infrastructure needs</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-8">
