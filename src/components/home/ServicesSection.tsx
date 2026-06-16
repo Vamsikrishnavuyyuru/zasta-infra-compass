@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Building, Smartphone, ChevronRight } from "lucide-react";
+import { Users, Building, Smartphone, Briefcase, ChevronRight } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
