@@ -135,6 +135,47 @@ const Services = () => {
       detailedDescription:
         "Our proprietary construction quality management platform revolutionizes construction quality management with AI-powered analytics, comprehensive checklists, real-time monitoring, and detailed reporting capabilities for enhanced project oversight.",
     },
+    {
+      icon: Briefcase,
+      title: "NirmanJobs – AI-Powered Hiring Platform",
+      description: "Smart recruitment platform connecting construction companies with skilled engineers",
+      illustration: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&h=600&fit=crop",
+      illustrationAlt: "Engineers collaborating on a construction project",
+      features: [
+        {
+          name: "AI-Powered Matching",
+          details:
+            "Advanced algorithms match candidates with job requirements using semantic analysis of skills, experience, and preferences for high-accuracy hiring.",
+        },
+        {
+          name: "Smart JD Parsing",
+          details:
+            "Upload job descriptions in PDF or DOCX format and let AI automatically extract roles, skills, experience, and other key requirements.",
+        },
+        {
+          name: "Verified Engineer Database",
+          details:
+            "Access a curated database of verified civil, structural, and MEP engineers and construction professionals across India.",
+        },
+        {
+          name: "Fast Hiring Process",
+          details:
+            "Streamlined sourcing, automated shortlisting, and intelligent ranking enable significantly faster end-to-end hiring cycles.",
+        },
+        {
+          name: "Interview Scheduling",
+          details:
+            "Integrated calendar system for seamless interview coordination between employers and candidates with timely notifications.",
+        },
+        {
+          name: "DPDP Compliant & Secure",
+          details:
+            "Full compliance with Indian data protection laws including the DPDP Act and TRAI DND regulations to safeguard candidate data.",
+        },
+      ],
+      detailedDescription:
+        "NirmanJobs is our AI-powered recruitment platform purpose-built for the construction and engineering industry. It connects construction companies with skilled civil, structural, and MEP engineers across India through intelligent matching, smart JD parsing, a verified candidate database, and end-to-end hiring workflows.",
+    },
   ];
 
   return (
