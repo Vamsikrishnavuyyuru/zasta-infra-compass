@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Users, Building, Smartphone, ChevronRight } from "lucide-react";
+import { Users, Building, Smartphone, Briefcase, ChevronRight } from "lucide-react";
 
 const ServicesSection = () => {
   const services = [
@@ -24,6 +24,13 @@ const ServicesSection = () => {
         "Advanced field quality app with 2000+ checklists, offline functionality, and real-time auditing capabilities.",
       features: ["2000+ Checklists", "Offline Functionality", "Real-time Audits", "Photo Tagging"],
     },
+    {
+      icon: Briefcase,
+      title: "NirmanJobs – AI-Powered Hiring Platform",
+      description:
+        "AI-powered recruitment platform connecting construction companies with skilled civil, structural, and MEP engineers across India.",
+      features: ["AI-Powered Matching", "Smart JD Parsing", "Verified Engineer Database", "Interview Scheduling"],
+    },
   ];
 
   return (
@@ -34,7 +41,7 @@ const ServicesSection = () => {
           <p className="text-xl text-gray-600">Comprehensive solutions for your infrastructure needs</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <CardContent className="p-8">
