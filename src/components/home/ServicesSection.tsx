@@ -24,6 +24,13 @@ const ServicesSection = () => {
         "Advanced field quality app with 2000+ checklists, offline functionality, and real-time auditing capabilities.",
       features: ["2000+ Checklists", "Offline Functionality", "Real-time Audits", "Photo Tagging"],
     },
+    {
+      icon: Briefcase,
+      title: "NirmanJobs – AI-Powered Hiring Platform",
+      description:
+        "AI-powered recruitment platform connecting construction companies with skilled civil, structural, and MEP engineers across India.",
+      features: ["AI-Powered Matching", "Smart JD Parsing", "Verified Engineer Database", "Interview Scheduling"],
+    },
   ];
 
   return (
