@@ -1,6 +1,6 @@
 import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
-import { Users, Building, Smartphone } from "lucide-react";
+import { Users, Building, Smartphone, Briefcase } from "lucide-react";
 import ServiceHero from "@/components/services/ServiceHero";
 import ServiceCard from "@/components/services/ServiceCard";
 import ProcessSteps from "@/components/services/ProcessSteps";
