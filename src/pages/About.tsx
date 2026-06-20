@@ -68,7 +68,7 @@ const About = () => {
                 We continue to grow while maintaining our core values of quality, agility, and domain expertise.
               </p>
             </div>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 gap-6 max-w-sm mx-auto w-full">
               {stats.map((stat, index) => (
                 <Card key={index} className="text-center hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
