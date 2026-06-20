@@ -23,9 +23,8 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Founded in 2016 and based in Hyderabad, Zasta Enterprises Private Limited, Previously known as Zasta
-              Engineers And Consultancy Services delivers comprehensive infrastructure solutions including workforce
-              deployment, construction management, and digital project tools.
+              Headquartered in Hyderabad, Zasta Enterprises Private Limited delivers comprehensive infrastructure
+              solutions including workforce deployment, construction management, and digital project tools.
             </p>
             <div className="flex space-x-4">
               <a
