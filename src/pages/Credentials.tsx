@@ -79,12 +79,8 @@ const Credentials = () => {
                     <dd className="text-gray-900 font-medium">Zasta Enterprises Private Limited</dd>
                   </div>
                   <div>
-                    <dt className="text-gray-500">Formerly Known As</dt>
-                    <dd className="text-gray-900 font-medium">Zasta Engineers And Consultancy Services</dd>
-                  </div>
-                  <div>
-                    <dt className="text-gray-500">Founded</dt>
-                    <dd className="text-gray-900 font-medium">2016</dd>
+                    <dt className="text-gray-500">Headquarters</dt>
+                    <dd className="text-gray-900 font-medium">Hyderabad, India</dd>
                   </div>
                   <div>
                     <dt className="text-gray-500">Headquarters</dt>
