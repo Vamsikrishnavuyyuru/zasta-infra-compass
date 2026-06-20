@@ -5,38 +5,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Target, Eye, Heart, Award, Users, Building, Calendar, TrendingUp } from "lucide-react";
 
 const About = () => {
-  const timeline = [
-    {
-      year: "2016",
-      title: "Company Founded",
-      description: "Zasta established in Hyderabad",
-    },
-    {
-      year: "2017",
-      title: "National Deployment",
-      description: "Deployed 500+ inspectors across India for a Central Government Project",
-    },
-    { year: "2018", title: "First Major Project", description: "Deployed workforce for mega projects in Oil & Gas" },
-    {
-      year: "2020",
-      title: "Started Construction Project Management",
-      description: "Expanded into comprehensive construction project management services",
-    },
-    {
-      year: "2022",
-      title: "Sector Expansion",
-      description: "Extended services to data centers, industrial projects, and real estate",
-    },
-    {
-      year: "2024",
-      title: "Launched Our Construction Quality Management Software",
-      description: "Introduced advanced digital quality management solution for construction projects",
-    },
-    { year: "2025", title: "170+ Employees Milestone", description: "Zasta reaches 170+ skilled professionals." },
-    { year: "2025", title: "Company Rebranding", description: "Name changed to Zasta Enterprises Pvt Ltd" },
-  ];
-
   const values = [
+
     {
       icon: Target,
       title: "Excellence",
@@ -170,43 +140,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Journey</h2>
-            <p className="text-xl text-gray-300">Milestones in our growth story</p>
-          </div>
-
-          <div className="max-w-4xl mx-auto">
-            <div className="relative">
-              {/* Timeline line */}
-              <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-zasta-green-500 hidden md:block"></div>
-
-              <div className="space-y-12">
-                {timeline.map((item, index) => (
-                  <div key={index} className="relative flex items-center">
-                    {/* Timeline dot */}
-                    <div className="absolute left-6 w-4 h-4 bg-zasta-green-500 rounded-full border-4 border-gray-900 hidden md:block"></div>
-
-                    {/* Content */}
-                    <div className="md:ml-16 bg-gray-800 rounded-lg p-6 hover:bg-gray-700 transition-colors w-full">
-                      <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-                        <div>
-                          <div className="text-zasta-gold-400 font-bold text-lg mb-2">{item.year}</div>
-                          <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                          <p className="text-gray-300">{item.description}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </Layout>
+
   );
 };
 
