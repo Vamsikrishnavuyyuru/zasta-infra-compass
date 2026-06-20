@@ -9,7 +9,7 @@ const About = () => {
     {
       year: "2016",
       title: "Company Founded",
-      description: "Zasta Engineers And Consultancy Services established in Hyderabad",
+      description: "Zasta established in Hyderabad",
     },
     {
       year: "2017",
