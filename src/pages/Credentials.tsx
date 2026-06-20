@@ -82,10 +82,6 @@ const Credentials = () => {
                     <dt className="text-gray-500">Headquarters</dt>
                     <dd className="text-gray-900 font-medium">Hyderabad, India</dd>
                   </div>
-                  <div>
-                    <dt className="text-gray-500">Headquarters</dt>
-                    <dd className="text-gray-900 font-medium">Hyderabad, India</dd>
-                  </div>
                 </dl>
               </CardContent>
             </Card>
