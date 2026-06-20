@@ -9,7 +9,7 @@ const About = () => {
     {
       year: "2016",
       title: "Company Founded",
-      description: "Zasta Engineers And Consultancy Services established in Hyderabad",
+      description: "Zasta established in Hyderabad",
     },
     {
       year: "2017",
@@ -68,14 +68,14 @@ const About = () => {
   return (
     <Layout>
       <SEO
-        title="About Zasta Group — Infrastructure Experts Since 2016"
-        description="Learn about Zasta Group, a Hyderabad-based infrastructure services company delivering workforce and construction management worldwide since 2016."
+        title="About Zasta Group — Infrastructure Experts in Hyderabad"
+        description="Learn about Zasta Group, a Hyderabad-based infrastructure services company delivering workforce and construction management worldwide."
         path="/about"
       />
       {/* Hero Section with City Animation */}
       <SectionHeaderWithCity
         title="About Zasta"
-        subtitle="Powering infrastructure projects worldwide since 2016 with innovative solutions and skilled expertise"
+        subtitle="Headquartered in Hyderabad, powering infrastructure projects worldwide with innovative solutions and skilled expertise"
         bgGradient="bg-gradient-to-br from-zasta-green-900 via-zasta-green-700 to-zasta-green-500"
       />
 
@@ -86,10 +86,9 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Founded in 2016 in Hyderabad, Zasta Enterprises Private Limited, Previously known as Zasta Engineers And
-                Consultancy Services emerged from a vision to bridge the gap between skilled talent and infrastructure
-                development needs. What started as a workforce solutions company has evolved into a comprehensive
-                infrastructure services provider.
+                Headquartered in Hyderabad, Zasta Enterprises Private Limited emerged from a vision to bridge the gap
+                between skilled talent and infrastructure development needs. What started as a workforce solutions
+                company has evolved into a comprehensive infrastructure services provider.
               </p>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
                 Today, we serve global infrastructure projects across power, transportation, oil & gas, data centers,
