@@ -3870,6 +3870,137 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-06-15",
     },
+    {
+      id: 212,
+      title: "Safety Officer",
+      department: "HSE (Health, Safety & Environment)",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Implement and maintain EHS protocols across the residential construction site. Conduct hazard identification, safety training, and enforce zero-incident safety cultures on site.",
+      requirements: [
+        "Degree/Diploma in Engineering with a recognized professional Safety certification (ADIS/NEBOSH).",
+        "5+ years of safety execution experience in the construction industry.",
+        "Mandatory track record managing safety parameters for Residential projects.",
+      ],
+      postedDate: "2026-06-27",
+    },
+    {
+      id: 213,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Coordinate and execute internal and external MEP services for residential projects. Focus on smooth service integration across electrical, plumbing, firefighting, and HVAC setups.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "5+ years of core site experience handling MEP utilities.",
+        "Mandatory residential construction project experience.",
+        "Ability to interface with civil execution teams to plan infrastructure routing.",
+      ],
+      postedDate: "2026-06-27",
+    },
+    {
+      id: 214,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Manage MEP services integration for a high-rise tower project. This position directly centers on coordinating service routing and sleeves within active Mivan formwork casting cycles.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "5+ years of high-rise building MEP installation experience.",
+        "Mandatory experience with Mivan (Aluminum formwork) construction systems.",
+        "Expertise in vertical service distribution and high-rise fire fighting infrastructure.",
+      ],
+      postedDate: "2026-06-27",
+    },
+
+    {
+      id: 215,
+      title: "Planning Engineer",
+      department: "Project Planning",
+      location: "Nanakramguda, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Responsible for developing, updating, and tracking project schedules for a high-rise tower in Nanakramguda. This role centers on monitoring active cycle times and resource metrics within a Mivan structural framework.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "5+ years of core construction project planning experience.",
+        "Mandatory experience on High-Rise projects utilizing Mivan technology.",
+        "Proficiency in project management software such as Primavera P6 or MS Project.",
+        "Strong capability in critical path analysis, material forecasting, and progress reporting.",
+      ],
+      postedDate: "2026-06-27",
+    },
+    {
+      id: 216,
+      title: "QS and Contracts Engineer",
+      department: "Contracts & Commercial",
+      location: "Himayat Nagar, Hyderabad, India",
+      type: "Full-time",
+      experience: "10 years",
+      vacancy: 1,
+      description:
+        "Manage the quantity surveying, estimation, and contract management workflows for residential developments. This position handles vendor evaluations, contract drafting, cost controls, and dispute avoidance protocols.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering or Quantity Surveying.",
+        "10 years of professional experience handling QS, billing, and contract administration.",
+        "Mandatory background working on Residential construction projects.",
+        "Expertise in contract conditions, rate analysis, claims handling, and final accounts closing.",
+        "Strong negotiation and commercial management skills.",
+      ],
+      postedDate: "2026-06-27",
+    },
+    {
+      id: 217,
+      title: "Planning Engineer",
+      department: "Project Planning",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Lead scheduling control and resource tracking for a high-rise residential project in Chevella. Manage structural timelines and monitor daily progress parameters matching high-speed Mivan casting cycles.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "5+ years of dedicated project planning experience.",
+        "Mandatory track record on High-Rise projects using Mivan (Aluminum Formwork) technology.",
+        "Proficient in generating baseline schedules, delay analysis, and daily/weekly progress variants using MS Project or Primavera P6.",
+      ],
+      postedDate: "2026-06-27",
+    },
+
+    {
+      id: 218,
+      title: "Mechanical Inspection Engineer",
+      department: "Mechanical Engineering",
+      location: "Parwada, Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "8+ years",
+      vacancy: 1,
+      description:
+        "Seeking an experienced Mechanical Inspection Engineer to drive the piping fabrication, alignment, and execution processes for industrial or EPC projects in Parwada, Vizag. This position is responsible for rigorous physical site inspections, welding validations, and system hydrotesting to maintain seamless execution timelines and absolute compliance with engineering specifications.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Mechanical Engineering.",
+        "Minimum 8+ years of proven hands-on experience in mechanical inspection, piping networks, and industrial site execution.",
+        "Strong technical knowledge of piping installation, structural fabrication, system alignments, and testing workflows governed by applicable ASME/API codes.",
+        "Demonstrated experience in conducting field inspections for piping systems, welding quality, NDT review, hydrotesting protocols, and heavy mechanical equipment placement.",
+        "Proficiency in accurately reviewing complex engineering drawings, piping isometrics, construction method statements, field inspection checklists, and formal quality documentation.",
+        "Good coordination and collaborative skills to interface efficiently with construction crews, internal QA/QC leads, client representatives, and third-party contractors to guarantee milestone delivery.",
+      ],
+      postedDate: "2026-06-27",
+    },
   ];
 
   // Get unique departments and locations for filter options
