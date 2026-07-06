@@ -4094,6 +4094,62 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-07-06",
     },
+    {
+      id: 224,
+      title: "Mechanical Inspection Engineer",
+      department: "Quality Control & Execution",
+      location: "Parwada, Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "8+ years",
+      vacancy: 1,
+      description:
+        "Seeking an experienced Mechanical Inspection Engineer to drive piping fabrication, loop alignment, and execution processes for industrial or EPC projects in Parwada, Vizag. This position is responsible for rigorous physical site inspections, welding validations, and system hydrotesting to maintain seamless execution timelines.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Mechanical Engineering.",
+        "Minimum 8+ years of hands-on experience in mechanical inspection, piping networks, and industrial site execution.",
+        "Strong technical knowledge of piping installation, structural fabrication, alignment, and testing workflows governed by ASME/API codes.",
+        "Demonstrated experience conducting field inspections for welding quality, NDT review, hydrotesting protocols, and mechanical equipment placement.",
+        "Proficiency in reviewing complex engineering drawings, piping isometrics, and construction method statements.",
+      ],
+      postedDate: "2026-07-06",
+    },
+    {
+      id: 225,
+      title: "Civil Quality Engineer",
+      department: "Quality Assurance & Control",
+      location: "Mumbai, Maharashtra, India",
+      type: "Full-time",
+      experience: "8+ years",
+      vacancy: 1,
+      description:
+        "We are looking for a dedicated Civil Quality Engineer to establish and maintain QA/QC frameworks at our Mumbai project site. You will manage material testing logs, concrete pour cards, and structural alignment checks to ensure zero-defect construction parameters.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "8+ years of core experience in civil construction quality management.",
+        "Expertise in implementing site Quality Management Systems (QMS) and raising/closing Non-Conformance Reports (NCR).",
+        "Deep understanding of relevant IS codes, laboratory material testing protocols, and concrete mix design verifications.",
+        "Strong profile in auditing site workflows, verifying BBS, and checking structural finishing checklists.",
+      ],
+      postedDate: "2026-07-06",
+    },
+    {
+      id: 226,
+      title: "Project Manager",
+      department: "Project Management",
+      location: "Hyderabad, Telangana, India",
+      type: "Full-time",
+      experience: "15+ years",
+      vacancy: 1,
+      description:
+        "Seeking a veteran Project Manager to lead large-scale residential developments in Hyderabad. This leadership role oversees the entire project lifecycle, managing multidisciplinary engineering teams, contractor performance, site budgets, and high-quality construction timelines.",
+      requirements: [
+        "Bachelor’s or Master’s degree in Civil Engineering.",
+        "15+ years of active construction project management experience.",
+        "Mandatory track record of successfully executing and delivering premium, large-scale Residential developments.",
+        "Exceptional leadership, budget management, value engineering, and stakeholder management capabilities.",
+      ],
+      postedDate: "2026-07-06",
+    },
   ];
 
   // Get unique departments and locations for filter options
