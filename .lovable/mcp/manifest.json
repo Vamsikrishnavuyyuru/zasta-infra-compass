@@ -1,0 +1,75 @@
+{
+  "version": 1,
+  "sdk_version": "0.20.0",
+  "path": "/functions/v1/mcp",
+  "auth": {
+    "type": "none"
+  },
+  "mcp": {
+    "server": {
+      "name": "zasta-group-mcp",
+      "version": "0.1.0",
+      "title": "Zasta Group MCP"
+    },
+    "tools": [
+      {
+        "name": "get_company_info",
+        "title": "Get company information",
+        "description": "Get an overview of Zasta Group — headquarters, sectors served, products, and key stats.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_services",
+        "title": "List Zasta Group services",
+        "description": "List the services and products offered by Zasta Group, including the Construction Quality Management Platform and NirmanJobs.",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "$schema": "http://json-schema.org/draft-07/schema#",
+          "type": "object",
+          "properties": {}
+        },
+        "outputSchema": null
+      },
+      {
+        "name": "list_job_openings",
+        "title": "List current job openings",
+        "description": "List current job openings at Zasta Group, optionally filtered by location or department (case-insensitive substring match).",
+        "annotations": {
+          "readOnlyHint": true,
+          "idempotentHint": true,
+          "openWorldHint": false
+        },
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "location": {
+              "type": "string",
+              "description": "Optional location filter, e.g. 'Hyderabad'."
+            },
+            "department": {
+              "type": "string",
+              "description": "Optional department filter, e.g. 'Quality'."
+            }
+          },
+          "additionalProperties": false,
+          "$schema": "http://json-schema.org/draft-07/schema#"
+        },
+        "outputSchema": null
+      }
+    ]
+  }
+}
