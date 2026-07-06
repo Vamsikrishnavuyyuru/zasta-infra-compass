@@ -4001,6 +4001,99 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-06-27",
     },
+    {
+      id: 219,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Coordinate and execute internal and external MEP services for residential projects. Focus on smooth service integration across electrical, plumbing, firefighting, and HVAC setups.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "5+ years of core site experience handling MEP utilities.",
+        "Mandatory residential construction project experience.",
+        "Ability to interface with civil execution teams to plan infrastructure routing.",
+      ],
+      postedDate: "2026-07-06",
+    },
+    {
+      id: 220,
+      title: "MEP Engineer",
+      department: "Mechanical Engineering",
+      location: "Tarnaka, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Manage MEP services integration for a high-rise tower project. This position directly centers on coordinating service routing and sleeves within active Mivan formwork casting cycles.",
+      requirements: [
+        "Bachelor’s degree in Mechanical or Electrical Engineering.",
+        "5+ years of high-rise building MEP installation experience.",
+        "Mandatory experience with Mivan (Aluminum formwork) construction systems.",
+        "Expertise in vertical service distribution and high-rise fire fighting infrastructure.",
+      ],
+      postedDate: "2026-07-06",
+    },
+
+    {
+      id: 221,
+      title: "Planning Engineer",
+      department: "Project Planning",
+      location: "Nanakramguda, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Responsible for developing, updating, and tracking project schedules for a high-rise tower in Nanakramguda. This role centers on monitoring active cycle times and resource metrics within a Mivan structural framework.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "5+ years of core construction project planning experience.",
+        "Mandatory experience on High-Rise projects utilizing Mivan technology.",
+        "Proficiency in project management software such as Primavera P6 or MS Project.",
+        "Strong capability in critical path analysis, material forecasting, and progress reporting.",
+      ],
+      postedDate: "2026-07-06",
+    },
+    {
+      id: 222,
+      title: "QS and Contracts Engineer",
+      department: "Contracts & Commercial",
+      location: "Himayat Nagar, Hyderabad, India",
+      type: "Full-time",
+      experience: "10 years",
+      vacancy: 1,
+      description:
+        "Manage the quantity surveying, estimation, and contract management workflows for residential developments. This position handles vendor evaluations, contract drafting, cost controls, and dispute avoidance protocols.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering or Quantity Surveying.",
+        "10 years of professional experience handling QS, billing, and contract administration.",
+        "Mandatory background working on Residential construction projects.",
+        "Expertise in contract conditions, rate analysis, claims handling, and final accounts closing.",
+        "Strong negotiation and commercial management skills.",
+      ],
+      postedDate: "2026-07-06",
+    },
+    {
+      id: 223,
+      title: "Planning Engineer",
+      department: "Project Planning",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Lead scheduling control and resource tracking for a high-rise residential project in Chevella. Manage structural timelines and monitor daily progress parameters matching high-speed Mivan casting cycles.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "5+ years of dedicated project planning experience.",
+        "Mandatory track record on High-Rise projects using Mivan (Aluminum Formwork) technology.",
+        "Proficient in generating baseline schedules, delay analysis, and daily/weekly progress variants using MS Project or Primavera P6.",
+      ],
+      postedDate: "2026-07-06",
+    },
   ];
 
   // Get unique departments and locations for filter options
