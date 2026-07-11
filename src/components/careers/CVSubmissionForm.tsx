@@ -1,16 +1,12 @@
-
 import { useState, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { Textarea } from '@/components/ui/textarea';
 import { Alert, AlertDescription } from '@/components/ui/alert';
-import { Upload, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
-import CVAttachmentInput from "./CVAttachmentInput";
-import CVPersonalDetailsForm from "./CVPersonalDetailsForm";
-import CVZapierWebhookInput from "./CVZapierWebhookInput";
+import { supabase } from '@/integrations/supabase/client';
+import CVAttachmentInput from './CVAttachmentInput';
+import CVPersonalDetailsForm from './CVPersonalDetailsForm';
 
 interface FormData {
   name: string;
@@ -30,24 +26,16 @@ const CVSubmissionForm = () => {
     phone: '',
     experience: '',
     skills: '',
-    coverLetter: ''
+    coverLetter: '',
   });
-  const [formErrors, setFormErrors] = useState<{[key: string]: string}>({});
+  const [formErrors, setFormErrors] = useState<{ [key: string]: string }>({});
   const [cvFile, setCvFile] = useState<File | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
-  // Set default Zapier Webhook URL and hide it from users
-  const [zapierWebhook, setZapierWebhook] = useState<string>('https://hooks.zapier.com/hooks/catch/23382207/uyj0owa/');
-
-  // Hide the webhook input field from users
-  const showWebhookInput = false; // set to false to HIDE the field from users
-  
   const validateForm = () => {
-    const errors: {[key: string]: string} = {};
-    
-    if (!formData.name.trim()) {
-      errors.name = 'Full name is required';
-    }
+    const errors: { [key: string]: string } = {};
+
+    if (!formData.name.trim()) errors.name = 'Full name is required';
     if (!formData.email.trim()) {
       errors.email = 'Email is required';
     } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
@@ -58,16 +46,8 @@ const CVSubmissionForm = () => {
     } else if (!/^[\+]?[1-9][\d]{0,15}$/.test(formData.phone.replace(/\s/g, ''))) {
       errors.phone = 'Please enter a valid phone number';
     }
-    if (!formData.experience.trim()) {
-      errors.experience = 'Years of experience is required';
-    }
-    if (!cvFile) {
-      errors.cv = 'CV/Resume is required';
-    }
-    // Remove webhook validation since it's pre-filled and hidden
-    // if (!zapierWebhook.trim()) {
-    //   errors.webhook = 'Zapier Webhook URL is required (admin only)';
-    // }
+    if (!formData.experience.trim()) errors.experience = 'Years of experience is required';
+    if (!cvFile) errors.cv = 'CV/Resume is required';
 
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
@@ -75,50 +55,30 @@ const CVSubmissionForm = () => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-
-    if (formErrors[name]) {
-      setFormErrors(prev => ({ ...prev, [name]: '' }));
-    }
+    setFormData((prev) => ({ ...prev, [name]: value }));
+    if (formErrors[name]) setFormErrors((prev) => ({ ...prev, [name]: '' }));
   };
-
-  const handleWebhookChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setZapierWebhook(e.target.value);
-    if (formErrors.webhook) {
-      setFormErrors(prev => ({ ...prev, webhook: '' }));
-    }
-  }
 
   const handleFileChange = (file: File | null) => {
     if (file) {
       if (file.size > 10 * 1024 * 1024) {
-        setFormErrors((prev) => ({
-          ...prev,
-          cv: "File size must be less than 10MB",
-        }));
+        setFormErrors((prev) => ({ ...prev, cv: 'File size must be less than 10MB' }));
         return;
       }
       const allowedTypes = [
-        "application/pdf",
-        "application/msword",
-        "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        'application/pdf',
+        'application/msword',
+        'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
       ];
       if (!allowedTypes.includes(file.type)) {
-        setFormErrors((prev) => ({
-          ...prev,
-          cv: "Please upload a PDF, DOC, or DOCX file",
-        }));
+        setFormErrors((prev) => ({ ...prev, cv: 'Please upload a PDF, DOC, or DOCX file' }));
         return;
       }
       setCvFile(file);
-      setFormErrors((prev) => ({ ...prev, cv: "" }));
+      setFormErrors((prev) => ({ ...prev, cv: '' }));
     } else {
       setCvFile(null);
     }
-  };
-
-  const handleUploadDivClick = () => {
-    fileInputRef.current?.click();
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -126,9 +86,9 @@ const CVSubmissionForm = () => {
 
     if (!validateForm()) {
       toast({
-        title: "Validation Error",
-        description: "Please fix the errors in the form before submitting.",
-        variant: "destructive",
+        title: 'Validation Error',
+        description: 'Please fix the errors in the form before submitting.',
+        variant: 'destructive',
       });
       return;
     }
@@ -137,50 +97,34 @@ const CVSubmissionForm = () => {
 
     try {
       const payload = new window.FormData();
-      payload.append("name", formData.name);
-      payload.append("email", formData.email);
-      payload.append("phone", formData.phone);
-      payload.append("experience", formData.experience);
-      payload.append("skills", formData.skills);
-      payload.append("coverLetter", formData.coverLetter || "");
-      if (cvFile) {
-        payload.append("cvAttachment", cvFile); // This is sent to Zapier
-      }
-      payload.append("submittedAt", new Date().toISOString());
+      payload.append('name', formData.name);
+      payload.append('email', formData.email);
+      payload.append('phone', formData.phone);
+      payload.append('experience', formData.experience);
+      payload.append('skills', formData.skills);
+      payload.append('coverLetter', formData.coverLetter || '');
+      if (cvFile) payload.append('cvAttachment', cvFile);
 
-      await fetch(zapierWebhook, {
-        method: "POST",
-        body: payload,
-        mode: "no-cors", // Zapier expects this for file uploads
-      });
+      const { error } = await supabase.functions.invoke('submit-cv', { body: payload });
+      if (error) throw error;
 
       toast({
-        title: "Application Submitted!",
+        title: 'Application Submitted!',
         description:
           "Thank you for your interest. We'll review your application and get back to you soon.",
       });
 
-      setFormData({
-        name: "",
-        email: "",
-        phone: "",
-        experience: "",
-        skills: "",
-        coverLetter: "",
-      });
+      setFormData({ name: '', email: '', phone: '', experience: '', skills: '', coverLetter: '' });
       setCvFile(null);
       setFormErrors({});
-      const fileInput = document.getElementById(
-        "cv-upload"
-      ) as HTMLInputElement;
-      if (fileInput) fileInput.value = "";
-    } catch (error) {
-      console.error("Error submitting to Zapier:", error);
+      const fileInput = document.getElementById('cv-upload') as HTMLInputElement;
+      if (fileInput) fileInput.value = '';
+    } catch (_error) {
       toast({
-        title: "Submission Failed",
+        title: 'Submission Failed',
         description:
-          "There was an error submitting your application. Please check your internet connection or email hr@zastagroup.com.",
-        variant: "destructive",
+          'There was an error submitting your application. Please try again or email hr@zastagroup.com.',
+        variant: 'destructive',
       });
     } finally {
       setIsSubmitting(false);
@@ -191,9 +135,7 @@ const CVSubmissionForm = () => {
     <Card>
       <CardContent className="p-8">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Submit Your Application
-          </h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Submit Your Application</h2>
           <p className="text-gray-600">
             Don't see a perfect match? Submit your CV and we'll contact you when suitable opportunities arise.
           </p>
@@ -207,13 +149,6 @@ const CVSubmissionForm = () => {
             Your CV/Resume file will be sent as an email attachment via our secure system.
           </AlertDescription>
         </Alert>
-
-        <CVZapierWebhookInput
-          zapierWebhook={zapierWebhook}
-          onChange={handleWebhookChange}
-          error={formErrors.webhook}
-          show={showWebhookInput}
-        />
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <CVPersonalDetailsForm
@@ -234,7 +169,7 @@ const CVSubmissionForm = () => {
             className="w-full bg-zasta-green-600 hover:bg-zasta-green-700"
             disabled={isSubmitting}
           >
-            {isSubmitting ? "Submitting..." : "Submit Application"}
+            {isSubmitting ? 'Submitting...' : 'Submit Application'}
           </Button>
         </form>
       </CardContent>
