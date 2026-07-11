@@ -4,7 +4,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Button } from '@/components/ui/button';
 import { useToast } from '@/hooks/use-toast';
-import emailjs from '@emailjs/browser';
+import { supabase } from '@/integrations/supabase/client';
 
 const ContactForm = () => {
   const { toast } = useToast();
@@ -31,32 +31,19 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // TODO: Replace these with your actual EmailJS credentials
-      const serviceId = 'service_qghr4z3';     // Replace with your service ID from EmailJS
-      const templateId = 'template_vvlqi9w';   // Replace with your template ID from EmailJS  
-      const publicKey = '2TgKwPSGEVu3-AfF1';     // Replace with your public key from EmailJS
+      const { data, error } = await supabase.functions.invoke('send-contact-email', {
+        body: formData,
+      });
 
-      const templateParams = {
-        from_name: formData.name,
-        from_email: formData.email,
-        company: formData.company,
-        phone: formData.phone,
-        subject: formData.subject,
-        message: formData.message,
-        to_email: 'hr@zastagroup.com'
-      };
-
-
-
-
-      await emailjs.send(serviceId, templateId, templateParams, publicKey);
+      if (error || !data?.ok) {
+        throw new Error(error?.message || 'Failed to send');
+      }
 
       toast({
         title: "Message Sent Successfully!",
         description: "Thank you for contacting us. Our HR team will get back to you within 24 hours.",
       });
-      
-      // Reset form
+
       setFormData({
         name: '',
         email: '',
@@ -66,13 +53,9 @@ const ContactForm = () => {
         message: ''
       });
     } catch (error) {
-      console.error('Email sending failed:', error);
-      
-      let errorMessage = "There was an error sending your message. Please try again or contact us directly at hr@zastagroup.com";
-      
       toast({
         title: "Failed to Send Message",
-        description: errorMessage,
+        description: "There was an error sending your message. Please try again or contact us directly at hr@zastagroup.com",
         variant: "destructive"
       });
     } finally {
