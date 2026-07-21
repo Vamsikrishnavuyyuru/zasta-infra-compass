@@ -2,9 +2,12 @@ import Layout from "@/components/Layout";
 import SEO from "@/components/SEO";
 import SectionHeaderWithCity from "@/components/shared/SectionHeaderWithCity";
 import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import { Target, Eye, Heart, Award, Users, Building, Calendar, TrendingUp } from "lucide-react";
 
 const About = () => {
+  const navigate = useNavigate();
   const values = [
 
     {
@@ -136,6 +139,20 @@ const About = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Certifications CTA */}
+      <section className="pb-20">
+        <div className="container mx-auto px-4 flex justify-center">
+          <Button
+            size="lg"
+            onClick={() => navigate("/certifications")}
+            className="bg-zasta-green-600 hover:bg-zasta-green-700 text-white px-8 py-4 font-semibold text-lg"
+          >
+            <Award className="w-5 h-5 mr-2" />
+            Certifications
+          </Button>
         </div>
       </section>
 
