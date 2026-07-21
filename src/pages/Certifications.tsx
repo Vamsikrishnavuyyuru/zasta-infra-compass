@@ -5,6 +5,9 @@ import SectionHeaderWithCity from "@/components/shared/SectionHeaderWithCity";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent, DialogTitle } from "@/components/ui/dialog";
 import { Award } from "lucide-react";
+import isoAsset from "@/assets/iso-9001.asset.json";
+import dpiitAsset from "@/assets/dpiit-recognition.asset.json";
+import udyamAsset from "@/assets/udyam-registration.asset.json";
 
 interface Certificate {
   title: string;
@@ -13,12 +16,9 @@ interface Certificate {
 }
 
 const certificates: Certificate[] = [
-  { title: "ISO 9001:2015 — Quality Management", issuer: "International Organization for Standardization", image: "/placeholder.svg" },
-  { title: "ISO 45001 — Occupational Health & Safety", issuer: "International Organization for Standardization", image: "/placeholder.svg" },
-  { title: "ISO 14001 — Environmental Management", issuer: "International Organization for Standardization", image: "/placeholder.svg" },
-  { title: "D&B D-U-N-S® Registered", issuer: "Dun & Bradstreet", image: "/placeholder.svg" },
-  { title: "MSME Registration", issuer: "Government of India", image: "/placeholder.svg" },
-  { title: "Companies Act Registration", issuer: "Ministry of Corporate Affairs, India", image: "/placeholder.svg" },
+  { title: "ISO 9001:2015 — Quality Management System", issuer: "International Organization for Standardization", image: isoAsset.url },
+  { title: "DPIIT Startup India Recognition", issuer: "Department for Promotion of Industry and Internal Trade, Government of India", image: dpiitAsset.url },
+  { title: "Udyam Registration (MSME)", issuer: "Ministry of Micro, Small & Medium Enterprises, Government of India", image: udyamAsset.url },
 ];
 
 const Certifications = () => {
@@ -56,7 +56,7 @@ const Certifications = () => {
                     src={cert.image}
                     alt={cert.title}
                     loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </button>
                 <CardContent className="p-6">
