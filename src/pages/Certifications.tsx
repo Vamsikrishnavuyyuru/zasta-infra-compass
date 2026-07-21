@@ -56,7 +56,7 @@ const Certifications = () => {
                     src={cert.image}
                     alt={cert.title}
                     loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500"
                   />
                 </button>
                 <CardContent className="p-6">
