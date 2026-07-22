@@ -1,43 +1,27 @@
-
 ## Goal
-Add a "Certifications" CTA at the bottom of the About Us page (below Core Values) and a new `/certifications` route displaying certificate cards in a responsive grid with an image lightbox. No existing sections, styles, or routes are modified.
+Add "Certifications" as a top-level nav item between "About Us" and "Services", and remove the now-redundant "Certifications" CTA button from the bottom of the About Us page. The `/certifications` page and route already exist and remain unchanged.
 
 ## Changes
 
-### 1. `src/pages/About.tsx` (append only, non-destructive)
-Add a new `<section>` after the Core Values section containing a centered CTA button:
-- Uses existing shadcn `Button` component
-- Green theme via existing `bg-zasta-green-600 hover:bg-zasta-green-700` classes (matches other buttons on the site)
-- `useNavigate()` → `/certifications`
-- Label: "Certifications" with a lucide `Award` icon
-- Spacing consistent with adjacent sections (`py-16` / `py-20`)
-
-### 2. `src/pages/Certifications.tsx` (new file)
-Structure mirrors `About.tsx` / `Credentials.tsx` for visual consistency:
-- Wrapped in `<Layout>` (same Header + Footer + floating buttons)
-- `<SEO>` with title "Our Certifications — Zasta Group" and matching description
-- Hero: `SectionHeaderWithCity` with:
-  - Title: "Our Certifications"
-  - Subtitle: "Our certifications demonstrate our commitment to quality, compliance, and industry standards."
-- Grid section:
-  - `grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8` inside `container mx-auto px-4`
-  - Each card uses shadcn `Card` with `hover:shadow-xl transition-shadow hover:-translate-y-1 transition-transform`
-  - Card contents: placeholder image (`/placeholder.svg`), title, optional issuing authority
-  - Clicking image opens shadcn `Dialog` (lightbox) showing a large version of the same image
-- Placeholder data array of 6 certificate entries (title, issuer, image = `/placeholder.svg`) so images can be swapped later without layout changes
-
-### 3. `src/App.tsx`
-Add lazy import + route:
-```tsx
-const Certifications = lazy(() => import("./pages/Certifications"));
-<Route path="/certifications" element={<Certifications />} />
+### 1. `src/components/Header.tsx`
+Insert a new entry into the `navItems` array between `About Us` and `Services`:
+```ts
+{ name: 'Certifications', path: '/certifications' },
 ```
-Placed above the catch-all `*` route. No other routes touched.
+This single array drives both the desktop nav and the mobile hamburger menu, and the header is already the sticky header (`fixed w-full z-50`). So the new item automatically appears in:
+- Desktop navigation
+- Mobile hamburger menu
+- Sticky header
+
+Spacing, typography, hover effects, transitions, active state (`bg-zasta-green-100 text-zasta-green-600`), and responsive behavior are inherited from the shared `navItems.map(...)` render — no style changes needed.
+
+### 2. `src/pages/About.tsx`
+Remove the "Certifications CTA" `<section>` (the block containing the green `Certifications` button that navigates to `/certifications`). Also clean up now-unused imports (`Button`, `useNavigate`, `Award`) and the `navigate` constant if no longer referenced elsewhere on the page.
 
 ## Not touched
-Header, Footer, About sections (Story, Stats, Vision/Mission, Core Values), existing routes, existing styles, `index.css`, `tailwind.config.ts`.
+- `src/pages/Certifications.tsx` — content, images, lightbox, animations preserved as-is.
+- `src/App.tsx` — `/certifications` route already registered.
+- Footer, other pages, tokens, global styles.
 
-## Technical notes
-- Reuses existing shadcn `Dialog` for the lightbox — no new dependencies.
-- All colors via existing `zasta-green-*` tokens; no hardcoded hex values.
-- Fully responsive via Tailwind breakpoints already used elsewhere in the project.
+## Result
+Nav order: Home | About Us | Certifications | Services | Careers | Contact — identical styling and behavior across desktop, mobile, and sticky states. Active highlight on `/certifications` matches other items.
