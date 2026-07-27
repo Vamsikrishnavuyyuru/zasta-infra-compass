@@ -4460,6 +4460,63 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-07-13",
     },
+    {
+      id: 243,
+      title: "Junior Inspector (Mechanical)",
+      department: "Quality Control & Inspection",
+      location: "Mumbai, Maharashtra, India",
+      type: "Full-time",
+      experience: "5-7 years",
+      vacancy: 1,
+      description:
+        "Responsible for conducting daily physical mechanical inspections, non-destructive testing (NDT), and structural/piping weld validations across site operations in Mumbai. Ensures all fabricated components and joints strictly meet customer engineering standards and applicable safety codes.",
+      requirements: [
+        "Diploma or Bachelor’s degree in Mechanical Engineering.",
+        "5 to 7 years of active quality inspection experience in mechanical, piping, or fabrication environments.",
+        "Mandatory ASNT/ISNT NDT Level II certifications in Radiographic Testing (RT), Penetrant Testing (PT), Ultrasonic Testing (UT), and Magnetic Particle Testing (MPT).",
+        "Hands-on experience in weld visual inspection, material verification, and NDT report generation.",
+        "Ability to read and interpret mechanical drawings, isometric diagrams, and quality control plans (QCP).",
+      ],
+      postedDate: "2026-07-16",
+    },
+    {
+      id: 244,
+      title: "Senior Inspector (Mechanical)",
+      department: "Quality Control & Inspection",
+      location: "Mumbai, Maharashtra, India",
+      type: "Full-time",
+      experience: "8-10 years",
+      vacancy: 1,
+      description:
+        "Lead core mechanical quality inspections, oversee NDT execution, and validate structural and static equipment fabrication for industrial projects in Mumbai. Responsible for verifying client quality compliance, signing off inspection test plans (ITPs), and resolving site quality issues.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Mechanical Engineering.",
+        "8 to 10 years of progressive quality inspection experience in industrial, piping, or heavy engineering projects.",
+        "Mandatory ASNT/ISNT NDT Level II certifications in Radiographic Testing (RT), Penetrant Testing (PT), Ultrasonic Testing (UT), and Magnetic Particle Testing (MPT).",
+        "Demonstrated expertise in supervising welding inspections, reviewing NDT radiograph films, and managing hydrotest packages.",
+        "Strong coordination skills with client representatives, third-party inspection agencies (TPIA), and fabrication teams.",
+      ],
+      postedDate: "2026-07-16",
+    },
+    {
+      id: 245,
+      title: "Senior Inspector (Mechanical) – CSWIP 3.1 Certified",
+      department: "Quality Control & Inspection",
+      location: "Mumbai, Maharashtra, India",
+      type: "Full-time",
+      experience: "8-10 years",
+      vacancy: 1,
+      description:
+        "Senior inspection authority responsible for critical weld quality control, NDT review, and code compliance for high-spec industrial and piping projects in Mumbai. Enforces strict adherence to WPS/PQR specifications and oversees complex joint inspections.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Mechanical Engineering.",
+        "8 to 10 years of core quality inspection experience with emphasis on heavy welding and fabrication.",
+        "Mandatory valid CSWIP 3.1 Welding Inspector certification.",
+        "Mandatory ASNT/ISNT NDT Level II certifications in Radiographic Testing (RT), Penetrant Testing (PT), Ultrasonic Testing (UT), and Magnetic Particle Testing (MPT).",
+        "Deep understanding of ASME, API, and AWS codes, welding procedure qualification (WPS/PQR), and direct interaction with client/third-party auditors.",
+      ],
+      postedDate: "2026-07-16",
+    },
   ];
 
   // Get unique departments and locations for filter options
