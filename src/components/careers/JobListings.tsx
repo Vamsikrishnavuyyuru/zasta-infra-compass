@@ -4681,6 +4681,97 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-07-21",
     },
+    {
+      id: 255,
+      title: "Civil Quality Engineer",
+      department: "Quality Assurance & Control",
+      location: "Parwada, Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "4+ years",
+      vacancy: 1,
+      description:
+        "Establish and maintain site civil QA/QC systems, execute routine material testing, and oversee quality compliance for industrial plant projects in Parwada, Vizag. Focus on concrete testing, structural alignment checks, and managing inspection pour cards.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "4+ years of active civil quality control experience.",
+        "Mandatory experience in Industrial projects (Factories, Plants, Warehouses, or Refineries).",
+        "Proficiency in laboratory testing protocols, concrete mix design evaluations, and Non-Conformance Report (NCR) management.",
+        "In-depth knowledge of relevant IS codes and technical site documentation standards.",
+      ],
+      postedDate: "2026-07-23",
+    },
+    {
+      id: 256,
+      title: "Civil Engineer",
+      department: "Civil Engineering",
+      location: "Shankarpalli, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Supervise daily site civil execution, structural concrete works, and finishing activities for a residential development in Shankarpalli. Responsible for tracking daily progress, managing subcontractor labor, and ensuring drawing compliance.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "5+ years of core civil construction site execution experience.",
+        "Mandatory experience working on Residential construction developments.",
+        "Strong understanding of structural execution, site safety practices, Bar Bending Schedules (BBS), and material reconciliation.",
+      ],
+      postedDate: "2026-07-23",
+    },
+    {
+      id: 257,
+      title: "QS & Billing Engineer",
+      department: "Quantity Surveying & Billing",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Manage quantity take-offs, joint site measurements, sub-contractor bill validations, and client billing for a high-rise Mivan project in Chevella. Track material usage variances and prepare monthly progress accounts.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "5+ years of dedicated Quantity Surveying (QS) and site billing experience.",
+        "Mandatory experience on High-Rise projects utilizing Mivan (Aluminum Formwork) systems.",
+        "Proficiency in Bar Bending Schedule (BBS) verification, rate analysis, contract line-item measurement, and billing ledger audits.",
+      ],
+      postedDate: "2026-07-23",
+    },
+    {
+      id: 258,
+      title: "Sr. RMC Engineer",
+      department: "Ready Mix Concrete Operations",
+      location: "Hyderabad, Telangana, India",
+      type: "Full-time",
+      experience: "7+ years",
+      vacancy: 1,
+      description:
+        "Lead ready-mix batching plant operations, concrete mix optimizations, quality testing, and supply dispatch workflows across Hyderabad sites. Ensure concrete grades match strict structural strength and slump requirements.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil / Chemical Engineering.",
+        "7+ years of hands-on experience in Ready Mix Concrete (RMC) plant operations and quality assurance.",
+        "Mandatory expertise in concrete trial mixes, admixture selection, raw material testing (aggregates, cement, fly ash), and batching plant calibration.",
+        "Proven ability to manage daily dispatch schedules, site quality troubleshooting, and technical interaction with site structural engineers.",
+      ],
+      postedDate: "2026-07-23",
+    },
+    {
+      id: 259,
+      title: "Jr. RMC Engineer",
+      department: "Ready Mix Concrete Operations",
+      location: "Nanakramguda, Hyderabad, India",
+      type: "Full-time",
+      experience: "4+ years",
+      vacancy: 1,
+      description:
+        "Oversee daily concrete batching, sampling, cube testing, and fresh concrete slump validations for high-rise site delivery in Nanakramguda. Coordinate transit mixer timings and raw material stock monitoring.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "4+ years of direct site/plant experience in Ready Mix Concrete (RMC) operations.",
+        "Mandatory background in RMC testing procedures, slump retention checks, cube compressive strength logs, and batching accuracy.",
+        "Familiarity with relevant IS standards for concrete manufacturing and site sampling protocols.",
+      ],
+      postedDate: "2026-07-23",
+    },
   ];
 
   // Get unique departments and locations for filter options
