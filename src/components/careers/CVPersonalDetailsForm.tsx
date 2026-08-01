@@ -10,6 +10,8 @@ interface FormData {
   phone: string;
   experience: string;
   skills: string;
+  currentJobTitle: string;
+  positionApplyingFor: string;
   coverLetter: string;
 }
 
@@ -101,6 +103,39 @@ const CVPersonalDetailsForm = ({
       {formErrors.skills && (
         <p className="text-red-500 text-sm mt-1">{formErrors.skills}</p>
       )}
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <Label htmlFor="currentJobTitle">Current Job Title *</Label>
+        <Input
+          id="currentJobTitle"
+          name="currentJobTitle"
+          value={formData.currentJobTitle}
+          onChange={onChange}
+          required
+          placeholder="e.g., Site Engineer, QA/QC Engineer, Project Manager"
+          className={`mt-2 ${formErrors.currentJobTitle ? "border-red-500" : ""}`}
+        />
+        {formErrors.currentJobTitle && (
+          <p className="text-red-500 text-sm mt-1">{formErrors.currentJobTitle}</p>
+        )}
+      </div>
+      <div>
+        <Label htmlFor="positionApplyingFor">Position Applying For *</Label>
+        <Input
+          id="positionApplyingFor"
+          name="positionApplyingFor"
+          value={formData.positionApplyingFor}
+          onChange={onChange}
+          required
+          placeholder="e.g., Civil Engineer, Safety Officer, Planning Engineer"
+          className={`mt-2 ${formErrors.positionApplyingFor ? "border-red-500" : ""}`}
+        />
+        {formErrors.positionApplyingFor && (
+          <p className="text-red-500 text-sm mt-1">{formErrors.positionApplyingFor}</p>
+        )}
+      </div>
     </div>
 
     <div>

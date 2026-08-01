@@ -62,10 +62,12 @@ Deno.serve(async (req) => {
     const phone = str(form.get('phone'), 32);
     const experience = str(form.get('experience'), 64);
     const skills = str(form.get('skills'), 2000);
+    const currentJobTitle = str(form.get('currentJobTitle'), 150);
+    const positionApplyingFor = str(form.get('positionApplyingFor'), 150);
     const coverLetter = str(form.get('coverLetter'), 5000);
     const cv = form.get('cvAttachment');
 
-    if (!name || !email || !phone || !experience) {
+    if (!name || !email || !phone || !experience || !currentJobTitle || !positionApplyingFor) {
       return new Response(JSON.stringify({ error: 'Missing required fields' }), {
         status: 400,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
@@ -110,6 +112,8 @@ Deno.serve(async (req) => {
           <tr><td><strong>Email</strong></td><td>${escapeHtml(email)}</td></tr>
           <tr><td><strong>Phone</strong></td><td>${escapeHtml(phone)}</td></tr>
           <tr><td><strong>Experience</strong></td><td>${escapeHtml(experience)}</td></tr>
+          <tr><td><strong>Current Job Title</strong></td><td>${escapeHtml(currentJobTitle)}</td></tr>
+          <tr><td><strong>Position Applying For</strong></td><td>${escapeHtml(positionApplyingFor)}</td></tr>
           <tr><td valign="top"><strong>Skills</strong></td><td>${escapeHtml(skills).replace(/\n/g, '<br/>')}</td></tr>
           <tr><td valign="top"><strong>Cover Letter</strong></td><td>${escapeHtml(coverLetter).replace(/\n/g, '<br/>')}</td></tr>
         </table>
