@@ -14,6 +14,8 @@ interface FormData {
   phone: string;
   experience: string;
   skills: string;
+  currentJobTitle: string;
+  positionApplyingFor: string;
   coverLetter: string;
 }
 
@@ -26,6 +28,8 @@ const CVSubmissionForm = () => {
     phone: '',
     experience: '',
     skills: '',
+    currentJobTitle: '',
+    positionApplyingFor: '',
     coverLetter: '',
   });
   const [formErrors, setFormErrors] = useState<{ [key: string]: string }>({});
@@ -47,6 +51,9 @@ const CVSubmissionForm = () => {
       errors.phone = 'Please enter a valid phone number';
     }
     if (!formData.experience.trim()) errors.experience = 'Years of experience is required';
+    if (!formData.currentJobTitle.trim()) errors.currentJobTitle = 'Current job title is required';
+    if (!formData.positionApplyingFor.trim())
+      errors.positionApplyingFor = 'Position applying for is required';
     if (!cvFile) errors.cv = 'CV/Resume is required';
 
     setFormErrors(errors);
@@ -102,6 +109,8 @@ const CVSubmissionForm = () => {
       payload.append('phone', formData.phone);
       payload.append('experience', formData.experience);
       payload.append('skills', formData.skills);
+      payload.append('currentJobTitle', formData.currentJobTitle);
+      payload.append('positionApplyingFor', formData.positionApplyingFor);
       payload.append('coverLetter', formData.coverLetter || '');
       if (cvFile) payload.append('cvAttachment', cvFile);
 
@@ -114,7 +123,16 @@ const CVSubmissionForm = () => {
           "Thank you for your interest. We'll review your application and get back to you soon.",
       });
 
-      setFormData({ name: '', email: '', phone: '', experience: '', skills: '', coverLetter: '' });
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        experience: '',
+        skills: '',
+        currentJobTitle: '',
+        positionApplyingFor: '',
+        coverLetter: '',
+      });
       setCvFile(null);
       setFormErrors({});
       const fileInput = document.getElementById('cv-upload') as HTMLInputElement;
