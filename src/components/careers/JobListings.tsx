@@ -4898,7 +4898,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Proficiency in laboratory testing protocols, concrete mix design evaluations, and Non-Conformance Report (NCR) management.",
         "In-depth knowledge of relevant IS codes and technical site documentation standards.",
       ],
-      postedDate: "2026-07-01",
+      postedDate: "2026-08-01",
     },
     {
       id: 267,
@@ -4916,7 +4916,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Mandatory experience across Villas, Residential developments, or High-Rise projects utilizing Mivan (Aluminum Formwork) systems.",
         "Proficiency in Bar Bending Schedule (BBS) verification, rate analysis, contract line-item measurement, and billing ledger audits.",
       ],
-      postedDate: "2026-07-01",
+      postedDate: "2026-08-01",
     },
     {
       id: 268,
@@ -4934,7 +4934,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Mandatory expertise in concrete trial mixes, admixture selection, raw material testing (aggregates, cement, fly ash), and batching plant calibration.",
         "Proven ability to manage daily dispatch schedules, site quality troubleshooting, and technical interaction with site structural engineers.",
       ],
-      postedDate: "2026-07-01",
+      postedDate: "2026-08-01",
     },
     {
       id: 269,
@@ -4952,7 +4952,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Mandatory background in RMC testing procedures, slump retention checks, cube compressive strength logs, and batching accuracy.",
         "Familiarity with relevant IS standards for concrete manufacturing and site sampling protocols.",
       ],
-      postedDate: "2026-07-01",
+      postedDate: "2026-08-01",
     },
     {
       id: 270,
@@ -4970,7 +4970,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Mandatory experience in Industrial projects (Plants, Refineries, Factories, or EPC developments).",
         "Expertise in interpreting piping isometrics, equipment layout drawings, structural mechanical erection, and pre-commissioning procedures.",
       ],
-      postedDate: "2026-07-01",
+      postedDate: "2026-08-01",
     },
     {
       id: 271,
@@ -4988,7 +4988,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Mandatory experience in Residential construction projects.",
         "Basic proficiency in reading MEP overlay drawings, checking routing clearances, and verifying utility installations against design specs.",
       ],
-      postedDate: "2026-07-01",
+      postedDate: "2026-08-01",
     },
     {
       id: 272,
@@ -5006,7 +5006,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
         "Mandatory track record of managing complete MEP operations on Residential construction developments.",
         "Expertise in resolving technical design clashes, managing subcontractor progress, conducting pre-commissioning checks, and interfacing with civil execution leads.",
       ],
-      postedDate: "2026-07-01",
+      postedDate: "2026-08-01",
     },
   ];
 
@@ -5025,9 +5025,7 @@ const JobListings = ({ onApply }: JobListingsProps) => {
   const filteredAndSortedJobs = useMemo(() => {
     // Exclude January 2026 postings from current openings display
     const hiddenMonths = ["2026-01", "2026-02", "2026-03"];
-    let filtered = currentOpenings.filter(
-      (job) => !hiddenMonths.some((m) => job.postedDate.startsWith(m)),
-    );
+    let filtered = currentOpenings.filter((job) => !hiddenMonths.some((m) => job.postedDate.startsWith(m)));
 
     // Apply filters
     if (filterDepartment !== "all") {
