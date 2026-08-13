@@ -5008,6 +5008,78 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-08-01",
     },
+    {
+      id: 272,
+      title: "Civil Engineer (Structure + Quality)",
+      department: "Civil Engineering & Quality",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Supervise structural execution while driving rigorous civil QA/QC protocols for a residential development in Chevella. Oversee reinforcement checking, concrete pour cards, formwork stability, and daily structural quality compliance.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "5+ years of combined structural execution and quality control experience.",
+        "Mandatory experience in Residential construction projects.",
+        "Proficiency in Bar Bending Schedule (BBS) checking, structural alignment verification, concrete testing protocols, and managing Non-Conformance Reports (NCR).",
+      ],
+      postedDate: "2026-08-13",
+    },
+    {
+      id: 273,
+      title: "Civil Engineer",
+      department: "Civil Engineering",
+      location: "Shankarpalli, Hyderabad, India",
+      type: "Full-time",
+      experience: "5 years",
+      vacancy: 1,
+      description:
+        "Oversee daily site execution, structural concrete pours, brickwork, and finishing works for a residential project in Shankarpalli. Manage subcontractor teams, enforce drawing adherence, and ensure smooth site progress.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "5 years of core civil site execution experience.",
+        "Mandatory experience in Residential construction developments.",
+        "Strong understanding of site safety practices, material resource tracking, execution checklists, and drawing interpretation.",
+      ],
+      postedDate: "2026-08-13",
+    },
+    {
+      id: 274,
+      title: "Jr. RMC Engineer",
+      department: "Ready Mix Concrete Operations",
+      location: "Nanakramguda, Hyderabad, India",
+      type: "Full-time",
+      experience: "3+ years",
+      vacancy: 1,
+      description:
+        "Monitor day-to-day concrete batching operations, raw material sampling, fresh concrete slump tests, and cube testing routines for high-rise residential construction in Nanakramguda. Track transit mixer dispatches and batching logs.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "3+ years of direct experience in Ready Mix Concrete (RMC) plant operations or site concrete quality control.",
+        "Mandatory experience with RMC testing protocols, slump retention checks, compressive strength logging, and raw material sampling.",
+        "Familiarity with standard IS codes governing concrete manufacturing and site sampling.",
+      ],
+      postedDate: "2026-08-13",
+    },
+    {
+      id: 275,
+      title: "MEP Engineer",
+      department: "Mechanical / Electrical / Plumbing",
+      location: "Shankarpalli, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Manage physical execution and field integration of electrical, plumbing, firefighting, and HVAC networks for a residential development in Shankarpalli. Ensure service routings strictly align with civil structures and architectural specs.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Electrical or Mechanical Engineering.",
+        "5+ years of hands-on site coordination experience in MEP services.",
+        "Mandatory experience working on Residential construction developments.",
+        "Proficiency in overlay drawing review, resolving MEP service clashes, checking sleeve placements, and supervising trade contractors.",
+      ],
+      postedDate: "2026-08-13",
+    },
   ];
 
   // Get unique departments and locations for filter options
