@@ -5080,6 +5080,96 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-08-13",
     },
+    {
+      id: 276,
+      title: "Construction Manager",
+      department: "Construction Management",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "10+ years",
+      vacancy: 1,
+      description:
+        "Lead and manage overall site construction activities, resource deployment, and execution schedules for a major residential project in Chevella. Drive multidisciplinary site teams to deliver structural and finishing milestones on schedule while maintaining strict safety and quality standards.",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "10+ years of active site construction management experience.",
+        "Mandatory track record of managing Residential construction developments.",
+        "Strong leadership capabilities in site team coordination, subcontractor management, material resource planning, and progress tracking.",
+      ],
+      postedDate: "2026-08-22",
+    },
+    {
+      id: 277,
+      title: "QS & Billing Engineer",
+      department: "Quantity Surveying & Billing",
+      location: "Parwada, Vizag, Andhra Pradesh, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Manage quantity take-offs, site measurements, subcontractor bill validations, and client billing for industrial plant developments in Parwada, Vizag. Track material usage variances, structural steel/piping quantities, and cost ledgers.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil / Mechanical Engineering.",
+        "5+ years of dedicated Quantity Surveying and site billing experience.",
+        "Mandatory experience in Industrial projects (Factories, Plants, Refineries, or Warehouses).",
+        "Proficiency in rate analysis, contract line-item measurement, BBS verification, and joint measurement sign-offs.",
+      ],
+      postedDate: "2026-08-22",
+    },
+    {
+      id: 278,
+      title: "QS & Billing Engineer",
+      department: "Quantity Surveying & Billing",
+      location: "Chevella, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Handle quantity measurements, subcontractor work verification, and client billing for villa and residential projects in Chevella. Oversee cost estimations, variation approvals, and material reconciliation.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "5+ years of core Quantity Surveying and site billing experience.",
+        "Mandatory experience in Villa or Residential construction projects.",
+        "Proficiency in BBS calculation, rate analysis, contract documentation, and billing ledger audits.",
+      ],
+      postedDate: "2026-08-22",
+    },
+    {
+      id: 279,
+      title: "Jr. RMC Engineer",
+      department: "Ready Mix Concrete Operations",
+      location: "Nanakramguda, Hyderabad, India",
+      type: "Full-time",
+      experience: "3+ years",
+      vacancy: 1,
+      description:
+        "Monitor daily batching plant operations, raw material sampling, fresh concrete slump tests, and cube testing routines for project delivery in Nanakramguda. Track transit mixer dispatches and batching logs.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Civil Engineering.",
+        "3+ years of direct experience in Ready Mix Concrete (RMC) plant operations or site concrete quality control.",
+        "Mandatory background in RMC testing protocols, slump retention checks, compressive strength logging, and raw material sampling.",
+        "Familiarity with standard IS codes governing concrete manufacturing and site sampling.",
+      ],
+      postedDate: "2026-08-22",
+    },
+    {
+      id: 280,
+      title: "MEP Engineer",
+      department: "Mechanical / Electrical / Plumbing",
+      location: "Shankarpalli, Hyderabad, India",
+      type: "Full-time",
+      experience: "5+ years",
+      vacancy: 1,
+      description:
+        "Manage physical execution and field integration of electrical, plumbing, firefighting, and HVAC networks for a residential development in Shankarpalli. Ensure service routings strictly align with civil structures and architectural specs.",
+      requirements: [
+        "Bachelor’s degree or Diploma in Electrical or Mechanical Engineering.",
+        "5+ years of hands-on site coordination experience in MEP services.",
+        "Mandatory experience working on Residential construction developments.",
+        "Proficiency in overlay drawing review, resolving MEP service clashes, checking sleeve placements, and supervising trade contractors.",
+      ],
+      postedDate: "2026-08-22",
+    },
   ];
 
   // Get unique departments and locations for filter options
