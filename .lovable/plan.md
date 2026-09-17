@@ -1,27 +1,32 @@
-## Goal
-Add "Certifications" as a top-level nav item between "About Us" and "Services", and remove the now-redundant "Certifications" CTA button from the bottom of the About Us page. The `/certifications` page and route already exist and remain unchanged.
+# Zasta Corporate Presentation Plan
 
-## Changes
+## Deliverable
+Create one professional Microsoft PowerPoint presentation in legacy **`.ppt` format only**. No website files, pages, content, or functionality will be changed.
 
-### 1. `src/components/Header.tsx`
-Insert a new entry into the `navItems` array between `About Us` and `Services`:
-```ts
-{ name: 'Certifications', path: '/certifications' },
-```
-This single array drives both the desktop nav and the mobile hamburger menu, and the header is already the sticky header (`fixed w-full z-50`). So the new item automatically appears in:
-- Desktop navigation
-- Mobile hamburger menu
-- Sticky header
+## Presentation Direction
+- Primarily white backgrounds with restrained Zasta green, charcoal, and subtle gold accents.
+- Use the existing Zasta logo exactly as supplied, preserving its original proportions without reshaping or redrawing it.
+- Use concise language, strong visual hierarchy, clean diagrams, large statistics, and relevant AI-generated infrastructure imagery.
+- Keep the deck brief and easy to understand: approximately **8 slides** in 16:9 format.
 
-Spacing, typography, hover effects, transitions, active state (`bg-zasta-green-100 text-zasta-green-600`), and responsive behavior are inherited from the shared `navItems.map(...)` render — no style changes needed.
+## Proposed Slide Story
+1. **Cover** — Zasta Enterprises Private Limited, “Excellence Always,” Hyderabad positioning, original logo.
+2. **Company at a Glance** — company overview, global infrastructure focus, 170+ expert engineers, 40+ completed projects, 30+ current projects.
+3. **Capabilities** — workforce solutions, construction project management, engineering consultancy, and digital platforms.
+4. **Sectors We Serve** — power and distribution, transportation, oil and gas, IT/data centers, real estate, industries and warehousing.
+5. **CONQUAL** — Zasta’s Construction Quality Management Platform: 2,000+ checklists, offline working, real-time audits, photo/GPS records, AI reporting, and cloud synchronization.
+6. **NirmanJobs** — AI-powered construction hiring platform: intelligent matching, smart JD parsing, verified engineer database, faster hiring, and interview scheduling; include `nirmanjobs.com`.
+7. **Why Zasta + Trust** — agility, quality, domain knowledge, rapid response, D-U-N-S® 77-141-6338, ISO 9001:2015, DPIIT Startup India, and Udyam/MSME registration.
+8. **Contact / Closing** — Hyderabad office, phone, email, website, and a clear partnership message.
 
-### 2. `src/pages/About.tsx`
-Remove the "Certifications CTA" `<section>` (the block containing the green `Certifications` button that navigates to `/certifications`). Also clean up now-unused imports (`Button`, `useNavigate`, `Award`) and the `navigate` constant if no longer referenced elsewhere on the page.
+## Image and Brand Treatment
+- Generate a small cohesive set of realistic, premium images for infrastructure delivery, construction quality technology, and specialist recruitment.
+- Keep all generated visuals text-free so names, facts, and branding remain editable and accurate in PowerPoint.
+- Use the website’s current factual content as the source of truth; do not invent customers, financial figures, testimonials, or project claims.
+- Mention **CONQUAL explicitly in the presentation only**, per the confirmed instruction.
 
-## Not touched
-- `src/pages/Certifications.tsx` — content, images, lightbox, animations preserved as-is.
-- `src/App.tsx` — `/certifications` route already registered.
-- Footer, other pages, tokens, global styles.
-
-## Result
-Nav order: Home | About Us | Certifications | Services | Careers | Contact — identical styling and behavior across desktop, mobile, and sticky states. Active highlight on `/certifications` matches other items.
+## Quality Assurance
+- Convert and inspect every slide as an image for clipping, overlap, alignment, readability, logo distortion, and color consistency.
+- Perform at least one correction and re-verification pass.
+- Validate slide order and wording, then confirm the final file opens correctly as `.ppt`.
+- Provide only the final `.ppt` and a concise QA summary.
