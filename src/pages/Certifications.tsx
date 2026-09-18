@@ -11,6 +11,7 @@ import dpiitAsset from "@/assets/dpiit-recognition.asset.json";
 import udyamAsset from "@/assets/udyam-registration.asset.json";
 import udyamPage1 from "@/assets/udyam-page-1.asset.json";
 import udyamPage2 from "@/assets/udyam-page-2.asset.json";
+import iso27001Asset from "@/assets/iso-iec-27001.asset.json";
 
 interface Certificate {
   title: string;
@@ -27,6 +28,11 @@ const certificates: Certificate[] = [
     issuer: "Ministry of Micro, Small & Medium Enterprises, Government of India",
     image: udyamAsset.url,
     pages: [udyamPage1.url, udyamPage2.url],
+  },
+  {
+    title: "ISO/IEC 27001:2022 — Information Security Management System",
+    issuer: "Ranalysis Certification Pvt. Ltd.",
+    image: iso27001Asset.url,
   },
 ];
 
