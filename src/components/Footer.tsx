@@ -84,7 +84,7 @@ const Footer = () => {
                 <MapPin size={18} className="text-zasta-green-400 mt-1 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
                   {" "}
-                  FLAT NO:904-A, SY NO:150, VAZHRAA PRATHIK, BLOCK-A, Nizampet, Qutubullapur, Hyderabad- 500090, India
+                  904-A, SY NO:150, VAZHRAA PRATHIK, BLOCK-A, Nizampet, Qutubullapur, Hyderabad- 500090, India
                 </span>
               </div>
               <div className="flex items-center space-x-3">
