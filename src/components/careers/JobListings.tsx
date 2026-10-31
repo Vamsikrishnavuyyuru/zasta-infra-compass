@@ -6259,8 +6259,8 @@ const JobListings = ({ onApply }: JobListingsProps) => {
 
   // Filter and sort jobs
   const filteredAndSortedJobs = useMemo(() => {
-    // Exclude January 2026 postings from current openings display
-    const hiddenMonths = ["2026-01", "2026-02", "2026-03"];
+    // Hide January through June 2026 postings from current openings display
+    const hiddenMonths = ["2026-01", "2026-02", "2026-03", "2026-04", "2026-05", "2026-06"];
     let filtered = currentOpenings.filter((job) => !hiddenMonths.some((m) => job.postedDate.startsWith(m)));
 
     // Apply filters
