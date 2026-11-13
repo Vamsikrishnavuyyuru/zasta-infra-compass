@@ -6640,6 +6640,26 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-11-13",
     },
+    {
+      id: 365,
+      title: "Mechanical Inspection Engineer",
+      department: "Mechanical Inspection & Quality Assurance",
+      location: "Chennai, Tamil Nadu, India",
+      type: "Full-time",
+      experience: "7+ years",
+      vacancy: 1,
+      description:
+        "Conduct mechanical inspections for industrial project activities in Chennai, overseeing fabrication, welding, piping systems, and equipment installation to ensure strict quality compliance with project specifications and standards[cite: 12].",
+      requirements: [
+        "Bachelor’s degree or Diploma in Mechanical Engineering.",
+        "7+ years of mechanical inspection experience at industrial project sites[cite: 12].",
+        "Hands-on expertise in inspecting fabrication, welding, piping systems, and mechanical equipment installation works[cite: 12].",
+        "Ability to conduct welding inspections and verify WPS/PQR and welder qualifications[cite: 12].",
+        "Proficiency in monitoring material inspection, fit-up, alignment, and dimensional checks[cite: 12].",
+        "Strong skills in reviewing inspection reports, technical documents, and coordinating with site, QA/QC, and project teams[cite: 12].",
+      ],
+      postedDate: "2026-11-13",
+    },
   ];
 
   // Get unique departments and locations for filter options
