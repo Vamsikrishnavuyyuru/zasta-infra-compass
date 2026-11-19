@@ -6660,6 +6660,96 @@ const JobListings = ({ onApply }: JobListingsProps) => {
       ],
       postedDate: "2026-11-13",
     },
+    {
+      id: 366,
+      title: "MEP Mechanical Engineer",
+      department: "Mechanical / Electrical / Plumbing",
+      location: "Shameerpet, Hyderabad, India",
+      type: "Full-time",
+      experience: "7+ years",
+      vacancy: 1,
+      description:
+        "Lead mechanical MEP execution, HVAC, cleanroom utilities, and piping installations for projects in Shameerpet, Hyderabad[cite: 13].",
+      requirements: [
+        "Bachelor’s degree or Diploma in Mechanical Engineering.",
+        "7+ years of core MEP mechanical site execution experience[cite: 13].",
+        "Pharmaceutical project experience preferred[cite: 13].",
+        "Strong proficiency in reading MEP drawings, utility routing, and testing/commissioning protocols.",
+      ],
+      postedDate: "2026-11-19",
+    },
+    {
+      id: 367,
+      title: "Civil Quality Manager",
+      department: "Quality Management",
+      location: "Shameerpet, Hyderabad, India",
+      type: "Full-time",
+      experience: "10 years",
+      vacancy: 1,
+      description:
+        "Oversee civil QA/QC systems, quality audits, and compliance standards for projects in Shameerpet, Hyderabad[cite: 13].",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "10 years of dedicated civil quality control and assurance management experience[cite: 13].",
+        "Mandatory ISO 9001:2015 certification/implementation experience[cite: 13].",
+        "Pharmaceutical project experience preferred[cite: 13].",
+      ],
+      postedDate: "2026-11-19",
+    },
+    {
+      id: 368,
+      title: "Civil Planner",
+      department: "Project Planning",
+      location: "Shameerpet, Hyderabad, India",
+      type: "Full-time",
+      experience: "7-10 years",
+      vacancy: 1,
+      description:
+        "Develop baseline project schedules, track milestone progress, and perform delay analysis for civil construction in Shameerpet, Hyderabad[cite: 13].",
+      requirements: [
+        "Bachelor’s degree in Civil Engineering.",
+        "7 to 10 years of project planning and scheduling experience[cite: 13].",
+        "Pharmaceutical project experience preferred[cite: 13].",
+        "Proficiency in Primavera P6 or MS Project along with progress variance reporting.",
+      ],
+      postedDate: "2026-11-19",
+    },
+    {
+      id: 369,
+      title: "Document Controller",
+      department: "Document Control & Administration",
+      location: "Shameerpet, Hyderabad, India",
+      type: "Full-time",
+      experience: "7 years",
+      vacancy: 1,
+      description:
+        "Manage project documentation, GFC drawings, transmittals, QA/QC logs, and compliance records for projects in Shameerpet, Hyderabad[cite: 13].",
+      requirements: [
+        "Bachelor’s degree or Diploma in Engineering or relevant discipline.",
+        "7 years of document control experience in construction or industrial projects[cite: 13].",
+        "Pharmaceutical project experience preferred[cite: 13].",
+        "Proficiency in EDMS software, MS Office, and maintaining audit-ready technical documentation.",
+      ],
+      postedDate: "2026-11-19",
+    },
+    {
+      id: 370,
+      title: "Material Manager",
+      department: "Procurement & Material Management",
+      location: "Shameerpet, Hyderabad, India",
+      type: "Full-time",
+      experience: "5-7 years",
+      vacancy: 1,
+      description:
+        "Oversee site store operations, inventory tracking, material reconciliation, and vendor supply coordination for projects in Shameerpet, Hyderabad[cite: 13].",
+      requirements: [
+        "Bachelor’s degree or Diploma in Engineering or Supply Chain Management.",
+        "5 to 7 years of material management and site store control experience[cite: 13].",
+        "Pharmaceutical project experience preferred[cite: 13].",
+        "Expertise in ERP inventory modules, GRN processing, and minimizing material wastage.",
+      ],
+      postedDate: "2026-11-19",
+    },
   ];
 
   // Get unique departments and locations for filter options
